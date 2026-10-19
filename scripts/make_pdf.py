@@ -44,6 +44,19 @@ def group_order(k, order):
     return (order.index(k) if k in order else (-1 if k == "#" else 100 + ord(k[0])))
 
 
+def refs_html(t):
+    srcs = t.get("sources") or []
+    paps = t.get("papers") or []
+    if not srcs and not paps:
+        return ""
+    parts = []
+    if srcs:
+        parts.append("출처 " + " · ".join(e(s.get("publisher") or s["url"].split("/")[2]) for s in srcs))
+    if paps:
+        parts.append("논문 " + " · ".join(e(f'{p.get("authors") or ""} {p.get("year") or ""}'.strip()) for p in paps))
+    return f'<div class="refs">{" / ".join(parts)}</div>'
+
+
 def entry_html(t):
     abbr = f'<b>{e(t["abbr"])}</b> · ' if t["abbr"] and t["abbr"] != t["en"] else ""
     rel = ", ".join(e(BY_ID[r]["ko"]) for r in t["related"] if r in BY_ID)
@@ -56,6 +69,7 @@ def entry_html(t):
   <div class="d deep"><span>심화</span><p>{e(t["deep"])}</p></div>
   {ex}
   {f'<div class="rel">연관 {rel}</div>' if rel else ""}
+  {refs_html(t)}
 </article>'''
 
 
@@ -148,6 +162,7 @@ body {{ margin:0; font-family:var(--sans); color:var(--ink); font-size:8.6pt; li
 .d p {{ margin:0; }}
 .d.ex p {{ color:var(--muted); }}
 .rel {{ font-size:7.2pt; color:var(--muted); margin-top:1mm; }}
+.refs {{ font-size:6.8pt; color:var(--muted); margin-top:.6mm; font-style:italic; }}
 
 /* 분야별 차례 */
 .toc {{ break-after:page; }}

@@ -20,7 +20,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "tool-use",
@@ -42,7 +44,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "function-calling",
@@ -64,7 +68,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "mcp",
@@ -87,7 +93,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "a2a",
@@ -109,7 +117,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "multi-agent",
@@ -131,7 +141,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "agentic-workflow",
@@ -154,7 +166,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "orchestration",
@@ -176,7 +190,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "computer-use",
@@ -199,7 +215,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "memory-agent",
@@ -221,7 +239,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "human-in-the-loop",
@@ -243,7 +263,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "coding-agent",
@@ -265,7 +287,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "agentic-ai",
@@ -287,7 +311,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "agent-loop",
@@ -309,7 +335,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "react",
@@ -331,7 +359,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "planning",
@@ -353,7 +383,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "reflection",
@@ -375,7 +407,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "subagent",
@@ -397,7 +431,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "agent-skills",
@@ -419,7 +455,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "agents-md",
@@ -441,7 +479,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "browser-agent",
@@ -463,7 +503,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "agent-sandbox",
@@ -485,7 +527,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "agent-permissions",
@@ -507,7 +551,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "long-running-task",
@@ -529,7 +575,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "agent-state",
@@ -551,7 +599,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "handoff",
@@ -573,7 +623,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "agent-framework",
@@ -595,7 +647,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "tool-schema",
@@ -617,7 +671,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "mcp-server",
@@ -639,7 +695,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "mcp-client",
@@ -661,7 +719,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "connector",
@@ -683,7 +743,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "autonomy-level",
@@ -705,7 +767,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "agent-evaluation",
@@ -727,7 +791,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "agent-trajectory",
@@ -749,7 +815,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "deep-research",
@@ -771,7 +839,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "workflow-automation",
@@ -793,7 +863,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "retry-fallback",
@@ -815,7 +887,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "generative-ai",
@@ -837,7 +911,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "multimodal",
@@ -859,7 +935,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "diffusion-model",
@@ -882,7 +960,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "gan",
@@ -904,7 +984,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "vlm",
@@ -927,7 +1009,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "text-to-image",
@@ -949,7 +1033,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "tts",
@@ -971,7 +1057,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "stt",
@@ -993,7 +1081,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "ocr",
@@ -1015,7 +1105,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "video-generation",
@@ -1037,7 +1129,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "voice-agent",
@@ -1059,7 +1153,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "native-multimodal",
@@ -1081,7 +1177,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "latent-space",
@@ -1103,7 +1201,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "vae",
@@ -1125,7 +1225,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "denoising",
@@ -1147,7 +1249,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "flow-matching",
@@ -1169,7 +1273,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "dit",
@@ -1191,7 +1297,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "autoregressive-image-generation",
@@ -1213,7 +1321,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "text-encoder",
@@ -1235,7 +1345,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "clip",
@@ -1257,7 +1369,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "multimodal-embedding",
@@ -1280,7 +1394,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "image-to-image",
@@ -1302,7 +1418,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "inpainting",
@@ -1324,7 +1442,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "controlnet",
@@ -1346,7 +1466,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "negative-prompt",
@@ -1368,7 +1490,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "upscaling",
@@ -1390,7 +1514,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "image-captioning",
@@ -1412,7 +1538,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "vqa",
@@ -1434,7 +1562,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "document-ai",
@@ -1457,7 +1587,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "screen-understanding",
@@ -1479,7 +1611,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "realtime-voice",
@@ -1502,7 +1636,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "voice-cloning",
@@ -1524,7 +1660,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "music-generation",
@@ -1546,7 +1684,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "3d-generation",
@@ -1568,7 +1708,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "deepfake",
@@ -1590,7 +1732,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "content-provenance",
@@ -1612,7 +1756,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "ai-copyright",
@@ -1634,7 +1780,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "ai",
@@ -1657,7 +1805,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "machine-learning",
@@ -1680,7 +1830,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "supervised-learning",
@@ -1703,7 +1855,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "unsupervised-learning",
@@ -1726,7 +1880,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "reinforcement-learning",
@@ -1748,7 +1904,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "overfitting",
@@ -1771,7 +1929,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "training-data",
@@ -1794,7 +1954,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "feature",
@@ -1817,7 +1979,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "model",
@@ -1840,7 +2004,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "inference",
@@ -1863,7 +2029,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "parameter",
@@ -1886,7 +2054,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "classification",
@@ -1909,7 +2079,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "regression",
@@ -1931,7 +2103,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "clustering",
@@ -1953,7 +2127,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "data-split",
@@ -1976,7 +2152,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "underfitting",
@@ -1998,7 +2176,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "regularization",
@@ -2021,7 +2201,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "hyperparameter",
@@ -2044,7 +2226,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "cross-validation",
@@ -2066,7 +2250,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "precision-recall",
@@ -2089,7 +2275,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "f1-score",
@@ -2111,7 +2299,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "confusion-matrix",
@@ -2133,7 +2323,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "accuracy",
@@ -2155,7 +2347,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "auc-roc",
@@ -2177,7 +2371,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "bias-variance-tradeoff",
@@ -2199,7 +2395,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "anomaly-detection",
@@ -2222,7 +2420,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "recommender-system",
@@ -2244,7 +2444,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "time-series-forecasting",
@@ -2267,7 +2469,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "ensemble-learning",
@@ -2289,7 +2493,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "decision-tree",
@@ -2312,7 +2518,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "random-forest",
@@ -2334,7 +2542,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "gradient-boosting",
@@ -2357,7 +2567,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "feature-engineering",
@@ -2379,7 +2591,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "feature-scaling",
@@ -2401,7 +2615,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "data-labeling",
@@ -2424,7 +2640,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "semi-supervised-learning",
@@ -2446,7 +2664,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "self-supervised-learning",
@@ -2469,7 +2689,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "class-imbalance",
@@ -2491,7 +2713,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "data-leakage",
@@ -2513,7 +2737,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "dimensionality-reduction",
@@ -2535,7 +2761,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "logistic-regression",
@@ -2558,7 +2786,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "agi",
@@ -2581,7 +2811,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "narrow-ai",
@@ -2603,7 +2835,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "turing-test",
@@ -2625,7 +2859,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "neural-network",
@@ -2648,7 +2884,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "deep-learning",
@@ -2671,7 +2909,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "transformer",
@@ -2694,7 +2934,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "attention",
@@ -2717,7 +2959,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "self-attention",
@@ -2740,7 +2984,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "backpropagation",
@@ -2763,7 +3009,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "gradient-descent",
@@ -2786,7 +3034,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "cnn",
@@ -2809,7 +3059,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "rnn",
@@ -2832,7 +3084,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "embedding",
@@ -2855,7 +3109,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "activation-function",
@@ -2877,7 +3133,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "loss-function",
@@ -2900,7 +3158,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "epoch",
@@ -2922,7 +3182,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "perceptron",
@@ -2944,7 +3206,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "mlp",
@@ -2966,7 +3230,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "hidden-layer",
@@ -2988,7 +3254,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "dropout",
@@ -3010,7 +3278,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "batch-normalization",
@@ -3032,7 +3302,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "layer-normalization",
@@ -3053,7 +3325,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "residual-connection",
@@ -3075,7 +3349,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "learning-rate",
@@ -3098,7 +3374,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "optimizer",
@@ -3120,7 +3398,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "sgd",
@@ -3142,7 +3422,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "batch-size",
@@ -3165,7 +3447,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "cross-entropy",
@@ -3187,7 +3471,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "softmax",
@@ -3210,7 +3496,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "vanishing-gradient",
@@ -3233,7 +3521,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "lstm",
@@ -3255,7 +3545,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "gru",
@@ -3276,7 +3568,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "encoder-decoder",
@@ -3299,7 +3593,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "autoencoder",
@@ -3321,7 +3617,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "transfer-learning",
@@ -3343,7 +3641,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "positional-encoding",
@@ -3365,7 +3665,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "multi-head-attention",
@@ -3387,7 +3689,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "tensor",
@@ -3409,7 +3713,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "model-size",
@@ -3432,7 +3738,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "early-stopping",
@@ -3454,7 +3762,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "gnn",
@@ -3476,7 +3786,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "gpu",
@@ -3499,7 +3811,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "npu",
@@ -3521,7 +3835,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "quantization",
@@ -3544,7 +3860,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "inference-serving",
@@ -3567,7 +3885,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "latency",
@@ -3589,7 +3909,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "throughput",
@@ -3611,7 +3933,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "llmops",
@@ -3634,7 +3958,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "mlops",
@@ -3656,7 +3982,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "api",
@@ -3678,7 +4006,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "on-premise",
@@ -3700,7 +4030,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "sovereign-ai",
@@ -3723,7 +4055,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "vllm",
@@ -3746,7 +4080,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "edge-ai",
@@ -3768,7 +4104,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "observability",
@@ -3790,7 +4128,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "hbm",
@@ -3812,7 +4152,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "cuda",
@@ -3834,7 +4176,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "tpu",
@@ -3856,7 +4200,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "flops",
@@ -3878,7 +4224,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "batch-inference",
@@ -3900,7 +4248,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "async-processing",
@@ -3922,7 +4272,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "rate-limit",
@@ -3944,7 +4296,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "token-cost",
@@ -3967,7 +4321,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "model-gateway",
@@ -3990,7 +4346,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "fallback-model",
@@ -4012,7 +4370,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "semantic-cache",
@@ -4034,7 +4394,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "kubernetes",
@@ -4056,7 +4418,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "model-registry",
@@ -4078,7 +4442,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "ab-testing",
@@ -4100,7 +4466,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "drift-monitoring",
@@ -4122,7 +4490,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "private-cloud",
@@ -4144,7 +4514,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "hybrid-cloud",
@@ -4166,7 +4538,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "air-gapped-deployment",
@@ -4189,7 +4563,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "gguf",
@@ -4211,7 +4587,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "tensorrt",
@@ -4233,7 +4611,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "cold-start",
@@ -4255,7 +4635,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "ttft",
@@ -4277,7 +4659,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "prompt-caching",
@@ -4300,7 +4684,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "datacenter-power",
@@ -4322,7 +4708,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "ax",
@@ -4345,7 +4733,16 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [
+   {
+    "title": "What is AI transformation?",
+    "url": "https://www.ibm.com/topics/ai-transformation",
+    "publisher": "IBM",
+    "type": "guide"
+   }
+  ],
+  "papers": []
  },
  {
   "id": "dx",
@@ -4366,7 +4763,16 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [
+   {
+    "title": "Digital transformation",
+    "url": "https://en.wikipedia.org/wiki/Digital_transformation",
+    "publisher": "Wikipedia",
+    "type": "encyclopedia"
+   }
+  ],
+  "papers": []
  },
  {
   "id": "poc",
@@ -4388,7 +4794,16 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [
+   {
+    "title": "Proof of concept",
+    "url": "https://en.wikipedia.org/wiki/Proof_of_concept",
+    "publisher": "Wikipedia",
+    "type": "encyclopedia"
+   }
+  ],
+  "papers": []
  },
  {
   "id": "roi",
@@ -4410,7 +4825,16 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [
+   {
+    "title": "Return on investment",
+    "url": "https://en.wikipedia.org/wiki/Return_on_investment",
+    "publisher": "Wikipedia",
+    "type": "encyclopedia"
+   }
+  ],
+  "papers": []
  },
  {
   "id": "ai-governance",
@@ -4433,7 +4857,28 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [
+   {
+    "title": "AI Risk Management Framework",
+    "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+    "publisher": "NIST",
+    "type": "official"
+   },
+   {
+    "title": "Regulation (EU) 2024/1689 (Artificial Intelligence Act)",
+    "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "publisher": "EUR-Lex (European Union)",
+    "type": "official"
+   },
+   {
+    "title": "What is AI governance?",
+    "url": "https://www.ibm.com/think/topics/ai-governance",
+    "publisher": "IBM",
+    "type": "guide"
+   }
+  ],
+  "papers": []
  },
  {
   "id": "use-case",
@@ -4455,7 +4900,16 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [
+   {
+    "title": "Use case",
+    "url": "https://en.wikipedia.org/wiki/Use_case",
+    "publisher": "Wikipedia",
+    "type": "encyclopedia"
+   }
+  ],
+  "papers": []
  },
  {
   "id": "copilot",
@@ -4477,7 +4931,37 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [
+   {
+    "title": "What is GitHub Copilot?",
+    "url": "https://docs.github.com/en/copilot/get-started/what-is-github-copilot",
+    "publisher": "GitHub Docs",
+    "type": "docs"
+   },
+   {
+    "title": "Microsoft Copilot",
+    "url": "https://en.wikipedia.org/wiki/Microsoft_Copilot",
+    "publisher": "Wikipedia",
+    "type": "encyclopedia"
+   }
+  ],
+  "papers": [
+   {
+    "title": "Evaluating Large Language Models Trained on Code",
+    "authors": "Chen et al.",
+    "year": 2021,
+    "venue": "arXiv",
+    "url": "https://arxiv.org/abs/2107.03374"
+   },
+   {
+    "title": "The Impact of AI on Developer Productivity: Evidence from GitHub Copilot",
+    "authors": "Peng et al.",
+    "year": 2023,
+    "venue": "arXiv",
+    "url": "https://arxiv.org/abs/2302.06590"
+   }
+  ]
  },
  {
   "id": "ai-literacy",
@@ -4499,7 +4983,30 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [
+   {
+    "title": "Article 4: AI literacy",
+    "url": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-4",
+    "publisher": "European Commission AI Act Service Desk",
+    "type": "official"
+   },
+   {
+    "title": "Article 4: AI literacy",
+    "url": "https://www.artificialintelligenceact.eu/article/4/",
+    "publisher": "EU Artificial Intelligence Act (artificialintelligenceact.eu)",
+    "type": "article"
+   }
+  ],
+  "papers": [
+   {
+    "title": "What is AI Literacy? Competencies and Design Considerations",
+    "authors": "Long and Magerko",
+    "year": 2020,
+    "venue": "CHI 2020",
+    "url": "https://doi.org/10.1145/3313831.3376727"
+   }
+  ]
  },
  {
   "id": "change-management",
@@ -4521,7 +5028,16 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [
+   {
+    "title": "Change management",
+    "url": "https://en.wikipedia.org/wiki/Change_management",
+    "publisher": "Wikipedia",
+    "type": "encyclopedia"
+   }
+  ],
+  "papers": []
  },
  {
   "id": "ai-adoption",
@@ -4543,7 +5059,22 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [
+   {
+    "title": "Technology adoption life cycle",
+    "url": "https://en.wikipedia.org/wiki/Technology_adoption_life_cycle",
+    "publisher": "Wikipedia",
+    "type": "encyclopedia"
+   },
+   {
+    "title": "Diffusion of innovations",
+    "url": "https://en.wikipedia.org/wiki/Diffusion_of_innovations",
+    "publisher": "Wikipedia",
+    "type": "encyclopedia"
+   }
+  ],
+  "papers": []
  },
  {
   "id": "build-vs-buy",
@@ -4565,7 +5096,16 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [
+   {
+    "title": "Make or Buy Decision",
+    "url": "https://corporatefinanceinstitute.com/resources/management/make-or-buy-decision",
+    "publisher": "Corporate Finance Institute",
+    "type": "guide"
+   }
+  ],
+  "papers": []
  },
  {
   "id": "ai-cost",
@@ -4587,7 +5127,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "ax-roadmap",
@@ -4609,7 +5151,16 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [
+   {
+    "title": "What is AI transformation?",
+    "url": "https://www.ibm.com/topics/ai-transformation",
+    "publisher": "IBM",
+    "type": "guide"
+   }
+  ],
+  "papers": []
  },
  {
   "id": "ai-coe",
@@ -4631,7 +5182,22 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [
+   {
+    "title": "Center of excellence",
+    "url": "https://en.wikipedia.org/wiki/Center_of_excellence",
+    "publisher": "Wikipedia",
+    "type": "encyclopedia"
+   },
+   {
+    "title": "What is a center of excellence (CoE)?",
+    "url": "https://www.techtarget.com/whatis/definition/center-of-excellence-CoE",
+    "publisher": "TechTarget",
+    "type": "article"
+   }
+  ],
+  "papers": []
  },
  {
   "id": "process-redesign",
@@ -4653,7 +5219,16 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [
+   {
+    "title": "Business process re-engineering",
+    "url": "https://en.wikipedia.org/wiki/Business_process_re-engineering",
+    "publisher": "Wikipedia",
+    "type": "encyclopedia"
+   }
+  ],
+  "papers": []
  },
  {
   "id": "productivity-metrics",
@@ -4675,7 +5250,31 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [
+   {
+    "title": "Glossary:Labour productivity",
+    "url": "https://ec.europa.eu/eurostat/statistics-explained/index.php/Glossary:Labour_productivity",
+    "publisher": "Eurostat",
+    "type": "official"
+   }
+  ],
+  "papers": [
+   {
+    "title": "Generative AI at Work",
+    "authors": "Brynjolfsson et al.",
+    "year": 2023,
+    "venue": "arXiv",
+    "url": "https://arxiv.org/abs/2304.11771"
+   },
+   {
+    "title": "The Impact of AI on Developer Productivity: Evidence from GitHub Copilot",
+    "authors": "Peng et al.",
+    "year": 2023,
+    "venue": "arXiv",
+    "url": "https://arxiv.org/abs/2302.06590"
+   }
+  ]
  },
  {
   "id": "citizen-developer",
@@ -4697,7 +5296,16 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [
+   {
+    "title": "Unleashing the citizen developer in all of us with the Microsoft Power Platform",
+    "url": "https://www.microsoft.com/insidetrack/blog/unleashing-the-citizen-developer-in-all-of-us-with-the-microsoft-power-platform",
+    "publisher": "Microsoft Inside Track",
+    "type": "guide"
+   }
+  ],
+  "papers": []
  },
  {
   "id": "scale-up",
@@ -4719,7 +5327,24 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [
+   {
+    "title": "MLOps: Continuous delivery and automation pipelines in machine learning",
+    "url": "https://docs.cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning",
+    "publisher": "Google Cloud",
+    "type": "guide"
+   }
+  ],
+  "papers": [
+   {
+    "title": "Hidden Technical Debt in Machine Learning Systems",
+    "authors": "Sculley et al.",
+    "year": 2015,
+    "venue": "NeurIPS 2015",
+    "url": "https://neurips.cc/virtual/2015/poster/5680"
+   }
+  ]
  },
  {
   "id": "ai-strategy",
@@ -4741,7 +5366,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "ai-insourcing",
@@ -4763,7 +5390,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "vendor-lock-in",
@@ -4785,7 +5414,16 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [
+   {
+    "title": "Vendor lock-in",
+    "url": "https://en.wikipedia.org/wiki/Vendor_lock-in",
+    "publisher": "Wikipedia",
+    "type": "encyclopedia"
+   }
+  ],
+  "papers": []
  },
  {
   "id": "tco",
@@ -4808,7 +5446,16 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [
+   {
+    "title": "Total cost of ownership",
+    "url": "https://en.wikipedia.org/wiki/Total_cost_of_ownership",
+    "publisher": "Wikipedia",
+    "type": "encyclopedia"
+   }
+  ],
+  "papers": []
  },
  {
   "id": "sla",
@@ -4830,7 +5477,28 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [
+   {
+    "title": "What is an SLA (service level agreement)?",
+    "url": "https://www.ibm.com/think/topics/service-level-agreement",
+    "publisher": "IBM",
+    "type": "guide"
+   },
+   {
+    "title": "Service-level agreement",
+    "url": "https://en.wikipedia.org/wiki/Service-level_agreement",
+    "publisher": "Wikipedia",
+    "type": "encyclopedia"
+   },
+   {
+    "title": "Service-level objective",
+    "url": "https://en.wikipedia.org/wiki/Service-level_objective",
+    "publisher": "Wikipedia",
+    "type": "encyclopedia"
+   }
+  ],
+  "papers": []
  },
  {
   "id": "prompt-library",
@@ -4852,7 +5520,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "ai-champion",
@@ -4874,7 +5544,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "reskilling",
@@ -4896,7 +5568,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "ai-native",
@@ -4918,7 +5592,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "enterprise-llm-portal",
@@ -4941,7 +5617,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "data-driven-decision",
@@ -4963,7 +5641,16 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [
+   {
+    "title": "Data-driven decision management (DDDM)",
+    "url": "https://www.ebsco.com/research-starters/computer-science/data-driven-decision-management-dddm",
+    "publisher": "EBSCO Research Starters",
+    "type": "encyclopedia"
+   }
+  ],
+  "papers": []
  },
  {
   "id": "network-separation-reform",
@@ -4986,7 +5673,22 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [
+   {
+    "title": "[보도참고] 전 금융업권 대상 ｢금융분야 망분리 개선 로드맵｣ 설명회 개최",
+    "url": "https://www.fsc.go.kr/no010101/82937?curPage=86",
+    "publisher": "금융위원회",
+    "type": "official"
+   },
+   {
+    "title": "금융위원회, 금융감독원 '금융분야 망분리 개선 로드맵' 발표",
+    "url": "https://www.kimchang.com/ko/insights/detail.kc?idx=31199",
+    "publisher": "김·장 법률사무소",
+    "type": "article"
+   }
+  ],
+  "papers": []
  },
  {
   "id": "regulatory-sandbox",
@@ -5007,7 +5709,16 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [
+   {
+    "title": "[보도자료] 올해도 ｢금융규제 샌드박스｣가 일상 속 금융혁신을 만들었습니다 - '23년 금융규제 샌드박스 제도 운영성과",
+    "url": "https://www.fsc.go.kr/po010101/81327?curPage=1",
+    "publisher": "금융위원회",
+    "type": "official"
+   }
+  ],
+  "papers": []
  },
  {
   "id": "ai-maturity-model",
@@ -5029,7 +5740,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "shadow-ai",
@@ -5051,7 +5764,16 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [
+   {
+    "title": "What is shadow AI?",
+    "url": "https://www.ibm.com/topics/shadow-ai",
+    "publisher": "IBM",
+    "type": "guide"
+   }
+  ],
+  "papers": []
  },
  {
   "id": "llm",
@@ -5074,7 +5796,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "foundation-model",
@@ -5097,7 +5821,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "token",
@@ -5120,7 +5846,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "tokenizer",
@@ -5142,7 +5870,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "context-window",
@@ -5165,7 +5895,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "next-token-prediction",
@@ -5188,7 +5920,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "temperature",
@@ -5211,7 +5945,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "top-p",
@@ -5233,7 +5969,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "open-weight-model",
@@ -5256,7 +5994,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "slm",
@@ -5279,7 +6019,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "moe",
@@ -5302,7 +6044,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "kv-cache",
@@ -5325,7 +6069,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "scaling-law",
@@ -5348,7 +6094,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "multilingual-model",
@@ -5370,7 +6118,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "decoder-only-model",
@@ -5393,7 +6143,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "encoder-model",
@@ -5416,7 +6168,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "autoregressive-model",
@@ -5438,7 +6192,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "emergent-abilities",
@@ -5460,7 +6216,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "logits",
@@ -5482,7 +6240,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "sampling",
@@ -5505,7 +6265,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "top-k",
@@ -5526,7 +6288,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "greedy-decoding",
@@ -5548,7 +6312,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "beam-search",
@@ -5569,7 +6335,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "repetition-penalty",
@@ -5590,7 +6358,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "max-tokens",
@@ -5612,7 +6382,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "stop-sequence",
@@ -5633,7 +6405,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "long-context",
@@ -5656,7 +6430,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "lost-in-the-middle",
@@ -5678,7 +6454,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "frontier-model",
@@ -5701,7 +6479,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "open-source-model",
@@ -5723,7 +6503,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "korean-token-efficiency",
@@ -5746,7 +6528,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "bpe",
@@ -5767,7 +6551,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "rope",
@@ -5789,7 +6575,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "grouped-query-attention",
@@ -5810,7 +6598,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "knowledge-cutoff",
@@ -5832,7 +6622,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "multi-turn-conversation",
@@ -5854,7 +6646,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "chat-template",
@@ -5876,7 +6670,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "streaming-response",
@@ -5898,7 +6694,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "speculative-decoding",
@@ -5921,7 +6719,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "ssm",
@@ -5943,7 +6743,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "hybrid-model",
@@ -5966,7 +6768,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "world-model",
@@ -5988,7 +6792,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "pre-training",
@@ -6011,7 +6817,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "fine-tuning",
@@ -6034,7 +6842,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "sft",
@@ -6057,7 +6867,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "rlhf",
@@ -6080,7 +6892,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "dpo",
@@ -6103,7 +6917,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "lora",
@@ -6126,7 +6942,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "peft",
@@ -6149,7 +6967,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "distillation",
@@ -6171,7 +6991,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "instruction-tuning",
@@ -6193,7 +7015,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "synthetic-data",
@@ -6215,7 +7039,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "alignment",
@@ -6238,7 +7064,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "constitutional-ai",
@@ -6260,7 +7088,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "catastrophic-forgetting",
@@ -6282,7 +7112,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "post-training",
@@ -6305,7 +7137,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "data-curation",
@@ -6328,7 +7162,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "loss-masking",
@@ -6350,7 +7186,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "reward-model",
@@ -6373,7 +7211,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "preference-data",
@@ -6395,7 +7235,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "rlaif",
@@ -6417,7 +7259,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "ppo",
@@ -6440,7 +7284,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "grpo",
@@ -6462,7 +7308,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "rlvr",
@@ -6485,7 +7333,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "reward-hacking",
@@ -6508,7 +7358,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "kl-penalty",
@@ -6530,7 +7382,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "qlora",
@@ -6552,7 +7406,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "adapter",
@@ -6574,7 +7430,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "full-fine-tuning",
@@ -6596,7 +7454,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "model-merging",
@@ -6618,7 +7478,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "continual-learning",
@@ -6640,7 +7502,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "continued-pre-training",
@@ -6662,7 +7526,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "domain-adaptation",
@@ -6684,7 +7550,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "curriculum-learning",
@@ -6706,7 +7574,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "checkpoint",
@@ -6728,7 +7598,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "data-contamination",
@@ -6750,7 +7622,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "mixed-precision",
@@ -6772,7 +7646,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "distributed-training",
@@ -6795,7 +7671,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "data-parallelism",
@@ -6816,7 +7694,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "tensor-parallelism",
@@ -6838,7 +7718,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "pipeline-parallelism",
@@ -6859,7 +7741,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "training-tokens",
@@ -6881,7 +7765,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "prompt",
@@ -6903,7 +7789,36 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [
+   {
+    "title": "Prompt engineering overview",
+    "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview",
+    "publisher": "Anthropic",
+    "type": "docs"
+   },
+   {
+    "title": "Prompt engineering | OpenAI API",
+    "url": "https://developers.openai.com/api/docs/guides/prompt-engineering",
+    "publisher": "OpenAI",
+    "type": "docs"
+   },
+   {
+    "title": "Prompt engineering",
+    "url": "https://en.wikipedia.org/wiki/Prompt_engineering",
+    "publisher": "Wikipedia",
+    "type": "encyclopedia"
+   }
+  ],
+  "papers": [
+   {
+    "title": "The Prompt Report: A Systematic Survey of Prompt Engineering Techniques",
+    "authors": "Schulhoff et al.",
+    "year": 2024,
+    "venue": "arXiv",
+    "url": "https://arxiv.org/abs/2406.06608"
+   }
+  ]
  },
  {
   "id": "prompt-engineering",
@@ -6926,7 +7841,36 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [
+   {
+    "title": "Prompting best practices",
+    "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices",
+    "publisher": "Anthropic",
+    "type": "docs"
+   },
+   {
+    "title": "What Is Prompt Engineering? | IBM",
+    "url": "https://www.ibm.com/think/topics/prompt-engineering",
+    "publisher": "IBM",
+    "type": "guide"
+   },
+   {
+    "title": "Prompt engineering",
+    "url": "https://en.wikipedia.org/wiki/Prompt_engineering",
+    "publisher": "Wikipedia",
+    "type": "encyclopedia"
+   }
+  ],
+  "papers": [
+   {
+    "title": "The Prompt Report: A Systematic Survey of Prompt Engineering Techniques",
+    "authors": "Schulhoff et al.",
+    "year": 2024,
+    "venue": "arXiv",
+    "url": "https://arxiv.org/abs/2406.06608"
+   }
+  ]
  },
  {
   "id": "system-prompt",
@@ -6948,7 +7892,22 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [
+   {
+    "title": "Prompting best practices (Give Claude a role)",
+    "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices",
+    "publisher": "Anthropic",
+    "type": "docs"
+   },
+   {
+    "title": "Prompt engineering | OpenAI API (Message roles and instruction following)",
+    "url": "https://developers.openai.com/api/docs/guides/prompt-engineering",
+    "publisher": "OpenAI",
+    "type": "docs"
+   }
+  ],
+  "papers": []
  },
  {
   "id": "user-prompt",
@@ -6969,7 +7928,22 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [
+   {
+    "title": "Prompt engineering | OpenAI API (Message roles and instruction following)",
+    "url": "https://developers.openai.com/api/docs/guides/prompt-engineering",
+    "publisher": "OpenAI",
+    "type": "docs"
+   },
+   {
+    "title": "Prompt injection",
+    "url": "https://en.wikipedia.org/wiki/Prompt_injection",
+    "publisher": "Wikipedia",
+    "type": "encyclopedia"
+   }
+  ],
+  "papers": []
  },
  {
   "id": "zero-shot",
@@ -6991,7 +7965,37 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [
+   {
+    "title": "Prompt design strategies",
+    "url": "https://ai.google.dev/gemini-api/docs/prompting-strategies",
+    "publisher": "Google",
+    "type": "docs"
+   },
+   {
+    "title": "Prompt engineering",
+    "url": "https://en.wikipedia.org/wiki/Prompt_engineering",
+    "publisher": "Wikipedia",
+    "type": "encyclopedia"
+   }
+  ],
+  "papers": [
+   {
+    "title": "Language Models are Few-Shot Learners",
+    "authors": "Brown et al.",
+    "year": 2020,
+    "venue": "NeurIPS 2020",
+    "url": "https://arxiv.org/abs/2005.14165"
+   },
+   {
+    "title": "Large Language Models are Zero-Shot Reasoners",
+    "authors": "Kojima et al.",
+    "year": 2022,
+    "venue": "NeurIPS 2022",
+    "url": "https://arxiv.org/abs/2205.11916"
+   }
+  ]
  },
  {
   "id": "one-shot",
@@ -7012,7 +8016,30 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [
+   {
+    "title": "Prompt design strategies",
+    "url": "https://ai.google.dev/gemini-api/docs/prompting-strategies",
+    "publisher": "Google",
+    "type": "docs"
+   },
+   {
+    "title": "Prompt engineering",
+    "url": "https://en.wikipedia.org/wiki/Prompt_engineering",
+    "publisher": "Wikipedia",
+    "type": "encyclopedia"
+   }
+  ],
+  "papers": [
+   {
+    "title": "Language Models are Few-Shot Learners",
+    "authors": "Brown et al.",
+    "year": 2020,
+    "venue": "NeurIPS 2020",
+    "url": "https://arxiv.org/abs/2005.14165"
+   }
+  ]
  },
  {
   "id": "few-shot",
@@ -7034,7 +8061,36 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [
+   {
+    "title": "Prompting best practices (Use examples effectively)",
+    "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices",
+    "publisher": "Anthropic",
+    "type": "docs"
+   },
+   {
+    "title": "Prompt engineering | OpenAI API (Few-shot learning)",
+    "url": "https://developers.openai.com/api/docs/guides/prompt-engineering",
+    "publisher": "OpenAI",
+    "type": "docs"
+   },
+   {
+    "title": "Prompt design strategies",
+    "url": "https://ai.google.dev/gemini-api/docs/prompting-strategies",
+    "publisher": "Google",
+    "type": "docs"
+   }
+  ],
+  "papers": [
+   {
+    "title": "Language Models are Few-Shot Learners",
+    "authors": "Brown et al.",
+    "year": 2020,
+    "venue": "NeurIPS 2020",
+    "url": "https://arxiv.org/abs/2005.14165"
+   }
+  ]
  },
  {
   "id": "in-context-learning",
@@ -7057,7 +8113,31 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [
+   {
+    "title": "Prompt engineering",
+    "url": "https://en.wikipedia.org/wiki/Prompt_engineering",
+    "publisher": "Wikipedia",
+    "type": "encyclopedia"
+   }
+  ],
+  "papers": [
+   {
+    "title": "Language Models are Few-Shot Learners",
+    "authors": "Brown et al.",
+    "year": 2020,
+    "venue": "NeurIPS 2020",
+    "url": "https://arxiv.org/abs/2005.14165"
+   },
+   {
+    "title": "Many-Shot In-Context Learning",
+    "authors": "Agarwal et al.",
+    "year": 2024,
+    "venue": "NeurIPS 2024",
+    "url": "https://arxiv.org/abs/2404.11018"
+   }
+  ]
  },
  {
   "id": "chain-of-thought",
@@ -7079,7 +8159,37 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [
+   {
+    "title": "Prompting best practices (Thinking and reasoning)",
+    "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices",
+    "publisher": "Anthropic",
+    "type": "docs"
+   },
+   {
+    "title": "Prompt engineering",
+    "url": "https://en.wikipedia.org/wiki/Prompt_engineering",
+    "publisher": "Wikipedia",
+    "type": "encyclopedia"
+   }
+  ],
+  "papers": [
+   {
+    "title": "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models",
+    "authors": "Wei et al.",
+    "year": 2022,
+    "venue": "NeurIPS 2022",
+    "url": "https://arxiv.org/abs/2201.11903"
+   },
+   {
+    "title": "Large Language Models are Zero-Shot Reasoners",
+    "authors": "Kojima et al.",
+    "year": 2022,
+    "venue": "NeurIPS 2022",
+    "url": "https://arxiv.org/abs/2205.11916"
+   }
+  ]
  },
  {
   "id": "self-consistency",
@@ -7101,7 +8211,24 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [
+   {
+    "title": "Prompt engineering",
+    "url": "https://en.wikipedia.org/wiki/Prompt_engineering",
+    "publisher": "Wikipedia",
+    "type": "encyclopedia"
+   }
+  ],
+  "papers": [
+   {
+    "title": "Self-Consistency Improves Chain of Thought Reasoning in Language Models",
+    "authors": "Wang et al.",
+    "year": 2022,
+    "venue": "ICLR 2023",
+    "url": "https://arxiv.org/abs/2203.11171"
+   }
+  ]
  },
  {
   "id": "tree-of-thoughts",
@@ -7123,7 +8250,24 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [
+   {
+    "title": "Prompt engineering",
+    "url": "https://en.wikipedia.org/wiki/Prompt_engineering",
+    "publisher": "Wikipedia",
+    "type": "encyclopedia"
+   }
+  ],
+  "papers": [
+   {
+    "title": "Tree of Thoughts: Deliberate Problem Solving with Large Language Models",
+    "authors": "Yao et al.",
+    "year": 2023,
+    "venue": "NeurIPS 2023",
+    "url": "https://arxiv.org/abs/2305.10601"
+   }
+  ]
  },
  {
   "id": "reasoning-model",
@@ -7146,7 +8290,36 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [
+   {
+    "title": "Reasoning models | OpenAI API",
+    "url": "https://developers.openai.com/api/docs/guides/reasoning",
+    "publisher": "OpenAI",
+    "type": "docs"
+   },
+   {
+    "title": "Thinking",
+    "url": "https://platform.claude.com/docs/en/build-with-claude/thinking",
+    "publisher": "Anthropic",
+    "type": "docs"
+   },
+   {
+    "title": "Reasoning model",
+    "url": "https://en.wikipedia.org/wiki/Reasoning_language_model",
+    "publisher": "Wikipedia",
+    "type": "encyclopedia"
+   }
+  ],
+  "papers": [
+   {
+    "title": "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning",
+    "authors": "DeepSeek-AI",
+    "year": 2025,
+    "venue": "arXiv",
+    "url": "https://arxiv.org/abs/2501.12948"
+   }
+  ]
  },
  {
   "id": "test-time-compute",
@@ -7169,7 +8342,31 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [
+   {
+    "title": "Reasoning model",
+    "url": "https://en.wikipedia.org/wiki/Reasoning_language_model",
+    "publisher": "Wikipedia",
+    "type": "encyclopedia"
+   }
+  ],
+  "papers": [
+   {
+    "title": "Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters",
+    "authors": "Snell et al.",
+    "year": 2024,
+    "venue": "arXiv",
+    "url": "https://arxiv.org/abs/2408.03314"
+   },
+   {
+    "title": "Self-Consistency Improves Chain of Thought Reasoning in Language Models",
+    "authors": "Wang et al.",
+    "year": 2022,
+    "venue": "ICLR 2023",
+    "url": "https://arxiv.org/abs/2203.11171"
+   }
+  ]
  },
  {
   "id": "extended-thinking",
@@ -7191,7 +8388,22 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [
+   {
+    "title": "Extended thinking",
+    "url": "https://platform.claude.com/docs/en/build-with-claude/extended-thinking",
+    "publisher": "Anthropic",
+    "type": "docs"
+   },
+   {
+    "title": "Thinking",
+    "url": "https://platform.claude.com/docs/en/build-with-claude/thinking",
+    "publisher": "Anthropic",
+    "type": "docs"
+   }
+  ],
+  "papers": []
  },
  {
   "id": "thinking-budget",
@@ -7213,7 +8425,36 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [
+   {
+    "title": "Extended thinking",
+    "url": "https://platform.claude.com/docs/en/build-with-claude/extended-thinking",
+    "publisher": "Anthropic",
+    "type": "docs"
+   },
+   {
+    "title": "Effort",
+    "url": "https://platform.claude.com/docs/en/build-with-claude/effort",
+    "publisher": "Anthropic",
+    "type": "docs"
+   },
+   {
+    "title": "Reasoning models | OpenAI API",
+    "url": "https://developers.openai.com/api/docs/guides/reasoning",
+    "publisher": "OpenAI",
+    "type": "docs"
+   }
+  ],
+  "papers": [
+   {
+    "title": "Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters",
+    "authors": "Snell et al.",
+    "year": 2024,
+    "venue": "arXiv",
+    "url": "https://arxiv.org/abs/2408.03314"
+   }
+  ]
  },
  {
   "id": "role-prompting",
@@ -7234,7 +8475,22 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [
+   {
+    "title": "Prompting best practices (Give Claude a role)",
+    "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices",
+    "publisher": "Anthropic",
+    "type": "docs"
+   },
+   {
+    "title": "What Is Prompt Engineering? | IBM",
+    "url": "https://www.ibm.com/think/topics/prompt-engineering",
+    "publisher": "IBM",
+    "type": "guide"
+   }
+  ],
+  "papers": []
  },
  {
   "id": "prompt-template",
@@ -7256,7 +8512,16 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [
+   {
+    "title": "Prompt engineering | OpenAI API (Version prompts in code)",
+    "url": "https://developers.openai.com/api/docs/guides/prompt-engineering",
+    "publisher": "OpenAI",
+    "type": "docs"
+   }
+  ],
+  "papers": []
  },
  {
   "id": "prompt-chaining",
@@ -7278,7 +8543,30 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [
+   {
+    "title": "Prompting best practices (Chain complex prompts)",
+    "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices",
+    "publisher": "Anthropic",
+    "type": "docs"
+   },
+   {
+    "title": "Prompt design strategies (Break down prompts into components)",
+    "url": "https://ai.google.dev/gemini-api/docs/prompting-strategies",
+    "publisher": "Google",
+    "type": "docs"
+   }
+  ],
+  "papers": [
+   {
+    "title": "AI Chains: Transparent and Controllable Human-AI Interaction by Chaining Large Language Model Prompts",
+    "authors": "Wu et al.",
+    "year": 2022,
+    "venue": "CHI 2022",
+    "url": "https://arxiv.org/abs/2110.01691"
+   }
+  ]
  },
  {
   "id": "meta-prompting",
@@ -7299,7 +8587,37 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [
+   {
+    "title": "Prompt engineering overview (Prompt generator)",
+    "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview",
+    "publisher": "Anthropic",
+    "type": "docs"
+   },
+   {
+    "title": "Prompt engineering",
+    "url": "https://en.wikipedia.org/wiki/Prompt_engineering",
+    "publisher": "Wikipedia",
+    "type": "encyclopedia"
+   }
+  ],
+  "papers": [
+   {
+    "title": "Meta-Prompting: Enhancing Language Models with Task-Agnostic Scaffolding",
+    "authors": "Suzgun and Kalai",
+    "year": 2024,
+    "venue": "arXiv",
+    "url": "https://arxiv.org/abs/2401.12954"
+   },
+   {
+    "title": "Large Language Models Are Human-Level Prompt Engineers",
+    "authors": "Zhou et al.",
+    "year": 2022,
+    "venue": "ICLR 2023",
+    "url": "https://arxiv.org/abs/2211.01910"
+   }
+  ]
  },
  {
   "id": "prompt-optimization",
@@ -7321,7 +8639,44 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [
+   {
+    "title": "Overview - DSPy",
+    "url": "https://dspy.ai/current/",
+    "publisher": "DSPy (Stanford NLP)",
+    "type": "docs"
+   },
+   {
+    "title": "Prompt engineering",
+    "url": "https://en.wikipedia.org/wiki/Prompt_engineering",
+    "publisher": "Wikipedia",
+    "type": "encyclopedia"
+   }
+  ],
+  "papers": [
+   {
+    "title": "DSPy: Compiling Declarative Language Model Calls into Self-Improving Pipelines",
+    "authors": "Khattab et al.",
+    "year": 2023,
+    "venue": "arXiv",
+    "url": "https://arxiv.org/abs/2310.03714"
+   },
+   {
+    "title": "Large Language Models Are Human-Level Prompt Engineers",
+    "authors": "Zhou et al.",
+    "year": 2022,
+    "venue": "ICLR 2023",
+    "url": "https://arxiv.org/abs/2211.01910"
+   },
+   {
+    "title": "Large Language Models as Optimizers",
+    "authors": "Yang et al.",
+    "year": 2023,
+    "venue": "arXiv",
+    "url": "https://arxiv.org/abs/2309.03409"
+   }
+  ]
  },
  {
   "id": "structured-output",
@@ -7343,7 +8698,22 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [
+   {
+    "title": "Structured Outputs | OpenAI API",
+    "url": "https://developers.openai.com/api/docs/guides/structured-outputs",
+    "publisher": "OpenAI",
+    "type": "docs"
+   },
+   {
+    "title": "Structured outputs",
+    "url": "https://platform.claude.com/docs/en/build-with-claude/structured-outputs",
+    "publisher": "Anthropic",
+    "type": "docs"
+   }
+  ],
+  "papers": []
  },
  {
   "id": "output-formatting",
@@ -7364,7 +8734,22 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [
+   {
+    "title": "Prompting best practices (Output and formatting)",
+    "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices",
+    "publisher": "Anthropic",
+    "type": "docs"
+   },
+   {
+    "title": "Prompt engineering | OpenAI API (Message formatting with Markdown and XML)",
+    "url": "https://developers.openai.com/api/docs/guides/prompt-engineering",
+    "publisher": "OpenAI",
+    "type": "docs"
+   }
+  ],
+  "papers": []
  },
  {
   "id": "prefill",
@@ -7385,7 +8770,22 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [
+   {
+    "title": "Prompting best practices (Migrating away from prefilled responses)",
+    "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices",
+    "publisher": "Anthropic",
+    "type": "docs"
+   },
+   {
+    "title": "Prompt design strategies (response prefix)",
+    "url": "https://ai.google.dev/gemini-api/docs/prompting-strategies",
+    "publisher": "Google",
+    "type": "docs"
+   }
+  ],
+  "papers": []
  },
  {
   "id": "xml-tags",
@@ -7407,7 +8807,22 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [
+   {
+    "title": "Prompting best practices (Structure prompts with XML tags)",
+    "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices",
+    "publisher": "Anthropic",
+    "type": "docs"
+   },
+   {
+    "title": "Prompt engineering | OpenAI API (Message formatting with Markdown and XML)",
+    "url": "https://developers.openai.com/api/docs/guides/prompt-engineering",
+    "publisher": "OpenAI",
+    "type": "docs"
+   }
+  ],
+  "papers": []
  },
  {
   "id": "delimiter",
@@ -7428,7 +8843,22 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [
+   {
+    "title": "Prompt engineering | OpenAI API (Message formatting with Markdown and XML)",
+    "url": "https://developers.openai.com/api/docs/guides/prompt-engineering",
+    "publisher": "OpenAI",
+    "type": "docs"
+   },
+   {
+    "title": "Prompt injection",
+    "url": "https://en.wikipedia.org/wiki/Prompt_injection",
+    "publisher": "Wikipedia",
+    "type": "encyclopedia"
+   }
+  ],
+  "papers": []
  },
  {
   "id": "summarization-prompt",
@@ -7449,7 +8879,16 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [
+   {
+    "title": "Prompting best practices",
+    "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices",
+    "publisher": "Anthropic",
+    "type": "docs"
+   }
+  ],
+  "papers": []
  },
  {
   "id": "step-back-prompting",
@@ -7470,7 +8909,17 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": [
+   {
+    "title": "Take a Step Back: Evoking Reasoning via Abstraction in Large Language Models",
+    "authors": "Zheng et al.",
+    "year": 2023,
+    "venue": "ICLR 2024",
+    "url": "https://arxiv.org/abs/2310.06117"
+   }
+  ]
  },
  {
   "id": "context-engineering",
@@ -7493,7 +8942,22 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [
+   {
+    "title": "Effective context engineering for AI agents",
+    "url": "https://anthropic.com/engineering/effective-context-engineering-for-ai-agents",
+    "publisher": "Anthropic",
+    "type": "guide"
+   },
+   {
+    "title": "Prompt engineering",
+    "url": "https://en.wikipedia.org/wiki/Prompt_engineering",
+    "publisher": "Wikipedia",
+    "type": "encyclopedia"
+   }
+  ],
+  "papers": []
  },
  {
   "id": "prompt-versioning",
@@ -7515,7 +8979,22 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [
+   {
+    "title": "Prompt engineering | OpenAI API (Version prompts in code)",
+    "url": "https://developers.openai.com/api/docs/guides/prompt-engineering",
+    "publisher": "OpenAI",
+    "type": "docs"
+   },
+   {
+    "title": "Prompt engineering overview",
+    "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview",
+    "publisher": "Anthropic",
+    "type": "docs"
+   }
+  ],
+  "papers": []
  },
  {
   "id": "vibe-coding",
@@ -7537,7 +9016,16 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [
+   {
+    "title": "Vibe coding",
+    "url": "https://en.wikipedia.org/wiki/Vibe_coding",
+    "publisher": "Wikipedia",
+    "type": "encyclopedia"
+   }
+  ],
+  "papers": []
  },
  {
   "id": "rag",
@@ -7560,7 +9048,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "retrieval",
@@ -7583,7 +9073,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "vector-db",
@@ -7606,7 +9098,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "embedding-model",
@@ -7628,7 +9122,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "cosine-similarity",
@@ -7650,7 +9146,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "semantic-search",
@@ -7673,7 +9171,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "bm25",
@@ -7695,7 +9195,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "hybrid-search",
@@ -7717,7 +9219,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "reranking",
@@ -7739,7 +9243,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "top-k-retrieval",
@@ -7761,7 +9267,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "chunking",
@@ -7784,7 +9292,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "chunk-overlap",
@@ -7805,7 +9315,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "contextual-retrieval",
@@ -7827,7 +9339,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "ann",
@@ -7849,7 +9363,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "hnsw",
@@ -7870,7 +9386,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "vector-index",
@@ -7891,7 +9409,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "metadata-filtering",
@@ -7913,7 +9433,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "query-rewriting",
@@ -7935,7 +9457,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "hyde",
@@ -7957,7 +9481,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "multi-hop-retrieval",
@@ -7979,7 +9505,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "agentic-rag",
@@ -8002,7 +9530,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "contextual-compression",
@@ -8024,7 +9554,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "grounding",
@@ -8046,7 +9578,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "document-parsing",
@@ -8068,7 +9602,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "knowledge-base",
@@ -8090,7 +9626,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "knowledge-graph",
@@ -8112,7 +9650,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "graphrag",
@@ -8134,7 +9674,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "long-context-vs-rag",
@@ -8156,7 +9698,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "cag",
@@ -8178,7 +9722,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "text-to-sql",
@@ -8201,7 +9747,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "semantic-layer",
@@ -8223,7 +9771,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "data-pipeline",
@@ -8246,7 +9796,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "structured-data",
@@ -8267,7 +9819,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "unstructured-data",
@@ -8289,7 +9843,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "data-lakehouse",
@@ -8311,7 +9867,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "data-quality",
@@ -8333,7 +9891,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "metadata-management",
@@ -8356,7 +9916,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "data-catalog",
@@ -8378,7 +9940,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "hallucination",
@@ -8401,7 +9965,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "guardrail",
@@ -8424,7 +9990,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "red-teaming",
@@ -8447,7 +10015,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "prompt-injection",
@@ -8470,7 +10040,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "jailbreak",
@@ -8493,7 +10065,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "bias",
@@ -8516,7 +10090,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "explainable-ai",
@@ -8539,7 +10115,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "benchmark",
@@ -8562,7 +10140,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "llm-as-judge",
@@ -8585,7 +10165,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "eval",
@@ -8608,7 +10190,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "ai-basic-act-korea",
@@ -8631,7 +10215,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "eu-ai-act",
@@ -8654,7 +10240,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "responsible-ai",
@@ -8677,7 +10265,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "data-privacy",
@@ -8700,7 +10290,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "watermarking",
@@ -8723,7 +10315,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "high-impact-ai",
@@ -8746,7 +10340,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "ai-generated-content-labeling",
@@ -8769,7 +10365,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "financial-ai-guidelines",
@@ -8792,7 +10390,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "ai-risk-management-framework",
@@ -8815,7 +10415,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "pseudonymization",
@@ -8838,7 +10440,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "data-exfiltration",
@@ -8861,7 +10465,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "model-card",
@@ -8884,7 +10490,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "system-card",
@@ -8907,7 +10515,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "audit-trail",
@@ -8930,7 +10540,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "fairness",
@@ -8953,7 +10565,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "sycophancy",
@@ -8976,7 +10590,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "groundedness",
@@ -8999,7 +10615,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "accuracy-metric",
@@ -9022,7 +10640,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "golden-dataset",
@@ -9045,7 +10665,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "regression-testing",
@@ -9068,7 +10690,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "offline-online-eval",
@@ -9091,7 +10715,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "human-evaluation",
@@ -9114,7 +10740,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "leaderboard",
@@ -9137,7 +10765,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "mmlu",
@@ -9160,7 +10790,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "swe-bench",
@@ -9183,7 +10815,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "jailbreak-defense",
@@ -9206,7 +10840,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "content-filter",
@@ -9229,7 +10865,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "pii-masking",
@@ -9252,7 +10890,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "indirect-prompt-injection",
@@ -9275,7 +10915,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "data-poisoning",
@@ -9298,7 +10940,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "model-extraction",
@@ -9321,7 +10965,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "adversarial-attack",
@@ -9344,7 +10990,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "ai-safety-institute",
@@ -9367,7 +11015,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "responsible-scaling-policy",
@@ -9390,7 +11040,9 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  },
  {
   "id": "mechanistic-interpretability",
@@ -9413,6 +11065,8 @@
   "added": "2026-10-19",
   "updated": "2026-10-19",
   "revision": 1,
-  "status": "active"
+  "status": "active",
+  "sources": [],
+  "papers": []
  }
 ]
