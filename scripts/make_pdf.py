@@ -53,7 +53,12 @@ def refs_html(t):
     if srcs:
         parts.append("출처 " + " · ".join(e(s.get("publisher") or s["url"].split("/")[2]) for s in srcs))
     if paps:
-        parts.append("논문 " + " · ".join(e(f'{p.get("authors") or ""} {p.get("year") or ""}'.strip()) for p in paps))
+        def cite(p):
+            a = f'{p.get("authors") or ""} {p.get("year") or ""}'.strip()
+            if not a:
+                a = (p.get("venue") or (p.get("title_ko") or p["title"])[:24]).strip()
+            return ("[국내] " if p.get("region") == "kr" else "") + a
+        parts.append("논문 " + " · ".join(e(cite(p)) for p in paps))
     return f'<div class="refs">{" / ".join(parts)}</div>'
 
 
