@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
-/* Layout: AX newsletter language — navy masthead band with amber rule, light gray page, white cards; wiki rail (menu card + tree card) left, one card stack per document right */
+/* Single light look by design (matches the AX newsletter). Layout: AX newsletter language — navy masthead band with amber rule, light gray page, white cards; wiki rail (menu card + tree card) left, one card stack per document right */
 :root {
   --page: #eef1f5;
   --card: #ffffff;
@@ -46,30 +46,7 @@
   --c-biz-bg: #fff8e6; --c-biz: #7a5200;
   --f-sans: "IBM Plex Sans KR", -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
   --f-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Consolas, monospace;
-}
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --page: #0c1220; --card: #151d2e; --ink: #e6ebf3; --body: #b6c0cf; --muted: #7d889a; --line: #26324a; --line-soft: #1c263a;
-    --navy: #0a1430; --navy-2: #13203f; --navy-sub: #b7c4dc; --navy-dim: #7f93b8; --amber: #fca311; --amber-deep: #fbbf24; --link: #7fa7ff;
-    --tint-easy: #10291f; --tint-easy-fg: #6ee7b7; --tint-deep: #2d1520; --tint-deep-fg: #fda4af; --tint-ex: #2a2110; --tint-ex-fg: #fcd34d;
-    --l1-bg: #10291f; --l1: #6ee7b7; --l2-bg: #2f2710; --l2: #fcd34d; --l3-bg: #33161a; --l3: #fca5a5;
-    --c-basics-bg: #172a4d; --c-basics: #93b4ff; --c-dl-bg: #2a1a40; --c-dl: #d8b4fe; --c-llm-bg: #0f2c2a; --c-llm: #5eead4;
-    --c-training-bg: #2f2710; --c-training: #fcd34d; --c-prompt-bg: #33161a; --c-prompt: #fca5a5; --c-rag-bg: #10291f; --c-rag: #6ee7b7;
-    --c-agent-bg: #1e1f4a; --c-agent: #a5b4fc; --c-genai-bg: #36142a; --c-genai: #f9a8d4; --c-infra-bg: #222a38; --c-infra: #cbd5e1;
-    --c-safety-bg: #33161a; --c-safety: #fda4af; --c-biz-bg: #2a2110; --c-biz: #fcd34d;
-    color-scheme: dark;
-  }
-}
-:root[data-theme="dark"] {
-  --page: #0c1220; --card: #151d2e; --ink: #e6ebf3; --body: #b6c0cf; --muted: #7d889a; --line: #26324a; --line-soft: #1c263a;
-  --navy: #0a1430; --navy-2: #13203f; --navy-sub: #b7c4dc; --navy-dim: #7f93b8; --amber: #fca311; --amber-deep: #fbbf24; --link: #7fa7ff;
-  --tint-easy: #10291f; --tint-easy-fg: #6ee7b7; --tint-deep: #2d1520; --tint-deep-fg: #fda4af; --tint-ex: #2a2110; --tint-ex-fg: #fcd34d;
-  --l1-bg: #10291f; --l1: #6ee7b7; --l2-bg: #2f2710; --l2: #fcd34d; --l3-bg: #33161a; --l3: #fca5a5;
-  --c-basics-bg: #172a4d; --c-basics: #93b4ff; --c-dl-bg: #2a1a40; --c-dl: #d8b4fe; --c-llm-bg: #0f2c2a; --c-llm: #5eead4;
-  --c-training-bg: #2f2710; --c-training: #fcd34d; --c-prompt-bg: #33161a; --c-prompt: #fca5a5; --c-rag-bg: #10291f; --c-rag: #6ee7b7;
-  --c-agent-bg: #1e1f4a; --c-agent: #a5b4fc; --c-genai-bg: #36142a; --c-genai: #f9a8d4; --c-infra-bg: #222a38; --c-infra: #cbd5e1;
-  --c-safety-bg: #33161a; --c-safety: #fda4af; --c-biz-bg: #2a2110; --c-biz: #fcd34d;
-  color-scheme: dark;
+  color-scheme: light; /* 뉴스레터와 같은 단일 밝은 디자인: 기기의 다크 모드와 관계없이 같은 색 */
 }
 * { box-sizing: border-box; }
 [hidden] { display: none !important; }
@@ -195,8 +172,6 @@ mark { background: #fff1b8; color: #1f2933; border-radius: 2px; padding: 0 1px; 
 
 /* stat tiles */
 .stat .n { font-size: 30px; font-weight: 700; color: var(--navy); line-height: 1.1; font-variant-numeric: tabular-nums; }
-:root[data-theme="dark"] .stat .n { color: var(--amber); }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .stat .n { color: var(--amber); } }
 .stat .k { font-size: 12.5px; color: var(--muted); }
 
 /* home */
@@ -330,8 +305,7 @@ mark { background: #fff1b8; color: #1f2933; border-radius: 2px; padding: 0 1px; 
   .seq a.next { grid-column: 1; }
   .m-hide { display: none !important; }
 }
-:root[data-theme="dark"] .nav a[aria-current="page"] { background: var(--amber); color: #14213d; }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .nav a[aria-current="page"] { background: var(--amber); color: #14213d; } }
+
 @media (prefers-reduced-motion: reduce) { .tree summary::before, a.tcard { transition: none; } }
 </style>
 
