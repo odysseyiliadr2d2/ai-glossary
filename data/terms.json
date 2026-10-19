@@ -47,14 +47,18 @@
     "authors": "Wang et al.",
     "year": 2023,
     "venue": "Frontiers of Computer Science",
-    "url": "https://arxiv.org/abs/2308.11432"
+    "url": "https://arxiv.org/abs/2308.11432",
+    "region": "intl",
+    "title_ko": "A Survey on Large Language Model based Autonomous Agents"
    },
    {
     "title": "The Rise and Potential of Large Language Model Based Agents: A Survey",
     "authors": "Xi et al.",
     "year": 2023,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2309.07864"
+    "url": "https://arxiv.org/abs/2309.07864",
+    "region": "intl",
+    "title_ko": "The Rise and Potential of Large Language Model Based Agents: A Survey"
    }
   ]
  },
@@ -99,14 +103,18 @@
     "authors": "Schick et al.",
     "year": 2023,
     "venue": "NeurIPS 2023",
-    "url": "https://arxiv.org/abs/2302.04761"
+    "url": "https://arxiv.org/abs/2302.04761",
+    "region": "intl",
+    "title_ko": "Toolformer: Language Models Can Teach Themselves to Use Tools"
    },
    {
     "title": "Gorilla: Large Language Model Connected with Massive APIs",
     "authors": "Patil et al.",
     "year": 2023,
     "venue": "NeurIPS 2024",
-    "url": "https://arxiv.org/abs/2305.15334"
+    "url": "https://arxiv.org/abs/2305.15334",
+    "region": "intl",
+    "title_ko": "Gorilla: Large Language Model Connected with Massive APIs"
    }
   ]
  },
@@ -151,14 +159,18 @@
     "authors": "Patil et al.",
     "year": 2023,
     "venue": "NeurIPS 2024",
-    "url": "https://arxiv.org/abs/2305.15334"
+    "url": "https://arxiv.org/abs/2305.15334",
+    "region": "intl",
+    "title_ko": "Gorilla: Large Language Model Connected with Massive APIs"
    },
    {
     "title": "Toolformer: Language Models Can Teach Themselves to Use Tools",
     "authors": "Schick et al.",
     "year": 2023,
     "venue": "NeurIPS 2023",
-    "url": "https://arxiv.org/abs/2302.04761"
+    "url": "https://arxiv.org/abs/2302.04761",
+    "region": "intl",
+    "title_ko": "Toolformer: Language Models Can Teach Themselves to Use Tools"
    }
   ]
  },
@@ -296,21 +308,27 @@
     "authors": "Wu et al.",
     "year": 2023,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2308.08155"
+    "url": "https://arxiv.org/abs/2308.08155",
+    "region": "intl",
+    "title_ko": "AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation"
    },
    {
     "title": "CAMEL: Communicative Agents for \"Mind\" Exploration of Large Language Model Society",
     "authors": "Li et al.",
     "year": 2023,
     "venue": "NeurIPS 2023",
-    "url": "https://arxiv.org/abs/2303.17760"
+    "url": "https://arxiv.org/abs/2303.17760",
+    "region": "intl",
+    "title_ko": "CAMEL: Communicative Agents for \"Mind\" Exploration of Large Language Model Society"
    },
    {
     "title": "MetaGPT: Meta Programming for A Multi-Agent Collaborative Framework",
     "authors": "Hong et al.",
     "year": 2023,
     "venue": "ICLR 2024",
-    "url": "https://arxiv.org/abs/2308.00352"
+    "url": "https://arxiv.org/abs/2308.00352",
+    "region": "intl",
+    "title_ko": "MetaGPT: Meta Programming for A Multi-Agent Collaborative Framework"
    }
   ]
  },
@@ -399,7 +417,9 @@
     "authors": "Shen et al.",
     "year": 2023,
     "venue": "NeurIPS 2023",
-    "url": "https://arxiv.org/abs/2303.17580"
+    "url": "https://arxiv.org/abs/2303.17580",
+    "region": "intl",
+    "title_ko": "HuggingGPT: Solving AI Tasks with ChatGPT and its Friends in Hugging Face"
    }
   ]
  },
@@ -445,7 +465,9 @@
     "authors": "Xie et al.",
     "year": 2024,
     "venue": "NeurIPS 2024",
-    "url": "https://arxiv.org/abs/2404.07972"
+    "url": "https://arxiv.org/abs/2404.07972",
+    "region": "intl",
+    "title_ko": "OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments"
    }
   ]
  },
@@ -490,14 +512,18 @@
     "authors": "Packer et al.",
     "year": 2023,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2310.08560"
+    "url": "https://arxiv.org/abs/2310.08560",
+    "region": "intl",
+    "title_ko": "MemGPT: Towards LLMs as Operating Systems"
    },
    {
     "title": "Generative Agents: Interactive Simulacra of Human Behavior",
     "authors": "Park et al.",
     "year": 2023,
     "venue": "UIST 2023",
-    "url": "https://arxiv.org/abs/2304.03442"
+    "url": "https://arxiv.org/abs/2304.03442",
+    "region": "intl",
+    "title_ko": "Generative Agents: Interactive Simulacra of Human Behavior"
    }
   ]
  },
@@ -585,14 +611,18 @@
     "authors": "Jimenez et al.",
     "year": 2023,
     "venue": "ICLR 2024",
-    "url": "https://arxiv.org/abs/2310.06770"
+    "url": "https://arxiv.org/abs/2310.06770",
+    "region": "intl",
+    "title_ko": "SWE-bench: Can Language Models Resolve Real-World GitHub Issues?"
    },
    {
     "title": "SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering",
     "authors": "Yang et al.",
     "year": 2024,
     "venue": "NeurIPS 2024",
-    "url": "https://arxiv.org/abs/2405.15793"
+    "url": "https://arxiv.org/abs/2405.15793",
+    "region": "intl",
+    "title_ko": "SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering"
    }
   ]
  },
@@ -643,7 +673,9 @@
     "authors": "Xi et al.",
     "year": 2023,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2309.07864"
+    "url": "https://arxiv.org/abs/2309.07864",
+    "region": "intl",
+    "title_ko": "The Rise and Potential of Large Language Model Based Agents: A Survey"
    }
   ]
  },
@@ -688,7 +720,9 @@
     "authors": "Yao et al.",
     "year": 2022,
     "venue": "ICLR 2023",
-    "url": "https://arxiv.org/abs/2210.03629"
+    "url": "https://arxiv.org/abs/2210.03629",
+    "region": "intl",
+    "title_ko": "ReAct: Synergizing Reasoning and Acting in Language Models"
    }
   ]
  },
@@ -727,7 +761,9 @@
     "authors": "Yao et al.",
     "year": 2022,
     "venue": "ICLR 2023",
-    "url": "https://arxiv.org/abs/2210.03629"
+    "url": "https://arxiv.org/abs/2210.03629",
+    "region": "intl",
+    "title_ko": "ReAct: Synergizing Reasoning and Acting in Language Models"
    }
   ]
  },
@@ -766,21 +802,27 @@
     "authors": "Wang et al.",
     "year": 2023,
     "venue": "ACL 2023",
-    "url": "https://arxiv.org/abs/2305.04091"
+    "url": "https://arxiv.org/abs/2305.04091",
+    "region": "intl",
+    "title_ko": "Plan-and-Solve Prompting: Improving Zero-Shot Chain-of-Thought Reasoning by Large Language Models"
    },
    {
     "title": "Tree of Thoughts: Deliberate Problem Solving with Large Language Models",
     "authors": "Yao et al.",
     "year": 2023,
     "venue": "NeurIPS 2023",
-    "url": "https://arxiv.org/abs/2305.10601"
+    "url": "https://arxiv.org/abs/2305.10601",
+    "region": "intl",
+    "title_ko": "Tree of Thoughts: Deliberate Problem Solving with Large Language Models"
    },
    {
     "title": "HuggingGPT: Solving AI Tasks with ChatGPT and its Friends in Hugging Face",
     "authors": "Shen et al.",
     "year": 2023,
     "venue": "NeurIPS 2023",
-    "url": "https://arxiv.org/abs/2303.17580"
+    "url": "https://arxiv.org/abs/2303.17580",
+    "region": "intl",
+    "title_ko": "HuggingGPT: Solving AI Tasks with ChatGPT and its Friends in Hugging Face"
    }
   ]
  },
@@ -819,14 +861,18 @@
     "authors": "Shinn et al.",
     "year": 2023,
     "venue": "NeurIPS 2023",
-    "url": "https://arxiv.org/abs/2303.11366"
+    "url": "https://arxiv.org/abs/2303.11366",
+    "region": "intl",
+    "title_ko": "Reflexion: Language Agents with Verbal Reinforcement Learning"
    },
    {
     "title": "Self-Refine: Iterative Refinement with Self-Feedback",
     "authors": "Madaan et al.",
     "year": 2023,
     "venue": "NeurIPS 2023",
-    "url": "https://arxiv.org/abs/2303.17651"
+    "url": "https://arxiv.org/abs/2303.17651",
+    "region": "intl",
+    "title_ko": "Self-Refine: Iterative Refinement with Self-Feedback"
    }
   ]
  },
@@ -994,14 +1040,18 @@
     "authors": "Zhou et al.",
     "year": 2023,
     "venue": "ICLR 2024",
-    "url": "https://arxiv.org/abs/2307.13854"
+    "url": "https://arxiv.org/abs/2307.13854",
+    "region": "intl",
+    "title_ko": "WebArena: A Realistic Web Environment for Building Autonomous Agents"
    },
    {
     "title": "Mind2Web: Towards a Generalist Agent for the Web",
     "authors": "Deng et al.",
     "year": 2023,
     "venue": "NeurIPS 2023",
-    "url": "https://arxiv.org/abs/2306.06070"
+    "url": "https://arxiv.org/abs/2306.06070",
+    "region": "intl",
+    "title_ko": "Mind2Web: Towards a Generalist Agent for the Web"
    }
   ]
  },
@@ -1231,7 +1281,9 @@
     "authors": "Wu et al.",
     "year": 2023,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2308.08155"
+    "url": "https://arxiv.org/abs/2308.08155",
+    "region": "intl",
+    "title_ko": "AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation"
    }
   ]
  },
@@ -1430,7 +1482,9 @@
     "authors": "Feng et al.",
     "year": 2025,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2506.12469"
+    "url": "https://arxiv.org/abs/2506.12469",
+    "region": "intl",
+    "title_ko": "Levels of Autonomy for AI Agents"
    }
   ]
  },
@@ -1475,21 +1529,27 @@
     "authors": "Liu et al.",
     "year": 2023,
     "venue": "ICLR 2024",
-    "url": "https://arxiv.org/abs/2308.03688"
+    "url": "https://arxiv.org/abs/2308.03688",
+    "region": "intl",
+    "title_ko": "AgentBench: Evaluating LLMs as Agents"
    },
    {
     "title": "τ-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains",
     "authors": "Yao et al.",
     "year": 2024,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2406.12045"
+    "url": "https://arxiv.org/abs/2406.12045",
+    "region": "intl",
+    "title_ko": "τ-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains"
    },
    {
     "title": "SWE-bench: Can Language Models Resolve Real-World GitHub Issues?",
     "authors": "Jimenez et al.",
     "year": 2023,
     "venue": "ICLR 2024",
-    "url": "https://arxiv.org/abs/2310.06770"
+    "url": "https://arxiv.org/abs/2310.06770",
+    "region": "intl",
+    "title_ko": "SWE-bench: Can Language Models Resolve Real-World GitHub Issues?"
    }
   ]
  },
@@ -1694,14 +1754,18 @@
     "authors": "Goodfellow et al.",
     "year": 2014,
     "venue": "NeurIPS 2014",
-    "url": "https://arxiv.org/abs/1406.2661"
+    "url": "https://arxiv.org/abs/1406.2661",
+    "region": "intl",
+    "title_ko": "Generative Adversarial Networks"
    },
    {
     "title": "Denoising Diffusion Probabilistic Models",
     "authors": "Ho et al.",
     "year": 2020,
     "venue": "NeurIPS 2020",
-    "url": "https://arxiv.org/abs/2006.11239"
+    "url": "https://arxiv.org/abs/2006.11239",
+    "region": "intl",
+    "title_ko": "Denoising Diffusion Probabilistic Models"
    }
   ]
  },
@@ -1746,7 +1810,9 @@
     "authors": "Baltrušaitis et al.",
     "year": 2017,
     "venue": "IEEE TPAMI",
-    "url": "https://arxiv.org/abs/1705.09406"
+    "url": "https://arxiv.org/abs/1705.09406",
+    "region": "intl",
+    "title_ko": "Multimodal Machine Learning: A Survey and Taxonomy"
    }
   ]
  },
@@ -1798,21 +1864,27 @@
     "authors": "Sohl-Dickstein et al.",
     "year": 2015,
     "venue": "ICML 2015",
-    "url": "https://arxiv.org/abs/1503.03585"
+    "url": "https://arxiv.org/abs/1503.03585",
+    "region": "intl",
+    "title_ko": "Deep Unsupervised Learning using Nonequilibrium Thermodynamics"
    },
    {
     "title": "Denoising Diffusion Probabilistic Models",
     "authors": "Ho et al.",
     "year": 2020,
     "venue": "NeurIPS 2020",
-    "url": "https://arxiv.org/abs/2006.11239"
+    "url": "https://arxiv.org/abs/2006.11239",
+    "region": "intl",
+    "title_ko": "Denoising Diffusion Probabilistic Models"
    },
    {
     "title": "High-Resolution Image Synthesis with Latent Diffusion Models",
     "authors": "Rombach et al.",
     "year": 2021,
     "venue": "CVPR 2022",
-    "url": "https://arxiv.org/abs/2112.10752"
+    "url": "https://arxiv.org/abs/2112.10752",
+    "region": "intl",
+    "title_ko": "High-Resolution Image Synthesis with Latent Diffusion Models"
    }
   ]
  },
@@ -1857,7 +1929,9 @@
     "authors": "Goodfellow et al.",
     "year": 2014,
     "venue": "NeurIPS 2014",
-    "url": "https://arxiv.org/abs/1406.2661"
+    "url": "https://arxiv.org/abs/1406.2661",
+    "region": "intl",
+    "title_ko": "Generative Adversarial Networks"
    }
   ]
  },
@@ -1903,14 +1977,18 @@
     "authors": "Alayrac et al.",
     "year": 2022,
     "venue": "NeurIPS 2022",
-    "url": "https://arxiv.org/abs/2204.14198"
+    "url": "https://arxiv.org/abs/2204.14198",
+    "region": "intl",
+    "title_ko": "Flamingo: a Visual Language Model for Few-Shot Learning"
    },
    {
     "title": "Visual Instruction Tuning",
     "authors": "Liu et al.",
     "year": 2023,
     "venue": "NeurIPS 2023",
-    "url": "https://arxiv.org/abs/2304.08485"
+    "url": "https://arxiv.org/abs/2304.08485",
+    "region": "intl",
+    "title_ko": "Visual Instruction Tuning"
    }
   ]
  },
@@ -1955,21 +2033,27 @@
     "authors": "Ramesh et al.",
     "year": 2021,
     "venue": "ICML 2021",
-    "url": "https://arxiv.org/abs/2102.12092"
+    "url": "https://arxiv.org/abs/2102.12092",
+    "region": "intl",
+    "title_ko": "Zero-Shot Text-to-Image Generation"
    },
    {
     "title": "High-Resolution Image Synthesis with Latent Diffusion Models",
     "authors": "Rombach et al.",
     "year": 2021,
     "venue": "CVPR 2022",
-    "url": "https://arxiv.org/abs/2112.10752"
+    "url": "https://arxiv.org/abs/2112.10752",
+    "region": "intl",
+    "title_ko": "High-Resolution Image Synthesis with Latent Diffusion Models"
    },
    {
     "title": "Photorealistic Text-to-Image Diffusion Models with Deep Language Understanding",
     "authors": "Saharia et al.",
     "year": 2022,
     "venue": "NeurIPS 2022",
-    "url": "https://arxiv.org/abs/2205.11487"
+    "url": "https://arxiv.org/abs/2205.11487",
+    "region": "intl",
+    "title_ko": "Photorealistic Text-to-Image Diffusion Models with Deep Language Understanding"
    }
   ]
  },
@@ -2020,21 +2104,27 @@
     "authors": "van den Oord et al.",
     "year": 2016,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/1609.03499"
+    "url": "https://arxiv.org/abs/1609.03499",
+    "region": "intl",
+    "title_ko": "WaveNet: A Generative Model for Raw Audio"
    },
    {
     "title": "Natural TTS Synthesis by Conditioning WaveNet on Mel Spectrogram Predictions",
     "authors": "Shen et al.",
     "year": 2017,
     "venue": "ICASSP 2018",
-    "url": "https://arxiv.org/abs/1712.05884"
+    "url": "https://arxiv.org/abs/1712.05884",
+    "region": "intl",
+    "title_ko": "Natural TTS Synthesis by Conditioning WaveNet on Mel Spectrogram Predictions"
    },
    {
     "title": "Neural Codec Language Models are Zero-Shot Text to Speech Synthesizers",
     "authors": "Wang et al.",
     "year": 2023,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2301.02111"
+    "url": "https://arxiv.org/abs/2301.02111",
+    "region": "intl",
+    "title_ko": "Neural Codec Language Models are Zero-Shot Text to Speech Synthesizers"
    }
   ]
  },
@@ -2085,14 +2175,18 @@
     "authors": "Baevski et al.",
     "year": 2020,
     "venue": "NeurIPS 2020",
-    "url": "https://arxiv.org/abs/2006.11477"
+    "url": "https://arxiv.org/abs/2006.11477",
+    "region": "intl",
+    "title_ko": "wav2vec 2.0: A Framework for Self-Supervised Learning of Speech Representations"
    },
    {
     "title": "Robust Speech Recognition via Large-Scale Weak Supervision",
     "authors": "Radford et al.",
     "year": 2022,
     "venue": "ICML 2023",
-    "url": "https://arxiv.org/abs/2212.04356"
+    "url": "https://arxiv.org/abs/2212.04356",
+    "region": "intl",
+    "title_ko": "Robust Speech Recognition via Large-Scale Weak Supervision"
    }
   ]
  },
@@ -2143,14 +2237,18 @@
     "authors": "Li et al.",
     "year": 2021,
     "venue": "AAAI 2023",
-    "url": "https://arxiv.org/abs/2109.10282"
+    "url": "https://arxiv.org/abs/2109.10282",
+    "region": "intl",
+    "title_ko": "TrOCR: Transformer-based Optical Character Recognition with Pre-trained Models"
    },
    {
     "title": "OCR-free Document Understanding Transformer",
     "authors": "Kim et al.",
     "year": 2021,
     "venue": "ECCV 2022",
-    "url": "https://arxiv.org/abs/2111.15664"
+    "url": "https://arxiv.org/abs/2111.15664",
+    "region": "intl",
+    "title_ko": "OCR-free Document Understanding Transformer"
    }
   ]
  },
@@ -2201,14 +2299,18 @@
     "authors": "Ho et al.",
     "year": 2022,
     "venue": "NeurIPS 2022",
-    "url": "https://arxiv.org/abs/2204.03458"
+    "url": "https://arxiv.org/abs/2204.03458",
+    "region": "intl",
+    "title_ko": "Video Diffusion Models"
    },
    {
     "title": "Stable Video Diffusion: Scaling Latent Video Diffusion Models to Large Datasets",
     "authors": "Blattmann et al.",
     "year": 2023,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2311.15127"
+    "url": "https://arxiv.org/abs/2311.15127",
+    "region": "intl",
+    "title_ko": "Stable Video Diffusion: Scaling Latent Video Diffusion Models to Large Datasets"
    }
   ]
  },
@@ -2247,7 +2349,9 @@
     "authors": "Défossez et al.",
     "year": 2024,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2410.00037"
+    "url": "https://arxiv.org/abs/2410.00037",
+    "region": "intl",
+    "title_ko": "Moshi: a speech-text foundation model for real-time dialogue"
    }
   ]
  },
@@ -2286,14 +2390,18 @@
     "authors": "Gemini Team",
     "year": 2023,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2312.11805"
+    "url": "https://arxiv.org/abs/2312.11805",
+    "region": "intl",
+    "title_ko": "Gemini: A Family of Highly Capable Multimodal Models"
    },
    {
     "title": "Chameleon: Mixed-Modal Early-Fusion Foundation Models",
     "authors": "Chameleon Team",
     "year": 2024,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2405.09818"
+    "url": "https://arxiv.org/abs/2405.09818",
+    "region": "intl",
+    "title_ko": "Chameleon: Mixed-Modal Early-Fusion Foundation Models"
    }
   ]
  },
@@ -2338,7 +2446,9 @@
     "authors": "Rombach et al.",
     "year": 2021,
     "venue": "CVPR 2022",
-    "url": "https://arxiv.org/abs/2112.10752"
+    "url": "https://arxiv.org/abs/2112.10752",
+    "region": "intl",
+    "title_ko": "High-Resolution Image Synthesis with Latent Diffusion Models"
    }
   ]
  },
@@ -2383,7 +2493,9 @@
     "authors": "Kingma, Welling",
     "year": 2013,
     "venue": "ICLR 2014",
-    "url": "https://arxiv.org/abs/1312.6114"
+    "url": "https://arxiv.org/abs/1312.6114",
+    "region": "intl",
+    "title_ko": "Auto-Encoding Variational Bayes"
    }
   ]
  },
@@ -2428,21 +2540,27 @@
     "authors": "Ho et al.",
     "year": 2020,
     "venue": "NeurIPS 2020",
-    "url": "https://arxiv.org/abs/2006.11239"
+    "url": "https://arxiv.org/abs/2006.11239",
+    "region": "intl",
+    "title_ko": "Denoising Diffusion Probabilistic Models"
    },
    {
     "title": "Score-Based Generative Modeling through Stochastic Differential Equations",
     "authors": "Song et al.",
     "year": 2020,
     "venue": "ICLR 2021",
-    "url": "https://arxiv.org/abs/2011.13456"
+    "url": "https://arxiv.org/abs/2011.13456",
+    "region": "intl",
+    "title_ko": "Score-Based Generative Modeling through Stochastic Differential Equations"
    },
    {
     "title": "Consistency Models",
     "authors": "Song et al.",
     "year": 2023,
     "venue": "ICML 2023",
-    "url": "https://arxiv.org/abs/2303.01469"
+    "url": "https://arxiv.org/abs/2303.01469",
+    "region": "intl",
+    "title_ko": "Consistency Models"
    }
   ]
  },
@@ -2481,21 +2599,27 @@
     "authors": "Lipman et al.",
     "year": 2022,
     "venue": "ICLR 2023",
-    "url": "https://arxiv.org/abs/2210.02747"
+    "url": "https://arxiv.org/abs/2210.02747",
+    "region": "intl",
+    "title_ko": "Flow Matching for Generative Modeling"
    },
    {
     "title": "Flow Straight and Fast: Learning to Generate and Transfer Data with Rectified Flow",
     "authors": "Liu et al.",
     "year": 2022,
     "venue": "ICLR 2023",
-    "url": "https://arxiv.org/abs/2209.03003"
+    "url": "https://arxiv.org/abs/2209.03003",
+    "region": "intl",
+    "title_ko": "Flow Straight and Fast: Learning to Generate and Transfer Data with Rectified Flow"
    },
    {
     "title": "Scaling Rectified Flow Transformers for High-Resolution Image Synthesis",
     "authors": "Esser et al.",
     "year": 2024,
     "venue": "ICML 2024",
-    "url": "https://arxiv.org/abs/2403.03206"
+    "url": "https://arxiv.org/abs/2403.03206",
+    "region": "intl",
+    "title_ko": "Scaling Rectified Flow Transformers for High-Resolution Image Synthesis"
    }
   ]
  },
@@ -2534,14 +2658,18 @@
     "authors": "Peebles, Xie",
     "year": 2022,
     "venue": "ICCV 2023",
-    "url": "https://arxiv.org/abs/2212.09748"
+    "url": "https://arxiv.org/abs/2212.09748",
+    "region": "intl",
+    "title_ko": "Scalable Diffusion Models with Transformers"
    },
    {
     "title": "Scaling Rectified Flow Transformers for High-Resolution Image Synthesis",
     "authors": "Esser et al.",
     "year": 2024,
     "venue": "ICML 2024",
-    "url": "https://arxiv.org/abs/2403.03206"
+    "url": "https://arxiv.org/abs/2403.03206",
+    "region": "intl",
+    "title_ko": "Scaling Rectified Flow Transformers for High-Resolution Image Synthesis"
    }
   ]
  },
@@ -2580,21 +2708,27 @@
     "authors": "Esser et al.",
     "year": 2020,
     "venue": "CVPR 2021",
-    "url": "https://arxiv.org/abs/2012.09841"
+    "url": "https://arxiv.org/abs/2012.09841",
+    "region": "intl",
+    "title_ko": "Taming Transformers for High-Resolution Image Synthesis"
    },
    {
     "title": "Zero-Shot Text-to-Image Generation",
     "authors": "Ramesh et al.",
     "year": 2021,
     "venue": "ICML 2021",
-    "url": "https://arxiv.org/abs/2102.12092"
+    "url": "https://arxiv.org/abs/2102.12092",
+    "region": "intl",
+    "title_ko": "Zero-Shot Text-to-Image Generation"
    },
    {
     "title": "Visual Autoregressive Modeling: Scalable Image Generation via Next-Scale Prediction",
     "authors": "Tian et al.",
     "year": 2024,
     "venue": "NeurIPS 2024",
-    "url": "https://arxiv.org/abs/2404.02905"
+    "url": "https://arxiv.org/abs/2404.02905",
+    "region": "intl",
+    "title_ko": "Visual Autoregressive Modeling: Scalable Image Generation via Next-Scale Prediction"
    }
   ]
  },
@@ -2633,21 +2767,27 @@
     "authors": "Radford et al.",
     "year": 2021,
     "venue": "ICML 2021",
-    "url": "https://arxiv.org/abs/2103.00020"
+    "url": "https://arxiv.org/abs/2103.00020",
+    "region": "intl",
+    "title_ko": "Learning Transferable Visual Models From Natural Language Supervision"
    },
    {
     "title": "Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer",
     "authors": "Raffel et al.",
     "year": 2019,
     "venue": "JMLR 2020",
-    "url": "https://arxiv.org/abs/1910.10683"
+    "url": "https://arxiv.org/abs/1910.10683",
+    "region": "intl",
+    "title_ko": "Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer"
    },
    {
     "title": "Photorealistic Text-to-Image Diffusion Models with Deep Language Understanding",
     "authors": "Saharia et al.",
     "year": 2022,
     "venue": "NeurIPS 2022",
-    "url": "https://arxiv.org/abs/2205.11487"
+    "url": "https://arxiv.org/abs/2205.11487",
+    "region": "intl",
+    "title_ko": "Photorealistic Text-to-Image Diffusion Models with Deep Language Understanding"
    }
   ]
  },
@@ -2692,7 +2832,9 @@
     "authors": "Radford et al.",
     "year": 2021,
     "venue": "ICML 2021",
-    "url": "https://arxiv.org/abs/2103.00020"
+    "url": "https://arxiv.org/abs/2103.00020",
+    "region": "intl",
+    "title_ko": "Learning Transferable Visual Models From Natural Language Supervision"
    }
   ]
  },
@@ -2738,21 +2880,27 @@
     "authors": "Radford et al.",
     "year": 2021,
     "venue": "ICML 2021",
-    "url": "https://arxiv.org/abs/2103.00020"
+    "url": "https://arxiv.org/abs/2103.00020",
+    "region": "intl",
+    "title_ko": "Learning Transferable Visual Models From Natural Language Supervision"
    },
    {
     "title": "ImageBind: One Embedding Space To Bind Them All",
     "authors": "Girdhar et al.",
     "year": 2023,
     "venue": "CVPR 2023",
-    "url": "https://arxiv.org/abs/2305.05665"
+    "url": "https://arxiv.org/abs/2305.05665",
+    "region": "intl",
+    "title_ko": "ImageBind: One Embedding Space To Bind Them All"
    },
    {
     "title": "ColPali: Efficient Document Retrieval with Vision Language Models",
     "authors": "Faysse et al.",
     "year": 2024,
     "venue": "ICLR 2025",
-    "url": "https://arxiv.org/abs/2407.01449"
+    "url": "https://arxiv.org/abs/2407.01449",
+    "region": "intl",
+    "title_ko": "ColPali: Efficient Document Retrieval with Vision Language Models"
    }
   ]
  },
@@ -2797,21 +2945,27 @@
     "authors": "Isola et al.",
     "year": 2016,
     "venue": "CVPR 2017",
-    "url": "https://arxiv.org/abs/1611.07004"
+    "url": "https://arxiv.org/abs/1611.07004",
+    "region": "intl",
+    "title_ko": "Image-to-Image Translation with Conditional Adversarial Networks"
    },
    {
     "title": "SDEdit: Guided Image Synthesis and Editing with Stochastic Differential Equations",
     "authors": "Meng et al.",
     "year": 2021,
     "venue": "ICLR 2022",
-    "url": "https://arxiv.org/abs/2108.01073"
+    "url": "https://arxiv.org/abs/2108.01073",
+    "region": "intl",
+    "title_ko": "SDEdit: Guided Image Synthesis and Editing with Stochastic Differential Equations"
    },
    {
     "title": "InstructPix2Pix: Learning to Follow Image Editing Instructions",
     "authors": "Brooks et al.",
     "year": 2022,
     "venue": "CVPR 2023",
-    "url": "https://arxiv.org/abs/2211.09800"
+    "url": "https://arxiv.org/abs/2211.09800",
+    "region": "intl",
+    "title_ko": "InstructPix2Pix: Learning to Follow Image Editing Instructions"
    }
   ]
  },
@@ -2856,7 +3010,9 @@
     "authors": "Lugmayr et al.",
     "year": 2022,
     "venue": "CVPR 2022",
-    "url": "https://arxiv.org/abs/2201.09865"
+    "url": "https://arxiv.org/abs/2201.09865",
+    "region": "intl",
+    "title_ko": "RePaint: Inpainting using Denoising Diffusion Probabilistic Models"
    }
   ]
  },
@@ -2895,7 +3051,9 @@
     "authors": "Zhang et al.",
     "year": 2023,
     "venue": "ICCV 2023",
-    "url": "https://arxiv.org/abs/2302.05543"
+    "url": "https://arxiv.org/abs/2302.05543",
+    "region": "intl",
+    "title_ko": "Adding Conditional Control to Text-to-Image Diffusion Models"
    }
   ]
  },
@@ -2934,7 +3092,9 @@
     "authors": "Ho, Salimans",
     "year": 2022,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2207.12598"
+    "url": "https://arxiv.org/abs/2207.12598",
+    "region": "intl",
+    "title_ko": "Classifier-Free Diffusion Guidance"
    }
   ]
  },
@@ -2979,14 +3139,18 @@
     "authors": "Ledig et al.",
     "year": 2016,
     "venue": "CVPR 2017",
-    "url": "https://arxiv.org/abs/1609.04802"
+    "url": "https://arxiv.org/abs/1609.04802",
+    "region": "intl",
+    "title_ko": "Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network"
    },
    {
     "title": "Image Super-Resolution via Iterative Refinement",
     "authors": "Saharia et al.",
     "year": 2021,
     "venue": "IEEE TPAMI",
-    "url": "https://arxiv.org/abs/2104.07636"
+    "url": "https://arxiv.org/abs/2104.07636",
+    "region": "intl",
+    "title_ko": "Image Super-Resolution via Iterative Refinement"
    }
   ]
  },
@@ -3031,21 +3195,27 @@
     "authors": "Vinyals et al.",
     "year": 2014,
     "venue": "CVPR 2015",
-    "url": "https://arxiv.org/abs/1411.4555"
+    "url": "https://arxiv.org/abs/1411.4555",
+    "region": "intl",
+    "title_ko": "Show and Tell: A Neural Image Caption Generator"
    },
    {
     "title": "Show, Attend and Tell: Neural Image Caption Generation with Visual Attention",
     "authors": "Xu et al.",
     "year": 2015,
     "venue": "ICML 2015",
-    "url": "https://arxiv.org/abs/1502.03044"
+    "url": "https://arxiv.org/abs/1502.03044",
+    "region": "intl",
+    "title_ko": "Show, Attend and Tell: Neural Image Caption Generation with Visual Attention"
    },
    {
     "title": "BLIP: Bootstrapping Language-Image Pre-training for Unified Vision-Language Understanding and Generation",
     "authors": "Li et al.",
     "year": 2022,
     "venue": "ICML 2022",
-    "url": "https://arxiv.org/abs/2201.12086"
+    "url": "https://arxiv.org/abs/2201.12086",
+    "region": "intl",
+    "title_ko": "BLIP: Bootstrapping Language-Image Pre-training for Unified Vision-Language Understanding and Generation"
    }
   ]
  },
@@ -3084,7 +3254,9 @@
     "authors": "Agrawal et al.",
     "year": 2015,
     "venue": "ICCV 2015",
-    "url": "https://arxiv.org/abs/1505.00468"
+    "url": "https://arxiv.org/abs/1505.00468",
+    "region": "intl",
+    "title_ko": "VQA: Visual Question Answering"
    }
   ]
  },
@@ -3130,21 +3302,27 @@
     "authors": "Xu et al.",
     "year": 2019,
     "venue": "KDD 2020",
-    "url": "https://arxiv.org/abs/1912.13318"
+    "url": "https://arxiv.org/abs/1912.13318",
+    "region": "intl",
+    "title_ko": "LayoutLM: Pre-training of Text and Layout for Document Image Understanding"
    },
    {
     "title": "LayoutLMv3: Pre-training for Document AI with Unified Text and Image Masking",
     "authors": "Huang et al.",
     "year": 2022,
     "venue": "ACM MM 2022",
-    "url": "https://arxiv.org/abs/2204.08387"
+    "url": "https://arxiv.org/abs/2204.08387",
+    "region": "intl",
+    "title_ko": "LayoutLMv3: Pre-training for Document AI with Unified Text and Image Masking"
    },
    {
     "title": "OCR-free Document Understanding Transformer",
     "authors": "Kim et al.",
     "year": 2021,
     "venue": "ECCV 2022",
-    "url": "https://arxiv.org/abs/2111.15664"
+    "url": "https://arxiv.org/abs/2111.15664",
+    "region": "intl",
+    "title_ko": "OCR-free Document Understanding Transformer"
    }
   ]
  },
@@ -3183,21 +3361,27 @@
     "authors": "Lee et al.",
     "year": 2022,
     "venue": "ICML 2023",
-    "url": "https://arxiv.org/abs/2210.03347"
+    "url": "https://arxiv.org/abs/2210.03347",
+    "region": "intl",
+    "title_ko": "Pix2Struct: Screenshot Parsing as Pretraining for Visual Language Understanding"
    },
    {
     "title": "CogAgent: A Visual Language Model for GUI Agents",
     "authors": "Hong et al.",
     "year": 2023,
     "venue": "CVPR 2024",
-    "url": "https://arxiv.org/abs/2312.08914"
+    "url": "https://arxiv.org/abs/2312.08914",
+    "region": "intl",
+    "title_ko": "CogAgent: A Visual Language Model for GUI Agents"
    },
    {
     "title": "SeeClick: Harnessing GUI Grounding for Advanced Visual GUI Agents",
     "authors": "Cheng et al.",
     "year": 2024,
     "venue": "ACL 2024",
-    "url": "https://arxiv.org/abs/2401.10935"
+    "url": "https://arxiv.org/abs/2401.10935",
+    "region": "intl",
+    "title_ko": "SeeClick: Harnessing GUI Grounding for Advanced Visual GUI Agents"
    }
   ]
  },
@@ -3243,7 +3427,9 @@
     "authors": "Défossez et al.",
     "year": 2024,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2410.00037"
+    "url": "https://arxiv.org/abs/2410.00037",
+    "region": "intl",
+    "title_ko": "Moshi: a speech-text foundation model for real-time dialogue"
    }
   ]
  },
@@ -3288,21 +3474,27 @@
     "authors": "Arik et al.",
     "year": 2018,
     "venue": "NeurIPS 2018",
-    "url": "https://arxiv.org/abs/1802.06006"
+    "url": "https://arxiv.org/abs/1802.06006",
+    "region": "intl",
+    "title_ko": "Neural Voice Cloning with a Few Samples"
    },
    {
     "title": "Transfer Learning from Speaker Verification to Multispeaker Text-To-Speech Synthesis",
     "authors": "Jia et al.",
     "year": 2018,
     "venue": "NeurIPS 2018",
-    "url": "https://arxiv.org/abs/1806.04558"
+    "url": "https://arxiv.org/abs/1806.04558",
+    "region": "intl",
+    "title_ko": "Transfer Learning from Speaker Verification to Multispeaker Text-To-Speech Synthesis"
    },
    {
     "title": "Neural Codec Language Models are Zero-Shot Text to Speech Synthesizers",
     "authors": "Wang et al.",
     "year": 2023,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2301.02111"
+    "url": "https://arxiv.org/abs/2301.02111",
+    "region": "intl",
+    "title_ko": "Neural Codec Language Models are Zero-Shot Text to Speech Synthesizers"
    }
   ]
  },
@@ -3353,14 +3545,18 @@
     "authors": "Agostinelli et al.",
     "year": 2023,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2301.11325"
+    "url": "https://arxiv.org/abs/2301.11325",
+    "region": "intl",
+    "title_ko": "MusicLM: Generating Music From Text"
    },
    {
     "title": "Simple and Controllable Music Generation",
     "authors": "Copet et al.",
     "year": 2023,
     "venue": "NeurIPS 2023",
-    "url": "https://arxiv.org/abs/2306.05284"
+    "url": "https://arxiv.org/abs/2306.05284",
+    "region": "intl",
+    "title_ko": "Simple and Controllable Music Generation"
    }
   ]
  },
@@ -3405,21 +3601,27 @@
     "authors": "Mildenhall et al.",
     "year": 2020,
     "venue": "ECCV 2020",
-    "url": "https://arxiv.org/abs/2003.08934"
+    "url": "https://arxiv.org/abs/2003.08934",
+    "region": "intl",
+    "title_ko": "NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis"
    },
    {
     "title": "DreamFusion: Text-to-3D using 2D Diffusion",
     "authors": "Poole et al.",
     "year": 2022,
     "venue": "ICLR 2023",
-    "url": "https://arxiv.org/abs/2209.14988"
+    "url": "https://arxiv.org/abs/2209.14988",
+    "region": "intl",
+    "title_ko": "DreamFusion: Text-to-3D using 2D Diffusion"
    },
    {
     "title": "3D Gaussian Splatting for Real-Time Radiance Field Rendering",
     "authors": "Kerbl et al.",
     "year": 2023,
     "venue": "ACM TOG (SIGGRAPH 2023)",
-    "url": "https://arxiv.org/abs/2308.04079"
+    "url": "https://arxiv.org/abs/2308.04079",
+    "region": "intl",
+    "title_ko": "3D Gaussian Splatting for Real-Time Radiance Field Rendering"
    }
   ]
  },
@@ -3588,7 +3790,9 @@
     "authors": "Turing",
     "year": 1950,
     "venue": "Mind",
-    "url": "https://doi.org/10.1093/mind/LIX.236.433"
+    "url": "https://doi.org/10.1093/mind/LIX.236.433",
+    "region": "intl",
+    "title_ko": "Computing Machinery and Intelligence"
    }
   ]
  },
@@ -3634,7 +3838,9 @@
     "authors": "Samuel",
     "year": 1959,
     "venue": "IBM Journal of Research and Development",
-    "url": "https://doi.org/10.1147/rd.33.0210"
+    "url": "https://doi.org/10.1147/rd.33.0210",
+    "region": "intl",
+    "title_ko": "Some Studies in Machine Learning Using the Game of Checkers"
    }
   ]
  },
@@ -3755,21 +3961,27 @@
     "authors": "Watkins and Dayan",
     "year": 1992,
     "venue": "Machine Learning",
-    "url": "https://doi.org/10.1007/BF00992698"
+    "url": "https://doi.org/10.1007/BF00992698",
+    "region": "intl",
+    "title_ko": "Q-learning"
    },
    {
     "title": "Human-level control through deep reinforcement learning",
     "authors": "Mnih et al.",
     "year": 2015,
     "venue": "Nature",
-    "url": "https://doi.org/10.1038/nature14236"
+    "url": "https://doi.org/10.1038/nature14236",
+    "region": "intl",
+    "title_ko": "Human-level control through deep reinforcement learning"
    },
    {
     "title": "Proximal Policy Optimization Algorithms",
     "authors": "Schulman et al.",
     "year": 2017,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/1707.06347"
+    "url": "https://arxiv.org/abs/1707.06347",
+    "region": "intl",
+    "title_ko": "Proximal Policy Optimization Algorithms"
    }
   ]
  },
@@ -3815,7 +4027,9 @@
     "authors": "Srivastava et al.",
     "year": 2014,
     "venue": "JMLR",
-    "url": "https://jmlr.org/papers/v15/srivastava14a.html"
+    "url": "https://jmlr.org/papers/v15/srivastava14a.html",
+    "region": "intl",
+    "title_ko": "Dropout: A Simple Way to Prevent Neural Networks from Overfitting"
    }
   ]
  },
@@ -3861,7 +4075,9 @@
     "authors": "Gebru et al.",
     "year": 2018,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/1803.09010"
+    "url": "https://arxiv.org/abs/1803.09010",
+    "region": "intl",
+    "title_ko": "Datasheets for Datasets"
    }
   ]
  },
@@ -4047,7 +4263,9 @@
     "authors": "Sokolova and Lapalme",
     "year": 2009,
     "venue": "Information Processing & Management",
-    "url": "https://doi.org/10.1016/j.ipm.2009.03.002"
+    "url": "https://doi.org/10.1016/j.ipm.2009.03.002",
+    "region": "intl",
+    "title_ko": "A systematic analysis of performance measures for classification tasks"
    }
   ]
  },
@@ -4135,7 +4353,9 @@
     "authors": "Lloyd",
     "year": 1982,
     "venue": "IEEE Transactions on Information Theory",
-    "url": "https://doi.org/10.1109/TIT.1982.1056489"
+    "url": "https://doi.org/10.1109/TIT.1982.1056489",
+    "region": "intl",
+    "title_ko": "Least squares quantization in PCM"
    }
   ]
  },
@@ -4256,21 +4476,27 @@
     "authors": "Hoerl and Kennard",
     "year": 1970,
     "venue": "Technometrics",
-    "url": "https://doi.org/10.1080/00401706.1970.10488634"
+    "url": "https://doi.org/10.1080/00401706.1970.10488634",
+    "region": "intl",
+    "title_ko": "Ridge Regression: Biased Estimation for Nonorthogonal Problems"
    },
    {
     "title": "Regression Shrinkage and Selection Via the Lasso",
     "authors": "Tibshirani",
     "year": 1996,
     "venue": "Journal of the Royal Statistical Society Series B",
-    "url": "https://doi.org/10.1111/j.2517-6161.1996.tb02080.x"
+    "url": "https://doi.org/10.1111/j.2517-6161.1996.tb02080.x",
+    "region": "intl",
+    "title_ko": "Regression Shrinkage and Selection Via the Lasso"
    },
    {
     "title": "Dropout: A Simple Way to Prevent Neural Networks from Overfitting",
     "authors": "Srivastava et al.",
     "year": 2014,
     "venue": "JMLR",
-    "url": "https://jmlr.org/papers/v15/srivastava14a.html"
+    "url": "https://jmlr.org/papers/v15/srivastava14a.html",
+    "region": "intl",
+    "title_ko": "Dropout: A Simple Way to Prevent Neural Networks from Overfitting"
    }
   ]
  },
@@ -4316,14 +4542,18 @@
     "authors": "Bergstra and Bengio",
     "year": 2012,
     "venue": "JMLR",
-    "url": "https://jmlr.org/papers/v13/bergstra12a.html"
+    "url": "https://jmlr.org/papers/v13/bergstra12a.html",
+    "region": "intl",
+    "title_ko": "Random Search for Hyper-Parameter Optimization"
    },
    {
     "title": "Practical Bayesian Optimization of Machine Learning Algorithms",
     "authors": "Snoek et al.",
     "year": 2012,
     "venue": "NeurIPS 2012",
-    "url": "https://arxiv.org/abs/1206.2944"
+    "url": "https://arxiv.org/abs/1206.2944",
+    "region": "intl",
+    "title_ko": "Practical Bayesian Optimization of Machine Learning Algorithms"
    }
   ]
  },
@@ -4368,7 +4598,9 @@
     "authors": "Stone",
     "year": 1974,
     "venue": "Journal of the Royal Statistical Society Series B",
-    "url": "https://doi.org/10.1111/j.2517-6161.1974.tb00994.x"
+    "url": "https://doi.org/10.1111/j.2517-6161.1974.tb00994.x",
+    "region": "intl",
+    "title_ko": "Cross-Validatory Choice and Assessment of Statistical Predictions"
    }
   ]
  },
@@ -4414,14 +4646,18 @@
     "authors": "Davis and Goadrich",
     "year": 2006,
     "venue": "ICML 2006",
-    "url": "https://doi.org/10.1145/1143844.1143874"
+    "url": "https://doi.org/10.1145/1143844.1143874",
+    "region": "intl",
+    "title_ko": "The relationship between Precision-Recall and ROC curves"
    },
    {
     "title": "The Precision-Recall Plot Is More Informative than the ROC Plot When Evaluating Binary Classifiers on Imbalanced Datasets",
     "authors": "Saito and Rehmsmeier",
     "year": 2015,
     "venue": "PLOS ONE",
-    "url": "https://doi.org/10.1371/journal.pone.0118432"
+    "url": "https://doi.org/10.1371/journal.pone.0118432",
+    "region": "intl",
+    "title_ko": "The Precision-Recall Plot Is More Informative than the ROC Plot When Evaluating Binary Classifiers on Imbalanced Datasets"
    }
   ]
  },
@@ -4472,7 +4708,9 @@
     "authors": "Sokolova and Lapalme",
     "year": 2009,
     "venue": "Information Processing & Management",
-    "url": "https://doi.org/10.1016/j.ipm.2009.03.002"
+    "url": "https://doi.org/10.1016/j.ipm.2009.03.002",
+    "region": "intl",
+    "title_ko": "A systematic analysis of performance measures for classification tasks"
    }
   ]
  },
@@ -4523,7 +4761,9 @@
     "authors": "Fawcett",
     "year": 2006,
     "venue": "Pattern Recognition Letters",
-    "url": "https://doi.org/10.1016/j.patrec.2005.10.010"
+    "url": "https://doi.org/10.1016/j.patrec.2005.10.010",
+    "region": "intl",
+    "title_ko": "An introduction to ROC analysis"
    }
   ]
  },
@@ -4568,7 +4808,9 @@
     "authors": "Sokolova and Lapalme",
     "year": 2009,
     "venue": "Information Processing & Management",
-    "url": "https://doi.org/10.1016/j.ipm.2009.03.002"
+    "url": "https://doi.org/10.1016/j.ipm.2009.03.002",
+    "region": "intl",
+    "title_ko": "A systematic analysis of performance measures for classification tasks"
    }
   ]
  },
@@ -4613,21 +4855,27 @@
     "authors": "Hanley and McNeil",
     "year": 1982,
     "venue": "Radiology",
-    "url": "https://doi.org/10.1148/radiology.143.1.7063747"
+    "url": "https://doi.org/10.1148/radiology.143.1.7063747",
+    "region": "intl",
+    "title_ko": "The meaning and use of the area under a receiver operating characteristic (ROC) curve"
    },
    {
     "title": "An introduction to ROC analysis",
     "authors": "Fawcett",
     "year": 2006,
     "venue": "Pattern Recognition Letters",
-    "url": "https://doi.org/10.1016/j.patrec.2005.10.010"
+    "url": "https://doi.org/10.1016/j.patrec.2005.10.010",
+    "region": "intl",
+    "title_ko": "An introduction to ROC analysis"
    },
    {
     "title": "The relationship between Precision-Recall and ROC curves",
     "authors": "Davis and Goadrich",
     "year": 2006,
     "venue": "ICML 2006",
-    "url": "https://doi.org/10.1145/1143844.1143874"
+    "url": "https://doi.org/10.1145/1143844.1143874",
+    "region": "intl",
+    "title_ko": "The relationship between Precision-Recall and ROC curves"
    }
   ]
  },
@@ -4672,14 +4920,18 @@
     "authors": "Belkin et al.",
     "year": 2019,
     "venue": "PNAS",
-    "url": "https://doi.org/10.1073/pnas.1903070116"
+    "url": "https://doi.org/10.1073/pnas.1903070116",
+    "region": "intl",
+    "title_ko": "Reconciling modern machine-learning practice and the classical bias–variance trade-off"
    },
    {
     "title": "Deep Double Descent: Where Bigger Models and More Data Hurt",
     "authors": "Nakkiran et al.",
     "year": 2019,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/1912.02292"
+    "url": "https://arxiv.org/abs/1912.02292",
+    "region": "intl",
+    "title_ko": "Deep Double Descent: Where Bigger Models and More Data Hurt"
    }
   ]
  },
@@ -4725,14 +4977,18 @@
     "authors": "Chandola et al.",
     "year": 2009,
     "venue": "ACM Computing Surveys",
-    "url": "https://doi.org/10.1145/1541880.1541882"
+    "url": "https://doi.org/10.1145/1541880.1541882",
+    "region": "intl",
+    "title_ko": "Anomaly detection: A survey"
    },
    {
     "title": "Isolation Forest",
     "authors": "Liu et al.",
     "year": 2008,
     "venue": "ICDM 2008",
-    "url": "https://doi.org/10.1109/ICDM.2008.17"
+    "url": "https://doi.org/10.1109/ICDM.2008.17",
+    "region": "intl",
+    "title_ko": "Isolation Forest"
    }
   ]
  },
@@ -4777,14 +5033,18 @@
     "authors": "Koren et al.",
     "year": 2009,
     "venue": "Computer",
-    "url": "https://doi.org/10.1109/MC.2009.263"
+    "url": "https://doi.org/10.1109/MC.2009.263",
+    "region": "intl",
+    "title_ko": "Matrix Factorization Techniques for Recommender Systems"
    },
    {
     "title": "Deep Neural Networks for YouTube Recommendations",
     "authors": "Covington et al.",
     "year": 2016,
     "venue": "RecSys 2016",
-    "url": "https://doi.org/10.1145/2959100.2959190"
+    "url": "https://doi.org/10.1145/2959100.2959190",
+    "region": "intl",
+    "title_ko": "Deep Neural Networks for YouTube Recommendations"
    }
   ]
  },
@@ -4830,14 +5090,18 @@
     "authors": "Lim et al.",
     "year": 2019,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/1912.09363"
+    "url": "https://arxiv.org/abs/1912.09363",
+    "region": "intl",
+    "title_ko": "Temporal Fusion Transformers for Interpretable Multi-horizon Time Series Forecasting"
    },
    {
     "title": "A decoder-only foundation model for time-series forecasting",
     "authors": "Das et al.",
     "year": 2023,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2310.10688"
+    "url": "https://arxiv.org/abs/2310.10688",
+    "region": "intl",
+    "title_ko": "A decoder-only foundation model for time-series forecasting"
    }
   ]
  },
@@ -4882,14 +5146,18 @@
     "authors": "Breiman",
     "year": 1996,
     "venue": "Machine Learning",
-    "url": "https://doi.org/10.1007/BF00058655"
+    "url": "https://doi.org/10.1007/BF00058655",
+    "region": "intl",
+    "title_ko": "Bagging predictors"
    },
    {
     "title": "A Decision-Theoretic Generalization of On-Line Learning and an Application to Boosting",
     "authors": "Freund and Schapire",
     "year": 1997,
     "venue": "Journal of Computer and System Sciences",
-    "url": "https://doi.org/10.1006/jcss.1997.1504"
+    "url": "https://doi.org/10.1006/jcss.1997.1504",
+    "region": "intl",
+    "title_ko": "A Decision-Theoretic Generalization of On-Line Learning and an Application to Boosting"
    }
   ]
  },
@@ -4935,7 +5203,9 @@
     "authors": "Quinlan",
     "year": 1986,
     "venue": "Machine Learning",
-    "url": "https://doi.org/10.1007/BF00116251"
+    "url": "https://doi.org/10.1007/BF00116251",
+    "region": "intl",
+    "title_ko": "Induction of decision trees"
    }
   ]
  },
@@ -4980,7 +5250,9 @@
     "authors": "Breiman",
     "year": 2001,
     "venue": "Machine Learning",
-    "url": "https://doi.org/10.1023/A:1010933404324"
+    "url": "https://doi.org/10.1023/A:1010933404324",
+    "region": "intl",
+    "title_ko": "Random Forests"
    }
   ]
  },
@@ -5026,14 +5298,18 @@
     "authors": "Friedman",
     "year": 2001,
     "venue": "The Annals of Statistics",
-    "url": "https://doi.org/10.1214/aos/1013203451"
+    "url": "https://doi.org/10.1214/aos/1013203451",
+    "region": "intl",
+    "title_ko": "Greedy function approximation: A gradient boosting machine"
    },
    {
     "title": "XGBoost: A Scalable Tree Boosting System",
     "authors": "Chen and Guestrin",
     "year": 2016,
     "venue": "KDD 2016",
-    "url": "https://arxiv.org/abs/1603.02754"
+    "url": "https://arxiv.org/abs/1603.02754",
+    "region": "intl",
+    "title_ko": "XGBoost: A Scalable Tree Boosting System"
    }
   ]
  },
@@ -5153,7 +5429,9 @@
     "authors": "Ratner et al.",
     "year": 2017,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/1711.10160"
+    "url": "https://arxiv.org/abs/1711.10160",
+    "region": "intl",
+    "title_ko": "Snorkel: Rapid Training Data Creation with Weak Supervision"
    }
   ]
  },
@@ -5198,7 +5476,9 @@
     "authors": "Sohn et al.",
     "year": 2020,
     "venue": "NeurIPS 2020",
-    "url": "https://arxiv.org/abs/2001.07685"
+    "url": "https://arxiv.org/abs/2001.07685",
+    "region": "intl",
+    "title_ko": "FixMatch: Simplifying Semi-Supervised Learning with Consistency and Confidence"
    }
   ]
  },
@@ -5244,14 +5524,18 @@
     "authors": "Devlin et al.",
     "year": 2018,
     "venue": "NAACL 2019",
-    "url": "https://arxiv.org/abs/1810.04805"
+    "url": "https://arxiv.org/abs/1810.04805",
+    "region": "intl",
+    "title_ko": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"
    },
    {
     "title": "A Simple Framework for Contrastive Learning of Visual Representations",
     "authors": "Chen et al.",
     "year": 2020,
     "venue": "ICML 2020",
-    "url": "https://arxiv.org/abs/2002.05709"
+    "url": "https://arxiv.org/abs/2002.05709",
+    "region": "intl",
+    "title_ko": "A Simple Framework for Contrastive Learning of Visual Representations"
    }
   ]
  },
@@ -5290,14 +5574,18 @@
     "authors": "Chawla et al.",
     "year": 2002,
     "venue": "Journal of Artificial Intelligence Research",
-    "url": "https://arxiv.org/abs/1106.1813"
+    "url": "https://arxiv.org/abs/1106.1813",
+    "region": "intl",
+    "title_ko": "SMOTE: Synthetic Minority Over-sampling Technique"
    },
    {
     "title": "Focal Loss for Dense Object Detection",
     "authors": "Lin et al.",
     "year": 2017,
     "venue": "ICCV 2017",
-    "url": "https://arxiv.org/abs/1708.02002"
+    "url": "https://arxiv.org/abs/1708.02002",
+    "region": "intl",
+    "title_ko": "Focal Loss for Dense Object Detection"
    }
   ]
  },
@@ -5342,7 +5630,9 @@
     "authors": "Kaufman et al.",
     "year": 2012,
     "venue": "ACM Transactions on Knowledge Discovery from Data",
-    "url": "https://doi.org/10.1145/2382577.2382579"
+    "url": "https://doi.org/10.1145/2382577.2382579",
+    "region": "intl",
+    "title_ko": "Leakage in data mining: Formulation, detection, and avoidance"
    }
   ]
  },
@@ -5387,21 +5677,27 @@
     "authors": "van der Maaten and Hinton",
     "year": 2008,
     "venue": "JMLR",
-    "url": "https://jmlr.org/papers/v9/vandermaaten08a.html"
+    "url": "https://jmlr.org/papers/v9/vandermaaten08a.html",
+    "region": "intl",
+    "title_ko": "Visualizing Data using t-SNE"
    },
    {
     "title": "UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction",
     "authors": "McInnes et al.",
     "year": 2018,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/1802.03426"
+    "url": "https://arxiv.org/abs/1802.03426",
+    "region": "intl",
+    "title_ko": "UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction"
    },
    {
     "title": "Reducing the Dimensionality of Data with Neural Networks",
     "authors": "Hinton and Salakhutdinov",
     "year": 2006,
     "venue": "Science",
-    "url": "https://doi.org/10.1126/science.1127647"
+    "url": "https://doi.org/10.1126/science.1127647",
+    "region": "intl",
+    "title_ko": "Reducing the Dimensionality of Data with Neural Networks"
    }
   ]
  },
@@ -5485,7 +5781,9 @@
     "authors": "Morris et al.",
     "year": 2023,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2311.02462"
+    "url": "https://arxiv.org/abs/2311.02462",
+    "region": "intl",
+    "title_ko": "Levels of AGI for Operationalizing Progress on the Path to AGI"
    }
   ]
  },
@@ -5530,7 +5828,9 @@
     "authors": "Searle",
     "year": 1980,
     "venue": "Behavioral and Brain Sciences",
-    "url": "https://doi.org/10.1017/S0140525X00005756"
+    "url": "https://doi.org/10.1017/S0140525X00005756",
+    "region": "intl",
+    "title_ko": "Minds, brains, and programs"
    }
   ]
  },
@@ -5569,14 +5869,18 @@
     "authors": "Turing",
     "year": 1950,
     "venue": "Mind",
-    "url": "https://doi.org/10.1093/mind/LIX.236.433"
+    "url": "https://doi.org/10.1093/mind/LIX.236.433",
+    "region": "intl",
+    "title_ko": "Computing Machinery and Intelligence"
    },
    {
     "title": "Large Language Models Pass the Turing Test",
     "authors": "Jones and Bergen",
     "year": 2025,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2503.23674"
+    "url": "https://arxiv.org/abs/2503.23674",
+    "region": "intl",
+    "title_ko": "Large Language Models Pass the Turing Test"
    }
   ]
  },
@@ -5622,21 +5926,27 @@
     "authors": "Rosenblatt",
     "year": 1958,
     "venue": "Psychological Review",
-    "url": "https://doi.org/10.1037/h0042519"
+    "url": "https://doi.org/10.1037/h0042519",
+    "region": "intl",
+    "title_ko": "The perceptron: A probabilistic model for information storage and organization in the brain"
    },
    {
     "title": "Learning representations by back-propagating errors",
     "authors": "Rumelhart et al.",
     "year": 1986,
     "venue": "Nature",
-    "url": "https://doi.org/10.1038/323533a0"
+    "url": "https://doi.org/10.1038/323533a0",
+    "region": "intl",
+    "title_ko": "Learning representations by back-propagating errors"
    },
    {
     "title": "Multilayer feedforward networks are universal approximators",
     "authors": "Hornik et al.",
     "year": 1989,
     "venue": "Neural Networks",
-    "url": "https://doi.org/10.1016/0893-6080(89)90020-8"
+    "url": "https://doi.org/10.1016/0893-6080(89)90020-8",
+    "region": "intl",
+    "title_ko": "Multilayer feedforward networks are universal approximators"
    }
   ]
  },
@@ -5682,7 +5992,9 @@
     "authors": "LeCun et al.",
     "year": 2015,
     "venue": "Nature",
-    "url": "https://doi.org/10.1038/nature14539"
+    "url": "https://doi.org/10.1038/nature14539",
+    "region": "intl",
+    "title_ko": "Deep learning"
    }
   ]
  },
@@ -5728,7 +6040,9 @@
     "authors": "Vaswani et al.",
     "year": 2017,
     "venue": "NeurIPS 2017",
-    "url": "https://arxiv.org/abs/1706.03762"
+    "url": "https://arxiv.org/abs/1706.03762",
+    "region": "intl",
+    "title_ko": "Attention Is All You Need"
    }
   ]
  },
@@ -5774,14 +6088,18 @@
     "authors": "Bahdanau et al.",
     "year": 2014,
     "venue": "ICLR 2015",
-    "url": "https://arxiv.org/abs/1409.0473"
+    "url": "https://arxiv.org/abs/1409.0473",
+    "region": "intl",
+    "title_ko": "Neural Machine Translation by Jointly Learning to Align and Translate"
    },
    {
     "title": "Attention Is All You Need",
     "authors": "Vaswani et al.",
     "year": 2017,
     "venue": "NeurIPS 2017",
-    "url": "https://arxiv.org/abs/1706.03762"
+    "url": "https://arxiv.org/abs/1706.03762",
+    "region": "intl",
+    "title_ko": "Attention Is All You Need"
    }
   ]
  },
@@ -5827,7 +6145,9 @@
     "authors": "Vaswani et al.",
     "year": 2017,
     "venue": "NeurIPS 2017",
-    "url": "https://arxiv.org/abs/1706.03762"
+    "url": "https://arxiv.org/abs/1706.03762",
+    "region": "intl",
+    "title_ko": "Attention Is All You Need"
    }
   ]
  },
@@ -5873,7 +6193,9 @@
     "authors": "Rumelhart et al.",
     "year": 1986,
     "venue": "Nature",
-    "url": "https://doi.org/10.1038/323533a0"
+    "url": "https://doi.org/10.1038/323533a0",
+    "region": "intl",
+    "title_ko": "Learning representations by back-propagating errors"
    }
   ]
  },
@@ -5919,7 +6241,9 @@
     "authors": "Ruder",
     "year": 2016,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/1609.04747"
+    "url": "https://arxiv.org/abs/1609.04747",
+    "region": "intl",
+    "title_ko": "An overview of gradient descent optimization algorithms"
    }
   ]
  },
@@ -5965,14 +6289,18 @@
     "authors": "LeCun et al.",
     "year": 1989,
     "venue": "Neural Computation",
-    "url": "https://doi.org/10.1162/neco.1989.1.4.541"
+    "url": "https://doi.org/10.1162/neco.1989.1.4.541",
+    "region": "intl",
+    "title_ko": "Backpropagation Applied to Handwritten Zip Code Recognition"
    },
    {
     "title": "Deep Residual Learning for Image Recognition",
     "authors": "He et al.",
     "year": 2015,
     "venue": "CVPR 2016",
-    "url": "https://arxiv.org/abs/1512.03385"
+    "url": "https://arxiv.org/abs/1512.03385",
+    "region": "intl",
+    "title_ko": "Deep Residual Learning for Image Recognition"
    }
   ]
  },
@@ -6018,14 +6346,18 @@
     "authors": "Elman",
     "year": 1990,
     "venue": "Cognitive Science",
-    "url": "https://doi.org/10.1207/s15516709cog1402_1"
+    "url": "https://doi.org/10.1207/s15516709cog1402_1",
+    "region": "intl",
+    "title_ko": "Finding Structure in Time"
    },
    {
     "title": "Learning long-term dependencies with gradient descent is difficult",
     "authors": "Bengio et al.",
     "year": 1994,
     "venue": "IEEE Transactions on Neural Networks",
-    "url": "https://doi.org/10.1109/72.279181"
+    "url": "https://doi.org/10.1109/72.279181",
+    "region": "intl",
+    "title_ko": "Learning long-term dependencies with gradient descent is difficult"
    }
   ]
  },
@@ -6077,7 +6409,9 @@
     "authors": "Mikolov et al.",
     "year": 2013,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/1301.3781"
+    "url": "https://arxiv.org/abs/1301.3781",
+    "region": "intl",
+    "title_ko": "Efficient Estimation of Word Representations in Vector Space"
    }
   ]
  },
@@ -6122,14 +6456,18 @@
     "authors": "Hendrycks & Gimpel",
     "year": 2016,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/1606.08415"
+    "url": "https://arxiv.org/abs/1606.08415",
+    "region": "intl",
+    "title_ko": "Gaussian Error Linear Units (GELUs)"
    },
    {
     "title": "GLU Variants Improve Transformer",
     "authors": "Shazeer",
     "year": 2020,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2002.05202"
+    "url": "https://arxiv.org/abs/2002.05202",
+    "region": "intl",
+    "title_ko": "GLU Variants Improve Transformer"
    }
   ]
  },
@@ -6237,7 +6575,9 @@
     "authors": "Rosenblatt",
     "year": 1958,
     "venue": "Psychological Review",
-    "url": "https://doi.org/10.1037/h0042519"
+    "url": "https://doi.org/10.1037/h0042519",
+    "region": "intl",
+    "title_ko": "The perceptron: A probabilistic model for information storage and organization in the brain"
    }
   ]
  },
@@ -6276,14 +6616,18 @@
     "authors": "Rumelhart et al.",
     "year": 1986,
     "venue": "Nature",
-    "url": "https://doi.org/10.1038/323533a0"
+    "url": "https://doi.org/10.1038/323533a0",
+    "region": "intl",
+    "title_ko": "Learning representations by back-propagating errors"
    },
    {
     "title": "Multilayer feedforward networks are universal approximators",
     "authors": "Hornik et al.",
     "year": 1989,
     "venue": "Neural Networks",
-    "url": "https://doi.org/10.1016/0893-6080(89)90020-8"
+    "url": "https://doi.org/10.1016/0893-6080(89)90020-8",
+    "region": "intl",
+    "title_ko": "Multilayer feedforward networks are universal approximators"
    }
   ]
  },
@@ -6353,14 +6697,18 @@
     "authors": "Hinton et al.",
     "year": 2012,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/1207.0580"
+    "url": "https://arxiv.org/abs/1207.0580",
+    "region": "intl",
+    "title_ko": "Improving neural networks by preventing co-adaptation of feature detectors"
    },
    {
     "title": "Dropout: A Simple Way to Prevent Neural Networks from Overfitting",
     "authors": "Srivastava et al.",
     "year": 2014,
     "venue": "JMLR",
-    "url": "https://jmlr.org/papers/v15/srivastava14a.html"
+    "url": "https://jmlr.org/papers/v15/srivastava14a.html",
+    "region": "intl",
+    "title_ko": "Dropout: A Simple Way to Prevent Neural Networks from Overfitting"
    }
   ]
  },
@@ -6399,7 +6747,9 @@
     "authors": "Ioffe & Szegedy",
     "year": 2015,
     "venue": "ICML 2015",
-    "url": "https://arxiv.org/abs/1502.03167"
+    "url": "https://arxiv.org/abs/1502.03167",
+    "region": "intl",
+    "title_ko": "Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift"
    }
   ]
  },
@@ -6430,14 +6780,18 @@
     "authors": "Ba et al.",
     "year": 2016,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/1607.06450"
+    "url": "https://arxiv.org/abs/1607.06450",
+    "region": "intl",
+    "title_ko": "Layer Normalization"
    },
    {
     "title": "Root Mean Square Layer Normalization",
     "authors": "Zhang & Sennrich",
     "year": 2019,
     "venue": "NeurIPS 2019",
-    "url": "https://arxiv.org/abs/1910.07467"
+    "url": "https://arxiv.org/abs/1910.07467",
+    "region": "intl",
+    "title_ko": "Root Mean Square Layer Normalization"
    }
   ]
  },
@@ -6476,7 +6830,9 @@
     "authors": "He et al.",
     "year": 2015,
     "venue": "CVPR 2016",
-    "url": "https://arxiv.org/abs/1512.03385"
+    "url": "https://arxiv.org/abs/1512.03385",
+    "region": "intl",
+    "title_ko": "Deep Residual Learning for Image Recognition"
    }
   ]
  },
@@ -6522,7 +6878,9 @@
     "authors": "Loshchilov & Hutter",
     "year": 2016,
     "venue": "ICLR 2017",
-    "url": "https://arxiv.org/abs/1608.03983"
+    "url": "https://arxiv.org/abs/1608.03983",
+    "region": "intl",
+    "title_ko": "SGDR: Stochastic Gradient Descent with Warm Restarts"
    }
   ]
  },
@@ -6561,21 +6919,27 @@
     "authors": "Kingma & Ba",
     "year": 2014,
     "venue": "ICLR 2015",
-    "url": "https://arxiv.org/abs/1412.6980"
+    "url": "https://arxiv.org/abs/1412.6980",
+    "region": "intl",
+    "title_ko": "Adam: A Method for Stochastic Optimization"
    },
    {
     "title": "Decoupled Weight Decay Regularization",
     "authors": "Loshchilov & Hutter",
     "year": 2017,
     "venue": "ICLR 2019",
-    "url": "https://arxiv.org/abs/1711.05101"
+    "url": "https://arxiv.org/abs/1711.05101",
+    "region": "intl",
+    "title_ko": "Decoupled Weight Decay Regularization"
    },
    {
     "title": "An overview of gradient descent optimization algorithms",
     "authors": "Ruder",
     "year": 2016,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/1609.04747"
+    "url": "https://arxiv.org/abs/1609.04747",
+    "region": "intl",
+    "title_ko": "An overview of gradient descent optimization algorithms"
    }
   ]
  },
@@ -6614,7 +6978,9 @@
     "authors": "Robbins & Monro",
     "year": 1951,
     "venue": "The Annals of Mathematical Statistics",
-    "url": "https://doi.org/10.1214/aoms/1177729586"
+    "url": "https://doi.org/10.1214/aoms/1177729586",
+    "region": "intl",
+    "title_ko": "A Stochastic Approximation Method"
    }
   ]
  },
@@ -6660,14 +7026,18 @@
     "authors": "Keskar et al.",
     "year": 2016,
     "venue": "ICLR 2017",
-    "url": "https://arxiv.org/abs/1609.04836"
+    "url": "https://arxiv.org/abs/1609.04836",
+    "region": "intl",
+    "title_ko": "On Large-Batch Training for Deep Learning: Generalization Gap and Sharp Minima"
    },
    {
     "title": "Accurate, Large Minibatch SGD: Training ImageNet in 1 Hour",
     "authors": "Goyal et al.",
     "year": 2017,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/1706.02677"
+    "url": "https://arxiv.org/abs/1706.02677",
+    "region": "intl",
+    "title_ko": "Accurate, Large Minibatch SGD: Training ImageNet in 1 Hour"
    }
   ]
  },
@@ -6770,14 +7140,18 @@
     "authors": "Bengio et al.",
     "year": 1994,
     "venue": "IEEE Transactions on Neural Networks",
-    "url": "https://doi.org/10.1109/72.279181"
+    "url": "https://doi.org/10.1109/72.279181",
+    "region": "intl",
+    "title_ko": "Learning long-term dependencies with gradient descent is difficult"
    },
    {
     "title": "Deep Residual Learning for Image Recognition",
     "authors": "He et al.",
     "year": 2015,
     "venue": "CVPR 2016",
-    "url": "https://arxiv.org/abs/1512.03385"
+    "url": "https://arxiv.org/abs/1512.03385",
+    "region": "intl",
+    "title_ko": "Deep Residual Learning for Image Recognition"
    }
   ]
  },
@@ -6822,7 +7196,9 @@
     "authors": "Hochreiter & Schmidhuber",
     "year": 1997,
     "venue": "Neural Computation",
-    "url": "https://doi.org/10.1162/neco.1997.9.8.1735"
+    "url": "https://doi.org/10.1162/neco.1997.9.8.1735",
+    "region": "intl",
+    "title_ko": "Long Short-Term Memory"
    }
   ]
  },
@@ -6860,7 +7236,9 @@
     "authors": "Cho et al.",
     "year": 2014,
     "venue": "EMNLP 2014",
-    "url": "https://arxiv.org/abs/1406.1078"
+    "url": "https://arxiv.org/abs/1406.1078",
+    "region": "intl",
+    "title_ko": "Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation"
    }
   ]
  },
@@ -6906,21 +7284,27 @@
     "authors": "Sutskever et al.",
     "year": 2014,
     "venue": "NeurIPS 2014",
-    "url": "https://arxiv.org/abs/1409.3215"
+    "url": "https://arxiv.org/abs/1409.3215",
+    "region": "intl",
+    "title_ko": "Sequence to Sequence Learning with Neural Networks"
    },
    {
     "title": "Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation",
     "authors": "Cho et al.",
     "year": 2014,
     "venue": "EMNLP 2014",
-    "url": "https://arxiv.org/abs/1406.1078"
+    "url": "https://arxiv.org/abs/1406.1078",
+    "region": "intl",
+    "title_ko": "Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation"
    },
    {
     "title": "Neural Machine Translation by Jointly Learning to Align and Translate",
     "authors": "Bahdanau et al.",
     "year": 2014,
     "venue": "ICLR 2015",
-    "url": "https://arxiv.org/abs/1409.0473"
+    "url": "https://arxiv.org/abs/1409.0473",
+    "region": "intl",
+    "title_ko": "Neural Machine Translation by Jointly Learning to Align and Translate"
    }
   ]
  },
@@ -6965,14 +7349,18 @@
     "authors": "Hinton & Salakhutdinov",
     "year": 2006,
     "venue": "Science",
-    "url": "https://doi.org/10.1126/science.1127647"
+    "url": "https://doi.org/10.1126/science.1127647",
+    "region": "intl",
+    "title_ko": "Reducing the Dimensionality of Data with Neural Networks"
    },
    {
     "title": "Auto-Encoding Variational Bayes",
     "authors": "Kingma & Welling",
     "year": 2013,
     "venue": "ICLR 2014",
-    "url": "https://arxiv.org/abs/1312.6114"
+    "url": "https://arxiv.org/abs/1312.6114",
+    "region": "intl",
+    "title_ko": "Auto-Encoding Variational Bayes"
    }
   ]
  },
@@ -7017,14 +7405,18 @@
     "authors": "Pan & Yang",
     "year": 2010,
     "venue": "IEEE Transactions on Knowledge and Data Engineering",
-    "url": "https://doi.org/10.1109/TKDE.2009.191"
+    "url": "https://doi.org/10.1109/TKDE.2009.191",
+    "region": "intl",
+    "title_ko": "A Survey on Transfer Learning"
    },
    {
     "title": "How transferable are features in deep neural networks?",
     "authors": "Yosinski et al.",
     "year": 2014,
     "venue": "NeurIPS 2014",
-    "url": "https://arxiv.org/abs/1411.1792"
+    "url": "https://arxiv.org/abs/1411.1792",
+    "region": "intl",
+    "title_ko": "How transferable are features in deep neural networks?"
    }
   ]
  },
@@ -7063,14 +7455,18 @@
     "authors": "Vaswani et al.",
     "year": 2017,
     "venue": "NeurIPS 2017",
-    "url": "https://arxiv.org/abs/1706.03762"
+    "url": "https://arxiv.org/abs/1706.03762",
+    "region": "intl",
+    "title_ko": "Attention Is All You Need"
    },
    {
     "title": "RoFormer: Enhanced Transformer with Rotary Position Embedding",
     "authors": "Su et al.",
     "year": 2021,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2104.09864"
+    "url": "https://arxiv.org/abs/2104.09864",
+    "region": "intl",
+    "title_ko": "RoFormer: Enhanced Transformer with Rotary Position Embedding"
    }
   ]
  },
@@ -7109,21 +7505,27 @@
     "authors": "Vaswani et al.",
     "year": 2017,
     "venue": "NeurIPS 2017",
-    "url": "https://arxiv.org/abs/1706.03762"
+    "url": "https://arxiv.org/abs/1706.03762",
+    "region": "intl",
+    "title_ko": "Attention Is All You Need"
    },
    {
     "title": "Fast Transformer Decoding: One Write-Head is All You Need",
     "authors": "Shazeer",
     "year": 2019,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/1911.02150"
+    "url": "https://arxiv.org/abs/1911.02150",
+    "region": "intl",
+    "title_ko": "Fast Transformer Decoding: One Write-Head is All You Need"
    },
    {
     "title": "GQA: Training Generalized Multi-Query Transformer Models from Multi-Head Checkpoints",
     "authors": "Ainslie et al.",
     "year": 2023,
     "venue": "EMNLP 2023",
-    "url": "https://arxiv.org/abs/2305.13245"
+    "url": "https://arxiv.org/abs/2305.13245",
+    "region": "intl",
+    "title_ko": "GQA: Training Generalized Multi-Query Transformer Models from Multi-Head Checkpoints"
    }
   ]
  },
@@ -7206,14 +7608,18 @@
     "authors": "Kaplan et al.",
     "year": 2020,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2001.08361"
+    "url": "https://arxiv.org/abs/2001.08361",
+    "region": "intl",
+    "title_ko": "Scaling Laws for Neural Language Models"
    },
    {
     "title": "Training Compute-Optimal Large Language Models",
     "authors": "Hoffmann et al.",
     "year": 2022,
     "venue": "NeurIPS 2022",
-    "url": "https://arxiv.org/abs/2203.15556"
+    "url": "https://arxiv.org/abs/2203.15556",
+    "region": "intl",
+    "title_ko": "Training Compute-Optimal Large Language Models"
    }
   ]
  },
@@ -7295,21 +7701,27 @@
     "authors": "Kipf & Welling",
     "year": 2016,
     "venue": "ICLR 2017",
-    "url": "https://arxiv.org/abs/1609.02907"
+    "url": "https://arxiv.org/abs/1609.02907",
+    "region": "intl",
+    "title_ko": "Semi-Supervised Classification with Graph Convolutional Networks"
    },
    {
     "title": "Inductive Representation Learning on Large Graphs",
     "authors": "Hamilton et al.",
     "year": 2017,
     "venue": "NeurIPS 2017",
-    "url": "https://arxiv.org/abs/1706.02216"
+    "url": "https://arxiv.org/abs/1706.02216",
+    "region": "intl",
+    "title_ko": "Inductive Representation Learning on Large Graphs"
    },
    {
     "title": "Graph Attention Networks",
     "authors": "Veličković et al.",
     "year": 2017,
     "venue": "ICLR 2018",
-    "url": "https://arxiv.org/abs/1710.10903"
+    "url": "https://arxiv.org/abs/1710.10903",
+    "region": "intl",
+    "title_ko": "Graph Attention Networks"
    }
   ]
  },
@@ -7412,21 +7824,27 @@
     "authors": "Frantar et al.",
     "year": 2022,
     "venue": "ICLR 2023",
-    "url": "https://arxiv.org/abs/2210.17323"
+    "url": "https://arxiv.org/abs/2210.17323",
+    "region": "intl",
+    "title_ko": "GPTQ: Accurate Post-Training Quantization for Generative Pre-trained Transformers"
    },
    {
     "title": "AWQ: Activation-aware Weight Quantization for LLM Compression and Acceleration",
     "authors": "Lin et al.",
     "year": 2023,
     "venue": "MLSys 2024",
-    "url": "https://arxiv.org/abs/2306.00978"
+    "url": "https://arxiv.org/abs/2306.00978",
+    "region": "intl",
+    "title_ko": "AWQ: Activation-aware Weight Quantization for LLM Compression and Acceleration"
    },
    {
     "title": "LLM.int8(): 8-bit Matrix Multiplication for Transformers at Scale",
     "authors": "Dettmers et al.",
     "year": 2022,
     "venue": "NeurIPS 2022",
-    "url": "https://arxiv.org/abs/2208.07339"
+    "url": "https://arxiv.org/abs/2208.07339",
+    "region": "intl",
+    "title_ko": "LLM.int8(): 8-bit Matrix Multiplication for Transformers at Scale"
    }
   ]
  },
@@ -7472,21 +7890,27 @@
     "authors": "Yu et al.",
     "year": 2022,
     "venue": "OSDI 2022",
-    "url": "https://www.usenix.org/conference/osdi22/presentation/yu"
+    "url": "https://www.usenix.org/conference/osdi22/presentation/yu",
+    "region": "intl",
+    "title_ko": "Orca: A Distributed Serving System for Transformer-Based Generative Models"
    },
    {
     "title": "Efficient Memory Management for Large Language Model Serving with PagedAttention",
     "authors": "Kwon et al.",
     "year": 2023,
     "venue": "SOSP 2023",
-    "url": "https://arxiv.org/abs/2309.06180"
+    "url": "https://arxiv.org/abs/2309.06180",
+    "region": "intl",
+    "title_ko": "Efficient Memory Management for Large Language Model Serving with PagedAttention"
    },
    {
     "title": "DistServe: Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving",
     "authors": "Zhong et al.",
     "year": 2024,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2401.09670"
+    "url": "https://arxiv.org/abs/2401.09670",
+    "region": "intl",
+    "title_ko": "DistServe: Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving"
    }
   ]
  },
@@ -7531,14 +7955,18 @@
     "authors": "Agrawal et al.",
     "year": 2024,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2403.02310"
+    "url": "https://arxiv.org/abs/2403.02310",
+    "region": "intl",
+    "title_ko": "Taming Throughput-Latency Tradeoff in LLM Inference with Sarathi-Serve"
    },
    {
     "title": "DistServe: Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving",
     "authors": "Zhong et al.",
     "year": 2024,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2401.09670"
+    "url": "https://arxiv.org/abs/2401.09670",
+    "region": "intl",
+    "title_ko": "DistServe: Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving"
    }
   ]
  },
@@ -7583,14 +8011,18 @@
     "authors": "Yu et al.",
     "year": 2022,
     "venue": "OSDI 2022",
-    "url": "https://www.usenix.org/conference/osdi22/presentation/yu"
+    "url": "https://www.usenix.org/conference/osdi22/presentation/yu",
+    "region": "intl",
+    "title_ko": "Orca: A Distributed Serving System for Transformer-Based Generative Models"
    },
    {
     "title": "Taming Throughput-Latency Tradeoff in LLM Inference with Sarathi-Serve",
     "authors": "Agrawal et al.",
     "year": 2024,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2403.02310"
+    "url": "https://arxiv.org/abs/2403.02310",
+    "region": "intl",
+    "title_ko": "Taming Throughput-Latency Tradeoff in LLM Inference with Sarathi-Serve"
    }
   ]
  },
@@ -7661,14 +8093,18 @@
     "authors": "Sculley et al.",
     "year": 2015,
     "venue": "NIPS 2015",
-    "url": "https://papers.nips.cc/paper_files/paper/2015/hash/86df7dcfd896fcaf2674f757a2463eba-Abstract.html"
+    "url": "https://papers.nips.cc/paper_files/paper/2015/hash/86df7dcfd896fcaf2674f757a2463eba-Abstract.html",
+    "region": "intl",
+    "title_ko": "Hidden Technical Debt in Machine Learning Systems"
    },
    {
     "title": "Machine Learning Operations (MLOps): Overview, Definition, and Architecture",
     "authors": "Kreuzberger et al.",
     "year": 2022,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2205.02302"
+    "url": "https://arxiv.org/abs/2205.02302",
+    "region": "intl",
+    "title_ko": "Machine Learning Operations (MLOps): Overview, Definition, and Architecture"
    }
   ]
  },
@@ -7802,7 +8238,9 @@
     "authors": "Kwon et al.",
     "year": 2023,
     "venue": "SOSP 2023",
-    "url": "https://arxiv.org/abs/2309.06180"
+    "url": "https://arxiv.org/abs/2309.06180",
+    "region": "intl",
+    "title_ko": "Efficient Memory Management for Large Language Model Serving with PagedAttention"
    }
   ]
  },
@@ -8002,7 +8440,9 @@
     "authors": "Kaplan et al.",
     "year": 2020,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2001.08361"
+    "url": "https://arxiv.org/abs/2001.08361",
+    "region": "intl",
+    "title_ko": "Scaling Laws for Neural Language Models"
    }
   ]
  },
@@ -8642,7 +9082,9 @@
     "authors": "Zhong et al.",
     "year": 2024,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2401.09670"
+    "url": "https://arxiv.org/abs/2401.09670",
+    "region": "intl",
+    "title_ko": "DistServe: Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving"
    }
   ]
  },
@@ -8955,14 +9397,18 @@
     "authors": "Chen et al.",
     "year": 2021,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2107.03374"
+    "url": "https://arxiv.org/abs/2107.03374",
+    "region": "intl",
+    "title_ko": "Evaluating Large Language Models Trained on Code"
    },
    {
     "title": "The Impact of AI on Developer Productivity: Evidence from GitHub Copilot",
     "authors": "Peng et al.",
     "year": 2023,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2302.06590"
+    "url": "https://arxiv.org/abs/2302.06590",
+    "region": "intl",
+    "title_ko": "The Impact of AI on Developer Productivity: Evidence from GitHub Copilot"
    }
   ]
  },
@@ -9007,7 +9453,9 @@
     "authors": "Long and Magerko",
     "year": 2020,
     "venue": "CHI 2020",
-    "url": "https://doi.org/10.1145/3313831.3376727"
+    "url": "https://doi.org/10.1145/3313831.3376727",
+    "region": "intl",
+    "title_ko": "What is AI Literacy? Competencies and Design Considerations"
    }
   ]
  },
@@ -9268,14 +9716,18 @@
     "authors": "Brynjolfsson et al.",
     "year": 2023,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2304.11771"
+    "url": "https://arxiv.org/abs/2304.11771",
+    "region": "intl",
+    "title_ko": "Generative AI at Work"
    },
    {
     "title": "The Impact of AI on Developer Productivity: Evidence from GitHub Copilot",
     "authors": "Peng et al.",
     "year": 2023,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2302.06590"
+    "url": "https://arxiv.org/abs/2302.06590",
+    "region": "intl",
+    "title_ko": "The Impact of AI on Developer Productivity: Evidence from GitHub Copilot"
    }
   ]
  },
@@ -9345,7 +9797,9 @@
     "authors": "Sculley et al.",
     "year": 2015,
     "venue": "NeurIPS 2015",
-    "url": "https://neurips.cc/virtual/2015/poster/5680"
+    "url": "https://neurips.cc/virtual/2015/poster/5680",
+    "region": "intl",
+    "title_ko": "Hidden Technical Debt in Machine Learning Systems"
    }
   ]
  },
@@ -9820,14 +10274,18 @@
     "authors": "Vaswani et al.",
     "year": 2017,
     "venue": "NeurIPS 2017",
-    "url": "https://arxiv.org/abs/1706.03762"
+    "url": "https://arxiv.org/abs/1706.03762",
+    "region": "intl",
+    "title_ko": "Attention Is All You Need"
    },
    {
     "title": "Language Models are Few-Shot Learners",
     "authors": "Brown et al.",
     "year": 2020,
     "venue": "NeurIPS 2020",
-    "url": "https://arxiv.org/abs/2005.14165"
+    "url": "https://arxiv.org/abs/2005.14165",
+    "region": "intl",
+    "title_ko": "Language Models are Few-Shot Learners"
    }
   ]
  },
@@ -9879,7 +10337,9 @@
     "authors": "Bommasani et al.",
     "year": 2021,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2108.07258"
+    "url": "https://arxiv.org/abs/2108.07258",
+    "region": "intl",
+    "title_ko": "On the Opportunities and Risks of Foundation Models"
    }
   ]
  },
@@ -9925,7 +10385,9 @@
     "authors": "Sennrich et al.",
     "year": 2016,
     "venue": "ACL 2016",
-    "url": "https://aclanthology.org/P16-1162/"
+    "url": "https://aclanthology.org/P16-1162/",
+    "region": "intl",
+    "title_ko": "Neural Machine Translation of Rare Words with Subword Units"
    }
   ]
  },
@@ -9970,14 +10432,18 @@
     "authors": "Sennrich et al.",
     "year": 2016,
     "venue": "ACL 2016",
-    "url": "https://aclanthology.org/P16-1162/"
+    "url": "https://aclanthology.org/P16-1162/",
+    "region": "intl",
+    "title_ko": "Neural Machine Translation of Rare Words with Subword Units"
    },
    {
     "title": "SentencePiece: A simple and language independent subword tokenizer and detokenizer for Neural Text Processing",
     "authors": "Kudo and Richardson",
     "year": 2018,
     "venue": "EMNLP 2018 (System Demonstrations)",
-    "url": "https://aclanthology.org/D18-2012/"
+    "url": "https://aclanthology.org/D18-2012/",
+    "region": "intl",
+    "title_ko": "SentencePiece: A simple and language independent subword tokenizer and detokenizer for Neural Text Processing"
    }
   ]
  },
@@ -10061,7 +10527,9 @@
     "authors": "Brown et al.",
     "year": 2020,
     "venue": "NeurIPS 2020",
-    "url": "https://arxiv.org/abs/2005.14165"
+    "url": "https://arxiv.org/abs/2005.14165",
+    "region": "intl",
+    "title_ko": "Language Models are Few-Shot Learners"
    }
   ]
  },
@@ -10150,7 +10618,9 @@
     "authors": "Holtzman et al.",
     "year": 2020,
     "venue": "ICLR 2020",
-    "url": "https://arxiv.org/abs/1904.09751"
+    "url": "https://arxiv.org/abs/1904.09751",
+    "region": "intl",
+    "title_ko": "The Curious Case of Neural Text Degeneration"
    }
   ]
  },
@@ -10228,7 +10698,9 @@
     "authors": "Gunasekar et al.",
     "year": 2023,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2306.11644"
+    "url": "https://arxiv.org/abs/2306.11644",
+    "region": "intl",
+    "title_ko": "Textbooks Are All You Need"
    }
   ]
  },
@@ -10280,21 +10752,27 @@
     "authors": "Shazeer et al.",
     "year": 2017,
     "venue": "ICLR 2017",
-    "url": "https://arxiv.org/abs/1701.06538"
+    "url": "https://arxiv.org/abs/1701.06538",
+    "region": "intl",
+    "title_ko": "Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer"
    },
    {
     "title": "Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity",
     "authors": "Fedus et al.",
     "year": 2022,
     "venue": "JMLR",
-    "url": "https://arxiv.org/abs/2101.03961"
+    "url": "https://arxiv.org/abs/2101.03961",
+    "region": "intl",
+    "title_ko": "Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity"
    },
    {
     "title": "Mixtral of Experts",
     "authors": "Jiang et al.",
     "year": 2024,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2401.04088"
+    "url": "https://arxiv.org/abs/2401.04088",
+    "region": "intl",
+    "title_ko": "Mixtral of Experts"
    }
   ]
  },
@@ -10334,14 +10812,18 @@
     "authors": "Kwon et al.",
     "year": 2023,
     "venue": "SOSP 2023",
-    "url": "https://arxiv.org/abs/2309.06180"
+    "url": "https://arxiv.org/abs/2309.06180",
+    "region": "intl",
+    "title_ko": "Efficient Memory Management for Large Language Model Serving with PagedAttention"
    },
    {
     "title": "Fast Transformer Decoding: One Write-Head is All You Need",
     "authors": "Shazeer",
     "year": 2019,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/1911.02150"
+    "url": "https://arxiv.org/abs/1911.02150",
+    "region": "intl",
+    "title_ko": "Fast Transformer Decoding: One Write-Head is All You Need"
    }
   ]
  },
@@ -10381,14 +10863,18 @@
     "authors": "Kaplan et al.",
     "year": 2020,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2001.08361"
+    "url": "https://arxiv.org/abs/2001.08361",
+    "region": "intl",
+    "title_ko": "Scaling Laws for Neural Language Models"
    },
    {
     "title": "Training Compute-Optimal Large Language Models",
     "authors": "Hoffmann et al.",
     "year": 2022,
     "venue": "NeurIPS 2022",
-    "url": "https://arxiv.org/abs/2203.15556"
+    "url": "https://arxiv.org/abs/2203.15556",
+    "region": "intl",
+    "title_ko": "Training Compute-Optimal Large Language Models"
    }
   ]
  },
@@ -10420,14 +10906,18 @@
     "authors": "Conneau et al.",
     "year": 2020,
     "venue": "ACL 2020",
-    "url": "https://arxiv.org/abs/1911.02116"
+    "url": "https://arxiv.org/abs/1911.02116",
+    "region": "intl",
+    "title_ko": "Unsupervised Cross-lingual Representation Learning at Scale"
    },
    {
     "title": "How Good is Your Tokenizer? On the Monolingual Performance of Multilingual Language Models",
     "authors": "Rust et al.",
     "year": 2021,
     "venue": "ACL 2021",
-    "url": "https://arxiv.org/abs/2012.15613"
+    "url": "https://arxiv.org/abs/2012.15613",
+    "region": "intl",
+    "title_ko": "How Good is Your Tokenizer? On the Monolingual Performance of Multilingual Language Models"
    }
   ]
  },
@@ -10473,14 +10963,18 @@
     "authors": "Vaswani et al.",
     "year": 2017,
     "venue": "NeurIPS 2017",
-    "url": "https://arxiv.org/abs/1706.03762"
+    "url": "https://arxiv.org/abs/1706.03762",
+    "region": "intl",
+    "title_ko": "Attention Is All You Need"
    },
    {
     "title": "Language Models are Few-Shot Learners",
     "authors": "Brown et al.",
     "year": 2020,
     "venue": "NeurIPS 2020",
-    "url": "https://arxiv.org/abs/2005.14165"
+    "url": "https://arxiv.org/abs/2005.14165",
+    "region": "intl",
+    "title_ko": "Language Models are Few-Shot Learners"
    }
   ]
  },
@@ -10526,7 +11020,9 @@
     "authors": "Devlin et al.",
     "year": 2019,
     "venue": "NAACL 2019",
-    "url": "https://arxiv.org/abs/1810.04805"
+    "url": "https://arxiv.org/abs/1810.04805",
+    "region": "intl",
+    "title_ko": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"
    }
   ]
  },
@@ -10571,7 +11067,9 @@
     "authors": "Brown et al.",
     "year": 2020,
     "venue": "NeurIPS 2020",
-    "url": "https://arxiv.org/abs/2005.14165"
+    "url": "https://arxiv.org/abs/2005.14165",
+    "region": "intl",
+    "title_ko": "Language Models are Few-Shot Learners"
    }
   ]
  },
@@ -10603,14 +11101,18 @@
     "authors": "Wei et al.",
     "year": 2022,
     "venue": "TMLR",
-    "url": "https://arxiv.org/abs/2206.07682"
+    "url": "https://arxiv.org/abs/2206.07682",
+    "region": "intl",
+    "title_ko": "Emergent Abilities of Large Language Models"
    },
    {
     "title": "Are Emergent Abilities of Large Language Models a Mirage?",
     "authors": "Schaeffer et al.",
     "year": 2023,
     "venue": "NeurIPS 2023",
-    "url": "https://arxiv.org/abs/2304.15004"
+    "url": "https://arxiv.org/abs/2304.15004",
+    "region": "intl",
+    "title_ko": "Are Emergent Abilities of Large Language Models a Mirage?"
    }
   ]
  },
@@ -10693,14 +11195,18 @@
     "authors": "Holtzman et al.",
     "year": 2020,
     "venue": "ICLR 2020",
-    "url": "https://arxiv.org/abs/1904.09751"
+    "url": "https://arxiv.org/abs/1904.09751",
+    "region": "intl",
+    "title_ko": "The Curious Case of Neural Text Degeneration"
    },
    {
     "title": "Hierarchical Neural Story Generation",
     "authors": "Fan et al.",
     "year": 2018,
     "venue": "ACL 2018",
-    "url": "https://arxiv.org/abs/1805.04833"
+    "url": "https://arxiv.org/abs/1805.04833",
+    "region": "intl",
+    "title_ko": "Hierarchical Neural Story Generation"
    }
   ]
  },
@@ -10744,7 +11250,9 @@
     "authors": "Fan et al.",
     "year": 2018,
     "venue": "ACL 2018",
-    "url": "https://arxiv.org/abs/1805.04833"
+    "url": "https://arxiv.org/abs/1805.04833",
+    "region": "intl",
+    "title_ko": "Hierarchical Neural Story Generation"
    }
   ]
  },
@@ -10825,7 +11333,9 @@
     "authors": "Holtzman et al.",
     "year": 2020,
     "venue": "ICLR 2020",
-    "url": "https://arxiv.org/abs/1904.09751"
+    "url": "https://arxiv.org/abs/1904.09751",
+    "region": "intl",
+    "title_ko": "The Curious Case of Neural Text Degeneration"
    }
   ]
  },
@@ -10869,7 +11379,9 @@
     "authors": "Keskar et al.",
     "year": 2019,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/1909.05858"
+    "url": "https://arxiv.org/abs/1909.05858",
+    "region": "intl",
+    "title_ko": "CTRL: A Conditional Transformer Language Model for Controllable Generation"
    }
   ]
  },
@@ -10988,14 +11500,18 @@
     "authors": "Peng et al.",
     "year": 2023,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2309.00071"
+    "url": "https://arxiv.org/abs/2309.00071",
+    "region": "intl",
+    "title_ko": "YaRN: Efficient Context Window Extension of Large Language Models"
    },
    {
     "title": "RULER: What's the Real Context Size of Your Long-Context Language Models?",
     "authors": "Hsieh et al.",
     "year": 2024,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2404.06654"
+    "url": "https://arxiv.org/abs/2404.06654",
+    "region": "intl",
+    "title_ko": "RULER: What's the Real Context Size of Your Long-Context Language Models?"
    }
   ]
  },
@@ -11027,7 +11543,9 @@
     "authors": "Liu et al.",
     "year": 2023,
     "venue": "TACL",
-    "url": "https://arxiv.org/abs/2307.03172"
+    "url": "https://arxiv.org/abs/2307.03172",
+    "region": "intl",
+    "title_ko": "Lost in the Middle: How Language Models Use Long Contexts"
    }
   ]
  },
@@ -11067,7 +11585,9 @@
     "authors": "Anderljung et al.",
     "year": 2023,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2307.03718"
+    "url": "https://arxiv.org/abs/2307.03718",
+    "region": "intl",
+    "title_ko": "Frontier AI Regulation: Managing Emerging Risks to Public Safety"
    }
   ]
  },
@@ -11138,14 +11658,18 @@
     "authors": "Petrov et al.",
     "year": 2023,
     "venue": "NeurIPS 2023",
-    "url": "https://arxiv.org/abs/2305.15425"
+    "url": "https://arxiv.org/abs/2305.15425",
+    "region": "intl",
+    "title_ko": "Language Model Tokenizers Introduce Unfairness Between Languages"
    },
    {
     "title": "How Good is Your Tokenizer? On the Monolingual Performance of Multilingual Language Models",
     "authors": "Rust et al.",
     "year": 2021,
     "venue": "ACL 2021",
-    "url": "https://arxiv.org/abs/2012.15613"
+    "url": "https://arxiv.org/abs/2012.15613",
+    "region": "intl",
+    "title_ko": "How Good is Your Tokenizer? On the Monolingual Performance of Multilingual Language Models"
    }
   ]
  },
@@ -11189,7 +11713,9 @@
     "authors": "Sennrich et al.",
     "year": 2016,
     "venue": "ACL 2016",
-    "url": "https://aclanthology.org/P16-1162/"
+    "url": "https://aclanthology.org/P16-1162/",
+    "region": "intl",
+    "title_ko": "Neural Machine Translation of Rare Words with Subword Units"
    }
   ]
  },
@@ -11221,14 +11747,18 @@
     "authors": "Su et al.",
     "year": 2021,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2104.09864"
+    "url": "https://arxiv.org/abs/2104.09864",
+    "region": "intl",
+    "title_ko": "RoFormer: Enhanced Transformer with Rotary Position Embedding"
    },
    {
     "title": "YaRN: Efficient Context Window Extension of Large Language Models",
     "authors": "Peng et al.",
     "year": 2023,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2309.00071"
+    "url": "https://arxiv.org/abs/2309.00071",
+    "region": "intl",
+    "title_ko": "YaRN: Efficient Context Window Extension of Large Language Models"
    }
   ]
  },
@@ -11259,14 +11789,18 @@
     "authors": "Ainslie et al.",
     "year": 2023,
     "venue": "EMNLP 2023",
-    "url": "https://arxiv.org/abs/2305.13245"
+    "url": "https://arxiv.org/abs/2305.13245",
+    "region": "intl",
+    "title_ko": "GQA: Training Generalized Multi-Query Transformer Models from Multi-Head Checkpoints"
    },
    {
     "title": "Fast Transformer Decoding: One Write-Head is All You Need",
     "authors": "Shazeer",
     "year": 2019,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/1911.02150"
+    "url": "https://arxiv.org/abs/1911.02150",
+    "region": "intl",
+    "title_ko": "Fast Transformer Decoding: One Write-Head is All You Need"
    }
   ]
  },
@@ -11305,7 +11839,9 @@
     "authors": "Cheng et al.",
     "year": 2024,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2403.12958"
+    "url": "https://arxiv.org/abs/2403.12958",
+    "region": "intl",
+    "title_ko": "Dated Data: Tracing Knowledge Cutoffs in Large Language Models"
    }
   ]
  },
@@ -11344,7 +11880,9 @@
     "authors": "Laban et al.",
     "year": 2025,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2505.06120"
+    "url": "https://arxiv.org/abs/2505.06120",
+    "region": "intl",
+    "title_ko": "LLMs Get Lost In Multi-Turn Conversation"
    }
   ]
  },
@@ -11458,21 +11996,27 @@
     "authors": "Leviathan et al.",
     "year": 2023,
     "venue": "ICML 2023",
-    "url": "https://arxiv.org/abs/2211.17192"
+    "url": "https://arxiv.org/abs/2211.17192",
+    "region": "intl",
+    "title_ko": "Fast Inference from Transformers via Speculative Decoding"
    },
    {
     "title": "Accelerating Large Language Model Decoding with Speculative Sampling",
     "authors": "Chen et al.",
     "year": 2023,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2302.01318"
+    "url": "https://arxiv.org/abs/2302.01318",
+    "region": "intl",
+    "title_ko": "Accelerating Large Language Model Decoding with Speculative Sampling"
    },
    {
     "title": "EAGLE: Speculative Sampling Requires Rethinking Feature Uncertainty",
     "authors": "Li et al.",
     "year": 2024,
     "venue": "ICML 2024",
-    "url": "https://arxiv.org/abs/2401.15077"
+    "url": "https://arxiv.org/abs/2401.15077",
+    "region": "intl",
+    "title_ko": "EAGLE: Speculative Sampling Requires Rethinking Feature Uncertainty"
    }
   ]
  },
@@ -11511,14 +12055,18 @@
     "authors": "Gu et al.",
     "year": 2022,
     "venue": "ICLR 2022",
-    "url": "https://arxiv.org/abs/2111.00396"
+    "url": "https://arxiv.org/abs/2111.00396",
+    "region": "intl",
+    "title_ko": "Efficiently Modeling Long Sequences with Structured State Spaces"
    },
    {
     "title": "Mamba: Linear-Time Sequence Modeling with Selective State Spaces",
     "authors": "Gu and Dao",
     "year": 2023,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2312.00752"
+    "url": "https://arxiv.org/abs/2312.00752",
+    "region": "intl",
+    "title_ko": "Mamba: Linear-Time Sequence Modeling with Selective State Spaces"
    }
   ]
  },
@@ -11551,14 +12099,18 @@
     "authors": "Lieber et al.",
     "year": 2024,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2403.19887"
+    "url": "https://arxiv.org/abs/2403.19887",
+    "region": "intl",
+    "title_ko": "Jamba: A Hybrid Transformer-Mamba Language Model"
    },
    {
     "title": "An Empirical Study of Mamba-based Language Models",
     "authors": "Waleffe et al.",
     "year": 2024,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2406.07887"
+    "url": "https://arxiv.org/abs/2406.07887",
+    "region": "intl",
+    "title_ko": "An Empirical Study of Mamba-based Language Models"
    }
   ]
  },
@@ -11597,7 +12149,9 @@
     "authors": "Ha and Schmidhuber",
     "year": 2018,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/1803.10122"
+    "url": "https://arxiv.org/abs/1803.10122",
+    "region": "intl",
+    "title_ko": "World Models"
    }
   ]
  },
@@ -11649,14 +12203,18 @@
     "authors": "Devlin et al.",
     "year": 2018,
     "venue": "NAACL 2019",
-    "url": "https://arxiv.org/abs/1810.04805"
+    "url": "https://arxiv.org/abs/1810.04805",
+    "region": "intl",
+    "title_ko": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"
    },
    {
     "title": "Language Models are Few-Shot Learners",
     "authors": "Brown et al.",
     "year": 2020,
     "venue": "NeurIPS 2020",
-    "url": "https://arxiv.org/abs/2005.14165"
+    "url": "https://arxiv.org/abs/2005.14165",
+    "region": "intl",
+    "title_ko": "Language Models are Few-Shot Learners"
    }
   ]
  },
@@ -11708,14 +12266,18 @@
     "authors": "Devlin et al.",
     "year": 2018,
     "venue": "NAACL 2019",
-    "url": "https://arxiv.org/abs/1810.04805"
+    "url": "https://arxiv.org/abs/1810.04805",
+    "region": "intl",
+    "title_ko": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"
    },
    {
     "title": "Parameter-Efficient Transfer Learning for NLP",
     "authors": "Houlsby et al.",
     "year": 2019,
     "venue": "ICML 2019",
-    "url": "https://arxiv.org/abs/1902.00751"
+    "url": "https://arxiv.org/abs/1902.00751",
+    "region": "intl",
+    "title_ko": "Parameter-Efficient Transfer Learning for NLP"
    }
   ]
  },
@@ -11761,7 +12323,9 @@
     "authors": "Ouyang et al.",
     "year": 2022,
     "venue": "NeurIPS 2022",
-    "url": "https://arxiv.org/abs/2203.02155"
+    "url": "https://arxiv.org/abs/2203.02155",
+    "region": "intl",
+    "title_ko": "Training language models to follow instructions with human feedback"
    }
   ]
  },
@@ -11813,21 +12377,27 @@
     "authors": "Christiano et al.",
     "year": 2017,
     "venue": "NeurIPS 2017",
-    "url": "https://arxiv.org/abs/1706.03741"
+    "url": "https://arxiv.org/abs/1706.03741",
+    "region": "intl",
+    "title_ko": "Deep reinforcement learning from human preferences"
    },
    {
     "title": "Fine-Tuning Language Models from Human Preferences",
     "authors": "Ziegler et al.",
     "year": 2019,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/1909.08593"
+    "url": "https://arxiv.org/abs/1909.08593",
+    "region": "intl",
+    "title_ko": "Fine-Tuning Language Models from Human Preferences"
    },
    {
     "title": "Training language models to follow instructions with human feedback",
     "authors": "Ouyang et al.",
     "year": 2022,
     "venue": "NeurIPS 2022",
-    "url": "https://arxiv.org/abs/2203.02155"
+    "url": "https://arxiv.org/abs/2203.02155",
+    "region": "intl",
+    "title_ko": "Training language models to follow instructions with human feedback"
    }
   ]
  },
@@ -11867,7 +12437,9 @@
     "authors": "Rafailov et al.",
     "year": 2023,
     "venue": "NeurIPS 2023",
-    "url": "https://arxiv.org/abs/2305.18290"
+    "url": "https://arxiv.org/abs/2305.18290",
+    "region": "intl",
+    "title_ko": "Direct Preference Optimization: Your Language Model is Secretly a Reward Model"
    }
   ]
  },
@@ -11913,7 +12485,9 @@
     "authors": "Hu et al.",
     "year": 2021,
     "venue": "ICLR 2022",
-    "url": "https://arxiv.org/abs/2106.09685"
+    "url": "https://arxiv.org/abs/2106.09685",
+    "region": "intl",
+    "title_ko": "LoRA: Low-Rank Adaptation of Large Language Models"
    }
   ]
  },
@@ -11959,21 +12533,27 @@
     "authors": "Houlsby et al.",
     "year": 2019,
     "venue": "ICML 2019",
-    "url": "https://arxiv.org/abs/1902.00751"
+    "url": "https://arxiv.org/abs/1902.00751",
+    "region": "intl",
+    "title_ko": "Parameter-Efficient Transfer Learning for NLP"
    },
    {
     "title": "Prefix-Tuning: Optimizing Continuous Prompts for Generation",
     "authors": "Li and Liang",
     "year": 2021,
     "venue": "ACL 2021",
-    "url": "https://arxiv.org/abs/2101.00190"
+    "url": "https://arxiv.org/abs/2101.00190",
+    "region": "intl",
+    "title_ko": "Prefix-Tuning: Optimizing Continuous Prompts for Generation"
    },
    {
     "title": "The Power of Scale for Parameter-Efficient Prompt Tuning",
     "authors": "Lester et al.",
     "year": 2021,
     "venue": "EMNLP 2021",
-    "url": "https://arxiv.org/abs/2104.08691"
+    "url": "https://arxiv.org/abs/2104.08691",
+    "region": "intl",
+    "title_ko": "The Power of Scale for Parameter-Efficient Prompt Tuning"
    }
   ]
  },
@@ -12024,7 +12604,9 @@
     "authors": "Hinton et al.",
     "year": 2015,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/1503.02531"
+    "url": "https://arxiv.org/abs/1503.02531",
+    "region": "intl",
+    "title_ko": "Distilling the Knowledge in a Neural Network"
    }
   ]
  },
@@ -12069,14 +12651,18 @@
     "authors": "Wei et al.",
     "year": 2021,
     "venue": "ICLR 2022",
-    "url": "https://arxiv.org/abs/2109.01652"
+    "url": "https://arxiv.org/abs/2109.01652",
+    "region": "intl",
+    "title_ko": "Finetuned Language Models Are Zero-Shot Learners"
    },
    {
     "title": "Training language models to follow instructions with human feedback",
     "authors": "Ouyang et al.",
     "year": 2022,
     "venue": "NeurIPS 2022",
-    "url": "https://arxiv.org/abs/2203.02155"
+    "url": "https://arxiv.org/abs/2203.02155",
+    "region": "intl",
+    "title_ko": "Training language models to follow instructions with human feedback"
    }
   ]
  },
@@ -12127,14 +12713,18 @@
     "authors": "Wang et al.",
     "year": 2022,
     "venue": "ACL 2023",
-    "url": "https://arxiv.org/abs/2212.10560"
+    "url": "https://arxiv.org/abs/2212.10560",
+    "region": "intl",
+    "title_ko": "Self-Instruct: Aligning Language Models with Self-Generated Instructions"
    },
    {
     "title": "The Curse of Recursion: Training on Generated Data Makes Models Forget",
     "authors": "Shumailov et al.",
     "year": 2023,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2305.17493"
+    "url": "https://arxiv.org/abs/2305.17493",
+    "region": "intl",
+    "title_ko": "The Curse of Recursion: Training on Generated Data Makes Models Forget"
    }
   ]
  },
@@ -12180,21 +12770,27 @@
     "authors": "Amodei et al.",
     "year": 2016,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/1606.06565"
+    "url": "https://arxiv.org/abs/1606.06565",
+    "region": "intl",
+    "title_ko": "Concrete Problems in AI Safety"
    },
    {
     "title": "Training language models to follow instructions with human feedback",
     "authors": "Ouyang et al.",
     "year": 2022,
     "venue": "NeurIPS 2022",
-    "url": "https://arxiv.org/abs/2203.02155"
+    "url": "https://arxiv.org/abs/2203.02155",
+    "region": "intl",
+    "title_ko": "Training language models to follow instructions with human feedback"
    },
    {
     "title": "Training a Helpful and Harmless Assistant with Reinforcement Learning from Human Feedback",
     "authors": "Bai et al.",
     "year": 2022,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2204.05862"
+    "url": "https://arxiv.org/abs/2204.05862",
+    "region": "intl",
+    "title_ko": "Training a Helpful and Harmless Assistant with Reinforcement Learning from Human Feedback"
    }
   ]
  },
@@ -12239,7 +12835,9 @@
     "authors": "Bai et al.",
     "year": 2022,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2212.08073"
+    "url": "https://arxiv.org/abs/2212.08073",
+    "region": "intl",
+    "title_ko": "Constitutional AI: Harmlessness from AI Feedback"
    }
   ]
  },
@@ -12284,7 +12882,9 @@
     "authors": "Kirkpatrick et al.",
     "year": 2016,
     "venue": "PNAS 2017",
-    "url": "https://arxiv.org/abs/1612.00796"
+    "url": "https://arxiv.org/abs/1612.00796",
+    "region": "intl",
+    "title_ko": "Overcoming catastrophic forgetting in neural networks"
    }
   ]
  },
@@ -12330,21 +12930,27 @@
     "authors": "Ouyang et al.",
     "year": 2022,
     "venue": "NeurIPS 2022",
-    "url": "https://arxiv.org/abs/2203.02155"
+    "url": "https://arxiv.org/abs/2203.02155",
+    "region": "intl",
+    "title_ko": "Training language models to follow instructions with human feedback"
    },
    {
     "title": "Tulu 3: Pushing Frontiers in Open Language Model Post-Training",
     "authors": "Lambert et al.",
     "year": 2024,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2411.15124"
+    "url": "https://arxiv.org/abs/2411.15124",
+    "region": "intl",
+    "title_ko": "Tulu 3: Pushing Frontiers in Open Language Model Post-Training"
    },
    {
     "title": "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning",
     "authors": "DeepSeek-AI",
     "year": 2025,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2501.12948"
+    "url": "https://arxiv.org/abs/2501.12948",
+    "region": "intl",
+    "title_ko": "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning"
    }
   ]
  },
@@ -12390,14 +12996,18 @@
     "authors": "Penedo et al.",
     "year": 2024,
     "venue": "NeurIPS 2024 Datasets and Benchmarks",
-    "url": "https://arxiv.org/abs/2406.17557"
+    "url": "https://arxiv.org/abs/2406.17557",
+    "region": "intl",
+    "title_ko": "The FineWeb Datasets: Decanting the Web for the Finest Text Data at Scale"
    },
    {
     "title": "Deduplicating Training Data Makes Language Models Better",
     "authors": "Lee et al.",
     "year": 2021,
     "venue": "ACL 2022",
-    "url": "https://arxiv.org/abs/2107.06499"
+    "url": "https://arxiv.org/abs/2107.06499",
+    "region": "intl",
+    "title_ko": "Deduplicating Training Data Makes Language Models Better"
    }
   ]
  },
@@ -12480,21 +13090,27 @@
     "authors": "Ouyang et al.",
     "year": 2022,
     "venue": "NeurIPS 2022",
-    "url": "https://arxiv.org/abs/2203.02155"
+    "url": "https://arxiv.org/abs/2203.02155",
+    "region": "intl",
+    "title_ko": "Training language models to follow instructions with human feedback"
    },
    {
     "title": "Let's Verify Step by Step",
     "authors": "Lightman et al.",
     "year": 2023,
     "venue": "ICLR 2024",
-    "url": "https://arxiv.org/abs/2305.20050"
+    "url": "https://arxiv.org/abs/2305.20050",
+    "region": "intl",
+    "title_ko": "Let's Verify Step by Step"
    },
    {
     "title": "Scaling Laws for Reward Model Overoptimization",
     "authors": "Gao et al.",
     "year": 2022,
     "venue": "ICML 2023",
-    "url": "https://arxiv.org/abs/2210.10760"
+    "url": "https://arxiv.org/abs/2210.10760",
+    "region": "intl",
+    "title_ko": "Scaling Laws for Reward Model Overoptimization"
    }
   ]
  },
@@ -12533,14 +13149,18 @@
     "authors": "Christiano et al.",
     "year": 2017,
     "venue": "NeurIPS 2017",
-    "url": "https://arxiv.org/abs/1706.03741"
+    "url": "https://arxiv.org/abs/1706.03741",
+    "region": "intl",
+    "title_ko": "Deep reinforcement learning from human preferences"
    },
    {
     "title": "Training a Helpful and Harmless Assistant with Reinforcement Learning from Human Feedback",
     "authors": "Bai et al.",
     "year": 2022,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2204.05862"
+    "url": "https://arxiv.org/abs/2204.05862",
+    "region": "intl",
+    "title_ko": "Training a Helpful and Harmless Assistant with Reinforcement Learning from Human Feedback"
    }
   ]
  },
@@ -12579,14 +13199,18 @@
     "authors": "Lee et al.",
     "year": 2023,
     "venue": "ICML 2024",
-    "url": "https://arxiv.org/abs/2309.00267"
+    "url": "https://arxiv.org/abs/2309.00267",
+    "region": "intl",
+    "title_ko": "RLAIF vs. RLHF: Scaling Reinforcement Learning from Human Feedback with AI Feedback"
    },
    {
     "title": "Constitutional AI: Harmlessness from AI Feedback",
     "authors": "Bai et al.",
     "year": 2022,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2212.08073"
+    "url": "https://arxiv.org/abs/2212.08073",
+    "region": "intl",
+    "title_ko": "Constitutional AI: Harmlessness from AI Feedback"
    }
   ]
  },
@@ -12632,14 +13256,18 @@
     "authors": "Schulman et al.",
     "year": 2017,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/1707.06347"
+    "url": "https://arxiv.org/abs/1707.06347",
+    "region": "intl",
+    "title_ko": "Proximal Policy Optimization Algorithms"
    },
    {
     "title": "Fine-Tuning Language Models from Human Preferences",
     "authors": "Ziegler et al.",
     "year": 2019,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/1909.08593"
+    "url": "https://arxiv.org/abs/1909.08593",
+    "region": "intl",
+    "title_ko": "Fine-Tuning Language Models from Human Preferences"
    }
   ]
  },
@@ -12678,14 +13306,18 @@
     "authors": "Shao et al.",
     "year": 2024,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2402.03300"
+    "url": "https://arxiv.org/abs/2402.03300",
+    "region": "intl",
+    "title_ko": "DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models"
    },
    {
     "title": "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning",
     "authors": "DeepSeek-AI",
     "year": 2025,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2501.12948"
+    "url": "https://arxiv.org/abs/2501.12948",
+    "region": "intl",
+    "title_ko": "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning"
    }
   ]
  },
@@ -12718,14 +13350,18 @@
     "authors": "Lambert et al.",
     "year": 2024,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2411.15124"
+    "url": "https://arxiv.org/abs/2411.15124",
+    "region": "intl",
+    "title_ko": "Tulu 3: Pushing Frontiers in Open Language Model Post-Training"
    },
    {
     "title": "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning",
     "authors": "DeepSeek-AI",
     "year": 2025,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2501.12948"
+    "url": "https://arxiv.org/abs/2501.12948",
+    "region": "intl",
+    "title_ko": "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning"
    }
   ]
  },
@@ -12765,14 +13401,18 @@
     "authors": "Amodei et al.",
     "year": 2016,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/1606.06565"
+    "url": "https://arxiv.org/abs/1606.06565",
+    "region": "intl",
+    "title_ko": "Concrete Problems in AI Safety"
    },
    {
     "title": "Scaling Laws for Reward Model Overoptimization",
     "authors": "Gao et al.",
     "year": 2022,
     "venue": "ICML 2023",
-    "url": "https://arxiv.org/abs/2210.10760"
+    "url": "https://arxiv.org/abs/2210.10760",
+    "region": "intl",
+    "title_ko": "Scaling Laws for Reward Model Overoptimization"
    }
   ]
  },
@@ -12817,14 +13457,18 @@
     "authors": "Jaques et al.",
     "year": 2016,
     "venue": "ICML 2017",
-    "url": "https://arxiv.org/abs/1611.02796"
+    "url": "https://arxiv.org/abs/1611.02796",
+    "region": "intl",
+    "title_ko": "Sequence Tutor: Conservative Fine-Tuning of Sequence Generation Models with KL-control"
    },
    {
     "title": "Fine-Tuning Language Models from Human Preferences",
     "authors": "Ziegler et al.",
     "year": 2019,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/1909.08593"
+    "url": "https://arxiv.org/abs/1909.08593",
+    "region": "intl",
+    "title_ko": "Fine-Tuning Language Models from Human Preferences"
    }
   ]
  },
@@ -12869,7 +13513,9 @@
     "authors": "Dettmers et al.",
     "year": 2023,
     "venue": "NeurIPS 2023",
-    "url": "https://arxiv.org/abs/2305.14314"
+    "url": "https://arxiv.org/abs/2305.14314",
+    "region": "intl",
+    "title_ko": "QLoRA: Efficient Finetuning of Quantized LLMs"
    }
   ]
  },
@@ -12914,7 +13560,9 @@
     "authors": "Houlsby et al.",
     "year": 2019,
     "venue": "ICML 2019",
-    "url": "https://arxiv.org/abs/1902.00751"
+    "url": "https://arxiv.org/abs/1902.00751",
+    "region": "intl",
+    "title_ko": "Parameter-Efficient Transfer Learning for NLP"
    }
   ]
  },
@@ -12990,21 +13638,27 @@
     "authors": "Wortsman et al.",
     "year": 2022,
     "venue": "ICML 2022",
-    "url": "https://arxiv.org/abs/2203.05482"
+    "url": "https://arxiv.org/abs/2203.05482",
+    "region": "intl",
+    "title_ko": "Model soups: averaging weights of multiple fine-tuned models improves accuracy without increasing inference time"
    },
    {
     "title": "Editing Models with Task Arithmetic",
     "authors": "Ilharco et al.",
     "year": 2022,
     "venue": "ICLR 2023",
-    "url": "https://arxiv.org/abs/2212.04089"
+    "url": "https://arxiv.org/abs/2212.04089",
+    "region": "intl",
+    "title_ko": "Editing Models with Task Arithmetic"
    },
    {
     "title": "TIES-Merging: Resolving Interference When Merging Models",
     "authors": "Yadav et al.",
     "year": 2023,
     "venue": "NeurIPS 2023",
-    "url": "https://arxiv.org/abs/2306.01708"
+    "url": "https://arxiv.org/abs/2306.01708",
+    "region": "intl",
+    "title_ko": "TIES-Merging: Resolving Interference When Merging Models"
    }
   ]
  },
@@ -13049,14 +13703,18 @@
     "authors": "Parisi et al.",
     "year": 2018,
     "venue": "Neural Networks",
-    "url": "https://arxiv.org/abs/1802.07569"
+    "url": "https://arxiv.org/abs/1802.07569",
+    "region": "intl",
+    "title_ko": "Continual Lifelong Learning with Neural Networks: A Review"
    },
    {
     "title": "Overcoming catastrophic forgetting in neural networks",
     "authors": "Kirkpatrick et al.",
     "year": 2016,
     "venue": "PNAS 2017",
-    "url": "https://arxiv.org/abs/1612.00796"
+    "url": "https://arxiv.org/abs/1612.00796",
+    "region": "intl",
+    "title_ko": "Overcoming catastrophic forgetting in neural networks"
    }
   ]
  },
@@ -13088,7 +13746,9 @@
     "authors": "Gururangan et al.",
     "year": 2020,
     "venue": "ACL 2020",
-    "url": "https://arxiv.org/abs/2004.10964"
+    "url": "https://arxiv.org/abs/2004.10964",
+    "region": "intl",
+    "title_ko": "Don't Stop Pretraining: Adapt Language Models to Domains and Tasks"
    }
   ]
  },
@@ -13127,7 +13787,9 @@
     "authors": "Gururangan et al.",
     "year": 2020,
     "venue": "ACL 2020",
-    "url": "https://arxiv.org/abs/2004.10964"
+    "url": "https://arxiv.org/abs/2004.10964",
+    "region": "intl",
+    "title_ko": "Don't Stop Pretraining: Adapt Language Models to Domains and Tasks"
    }
   ]
  },
@@ -13233,7 +13895,9 @@
     "authors": "Golchin and Surdeanu",
     "year": 2023,
     "venue": "ICLR 2024",
-    "url": "https://arxiv.org/abs/2308.08493"
+    "url": "https://arxiv.org/abs/2308.08493",
+    "region": "intl",
+    "title_ko": "Time Travel in LLMs: Tracing Data Contamination in Large Language Models"
    }
   ]
  },
@@ -13278,7 +13942,9 @@
     "authors": "Micikevicius et al.",
     "year": 2017,
     "venue": "ICLR 2018",
-    "url": "https://arxiv.org/abs/1710.03740"
+    "url": "https://arxiv.org/abs/1710.03740",
+    "region": "intl",
+    "title_ko": "Mixed Precision Training"
    }
   ]
  },
@@ -13330,14 +13996,18 @@
     "authors": "Rajbhandari et al.",
     "year": 2019,
     "venue": "SC20",
-    "url": "https://arxiv.org/abs/1910.02054"
+    "url": "https://arxiv.org/abs/1910.02054",
+    "region": "intl",
+    "title_ko": "ZeRO: Memory Optimizations Toward Training Trillion Parameter Models"
    },
    {
     "title": "Efficient Large-Scale Language Model Training on GPU Clusters Using Megatron-LM",
     "authors": "Narayanan et al.",
     "year": 2021,
     "venue": "SC21",
-    "url": "https://arxiv.org/abs/2104.04473"
+    "url": "https://arxiv.org/abs/2104.04473",
+    "region": "intl",
+    "title_ko": "Efficient Large-Scale Language Model Training on GPU Clusters Using Megatron-LM"
    }
   ]
  },
@@ -13387,14 +14057,18 @@
     "authors": "Li et al.",
     "year": 2020,
     "venue": "VLDB 2020",
-    "url": "https://arxiv.org/abs/2006.15704"
+    "url": "https://arxiv.org/abs/2006.15704",
+    "region": "intl",
+    "title_ko": "PyTorch Distributed: Experiences on Accelerating Data Parallel Training"
    },
    {
     "title": "ZeRO: Memory Optimizations Toward Training Trillion Parameter Models",
     "authors": "Rajbhandari et al.",
     "year": 2019,
     "venue": "SC20",
-    "url": "https://arxiv.org/abs/1910.02054"
+    "url": "https://arxiv.org/abs/1910.02054",
+    "region": "intl",
+    "title_ko": "ZeRO: Memory Optimizations Toward Training Trillion Parameter Models"
    }
   ]
  },
@@ -13439,7 +14113,9 @@
     "authors": "Shoeybi et al.",
     "year": 2019,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/1909.08053"
+    "url": "https://arxiv.org/abs/1909.08053",
+    "region": "intl",
+    "title_ko": "Megatron-LM: Training Multi-Billion Parameter Language Models Using Model Parallelism"
    }
   ]
  },
@@ -13483,14 +14159,18 @@
     "authors": "Huang et al.",
     "year": 2018,
     "venue": "NeurIPS 2019",
-    "url": "https://arxiv.org/abs/1811.06965"
+    "url": "https://arxiv.org/abs/1811.06965",
+    "region": "intl",
+    "title_ko": "GPipe: Efficient Training of Giant Neural Networks using Pipeline Parallelism"
    },
    {
     "title": "PipeDream: Fast and Efficient Pipeline Parallel DNN Training",
     "authors": "Harlap et al.",
     "year": 2018,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/1806.03377"
+    "url": "https://arxiv.org/abs/1806.03377",
+    "region": "intl",
+    "title_ko": "PipeDream: Fast and Efficient Pipeline Parallel DNN Training"
    }
   ]
  },
@@ -13529,14 +14209,18 @@
     "authors": "Hoffmann et al.",
     "year": 2022,
     "venue": "NeurIPS 2022",
-    "url": "https://arxiv.org/abs/2203.15556"
+    "url": "https://arxiv.org/abs/2203.15556",
+    "region": "intl",
+    "title_ko": "Training Compute-Optimal Large Language Models"
    },
    {
     "title": "Scaling Laws for Neural Language Models",
     "authors": "Kaplan et al.",
     "year": 2020,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2001.08361"
+    "url": "https://arxiv.org/abs/2001.08361",
+    "region": "intl",
+    "title_ko": "Scaling Laws for Neural Language Models"
    }
   ]
  },
@@ -13587,7 +14271,9 @@
     "authors": "Schulhoff et al.",
     "year": 2024,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2406.06608"
+    "url": "https://arxiv.org/abs/2406.06608",
+    "region": "intl",
+    "title_ko": "The Prompt Report: A Systematic Survey of Prompt Engineering Techniques"
    }
   ]
  },
@@ -13639,7 +14325,9 @@
     "authors": "Schulhoff et al.",
     "year": 2024,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2406.06608"
+    "url": "https://arxiv.org/abs/2406.06608",
+    "region": "intl",
+    "title_ko": "The Prompt Report: A Systematic Survey of Prompt Engineering Techniques"
    }
   ]
  },
@@ -13757,14 +14445,18 @@
     "authors": "Brown et al.",
     "year": 2020,
     "venue": "NeurIPS 2020",
-    "url": "https://arxiv.org/abs/2005.14165"
+    "url": "https://arxiv.org/abs/2005.14165",
+    "region": "intl",
+    "title_ko": "Language Models are Few-Shot Learners"
    },
    {
     "title": "Large Language Models are Zero-Shot Reasoners",
     "authors": "Kojima et al.",
     "year": 2022,
     "venue": "NeurIPS 2022",
-    "url": "https://arxiv.org/abs/2205.11916"
+    "url": "https://arxiv.org/abs/2205.11916",
+    "region": "intl",
+    "title_ko": "Large Language Models are Zero-Shot Reasoners"
    }
   ]
  },
@@ -13808,7 +14500,9 @@
     "authors": "Brown et al.",
     "year": 2020,
     "venue": "NeurIPS 2020",
-    "url": "https://arxiv.org/abs/2005.14165"
+    "url": "https://arxiv.org/abs/2005.14165",
+    "region": "intl",
+    "title_ko": "Language Models are Few-Shot Learners"
    }
   ]
  },
@@ -13859,7 +14553,9 @@
     "authors": "Brown et al.",
     "year": 2020,
     "venue": "NeurIPS 2020",
-    "url": "https://arxiv.org/abs/2005.14165"
+    "url": "https://arxiv.org/abs/2005.14165",
+    "region": "intl",
+    "title_ko": "Language Models are Few-Shot Learners"
    }
   ]
  },
@@ -13899,14 +14595,18 @@
     "authors": "Brown et al.",
     "year": 2020,
     "venue": "NeurIPS 2020",
-    "url": "https://arxiv.org/abs/2005.14165"
+    "url": "https://arxiv.org/abs/2005.14165",
+    "region": "intl",
+    "title_ko": "Language Models are Few-Shot Learners"
    },
    {
     "title": "Many-Shot In-Context Learning",
     "authors": "Agarwal et al.",
     "year": 2024,
     "venue": "NeurIPS 2024",
-    "url": "https://arxiv.org/abs/2404.11018"
+    "url": "https://arxiv.org/abs/2404.11018",
+    "region": "intl",
+    "title_ko": "Many-Shot In-Context Learning"
    }
   ]
  },
@@ -13951,14 +14651,18 @@
     "authors": "Wei et al.",
     "year": 2022,
     "venue": "NeurIPS 2022",
-    "url": "https://arxiv.org/abs/2201.11903"
+    "url": "https://arxiv.org/abs/2201.11903",
+    "region": "intl",
+    "title_ko": "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models"
    },
    {
     "title": "Large Language Models are Zero-Shot Reasoners",
     "authors": "Kojima et al.",
     "year": 2022,
     "venue": "NeurIPS 2022",
-    "url": "https://arxiv.org/abs/2205.11916"
+    "url": "https://arxiv.org/abs/2205.11916",
+    "region": "intl",
+    "title_ko": "Large Language Models are Zero-Shot Reasoners"
    }
   ]
  },
@@ -13997,7 +14701,9 @@
     "authors": "Wang et al.",
     "year": 2022,
     "venue": "ICLR 2023",
-    "url": "https://arxiv.org/abs/2203.11171"
+    "url": "https://arxiv.org/abs/2203.11171",
+    "region": "intl",
+    "title_ko": "Self-Consistency Improves Chain of Thought Reasoning in Language Models"
    }
   ]
  },
@@ -14036,7 +14742,9 @@
     "authors": "Yao et al.",
     "year": 2023,
     "venue": "NeurIPS 2023",
-    "url": "https://arxiv.org/abs/2305.10601"
+    "url": "https://arxiv.org/abs/2305.10601",
+    "region": "intl",
+    "title_ko": "Tree of Thoughts: Deliberate Problem Solving with Large Language Models"
    }
   ]
  },
@@ -14088,7 +14796,9 @@
     "authors": "DeepSeek-AI",
     "year": 2025,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2501.12948"
+    "url": "https://arxiv.org/abs/2501.12948",
+    "region": "intl",
+    "title_ko": "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning"
    }
   ]
  },
@@ -14128,14 +14838,18 @@
     "authors": "Snell et al.",
     "year": 2024,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2408.03314"
+    "url": "https://arxiv.org/abs/2408.03314",
+    "region": "intl",
+    "title_ko": "Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters"
    },
    {
     "title": "Self-Consistency Improves Chain of Thought Reasoning in Language Models",
     "authors": "Wang et al.",
     "year": 2022,
     "venue": "ICLR 2023",
-    "url": "https://arxiv.org/abs/2203.11171"
+    "url": "https://arxiv.org/abs/2203.11171",
+    "region": "intl",
+    "title_ko": "Self-Consistency Improves Chain of Thought Reasoning in Language Models"
    }
   ]
  },
@@ -14223,7 +14937,9 @@
     "authors": "Snell et al.",
     "year": 2024,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2408.03314"
+    "url": "https://arxiv.org/abs/2408.03314",
+    "region": "intl",
+    "title_ko": "Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters"
    }
   ]
  },
@@ -14335,7 +15051,9 @@
     "authors": "Wu et al.",
     "year": 2022,
     "venue": "CHI 2022",
-    "url": "https://arxiv.org/abs/2110.01691"
+    "url": "https://arxiv.org/abs/2110.01691",
+    "region": "intl",
+    "title_ko": "AI Chains: Transparent and Controllable Human-AI Interaction by Chaining Large Language Model Prompts"
    }
   ]
  },
@@ -14379,14 +15097,18 @@
     "authors": "Suzgun and Kalai",
     "year": 2024,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2401.12954"
+    "url": "https://arxiv.org/abs/2401.12954",
+    "region": "intl",
+    "title_ko": "Meta-Prompting: Enhancing Language Models with Task-Agnostic Scaffolding"
    },
    {
     "title": "Large Language Models Are Human-Level Prompt Engineers",
     "authors": "Zhou et al.",
     "year": 2022,
     "venue": "ICLR 2023",
-    "url": "https://arxiv.org/abs/2211.01910"
+    "url": "https://arxiv.org/abs/2211.01910",
+    "region": "intl",
+    "title_ko": "Large Language Models Are Human-Level Prompt Engineers"
    }
   ]
  },
@@ -14431,21 +15153,27 @@
     "authors": "Khattab et al.",
     "year": 2023,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2310.03714"
+    "url": "https://arxiv.org/abs/2310.03714",
+    "region": "intl",
+    "title_ko": "DSPy: Compiling Declarative Language Model Calls into Self-Improving Pipelines"
    },
    {
     "title": "Large Language Models Are Human-Level Prompt Engineers",
     "authors": "Zhou et al.",
     "year": 2022,
     "venue": "ICLR 2023",
-    "url": "https://arxiv.org/abs/2211.01910"
+    "url": "https://arxiv.org/abs/2211.01910",
+    "region": "intl",
+    "title_ko": "Large Language Models Are Human-Level Prompt Engineers"
    },
    {
     "title": "Large Language Models as Optimizers",
     "authors": "Yang et al.",
     "year": 2023,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2309.03409"
+    "url": "https://arxiv.org/abs/2309.03409",
+    "region": "intl",
+    "title_ko": "Large Language Models as Optimizers"
    }
   ]
  },
@@ -14688,7 +15416,9 @@
     "authors": "Zheng et al.",
     "year": 2023,
     "venue": "ICLR 2024",
-    "url": "https://arxiv.org/abs/2310.06117"
+    "url": "https://arxiv.org/abs/2310.06117",
+    "region": "intl",
+    "title_ko": "Take a Step Back: Evoking Reasoning via Abstraction in Large Language Models"
    }
   ]
  },
@@ -14840,14 +15570,18 @@
     "authors": "Lewis et al.",
     "year": 2020,
     "venue": "NeurIPS 2020",
-    "url": "https://arxiv.org/abs/2005.11401"
+    "url": "https://arxiv.org/abs/2005.11401",
+    "region": "intl",
+    "title_ko": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks"
    },
    {
     "title": "Dense Passage Retrieval for Open-Domain Question Answering",
     "authors": "Karpukhin et al.",
     "year": 2020,
     "venue": "EMNLP 2020",
-    "url": "https://arxiv.org/abs/2004.04906"
+    "url": "https://arxiv.org/abs/2004.04906",
+    "region": "intl",
+    "title_ko": "Dense Passage Retrieval for Open-Domain Question Answering"
    }
   ]
  },
@@ -14887,14 +15621,18 @@
     "authors": "Karpukhin et al.",
     "year": 2020,
     "venue": "EMNLP 2020",
-    "url": "https://arxiv.org/abs/2004.04906"
+    "url": "https://arxiv.org/abs/2004.04906",
+    "region": "intl",
+    "title_ko": "Dense Passage Retrieval for Open-Domain Question Answering"
    },
    {
     "title": "The Probabilistic Relevance Framework: BM25 and Beyond",
     "authors": "Robertson and Zaragoza",
     "year": 2009,
     "venue": "Foundations and Trends in Information Retrieval",
-    "url": "https://doi.org/10.1561/1500000019"
+    "url": "https://doi.org/10.1561/1500000019",
+    "region": "intl",
+    "title_ko": "The Probabilistic Relevance Framework: BM25 and Beyond"
    }
   ]
  },
@@ -14983,14 +15721,18 @@
     "authors": "Reimers and Gurevych",
     "year": 2019,
     "venue": "EMNLP-IJCNLP 2019",
-    "url": "https://arxiv.org/abs/1908.10084"
+    "url": "https://arxiv.org/abs/1908.10084",
+    "region": "intl",
+    "title_ko": "Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks"
    },
    {
     "title": "MTEB: Massive Text Embedding Benchmark",
     "authors": "Muennighoff et al.",
     "year": 2022,
     "venue": "EACL 2023",
-    "url": "https://arxiv.org/abs/2210.07316"
+    "url": "https://arxiv.org/abs/2210.07316",
+    "region": "intl",
+    "title_ko": "MTEB: Massive Text Embedding Benchmark"
    }
   ]
  },
@@ -15067,7 +15809,9 @@
     "authors": "Karpukhin et al.",
     "year": 2020,
     "venue": "EMNLP 2020",
-    "url": "https://arxiv.org/abs/2004.04906"
+    "url": "https://arxiv.org/abs/2004.04906",
+    "region": "intl",
+    "title_ko": "Dense Passage Retrieval for Open-Domain Question Answering"
    }
   ]
  },
@@ -15112,7 +15856,9 @@
     "authors": "Robertson and Zaragoza",
     "year": 2009,
     "venue": "Foundations and Trends in Information Retrieval",
-    "url": "https://doi.org/10.1561/1500000019"
+    "url": "https://doi.org/10.1561/1500000019",
+    "region": "intl",
+    "title_ko": "The Probabilistic Relevance Framework: BM25 and Beyond"
    }
   ]
  },
@@ -15151,7 +15897,9 @@
     "authors": "Cormack et al.",
     "year": 2009,
     "venue": "SIGIR 2009",
-    "url": "https://doi.org/10.1145/1571941.1572114"
+    "url": "https://doi.org/10.1145/1571941.1572114",
+    "region": "intl",
+    "title_ko": "Reciprocal Rank Fusion Outperforms Condorcet and Individual Rank Learning Methods"
    }
   ]
  },
@@ -15196,7 +15944,9 @@
     "authors": "Nogueira and Cho",
     "year": 2019,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/1901.04085"
+    "url": "https://arxiv.org/abs/1901.04085",
+    "region": "intl",
+    "title_ko": "Passage Re-ranking with BERT"
    }
   ]
  },
@@ -15235,7 +15985,9 @@
     "authors": "Liu et al.",
     "year": 2023,
     "venue": "TACL",
-    "url": "https://arxiv.org/abs/2307.03172"
+    "url": "https://arxiv.org/abs/2307.03172",
+    "region": "intl",
+    "title_ko": "Lost in the Middle: How Language Models Use Long Contexts"
    }
   ]
  },
@@ -15391,14 +16143,18 @@
     "authors": "Malkov and Yashunin",
     "year": 2016,
     "venue": "IEEE TPAMI",
-    "url": "https://arxiv.org/abs/1603.09320"
+    "url": "https://arxiv.org/abs/1603.09320",
+    "region": "intl",
+    "title_ko": "Efficient and robust approximate nearest neighbor search using Hierarchical Navigable Small World graphs"
    },
    {
     "title": "Billion-scale similarity search with GPUs",
     "authors": "Johnson et al.",
     "year": 2017,
     "venue": "IEEE Transactions on Big Data",
-    "url": "https://arxiv.org/abs/1702.08734"
+    "url": "https://arxiv.org/abs/1702.08734",
+    "region": "intl",
+    "title_ko": "Billion-scale similarity search with GPUs"
    }
   ]
  },
@@ -15442,7 +16198,9 @@
     "authors": "Malkov and Yashunin",
     "year": 2016,
     "venue": "IEEE TPAMI",
-    "url": "https://arxiv.org/abs/1603.09320"
+    "url": "https://arxiv.org/abs/1603.09320",
+    "region": "intl",
+    "title_ko": "Efficient and robust approximate nearest neighbor search using Hierarchical Navigable Small World graphs"
    }
   ]
  },
@@ -15486,14 +16244,18 @@
     "authors": "Johnson et al.",
     "year": 2017,
     "venue": "IEEE Transactions on Big Data",
-    "url": "https://arxiv.org/abs/1702.08734"
+    "url": "https://arxiv.org/abs/1702.08734",
+    "region": "intl",
+    "title_ko": "Billion-scale similarity search with GPUs"
    },
    {
     "title": "Efficient and robust approximate nearest neighbor search using Hierarchical Navigable Small World graphs",
     "authors": "Malkov and Yashunin",
     "year": 2016,
     "venue": "IEEE TPAMI",
-    "url": "https://arxiv.org/abs/1603.09320"
+    "url": "https://arxiv.org/abs/1603.09320",
+    "region": "intl",
+    "title_ko": "Efficient and robust approximate nearest neighbor search using Hierarchical Navigable Small World graphs"
    }
   ]
  },
@@ -15569,7 +16331,9 @@
     "authors": "Ma et al.",
     "year": 2023,
     "venue": "EMNLP 2023",
-    "url": "https://aclanthology.org/2023.emnlp-main.322"
+    "url": "https://aclanthology.org/2023.emnlp-main.322",
+    "region": "intl",
+    "title_ko": "Query Rewriting in Retrieval-Augmented Large Language Models"
    }
   ]
  },
@@ -15601,7 +16365,9 @@
     "authors": "Gao et al.",
     "year": 2022,
     "venue": "ACL 2023",
-    "url": "https://arxiv.org/abs/2212.10496"
+    "url": "https://arxiv.org/abs/2212.10496",
+    "region": "intl",
+    "title_ko": "Precise Zero-Shot Dense Retrieval without Relevance Labels"
    }
   ]
  },
@@ -15633,14 +16399,18 @@
     "authors": "Yang et al.",
     "year": 2018,
     "venue": "EMNLP 2018",
-    "url": "https://arxiv.org/abs/1809.09600"
+    "url": "https://arxiv.org/abs/1809.09600",
+    "region": "intl",
+    "title_ko": "HotpotQA: A Dataset for Diverse, Explainable Multi-hop Question Answering"
    },
    {
     "title": "Interleaving Retrieval with Chain-of-Thought Reasoning for Knowledge-Intensive Multi-Step Questions",
     "authors": "Trivedi et al.",
     "year": 2022,
     "venue": "ACL 2023",
-    "url": "https://arxiv.org/abs/2212.10509"
+    "url": "https://arxiv.org/abs/2212.10509",
+    "region": "intl",
+    "title_ko": "Interleaving Retrieval with Chain-of-Thought Reasoning for Knowledge-Intensive Multi-Step Questions"
    }
   ]
  },
@@ -15680,14 +16450,18 @@
     "authors": "Singh et al.",
     "year": 2025,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2501.09136"
+    "url": "https://arxiv.org/abs/2501.09136",
+    "region": "intl",
+    "title_ko": "Agentic Retrieval-Augmented Generation: A Survey on Agentic RAG"
    },
    {
     "title": "Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection",
     "authors": "Asai et al.",
     "year": 2023,
     "venue": "ICLR 2024",
-    "url": "https://arxiv.org/abs/2310.11511"
+    "url": "https://arxiv.org/abs/2310.11511",
+    "region": "intl",
+    "title_ko": "Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection"
    }
   ]
  },
@@ -15719,7 +16493,9 @@
     "authors": "Xu et al.",
     "year": 2023,
     "venue": "ICLR 2024",
-    "url": "https://arxiv.org/abs/2310.04408"
+    "url": "https://arxiv.org/abs/2310.04408",
+    "region": "intl",
+    "title_ko": "RECOMP: Improving Retrieval-Augmented LMs with Compression and Selective Augmentation"
    }
   ]
  },
@@ -15764,7 +16540,9 @@
     "authors": "Gao et al.",
     "year": 2023,
     "venue": "EMNLP 2023",
-    "url": "https://arxiv.org/abs/2305.14627"
+    "url": "https://arxiv.org/abs/2305.14627",
+    "region": "intl",
+    "title_ko": "Enabling Large Language Models to Generate Text with Citations"
    }
   ]
  },
@@ -15803,14 +16581,18 @@
     "authors": "Xu et al.",
     "year": 2020,
     "venue": "KDD 2020",
-    "url": "https://arxiv.org/abs/1912.13318"
+    "url": "https://arxiv.org/abs/1912.13318",
+    "region": "intl",
+    "title_ko": "LayoutLM: Pre-training of Text and Layout for Document Image Understanding"
    },
    {
     "title": "Docling Technical Report",
     "authors": "Auer et al.",
     "year": 2024,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2408.09869"
+    "url": "https://arxiv.org/abs/2408.09869",
+    "region": "intl",
+    "title_ko": "Docling Technical Report"
    }
   ]
  },
@@ -15923,7 +16705,9 @@
     "authors": "Edge et al.",
     "year": 2024,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2404.16130"
+    "url": "https://arxiv.org/abs/2404.16130",
+    "region": "intl",
+    "title_ko": "From Local to Global: A Graph RAG Approach to Query-Focused Summarization"
    }
   ]
  },
@@ -15962,7 +16746,9 @@
     "authors": "Liu et al.",
     "year": 2023,
     "venue": "TACL",
-    "url": "https://arxiv.org/abs/2307.03172"
+    "url": "https://arxiv.org/abs/2307.03172",
+    "region": "intl",
+    "title_ko": "Lost in the Middle: How Language Models Use Long Contexts"
    }
   ]
  },
@@ -16001,7 +16787,9 @@
     "authors": "Chan et al.",
     "year": 2024,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2412.15605"
+    "url": "https://arxiv.org/abs/2412.15605",
+    "region": "intl",
+    "title_ko": "Don't Do RAG: When Cache-Augmented Generation is All You Need for Knowledge Tasks"
    }
   ]
  },
@@ -16034,7 +16822,9 @@
     "authors": "Yu et al.",
     "year": 2018,
     "venue": "EMNLP 2018",
-    "url": "https://arxiv.org/abs/1809.08887"
+    "url": "https://arxiv.org/abs/1809.08887",
+    "region": "intl",
+    "title_ko": "Spider: A Large-Scale Human-Labeled Dataset for Complex and Cross-Domain Semantic Parsing and Text-to-SQL Task"
    }
   ]
  },
@@ -16209,7 +16999,9 @@
     "authors": "Armbrust et al.",
     "year": 2021,
     "venue": "CIDR 2021",
-    "url": "https://www.cidrdb.org/cidr2021/papers/cidr2021_paper17.pdf"
+    "url": "https://www.cidrdb.org/cidr2021/papers/cidr2021_paper17.pdf",
+    "region": "intl",
+    "title_ko": "Lakehouse: A New Generation of Open Platforms that Unify Data Warehousing and Advanced Analytics"
    }
   ]
  },
@@ -16355,14 +17147,18 @@
     "authors": "Ji et al.",
     "year": 2022,
     "venue": "ACM Computing Surveys",
-    "url": "https://doi.org/10.1145/3571730"
+    "url": "https://doi.org/10.1145/3571730",
+    "region": "intl",
+    "title_ko": "Survey of Hallucination in Natural Language Generation"
    },
    {
     "title": "A Survey on Hallucination in Large Language Models: Principles, Taxonomy, Challenges, and Open Questions",
     "authors": "Huang et al.",
     "year": 2023,
     "venue": "ACM Transactions on Information Systems",
-    "url": "https://arxiv.org/abs/2311.05232"
+    "url": "https://arxiv.org/abs/2311.05232",
+    "region": "intl",
+    "title_ko": "A Survey on Hallucination in Large Language Models: Principles, Taxonomy, Challenges, and Open Questions"
    }
   ]
  },
@@ -16402,14 +17198,18 @@
     "authors": "Rebedea et al.",
     "year": 2023,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2310.10501"
+    "url": "https://arxiv.org/abs/2310.10501",
+    "region": "intl",
+    "title_ko": "NeMo Guardrails: A Toolkit for Controllable and Safe LLM Applications with Programmable Rails"
    },
    {
     "title": "Llama Guard: LLM-based Input-Output Safeguard for Human-AI Conversations",
     "authors": "Inan et al.",
     "year": 2023,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2312.06674"
+    "url": "https://arxiv.org/abs/2312.06674",
+    "region": "intl",
+    "title_ko": "Llama Guard: LLM-based Input-Output Safeguard for Human-AI Conversations"
    }
   ]
  },
@@ -16449,14 +17249,18 @@
     "authors": "Perez et al.",
     "year": 2022,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2202.03286"
+    "url": "https://arxiv.org/abs/2202.03286",
+    "region": "intl",
+    "title_ko": "Red Teaming Language Models with Language Models"
    },
    {
     "title": "Red Teaming Language Models to Reduce Harms: Methods, Scaling Behaviors, and Lessons Learned",
     "authors": "Ganguli et al.",
     "year": 2022,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2209.07858"
+    "url": "https://arxiv.org/abs/2209.07858",
+    "region": "intl",
+    "title_ko": "Red Teaming Language Models to Reduce Harms: Methods, Scaling Behaviors, and Lessons Learned"
    }
   ]
  },
@@ -16502,14 +17306,18 @@
     "authors": "Perez and Ribeiro",
     "year": 2022,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2211.09527"
+    "url": "https://arxiv.org/abs/2211.09527",
+    "region": "intl",
+    "title_ko": "Ignore Previous Prompt: Attack Techniques For Language Models"
    },
    {
     "title": "Not what you've signed up for: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection",
     "authors": "Greshake et al.",
     "year": 2023,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2302.12173"
+    "url": "https://arxiv.org/abs/2302.12173",
+    "region": "intl",
+    "title_ko": "Not what you've signed up for: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection"
    }
   ]
  },
@@ -16549,14 +17357,18 @@
     "authors": "Wei et al.",
     "year": 2023,
     "venue": "NeurIPS 2023",
-    "url": "https://arxiv.org/abs/2307.02483"
+    "url": "https://arxiv.org/abs/2307.02483",
+    "region": "intl",
+    "title_ko": "Jailbroken: How Does LLM Safety Training Fail?"
    },
    {
     "title": "Universal and Transferable Adversarial Attacks on Aligned Language Models",
     "authors": "Zou et al.",
     "year": 2023,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2307.15043"
+    "url": "https://arxiv.org/abs/2307.15043",
+    "region": "intl",
+    "title_ko": "Universal and Transferable Adversarial Attacks on Aligned Language Models"
    }
   ]
  },
@@ -16596,7 +17408,9 @@
     "authors": "Mehrabi et al.",
     "year": 2019,
     "venue": "ACM Computing Surveys",
-    "url": "https://arxiv.org/abs/1908.09635"
+    "url": "https://arxiv.org/abs/1908.09635",
+    "region": "intl",
+    "title_ko": "A Survey on Bias and Fairness in Machine Learning"
    }
   ]
  },
@@ -16642,14 +17456,18 @@
     "authors": "Lundberg and Lee",
     "year": 2017,
     "venue": "NeurIPS 2017",
-    "url": "https://arxiv.org/abs/1705.07874"
+    "url": "https://arxiv.org/abs/1705.07874",
+    "region": "intl",
+    "title_ko": "A Unified Approach to Interpreting Model Predictions"
    },
    {
     "title": "\"Why Should I Trust You?\": Explaining the Predictions of Any Classifier",
     "authors": "Ribeiro et al.",
     "year": 2016,
     "venue": "KDD 2016",
-    "url": "https://arxiv.org/abs/1602.04938"
+    "url": "https://arxiv.org/abs/1602.04938",
+    "region": "intl",
+    "title_ko": "\"Why Should I Trust You?\": Explaining the Predictions of Any Classifier"
    }
   ]
  },
@@ -16695,14 +17513,18 @@
     "authors": "Hendrycks et al.",
     "year": 2020,
     "venue": "ICLR 2021",
-    "url": "https://arxiv.org/abs/2009.03300"
+    "url": "https://arxiv.org/abs/2009.03300",
+    "region": "intl",
+    "title_ko": "Measuring Massive Multitask Language Understanding"
    },
    {
     "title": "Holistic Evaluation of Language Models",
     "authors": "Liang et al.",
     "year": 2022,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2211.09110"
+    "url": "https://arxiv.org/abs/2211.09110",
+    "region": "intl",
+    "title_ko": "Holistic Evaluation of Language Models"
    }
   ]
  },
@@ -16742,7 +17564,9 @@
     "authors": "Zheng et al.",
     "year": 2023,
     "venue": "NeurIPS 2023 Datasets and Benchmarks",
-    "url": "https://arxiv.org/abs/2306.05685"
+    "url": "https://arxiv.org/abs/2306.05685",
+    "region": "intl",
+    "title_ko": "Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena"
    }
   ]
  },
@@ -16794,7 +17618,9 @@
     "authors": "Liang et al.",
     "year": 2022,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2211.09110"
+    "url": "https://arxiv.org/abs/2211.09110",
+    "region": "intl",
+    "title_ko": "Holistic Evaluation of Language Models"
    }
   ]
  },
@@ -16972,7 +17798,9 @@
     "authors": "Carlini et al.",
     "year": 2020,
     "venue": "USENIX Security 2021",
-    "url": "https://arxiv.org/abs/2012.07805"
+    "url": "https://arxiv.org/abs/2012.07805",
+    "region": "intl",
+    "title_ko": "Extracting Training Data from Large Language Models"
    }
   ]
  },
@@ -17024,7 +17852,9 @@
     "authors": "Kirchenbauer et al.",
     "year": 2023,
     "venue": "ICML 2023",
-    "url": "https://arxiv.org/abs/2301.10226"
+    "url": "https://arxiv.org/abs/2301.10226",
+    "region": "intl",
+    "title_ko": "A Watermark for Large Language Models"
    }
   ]
  },
@@ -17266,7 +18096,9 @@
     "authors": "Carlini et al.",
     "year": 2020,
     "venue": "USENIX Security 2021",
-    "url": "https://arxiv.org/abs/2012.07805"
+    "url": "https://arxiv.org/abs/2012.07805",
+    "region": "intl",
+    "title_ko": "Extracting Training Data from Large Language Models"
    }
   ]
  },
@@ -17306,7 +18138,9 @@
     "authors": "Mitchell et al.",
     "year": 2019,
     "venue": "FAT* 2019",
-    "url": "https://doi.org/10.1145/3287560.3287596"
+    "url": "https://doi.org/10.1145/3287560.3287596",
+    "region": "intl",
+    "title_ko": "Model Cards for Model Reporting"
    }
   ]
  },
@@ -17410,14 +18244,18 @@
     "authors": "Dwork et al.",
     "year": 2011,
     "venue": "ITCS 2012",
-    "url": "https://arxiv.org/abs/1104.3913"
+    "url": "https://arxiv.org/abs/1104.3913",
+    "region": "intl",
+    "title_ko": "Fairness Through Awareness"
    },
    {
     "title": "Equality of Opportunity in Supervised Learning",
     "authors": "Hardt et al.",
     "year": 2016,
     "venue": "NeurIPS 2016",
-    "url": "https://arxiv.org/abs/1610.02413"
+    "url": "https://arxiv.org/abs/1610.02413",
+    "region": "intl",
+    "title_ko": "Equality of Opportunity in Supervised Learning"
    }
   ]
  },
@@ -17450,14 +18288,18 @@
     "authors": "Sharma et al.",
     "year": 2023,
     "venue": "ICLR 2024",
-    "url": "https://arxiv.org/abs/2310.13548"
+    "url": "https://arxiv.org/abs/2310.13548",
+    "region": "intl",
+    "title_ko": "Towards Understanding Sycophancy in Language Models"
    },
    {
     "title": "Discovering Language Model Behaviors with Model-Written Evaluations",
     "authors": "Perez et al.",
     "year": 2022,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2212.09251"
+    "url": "https://arxiv.org/abs/2212.09251",
+    "region": "intl",
+    "title_ko": "Discovering Language Model Behaviors with Model-Written Evaluations"
    }
   ]
  },
@@ -17497,7 +18339,9 @@
     "authors": "Es et al.",
     "year": 2023,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2309.15217"
+    "url": "https://arxiv.org/abs/2309.15217",
+    "region": "intl",
+    "title_ko": "Ragas: Automated Evaluation of Retrieval Augmented Generation"
    }
   ]
  },
@@ -17683,14 +18527,18 @@
     "authors": "Ouyang et al.",
     "year": 2022,
     "venue": "NeurIPS 2022",
-    "url": "https://arxiv.org/abs/2203.02155"
+    "url": "https://arxiv.org/abs/2203.02155",
+    "region": "intl",
+    "title_ko": "Training language models to follow instructions with human feedback"
    },
    {
     "title": "Chatbot Arena: An Open Platform for Evaluating LLMs by Human Preference",
     "authors": "Chiang et al.",
     "year": 2024,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2403.04132"
+    "url": "https://arxiv.org/abs/2403.04132",
+    "region": "intl",
+    "title_ko": "Chatbot Arena: An Open Platform for Evaluating LLMs by Human Preference"
    }
   ]
  },
@@ -17736,7 +18584,9 @@
     "authors": "Chiang et al.",
     "year": 2024,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2403.04132"
+    "url": "https://arxiv.org/abs/2403.04132",
+    "region": "intl",
+    "title_ko": "Chatbot Arena: An Open Platform for Evaluating LLMs by Human Preference"
    }
   ]
  },
@@ -17776,14 +18626,18 @@
     "authors": "Hendrycks et al.",
     "year": 2020,
     "venue": "ICLR 2021",
-    "url": "https://arxiv.org/abs/2009.03300"
+    "url": "https://arxiv.org/abs/2009.03300",
+    "region": "intl",
+    "title_ko": "Measuring Massive Multitask Language Understanding"
    },
    {
     "title": "MMLU-Pro: A More Robust and Challenging Multi-Task Language Understanding Benchmark",
     "authors": "Wang et al.",
     "year": 2024,
     "venue": "NeurIPS 2024 Datasets and Benchmarks",
-    "url": "https://arxiv.org/abs/2406.01574"
+    "url": "https://arxiv.org/abs/2406.01574",
+    "region": "intl",
+    "title_ko": "MMLU-Pro: A More Robust and Challenging Multi-Task Language Understanding Benchmark"
    }
   ]
  },
@@ -17823,7 +18677,9 @@
     "authors": "Jimenez et al.",
     "year": 2023,
     "venue": "ICLR 2024",
-    "url": "https://arxiv.org/abs/2310.06770"
+    "url": "https://arxiv.org/abs/2310.06770",
+    "region": "intl",
+    "title_ko": "SWE-bench: Can Language Models Resolve Real-World GitHub Issues?"
    }
   ]
  },
@@ -17863,14 +18719,18 @@
     "authors": "Sharma et al.",
     "year": 2025,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2501.18837"
+    "url": "https://arxiv.org/abs/2501.18837",
+    "region": "intl",
+    "title_ko": "Constitutional Classifiers: Defending against Universal Jailbreaks across Thousands of Hours of Red Teaming"
    },
    {
     "title": "SmoothLLM: Defending Large Language Models Against Jailbreaking Attacks",
     "authors": "Robey et al.",
     "year": 2023,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2310.03684"
+    "url": "https://arxiv.org/abs/2310.03684",
+    "region": "intl",
+    "title_ko": "SmoothLLM: Defending Large Language Models Against Jailbreaking Attacks"
    }
   ]
  },
@@ -17916,7 +18776,9 @@
     "authors": "Inan et al.",
     "year": 2023,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2312.06674"
+    "url": "https://arxiv.org/abs/2312.06674",
+    "region": "intl",
+    "title_ko": "Llama Guard: LLM-based Input-Output Safeguard for Human-AI Conversations"
    }
   ]
  },
@@ -17994,7 +18856,9 @@
     "authors": "Greshake et al.",
     "year": 2023,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2302.12173"
+    "url": "https://arxiv.org/abs/2302.12173",
+    "region": "intl",
+    "title_ko": "Not what you've signed up for: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection"
    }
   ]
  },
@@ -18034,14 +18898,18 @@
     "authors": "Chen et al.",
     "year": 2017,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/1712.05526"
+    "url": "https://arxiv.org/abs/1712.05526",
+    "region": "intl",
+    "title_ko": "Targeted Backdoor Attacks on Deep Learning Systems Using Data Poisoning"
    },
    {
     "title": "Poisoning Attacks on LLMs Require a Near-constant Number of Poison Samples",
     "authors": "Souly et al.",
     "year": 2025,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2510.07192"
+    "url": "https://arxiv.org/abs/2510.07192",
+    "region": "intl",
+    "title_ko": "Poisoning Attacks on LLMs Require a Near-constant Number of Poison Samples"
    }
   ]
  },
@@ -18081,7 +18949,9 @@
     "authors": "Tramèr et al.",
     "year": 2016,
     "venue": "USENIX Security 2016",
-    "url": "https://arxiv.org/abs/1609.02943"
+    "url": "https://arxiv.org/abs/1609.02943",
+    "region": "intl",
+    "title_ko": "Stealing Machine Learning Models via Prediction APIs"
    }
   ]
  },
@@ -18121,21 +18991,27 @@
     "authors": "Szegedy et al.",
     "year": 2013,
     "venue": "ICLR 2014",
-    "url": "https://arxiv.org/abs/1312.6199"
+    "url": "https://arxiv.org/abs/1312.6199",
+    "region": "intl",
+    "title_ko": "Intriguing properties of neural networks"
    },
    {
     "title": "Explaining and Harnessing Adversarial Examples",
     "authors": "Goodfellow et al.",
     "year": 2014,
     "venue": "ICLR 2015",
-    "url": "https://arxiv.org/abs/1412.6572"
+    "url": "https://arxiv.org/abs/1412.6572",
+    "region": "intl",
+    "title_ko": "Explaining and Harnessing Adversarial Examples"
    },
    {
     "title": "Universal and Transferable Adversarial Attacks on Aligned Language Models",
     "authors": "Zou et al.",
     "year": 2023,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2307.15043"
+    "url": "https://arxiv.org/abs/2307.15043",
+    "region": "intl",
+    "title_ko": "Universal and Transferable Adversarial Attacks on Aligned Language Models"
    }
   ]
  },
@@ -18257,14 +19133,18 @@
     "authors": "Olah et al.",
     "year": 2020,
     "venue": "Distill",
-    "url": "https://doi.org/10.23915/distill.00024.001"
+    "url": "https://doi.org/10.23915/distill.00024.001",
+    "region": "intl",
+    "title_ko": "Zoom In: An Introduction to Circuits"
    },
    {
     "title": "Sparse Autoencoders Find Highly Interpretable Features in Language Models",
     "authors": "Cunningham et al.",
     "year": 2023,
     "venue": "arXiv",
-    "url": "https://arxiv.org/abs/2309.08600"
+    "url": "https://arxiv.org/abs/2309.08600",
+    "region": "intl",
+    "title_ko": "Sparse Autoencoders Find Highly Interpretable Features in Language Models"
    }
   ]
  }

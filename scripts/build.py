@@ -59,6 +59,8 @@ def validate(terms, tree, changes, releases):
             if not str(p_.get("url", "")).startswith(("http://", "https://")) or not p_.get("title"):
                 errs.append(f"{t['id']}: 논문 형식(title·url 필요) {p_.get('title')}")
             if p_.get("year") is not None and not isinstance(p_.get("year"), int): errs.append(f"{t['id']}: 논문 year는 숫자")
+            if p_.get("region") not in ("kr", "intl"): errs.append(f"{t['id']}: 논문 region은 kr 또는 intl")
+            if not p_.get("title_ko"): errs.append(f"{t['id']}: 논문 title_ko(한글 제목) 필요 {p_.get('title')}")
         bad_rel = [r for r in t["related"] if r not in idset]
         if bad_rel: errs.append(f"{t['id']}: 없는 연관 id {bad_rel}")
         if not any(c["id"] == t["id"] for c in changes): errs.append(f"{t['id']}: changelog 기록 없음")
