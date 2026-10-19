@@ -57,6 +57,9 @@ button, input, select { font: inherit; color: inherit; }
 .brand p { margin: 6px 0 0; color: var(--muted); font-size: 13px; line-height: 1.6; }
 .brand .stat { font-family: var(--f-mono); font-size: 12px; color: var(--accent); margin-top: 10px; font-variant-numeric: tabular-nums; }
 
+.dl { margin-top: 12px; display: inline-flex; align-items: center; gap: 7px; padding: 7px 12px; border: 1.5px solid var(--accent); border-radius: 8px; color: var(--accent); text-decoration: none; font-size: 13px; font-weight: 600; }
+.dl:hover { background: var(--accent); color: var(--bg); }
+.dl span { font-family: var(--f-mono); font-size: 11px; font-weight: 400; opacity: .8; }
 .search { position: relative; }
 .search input { width: 100%; padding: 11px 36px 11px 14px; border: 1.5px solid var(--rule); border-radius: 8px; background: var(--surface); font-size: 15px; }
 .search input:focus { border-color: var(--accent); outline: none; }
@@ -183,6 +186,10 @@ mark { background: var(--hl); color: inherit; border-radius: 2px; padding: 0 1px
       <h1>실무 AI 용어집</h1>
       <p>AX 전환을 함께 하는 실무자와 개발자를 위해, 같은 용어를 입문과 심화 두 수준으로 풀었다.</p>
       <div class="stat" id="stat"></div>
+      <a class="dl" href="ai-glossary.pdf" download="실무-AI-용어집.pdf">
+        <svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.5v8.2m0 0L4.8 6.5M8 9.7l3.2-3.2M2.5 11v2.5h11V11" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        전체 용어 PDF 받기 <span>78쪽 · 3.3MB</span>
+      </a>
     </div>
     <div class="search">
       <input id="q" type="search" placeholder="용어, 영문, 약어로 검색" autocomplete="off" aria-label="용어 검색">
