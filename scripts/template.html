@@ -218,6 +218,15 @@ a.catcard.more { background: var(--card); border: 2px dashed #c9cbe6; color: var
 .paper a.ttl { font-family: var(--f-display); font-size: 17px; font-weight: 700; color: var(--ink); text-decoration: none; line-height: 1.4; }
 .paper a.ttl:hover { color: var(--accent); text-decoration: underline; }
 .paper .m { font-size: 13px; color: var(--muted); margin-top: 4px; }
+.paper .orig { font-size: 12.5px; color: var(--muted); margin-top: 2px; font-style: italic; line-height: 1.5; }
+.pill.kr { background: #d9f2ff; color: #0b3f5c; }
+.pill.intl { background: #ece0ff; color: #43186e; }
+.ratio { display: flex; height: 12px; border-radius: 999px; overflow: hidden; margin-top: 8px; max-width: 420px; background: var(--soft); }
+.ratio i { display: block; height: 100%; }
+.ratio-l { display: flex; gap: 14px; font-size: 12.5px; color: var(--muted); margin-top: 6px; flex-wrap: wrap; }
+.ratio-l b { color: var(--ink); }
+.pgroup + .pgroup { margin-top: 16px; }
+.pgroup h4 { margin: 0 0 8px; display: flex; gap: 8px; align-items: center; font-size: 13px; }
 .paper .m b { color: var(--ink); font-weight: 600; }
 .paper .chips { margin-top: 10px; }
 .paper-search { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 14px; }
@@ -363,10 +372,17 @@ const PAPERS = (() => {
     if (!m.has(k)) m.set(k, Object.assign({}, p, { terms: [], cats: new Set() }));
     const e = m.get(k); if (!e.terms.includes(t.id)) e.terms.push(t.id); e.cats.add(t.cat);
   }));
-  return [...m.values()].map(p => Object.assign(p, { _hay: [p.title, p.authors, p.venue, p.year, ...p.terms.map(id => byId.get(id).ko + " " + byId.get(id).en)].join(" ").toLowerCase() }))
+  return [...m.values()].map(p => Object.assign(p, { _hay: [p.title_ko, p.title, p.authors, p.venue, p.year, p.region === "kr" ? "국내" : "해외", ...p.terms.map(id => byId.get(id).ko + " " + byId.get(id).en)].join(" ").toLowerCase() }))
     .sort((a, b) => (b.year || 0) - (a.year || 0) || a.title.localeCompare(b.title));
 })();
 const SOURCE_COUNT = LIVE.reduce((s, t) => s + (t.sources || []).length, 0);
+const PAPER_KR = PAPERS.filter(p => p.region === "kr").length, PAPER_INTL = PAPERS.length - PAPER_KR;
+const regionPill = p => p.region === "kr" ? '<span class="pill kr">국내</span>' : '<span class="pill intl">해외</span>';
+/* 논문 제목: 한글 제목을 크게, 원제가 다르면 아래 작게 */
+const paperTitle = (p, q) => {
+  const ko = p.title_ko || p.title, h = s => q ? hi(s, q) : esc(s);
+  return `<a class="ttl" href="${safeUrl(p.url)}" target="_blank" rel="noopener">${h(ko)}</a>${ko !== p.title ? `<div class="orig">${h(p.title)}</div>` : ""}`;
+};
 
 function choOf(s) {
   const c = s.trim().charCodeAt(0);
@@ -382,7 +398,7 @@ LIVE.forEach(t => {
 });
 
 const store = { get(k){ try { return localStorage.getItem(k); } catch(e){ return null; } }, set(k,v){ try { localStorage.setItem(k,v); } catch(e){} } };
-const state = { route: "home", q: "", view: store.get("gl-view") || "both", levels: new Set(), ixSort: store.get("gl-ixsort") || "ko", tlType: "all", pq: "", pcat: "", pera: "" };
+const state = { route: "home", q: "", view: store.get("gl-view") || "both", levels: new Set(), ixSort: store.get("gl-ixsort") || "ko", tlType: "all", pq: "", pcat: "", pera: "", preg: "" };
 const $ = s => document.querySelector(s);
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;" }[c]));
 const safeUrl = u => /^https?:\/\//i.test(u || "") ? esc(u) : "#";
@@ -419,11 +435,13 @@ function typeSummary(list) {
   const n = {}; list.forEach(c => n[c.type] = (n[c.type] || 0) + 1);
   return Object.keys(TYPES).filter(k => n[k]).map(k => `<span class="pill ${k}">${TYPES[k]} ${n[k]}</span>`).join(" ");
 }
-const extLinks = q => `<div class="ext">
+const extLinks = (q, qk = q) => `<div class="ext">
   <a href="https://arxiv.org/search/?query=${encodeURIComponent(q)}&amp;searchtype=all" target="_blank" rel="noopener">arXiv</a>
   <a href="https://www.semanticscholar.org/search?q=${encodeURIComponent(q)}" target="_blank" rel="noopener">Semantic Scholar</a>
   <a href="https://scholar.google.com/scholar?q=${encodeURIComponent(q)}" target="_blank" rel="noopener">Google Scholar</a>
-  <a href="https://www.riss.kr/search/Search.do?query=${encodeURIComponent(q)}" target="_blank" rel="noopener">RISS(국내)</a></div>`;
+  <a href="https://www.riss.kr/search/Search.do?query=${encodeURIComponent(qk)}" target="_blank" rel="noopener">RISS(국내)</a>
+  <a href="https://www.dbpia.co.kr/search/topSearch?searchOption=all&amp;query=${encodeURIComponent(qk)}" target="_blank" rel="noopener">DBpia(국내)</a>
+  <a href="https://scienceon.kisti.re.kr/srch/selectPORSrchTotal.do?searchKeyword=${encodeURIComponent(qk)}" target="_blank" rel="noopener">ScienceON(국내)</a></div>`;
 
 /* ---------- 대문 ---------- */
 function todayTerm() {
@@ -514,7 +532,7 @@ function viewTerm(t) {
       <h1 class="page-title">${esc(t.ko)}</h1>
       <div class="page-sub">${t.abbr && t.abbr !== t.en ? `<b>${esc(t.abbr)}</b> · ` : ""}${esc(t.en)}</div>
       <div class="meta">${lvPill(t.level)}${catPill(c.id)}<a class="pill ghost" href="#t-${tp.id}" data-go="t-${tp.id}">${esc(tp.ko)} · ${i + 1}/${ids.length}</a>
-        <span>최초 수록 <span class="mono">${fmtDate(t.added)}</span></span><span>마지막 수정 <span class="mono">${fmtDate(t.updated)}</span></span><span>판 <span class="mono">${t.revision}</span></span><span>출처 ${srcs.length} · 논문 ${papers.length}</span></div>
+        <span>최초 수록 <span class="mono">${fmtDate(t.added)}</span></span><span>마지막 수정 <span class="mono">${fmtDate(t.updated)}</span></span><span>판 <span class="mono">${t.revision}</span></span><span>출처 ${srcs.length} · 논문 ${papers.length}(국내 ${papers.filter(p => p.region === "kr").length})</span></div>
       <div class="seg" id="view" role="group" aria-label="설명 보기">
         <button data-v="easy" aria-pressed="${state.view === "easy"}">입문만</button><button data-v="both" aria-pressed="${state.view === "both"}">모두</button><button data-v="deep" aria-pressed="${state.view === "deep"}">심화만</button>
       </div>
@@ -530,10 +548,10 @@ function viewTerm(t) {
             : '<p class="empty" style="margin:0">아직 등록된 출처가 없다. 다음 정기 업데이트 때 보강된다.</p>'}
         </section>
         <section class="card"><p class="label">관련 논문 ${papers.length}</p>
-          ${papers.length ? `<ul class="list paper">${papers.map(p => `<li><a class="ttl" href="${safeUrl(p.url)}" target="_blank" rel="noopener">${esc(p.title)}</a>
-            <div class="m"><b>${esc(p.authors || "")}</b> · ${esc(p.year || "")} · ${esc(p.venue || "")}</div></li>`).join("")}</ul>`
+          ${papers.length ? ["kr", "intl"].map(rg => { const ps = papers.filter(p => (p.region || "intl") === rg); return ps.length ? `<div class="pgroup"><h4>${rg === "kr" ? '<span class="pill kr">국내 논문</span>' : '<span class="pill intl">해외 논문</span>'}<span class="mono" style="color:var(--muted);font-weight:400">${ps.length}</span></h4>
+            <ul class="list paper">${ps.map(p => `<li>${paperTitle(p)}<div class="m"><b>${esc(p.authors || "")}</b> · ${esc(p.year || "")} · ${esc(p.venue || "")}</div></li>`).join("")}</ul></div>` : ""; }).join("")
             : '<p class="empty" style="margin:0">이 용어는 특정 논문보다 실무·제도에서 쓰이는 말이라 대표 논문을 달지 않았다.</p>'}
-          <p class="label" style="margin:16px 0 0">이 용어로 논문 더 찾기</p>${extLinks(q)}
+          <p class="label" style="margin:16px 0 0">이 용어로 논문 더 찾기</p>${extLinks(q, t.ko)}
         </section>
         <section class="card"><p class="label">문서 이력 ${hist.length}</p>
           <ul class="list hist">${hist.map(h => `<li><span class="d">${fmtDate(h.date)}</span><span class="pill ${h.type}">${TYPES[h.type]}</span><span>${esc(h.summary)}</span></li>`).join("") || "<li>기록 없음</li>"}</ul></section>
@@ -555,16 +573,20 @@ function inEra(y, era) {
 }
 function viewPapers() {
   const q = state.pq.trim().toLowerCase();
-  const list = PAPERS.filter(p => (!q || p._hay.includes(q)) && (!state.pcat || p.cats.has(state.pcat)) && inEra(p.year, state.pera));
+  const list = PAPERS.filter(p => (!q || p._hay.includes(q)) && (!state.pcat || p.cats.has(state.pcat)) && inEra(p.year, state.pera) && (!state.preg || (p.region || "intl") === state.preg));
+  const pk = PAPERS.length ? Math.round(PAPER_KR / PAPERS.length * 100) : 0;
   const catN = {}; PAPERS.forEach(p => p.cats.forEach(c => catN[c] = (catN[c] || 0) + 1));
   return `<section class="card">${crumbs("<span>논문</span>")}
       <h1 class="page-title">관련 논문 찾기</h1>
-      <p class="lede">용어집 문서에 연결된 대표 논문 ${PAPERS.length}편을 모았다. 제목·저자·학회·연도·용어로 찾고, 원하는 논문이 없으면 아래 학술 검색으로 넘어간다.</p>
+      <p class="lede">용어집 문서에 연결된 논문 ${PAPERS.length}편을 모았다. 국내 학술지 논문과 해외 대표 논문을 함께 싣고, 해외 논문은 한글 제목과 원제를 같이 적었다. 제목·저자·학회·연도·용어로 찾는다.</p>
+      <div class="ratio" role="img" aria-label="국내 ${PAPER_KR}편, 해외 ${PAPER_INTL}편"><i style="width:${pk}%;background:#5cc0f0"></i><i style="width:${100 - pk}%;background:#a98be6"></i></div>
+      <div class="ratio-l"><span>국내 <b>${PAPER_KR}</b>편 (${pk}%)</span><span>해외 <b>${PAPER_INTL}</b>편 (${100 - pk}%)</span></div>
       <form class="paper-search" id="paperForm" role="search">
         <label for="pq" hidden>논문 검색</label>
         <input id="pq" type="search" value="${esc(state.pq)}" placeholder="예: transformer, Lewis, 2023, 검색 증강" autocomplete="off">
       </form>
       <div class="toolrow">
+        <div class="chips" id="regChips">${[["", "국내+해외"], ["kr", "국내"], ["intl", "해외"]].map(([v, l]) => `<button class="chip" data-reg="${v}" aria-pressed="${(state.preg || "") === v}">${l}</button>`).join("")}</div>
         <div class="chips" id="eraChips">${ERAS.map(([v, l]) => `<button class="chip" data-era="${v}" aria-pressed="${state.pera === v}">${l}</button>`).join("")}</div>
         <label for="pcat">분야 <select id="pcat"><option value="">전체 분야</option>${TREE.filter(c => catN[c.id]).map(c => `<option value="${c.id}" ${state.pcat === c.id ? "selected" : ""}>${esc(c.ko)} (${catN[c.id]})</option>`).join("")}</select></label>
       </div>
@@ -572,8 +594,8 @@ function viewPapers() {
     </section>
     <h2 class="h2">${list.length}편 <small>최신 연도 순</small></h2>
     ${list.length ? `<section class="grid g2">${list.slice(0, 120).map(p => `<article class="card paper">
-        <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px">${[...p.cats].map(c => catPill(c)).join("")}<span class="pill ghost">${esc(p.year || "연도 미상")}</span></div>
-        <a class="ttl" href="${safeUrl(p.url)}" target="_blank" rel="noopener">${hi(p.title, q)}</a>
+        <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px">${regionPill(p)}${[...p.cats].map(c => catPill(c)).join("")}<span class="pill ghost">${esc(p.year || "연도 미상")}</span></div>
+        ${paperTitle(p, q)}
         <div class="m"><b>${hi(p.authors || "", q)}</b> · ${hi(p.venue || "", q)}</div>
         <div class="chips">${p.terms.map(id => termChip(id)).join("")}</div></article>`).join("")}</section>`
       : `<section class="card empty"><strong>맞는 논문이 없다</strong>검색어나 필터를 바꾸거나, 위의 학술 검색 링크로 찾아보자.</section>`}`;
@@ -649,7 +671,7 @@ function viewSearch() {
     ${list.length ? `<section class="grid g3">${list.slice(0, 60).map(t => termCard(t, { hq, text: t.easy })).join("")}</section>`
       : `<section class="card empty"><strong>맞는 문서가 없다</strong>검색어를 줄여 보자. 초성(예: ㅍㅇㅌㄴ → 파인튜닝)으로도 찾을 수 있다.</section>`}
     ${pl.length ? `<h2 class="h2">관련 논문 <small><a href="#papers" data-go="papers" data-pq="${esc(hq)}">논문에서 더 보기 →</a></small></h2>
-      <section class="grid g2">${pl.map(p => `<article class="card paper"><a class="ttl" href="${safeUrl(p.url)}" target="_blank" rel="noopener">${hi(p.title, hq)}</a><div class="m"><b>${esc(p.authors || "")}</b> · ${esc(p.year || "")} · ${esc(p.venue || "")}</div></article>`).join("")}</section>` : ""}`;
+      <section class="grid g2">${pl.map(p => `<article class="card paper"><div style="margin-bottom:6px">${regionPill(p)}</div>${paperTitle(p, hq)}<div class="m"><b>${esc(p.authors || "")}</b> · ${esc(p.year || "")} · ${esc(p.venue || "")}</div></article>`).join("")}</section>` : ""}`;
 }
 
 /* ---------- 조회 집계 · 인기 순위 ---------- */
@@ -738,6 +760,8 @@ document.addEventListener("click", e => {
   if (tl) { state.tlType = tl.dataset.t; render(); return; }
   const lv = e.target.closest("#lvChips [data-l]");
   if (lv) { const l = +lv.dataset.l; state.levels.has(l) ? state.levels.delete(l) : state.levels.add(l); render(); return; }
+  const reg = e.target.closest("#regChips [data-reg]");
+  if (reg) { state.preg = reg.dataset.reg; render(); return; }
   const era = e.target.closest("#eraChips [data-era]");
   if (era) { state.pera = era.dataset.era; render(); return; }
   const vb = e.target.closest("#view button");
@@ -781,7 +805,7 @@ tt.addEventListener("click", () => scrollTo({ top: 0, behavior: "smooth" }));
 /* ---------- 시작 ---------- */
 {
   const lastDay = [...new Set(CHANGES.map(c => c.date))].sort().pop() || "";
-  $("#heroSub").textContent = `${LIVE.length}개 용어를 입문과 심화 두 수준으로. 출처 ${SOURCE_COUNT}건과 관련 논문 ${PAPERS.length}편을 함께 달았다.`;
+  $("#heroSub").textContent = `${LIVE.length}개 용어를 입문과 심화 두 수준으로. 출처 ${SOURCE_COUNT}건, 국내·해외 논문 ${PAPERS.length}편을 함께 달았다.`;
   $("#heroStats").innerHTML = `<div><b>${LIVE.length}</b><span>문서</span></div><div><b>${PAPERS.length}</b><span>논문</span></div><div><b>${fmtDate(nextUpdate()).slice(5)}</b><span>다음 업데이트</span></div>`;
   $("#quick").innerHTML = `자주 찾는 말 ${["RAG", "파인튜닝", "AI 에이전트", "MCP", "환각", "프롬프트 엔지니어링"].map(w => `<a href="#" data-quick="${esc(w)}">${esc(w)}</a>`).join("")}`;
   $("#foot").textContent = `${fmtDate(lastDay)} 갱신 · 문서 ${LIVE.length}개 · 출처 ${SOURCE_COUNT}건 · 논문 ${PAPERS.length}편 · 2주마다 업데이트`;
