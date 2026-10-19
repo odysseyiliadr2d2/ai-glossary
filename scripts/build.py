@@ -116,6 +116,29 @@ def sync_payload(terms, tree, changes, releases):
     }
 
 
+def og_tags(terms, tree):
+    """링크 미리보기(카카오톡·슬랙·문자 등)용 Open Graph·Twitter 카드 메타 태그. 이미지 주소는 절대 경로여야 한다."""
+    live = [t for t in terms if t["status"] == "active"]
+    papers = {p["url"] for t in live for p in t.get("papers", [])}
+    desc = (f"실무자와 개발자를 위한 AI 용어 위키. 용어 {len(live)}개를 입문·심화 두 수준으로 풀고, "
+            f"출처와 국내·해외 논문 {len(papers)}편을 연결했다. 2주마다 업데이트.")
+    img = SITE_URL + "og-image.png"
+    tags = [
+        ('property', 'og:type', 'website'), ('property', 'og:site_name', '실무 AI 용어집'),
+        ('property', 'og:title', '실무 AI 용어집'), ('property', 'og:description', desc),
+        ('property', 'og:url', SITE_URL), ('property', 'og:locale', 'ko_KR'),
+        ('property', 'og:image', img), ('property', 'og:image:width', '1200'), ('property', 'og:image:height', '630'),
+        ('property', 'og:image:alt', '실무 AI 용어집 대표 이미지'),
+        ('name', 'twitter:card', 'summary_large_image'), ('name', 'twitter:title', '실무 AI 용어집'),
+        ('name', 'twitter:description', desc), ('name', 'twitter:image', img),
+    ]
+    icon = ("data:image/svg+xml," "%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E"
+            "%3Crect width='64' height='64' rx='16' fill='%233d35b8'/%3E"
+            "%3Ctext x='32' y='42' font-family='Arial' font-weight='900' font-size='26' fill='%23ffd84d' text-anchor='middle'%3EAI%3C/text%3E%3C/svg%3E")
+    out = "".join(f'<meta {k}="{n}" content="{v}">\n' for k, n, v in tags)
+    return out + f'<link rel="canonical" href="{SITE_URL}">\n<link rel="icon" href="{icon}">\n'
+
+
 def render(tpl, terms, tree, changes, releases, pdf_meta, for_site):
     j = lambda o: json.dumps(o, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
     page = (tpl.replace("/*__DATA__*/[]", j(terms)).replace("/*__TREE__*/[]", j(tree))
@@ -124,10 +147,13 @@ def render(tpl, terms, tree, changes, releases, pdf_meta, for_site):
     if for_site:
         page = (page.replace("/*__PDF_URL__*/", "ai-glossary.pdf").replace("/*__PDF_ATTR__*/", 'download="실무-AI-용어집.pdf"')
                     .replace('const STATS = { url: "", key: "" };', f'const STATS = {{ url: "{SUPABASE["url"]}", key: "{SUPABASE["key"]}" }};'))
-        head, body = page.split('<div class="wrap">', 1)
+        # 본문은 첫 화면 요소(<header> 또는 <div class="wrap">)부터 시작한다. 그 앞(title·meta·style)만 <head>에 둔다
+        cut = min(i for i in (page.find("<header"), page.find('<div class="wrap">')) if i >= 0)
+        head, body = page[:cut], page[cut:]
         return ('<!doctype html>\n<html lang="ko">\n<head>\n<meta charset="utf-8">\n'
                 '<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">\n'
-                + head + '</head>\n<body>\n<div class="wrap">' + body + '\n</body>\n</html>\n')
+                + og_tags(terms, tree)
+                + head + '</head>\n<body>\n' + body + '\n</body>\n</html>\n')
     return (page.replace("/*__PDF_URL__*/", SITE_URL + "ai-glossary.pdf")
                 .replace("/*__PDF_ATTR__*/", 'target="_blank" rel="noopener"'))
 
@@ -146,6 +172,7 @@ def main():
 
     if a.pdf:
         subprocess.run([sys.executable, os.path.join(ROOT, "scripts", "make_pdf.py")], check=True)
+        subprocess.run([sys.executable, os.path.join(ROOT, "scripts", "make_og.py")], check=True)
 
     pdf = os.path.join(ROOT, "ai-glossary.pdf")
     if os.path.exists(pdf):

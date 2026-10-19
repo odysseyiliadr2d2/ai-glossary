@@ -26,6 +26,7 @@ AX 전환을 함께 하는 실무자와 개발자를 위한 AI 용어 위키다.
 | `supabase/schema.sql` | Supabase 테이블·뷰·함수 구조 |
 | `supabase/sync-payload.json` | Supabase 동기화 데이터 (빌드 산출물) |
 | `index.html`, `ai-glossary.pdf` | GitHub Pages로 공개되는 결과물 |
+| `og-image.png` | 링크 미리보기 대표 이미지(1200×630). `build.py --pdf` 때 최신 숫자로 다시 만든다 |
 
 ## 고치는 법
 
