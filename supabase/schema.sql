@@ -126,3 +126,6 @@ grant select on public.wiki_tree, public.wiki_timeline, public.wiki_backlinks to
 -- wiki_pull(ref):     GitHub의 supabase/sync-payload.json을 읽어 wiki_sync 실행
 -- 함수 본문은 Supabase 프로젝트에 적용된 버전과 같다. (Database > Functions에서 확인)
 create extension if not exists http with schema extensions;
+-- 동기화 함수는 방문자 API에서 실행할 수 없게 막는다 (함수 안에서도 anon/authenticated 호출을 거부한다)
+revoke execute on function public.wiki_sync(jsonb) from public, anon, authenticated;
+revoke execute on function public.wiki_pull(text) from public, anon, authenticated;
