@@ -1,135 +1,118 @@
 <title>실무 AI 용어집</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="비개발자와 개발자를 함께 위한 실무 AI 용어 위키. 분야·주제별 트리, 입문·심화 설명, 날짜별 변경 타임라인.">
+<meta name="description" content="비개발자와 개발자를 함께 위한 실무 AI 용어 위키. 분야·주제별 트리, 입문·심화 설명, 출처와 관련 논문, 날짜별 변경 타임라인.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap">
 <style>
-/* Single light look by design (matches the AX newsletter). Layout: AX newsletter language — navy masthead band with amber rule, light gray page, white cards; wiki rail (menu card + tree card) left, one card stack per document right */
+/* Single light look by design. Layout: learning cards — pill navigation, indigo hero with search on the home page, filled pastel cards per field, white content cards with large radii */
 :root {
-  --page: #eef1f5;
+  color-scheme: light;
+  --page: #f4f6fb;
   --card: #ffffff;
-  --ink: #1f2933;
-  --body: #4a5563;
-  --muted: #8a94a3;
-  --line: #e1e6ee;
-  --line-soft: #eef1f5;
-  --navy: #14213d;
-  --navy-2: #1d2d52;
-  --navy-sub: #c9d4e8;
-  --navy-dim: #8fa3c7;
-  --amber: #fca311;
-  --amber-deep: #d97706;
-  --link: #1a56db;
-  --tint-easy: #ecf8f0; --tint-easy-fg: #046c4e;
-  --tint-deep: #fdf0f3; --tint-deep-fg: #9f1239;
-  --tint-ex: #fff8e6;   --tint-ex-fg: #7a5200;
-  --l1-bg: #def7ec; --l1: #046c4e;
-  --l2-bg: #fdf6b2; --l2: #8e4b10;
-  --l3-bg: #fde8e8; --l3: #c81e1e;
-  /* 분야 색 (배경/글자) */
-  --c-basics-bg: #e8f0fe; --c-basics: #1a56db;
-  --c-dl-bg: #f3e8ff; --c-dl: #6b21a8;
-  --c-llm-bg: #e0f2f1; --c-llm: #00695c;
-  --c-training-bg: #fdf6b2; --c-training: #8e4b10;
-  --c-prompt-bg: #fde8e8; --c-prompt: #c81e1e;
-  --c-rag-bg: #def7ec; --c-rag: #046c4e;
-  --c-agent-bg: #e0e7ff; --c-agent: #3730a3;
-  --c-genai-bg: #fce7f3; --c-genai: #9d174d;
-  --c-infra-bg: #e5e7eb; --c-infra: #374151;
-  --c-safety-bg: #fff1f2; --c-safety: #9f1239;
-  --c-biz-bg: #fff8e6; --c-biz: #7a5200;
-  --f-sans: "IBM Plex Sans KR", -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
-  --f-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Consolas, monospace;
-  color-scheme: light; /* 뉴스레터와 같은 단일 밝은 디자인: 기기의 다크 모드와 관계없이 같은 색 */
+  --ink: #1b1f3b;
+  --body: #3b4064;
+  --muted: #5b6182;
+  --line: #e2e5f0;
+  --soft: #eceafd;
+  --accent: #3d35b8;
+  --accent-ink: #e3e1ff;
+  --yellow: #ffd84d;
+  --yellow-soft: #fff4c2;
+  --night: #1b1f3b;
+  --night-2: #2c3160;
+  --night-sub: #c9cbe6;
+  --easy: #9ff0c3; --mid: #ffd84d; --hard: #ffb3c4;
+  --l1-bg: #d4f5dd; --l1: #0f4a23;
+  --l2-bg: #fff0b8; --l2: #5c3a05;
+  --l3-bg: #ffe0e4; --l3: #6f1124;
+  --c-basics-bg: #dbe7ff; --c-basics: #12306e;
+  --c-dl-bg: #ece0ff; --c-dl: #43186e;
+  --c-llm-bg: #cdf1ea; --c-llm: #0b4a41;
+  --c-training-bg: #fff0b8; --c-training: #5c3a05;
+  --c-prompt-bg: #ffdcd6; --c-prompt: #7a1d10;
+  --c-rag-bg: #d4f5dd; --c-rag: #0f4a23;
+  --c-agent-bg: #dfe1ff; --c-agent: #262a7a;
+  --c-genai-bg: #ffdcef; --c-genai: #6e1546;
+  --c-infra-bg: #e2e6ee; --c-infra: #252d3d;
+  --c-safety-bg: #ffe0e4; --c-safety: #6f1124;
+  --c-biz-bg: #ffe9c7; --c-biz: #5a3a06;
+  --f-display: "Bricolage Grotesque", "IBM Plex Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  --f-sans: "IBM Plex Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  --f-mono: "DM Mono", ui-monospace, "SFMono-Regular", Consolas, monospace;
 }
 * { box-sizing: border-box; }
 [hidden] { display: none !important; }
 body { margin: 0; background: var(--page); color: var(--ink); font-family: var(--f-sans); font-size: 15px; line-height: 1.7; word-break: keep-all; overflow-wrap: anywhere; }
-body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--navy); }
-a { color: var(--link); }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--page); }
+a { color: var(--accent); }
 button, input, select { font: inherit; color: inherit; }
-:focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; }
+:focus-visible { outline: 3px solid var(--yellow); outline-offset: 2px; }
 .mono { font-family: var(--f-mono); font-variant-numeric: tabular-nums; }
+.wrap { max-width: 1200px; margin: 0 auto; padding-left: max(20px, env(safe-area-inset-left, 0px)); padding-right: max(20px, env(safe-area-inset-right, 0px)); }
 
-/* ---------- masthead ---------- */
-.mast { background: var(--navy); }
-.mast-in { max-width: 1240px; margin: 0 auto; padding-block: 26px 22px; padding-left: max(20px, env(safe-area-inset-left, 0px)); padding-right: max(20px, env(safe-area-inset-right, 0px)); display: grid; grid-template-columns: minmax(0, 1fr) minmax(280px, 420px); gap: 16px 32px; align-items: end; }
-.eyebrow { font-size: 12px; letter-spacing: 2px; color: var(--navy-dim); font-weight: 600; }
-.mast h1 { margin: 6px 0 0; font-size: 30px; font-weight: 700; line-height: 1.2; letter-spacing: -.01em; }
-.mast h1 a { color: #fff; text-decoration: none; }
-.mast .sub { color: var(--navy-sub); font-size: 14px; margin-top: 6px; }
-.mast-tools { display: grid; gap: 10px; }
-.search { position: relative; }
-.search input { width: 100%; padding: 12px 40px 12px 16px; border: 0; border-radius: 10px; background: #fff; color: #1f2933; font-size: 15px; }
-.search input::placeholder { color: #8a94a3; }
-.search input:focus { outline: 3px solid var(--amber); outline-offset: 0; }
-.search kbd { position: absolute; right: 12px; top: 50%; transform: translateY(-50%); font-family: var(--f-mono); font-size: 11px; color: #8a94a3; border: 1px solid #e1e6ee; border-radius: 4px; padding: 0 5px; }
-.search input:not(:placeholder-shown) + kbd { display: none; }
-@media (hover: none) { .search kbd { display: none; } }
-.mast-row { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
-.dl { display: inline-flex; align-items: center; gap: 7px; padding: 8px 14px; border-radius: 999px; background: var(--amber); color: #14213d; text-decoration: none; font-size: 13px; font-weight: 700; }
-.dl:hover { filter: brightness(1.06); }
-.dl span { font-family: var(--f-mono); font-size: 11px; font-weight: 500; opacity: .75; }
-.mast .upd { font-size: 12px; color: var(--navy-dim); }
-.stripe { height: 4px; background: var(--amber); }
+/* ---------- top bar ---------- */
+.top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 6; background: var(--page); }
+.top .wrap { padding-block: 16px 12px; display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; }
+.logo { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); }
+.logo i { width: 36px; height: 36px; border-radius: 10px; background: var(--accent); color: #fff; display: grid; place-items: center; font-style: normal; font-family: var(--f-display); font-weight: 800; font-size: 15px; }
+.logo b { font-size: 19px; font-weight: 700; letter-spacing: -.2px; }
+.top-search { flex: 1 1 260px; max-width: 420px; position: relative; }
+.top-search input { width: 100%; border: 0; background: var(--card); border-radius: 999px; padding: 10px 16px 10px 40px; font-size: 14px; box-shadow: 0 1px 2px rgba(27,31,59,.06); }
+.top-search svg { position: absolute; left: 14px; top: 50%; transform: translateY(-50%); color: var(--muted); }
+.pills { display: flex; flex-wrap: wrap; gap: 6px; margin-left: auto; }
+.pills a { padding: 8px 14px; border-radius: 999px; background: var(--card); color: var(--ink); text-decoration: none; font-weight: 700; font-size: 14px; white-space: nowrap; }
+.pills a:hover { background: var(--soft); }
+.pills a[aria-current="page"] { background: var(--night); color: #fff; }
+.pills a.pdf { background: var(--yellow); color: var(--ink); }
+.pills a.pdf span { font-family: var(--f-mono); font-size: 11px; font-weight: 400; opacity: .7; margin-left: 4px; }
 
-/* ---------- layout ---------- */
-.wrap { max-width: 1240px; margin: 0 auto; padding-block: 22px 64px; padding-left: max(20px, env(safe-area-inset-left, 0px)); padding-right: max(20px, env(safe-area-inset-right, 0px)); display: grid; grid-template-columns: 290px minmax(0, 1fr); gap: 24px; }
-.card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 20px 22px; min-width: 0; }
-.card.tight { padding: 14px 16px; }
-.card.edge-amber { border-left: 4px solid var(--amber); }
-.card.edge-teal { border-left: 4px solid #0e7490; }
-.card.edge-green { border-left: 4px solid var(--l1); }
-.card.navy { background: var(--navy); border-color: var(--navy); color: #fff; }
-.stack { display: grid; gap: 16px; align-content: start; min-width: 0; }
-.label { font-size: 11px; font-weight: 700; letter-spacing: 1px; color: var(--muted); text-transform: uppercase; margin: 0 0 10px; }
-.h-sec { font-size: 15px; font-weight: 700; color: var(--ink); margin: 6px 4px 0; display: flex; align-items: baseline; gap: 8px; }
-.h-sec small { font-size: 12.5px; color: var(--muted); font-weight: 400; }
+/* ---------- hero (home) ---------- */
+.hero { background: var(--accent); border-radius: 28px; padding: 40px 40px 34px; color: #fff; display: flex; flex-wrap: wrap; gap: 28px; align-items: flex-end; justify-content: space-between; margin-top: 4px; }
+.hero h1 { margin: 0; font-family: var(--f-display); font-size: 40px; line-height: 1.2; font-weight: 800; letter-spacing: -.5px; text-wrap: balance; }
+.hero p { margin: 12px 0 0; font-size: 16px; color: var(--accent-ink); }
+.hero form { display: flex; gap: 8px; max-width: 580px; margin-top: 18px; }
+.hero input { flex: 1; min-width: 0; border: 0; border-radius: 16px; padding: 16px 18px; font-size: 16px; color: var(--ink); }
+.hero button { border: 0; border-radius: 16px; padding: 0 22px; background: var(--yellow); color: var(--ink); font-weight: 800; font-size: 15px; cursor: pointer; }
+.hero .quick { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; font-size: 13px; color: var(--accent-ink); align-items: center; }
+.hero .quick a { color: #fff; background: rgba(255,255,255,.16); padding: 3px 11px; border-radius: 999px; text-decoration: none; }
+.hero .quick a:hover { background: rgba(255,255,255,.28); }
+.hero-stats { display: flex; gap: 10px; flex-wrap: wrap; }
+.hero-stats div { background: rgba(255,255,255,.14); border-radius: 18px; padding: 14px 18px; min-width: 100px; }
+.hero-stats b { display: block; font-family: var(--f-display); font-size: 30px; font-weight: 800; line-height: 1; }
+.hero-stats span { font-size: 12.5px; color: var(--accent-ink); }
 
-/* ---------- rail ---------- */
-.rail { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 12px); align-self: start; max-height: calc(100vh - 24px); overflow-y: auto; display: grid; gap: 14px; scrollbar-width: thin; padding-bottom: 8px; }
-.nav { display: grid; gap: 2px; }
-.nav a { display: flex; justify-content: space-between; align-items: baseline; padding: 7px 10px; border-radius: 8px; text-decoration: none; color: var(--ink); font-weight: 600; font-size: 14px; }
-.nav a:hover { background: var(--line-soft); }
-.nav a[aria-current="page"] { background: var(--navy); color: #fff; }
-.nav a small { font-family: var(--f-mono); font-size: 11px; color: var(--muted); font-weight: 400; }
-.nav a[aria-current="page"] small { color: var(--navy-dim); }
-.seg { display: grid; grid-template-columns: repeat(3, 1fr); background: var(--line-soft); border-radius: 999px; padding: 3px; }
-.seg button { background: none; border: 0; padding: 5px 4px; font-size: 13px; cursor: pointer; border-radius: 999px; color: var(--body); }
-.seg button[aria-pressed="true"] { background: var(--card); color: var(--ink); font-weight: 700; box-shadow: 0 1px 2px rgba(20,33,61,.12); }
-.tree-box > summary { list-style: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
-.tree-box > summary::-webkit-details-marker { display: none; }
-.tree-box > summary .label { margin: 0; }
-.tree-box > summary::after { content: "▾"; color: var(--muted); font-size: 12px; }
-.tree-box:not([open]) > summary::after { content: "▸"; }
-.tree { font-size: 14px; margin-top: 10px; }
-.tree summary { list-style: none; cursor: pointer; display: flex; align-items: center; gap: 6px; padding: 4px 6px; border-radius: 6px; }
-.tree summary::-webkit-details-marker { display: none; }
-.tree summary::before { content: "▸"; font-size: 10px; color: var(--muted); width: 10px; flex: none; transition: transform .15s; }
-.tree details[open] > summary::before { transform: rotate(90deg); }
-.tree summary:hover { background: var(--line-soft); }
-.tree summary a { color: var(--ink); text-decoration: none; flex: 1; min-width: 0; }
-.tree summary small { font-family: var(--f-mono); font-size: 10.5px; color: var(--muted); }
-.tree .cat > summary a { font-weight: 600; }
-.tree .dot { width: 8px; height: 8px; border-radius: 2px; flex: none; }
-.tree .topic { margin-left: 14px; }
-.tree .pages { margin: 0 0 4px 30px; padding: 0; list-style: none; border-left: 2px solid var(--line-soft); }
-.tree .pages a { display: block; padding: 1px 8px; font-size: 13px; color: var(--body); text-decoration: none; border-radius: 4px; }
-.tree .pages a:hover { color: var(--ink); background: var(--line-soft); }
-.tree a.on { color: var(--link) !important; font-weight: 700; }
-.rail-foot { font-size: 12px; color: var(--muted); line-height: 1.6; padding: 0 4px; }
-
-/* ---------- pills ---------- */
-.pill { display: inline-block; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 999px; white-space: nowrap; line-height: 1.4; text-decoration: none; }
+/* ---------- common ---------- */
+main { padding-block: 16px 64px; display: grid; gap: 18px; }
+.card { background: var(--card); border-radius: 22px; padding: 24px; min-width: 0; }
+.card.night { background: var(--night); color: #fff; }
+.card.yellow { background: var(--yellow-soft); }
+.card.tight { padding: 18px 20px; border-radius: 18px; }
+.grid { display: grid; gap: 16px; }
+.g2 { grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
+.g3 { grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
+.g4 { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
+.h2 { font-family: var(--f-display); font-size: 21px; font-weight: 800; margin: 10px 4px 0; display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+.h2 small { font-family: var(--f-sans); font-size: 13px; font-weight: 400; color: var(--muted); }
+.label { font-size: 12px; font-weight: 800; letter-spacing: .5px; color: var(--muted); margin: 0 0 10px; }
+.crumbs { font-size: 13px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 4px 6px; margin: 0 0 10px; }
+.crumbs a { color: inherit; text-decoration: none; }
+.crumbs a:hover { text-decoration: underline; }
+.page-title { font-family: var(--f-display); font-size: 34px; font-weight: 800; line-height: 1.2; margin: 0; letter-spacing: -.5px; text-wrap: balance; }
+.page-sub { font-family: var(--f-mono); font-size: 13px; color: var(--muted); margin-top: 6px; }
+.page-sub b { color: var(--ink); font-weight: 500; }
+.lede { margin: 12px 0 0; font-size: 15.5px; max-width: 70ch; }
+.meta { display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: center; margin-top: 14px; font-size: 12.5px; color: var(--muted); }
+.pill { display: inline-block; font-size: 12px; font-weight: 800; padding: 3px 11px; border-radius: 999px; white-space: nowrap; text-decoration: none; line-height: 1.5; }
 .pill.l1 { background: var(--l1-bg); color: var(--l1); }
 .pill.l2 { background: var(--l2-bg); color: var(--l2); }
 .pill.l3 { background: var(--l3-bg); color: var(--l3); }
+.pill.yellow { background: var(--yellow); color: var(--ink); }
+.pill.ghost { background: var(--soft); color: var(--accent); }
 .pill.added { background: var(--l1-bg); color: var(--l1); }
 .pill.updated { background: var(--l2-bg); color: var(--l2); }
-.pill.moved { background: var(--c-basics-bg); color: var(--c-basics); }
+.pill.moved { background: var(--soft); color: var(--accent); }
 .pill.removed { background: var(--l3-bg); color: var(--l3); }
-.pill.ghost { background: var(--line-soft); color: var(--body); font-weight: 600; }
 .c-basics { --cb: var(--c-basics-bg); --cf: var(--c-basics); } .c-dl { --cb: var(--c-dl-bg); --cf: var(--c-dl); }
 .c-llm { --cb: var(--c-llm-bg); --cf: var(--c-llm); } .c-training { --cb: var(--c-training-bg); --cf: var(--c-training); }
 .c-prompt { --cb: var(--c-prompt-bg); --cf: var(--c-prompt); } .c-rag { --cb: var(--c-rag-bg); --cf: var(--c-rag); }
@@ -137,226 +120,211 @@ button, input, select { font: inherit; color: inherit; }
 .c-infra { --cb: var(--c-infra-bg); --cf: var(--c-infra); } .c-safety { --cb: var(--c-safety-bg); --cf: var(--c-safety); }
 .c-biz { --cb: var(--c-biz-bg); --cf: var(--c-biz); }
 .pill.cat { background: var(--cb); color: var(--cf); }
-.tree .dot { background: var(--cf); }
+.fill { background: var(--cb); color: var(--cf); }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { display: inline-flex; align-items: center; gap: 6px; border: 0; background: var(--soft); color: var(--ink); border-radius: 999px; padding: 5px 12px; font-size: 13px; text-decoration: none; cursor: pointer; }
+.chip:hover { background: #dcd8fb; }
+.chip .n { font-family: var(--f-mono); font-size: 11px; color: var(--muted); }
+.chip[aria-pressed="true"] { background: var(--night); color: #fff; }
+.chip[aria-pressed="true"] .n { color: var(--night-sub); }
+.chip.on-fill { background: rgba(255,255,255,.6); color: inherit; }
+.chip.on-fill:hover { background: #fff; }
+.chip.cur { background: var(--night); color: #fff; }
+.gone { color: var(--muted); text-decoration: line-through; }
+mark { background: var(--yellow); color: var(--ink); border-radius: 3px; padding: 0 2px; }
+.empty { color: var(--muted); }
+.empty strong { display: block; font-family: var(--f-display); font-size: 20px; color: var(--ink); margin-bottom: 6px; }
+.go { font-weight: 800; text-decoration: none; font-size: 14px; }
 
-/* ---------- page header card ---------- */
-.crumbs { font-size: 13px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 4px 6px; margin: 0 0 8px; }
-.crumbs a { color: var(--muted); text-decoration: none; }
-.crumbs a:hover { color: var(--link); text-decoration: underline; }
-.crumbs span[aria-hidden] { opacity: .6; }
-.page-title { font-size: 32px; font-weight: 700; line-height: 1.25; margin: 0; letter-spacing: -0.01em; text-wrap: balance; color: var(--ink); }
-.page-sub { font-family: var(--f-mono); font-size: 13.5px; color: var(--muted); margin-top: 4px; }
-.page-sub b { color: var(--ink); font-weight: 500; }
-.lede { font-size: 15px; color: var(--body); max-width: 70ch; margin: 10px 0 0; }
-.meta { display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: center; margin-top: 14px; font-size: 12.5px; color: var(--muted); }
-
-/* ---------- grids of cards ---------- */
-.grid { display: grid; gap: 14px; }
-.grid.g2 { grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
-.grid.g3 { grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
-.grid.g4 { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
-a.tcard { display: grid; align-content: start; gap: 6px; text-decoration: none; color: inherit; transition: border-color .15s, transform .15s; }
-a.tcard:hover { border-color: var(--amber); transform: translateY(-1px); }
-.tcard .top { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
-.tcard .no { font-family: var(--f-mono); font-size: 12px; font-weight: 700; color: var(--muted); }
-.tcard .t { font-size: 17px; font-weight: 700; line-height: 1.4; color: var(--ink); }
-.tcard .e { font-family: var(--f-mono); font-size: 12px; color: var(--muted); margin-top: -4px; }
-.tcard p { margin: 2px 0 0; font-size: 13.5px; line-height: 1.6; color: var(--body); }
-.tcard .go { font-size: 13px; color: var(--link); font-weight: 600; margin-top: 4px; }
-mark { background: #fff1b8; color: #1f2933; border-radius: 2px; padding: 0 1px; }
-
-/* stat tiles */
-.stat .n { font-size: 30px; font-weight: 700; color: var(--navy); line-height: 1.1; font-variant-numeric: tabular-nums; }
-.stat .k { font-size: 12.5px; color: var(--muted); }
+/* term cards */
+a.tcard { display: grid; gap: 6px; align-content: start; text-decoration: none; color: var(--ink); transition: transform .15s, box-shadow .15s; }
+a.tcard:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(27,31,59,.08); }
+.tcard .top-row { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.tcard .num { font-family: var(--f-display); font-weight: 800; font-size: 26px; line-height: 1; color: var(--accent); }
+.tcard .t { font-family: var(--f-display); font-size: 19px; font-weight: 800; line-height: 1.35; }
+.tcard .e { font-family: var(--f-mono); font-size: 12px; color: var(--muted); margin-top: -2px; }
+.tcard p { margin: 4px 0 0; font-size: 14px; color: var(--body); }
 
 /* home */
-.today .k { font-size: 12px; letter-spacing: 1.5px; color: var(--amber); font-weight: 700; }
-.today h3 { font-size: 24px; margin: 8px 0 0; line-height: 1.3; }
-.today h3 a { color: #fff; text-decoration: none; }
-.today h3 a:hover { text-decoration: underline; }
-.today .en { font-family: var(--f-mono); font-size: 12.5px; color: var(--navy-dim); }
-.today p { margin: 10px 0 0; color: var(--navy-sub); line-height: 1.7; }
-.today .go { display: inline-block; margin-top: 12px; color: var(--amber); font-weight: 700; text-decoration: none; font-size: 13.5px; }
-.rows { list-style: none; margin: 0; padding: 0; }
-.rows li { display: grid; grid-template-columns: 82px minmax(0, 1fr); gap: 10px; padding: 9px 0; border-top: 1px solid var(--line-soft); font-size: 14px; align-items: baseline; }
-.rows li:first-child { border-top: 0; padding-top: 0; }
-.rows .d { font-family: var(--f-mono); font-size: 12px; color: var(--muted); }
-.catcard h3 { margin: 10px 0 0; font-size: 17px; }
-.catcard h3 a { color: var(--ink); text-decoration: none; }
-.catcard h3 a:hover { color: var(--link); }
-.catcard .cnt { font-family: var(--f-mono); font-size: 12px; color: var(--muted); }
-.catcard ul { list-style: none; margin: 10px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; }
-.catcard ul a { display: inline-block; font-size: 12.5px; padding: 3px 10px; border-radius: 999px; background: var(--line-soft); color: var(--body); text-decoration: none; }
-.catcard ul a:hover { background: var(--cb); color: var(--cf); }
-.catcard { border-top: 4px solid var(--cf); }
+.today h2 { margin: 10px 0 0; font-family: var(--f-display); font-size: 28px; font-weight: 800; line-height: 1.25; }
+.today h2 a { color: var(--ink); text-decoration: none; }
+.today .e { font-family: var(--f-mono); font-size: 12.5px; color: var(--muted); margin-top: 4px; }
+.today p { margin: 10px 0 0; font-size: 16px; }
+.today .go { display: inline-block; margin-top: 14px; padding: 10px 16px; border-radius: 12px; background: var(--soft); }
+.path .k { font-size: 12px; font-weight: 800; letter-spacing: 1px; color: var(--yellow); }
+.path h2 { margin: 8px 0 14px; font-family: var(--f-display); font-size: 22px; font-weight: 800; }
+.path .lv { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+.path .lv div { background: var(--night-2); border-radius: 16px; padding: 14px; }
+.path .lv b { display: block; font-family: var(--f-display); font-size: 28px; font-weight: 800; line-height: 1.1; }
+.path .lv span { font-size: 13px; color: var(--night-sub); }
+.path .recent { margin-top: 14px; font-size: 13.5px; color: var(--night-sub); }
+.path .recent a { color: #fff; }
+a.catcard { border-radius: 22px; padding: 20px; min-height: 172px; text-decoration: none; display: flex; flex-direction: column; gap: 6px; transition: transform .15s; }
+a.catcard:hover { transform: translateY(-2px); }
+a.catcard .n { font-family: var(--f-display); font-size: 34px; font-weight: 800; line-height: 1; letter-spacing: -1px; }
+a.catcard .k { font-size: 17px; font-weight: 800; margin-top: 6px; }
+a.catcard .s { font-size: 12.5px; line-height: 1.6; opacity: .82; }
+a.catcard.more { background: var(--card); border: 2px dashed #c9cbe6; color: var(--ink); justify-content: center; }
 
-/* topic / category */
-.chipline { display: flex; flex-wrap: wrap; gap: 6px; }
-.chip { border: 1px solid var(--line); background: var(--card); border-radius: 999px; padding: 3px 11px; font-size: 13px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; text-decoration: none; color: var(--ink); }
-.chip .n { font-family: var(--f-mono); font-size: 11px; color: var(--muted); }
-.chip:hover { border-color: var(--amber); }
-.chip[aria-pressed="true"] { background: var(--navy); border-color: var(--navy); color: #fff; }
-.chip[aria-pressed="true"] .n { color: var(--navy-dim); }
-.chip.pop b { font-family: var(--f-mono); font-size: 11px; color: var(--amber-deep); font-weight: 700; }
-.topiccard h3 { margin: 0; font-size: 18px; }
-.topiccard h3 a { color: var(--ink); text-decoration: none; }
-.topiccard h3 a:hover { color: var(--link); }
-.topiccard .td { color: var(--body); font-size: 13.5px; margin: 6px 0 12px; }
+/* tree page & category */
+.tree-cat { border-radius: 24px; padding: 24px; }
+.tree-cat h3 { margin: 0; font-family: var(--f-display); font-size: 22px; font-weight: 800; display: flex; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
+.tree-cat h3 a { color: inherit; text-decoration: none; }
+.tree-cat h3 a:hover { text-decoration: underline; }
+.tree-cat .d { margin: 6px 0 14px; font-size: 14px; opacity: .85; max-width: 80ch; }
+.tree-topics { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 10px; }
+.tree-topic { background: rgba(255,255,255,.62); border-radius: 16px; padding: 14px 16px; }
+.tree-topic h4 { margin: 0 0 8px; font-size: 15px; display: flex; justify-content: space-between; gap: 8px; }
+.tree-topic h4 a { color: inherit; text-decoration: none; }
+.tree-topic h4 a:hover { text-decoration: underline; }
+.tree-topic h4 small { font-family: var(--f-mono); font-weight: 400; font-size: 12px; opacity: .7; }
+.tree-topic .chip { background: rgba(255,255,255,.85); color: var(--ink); font-size: 12.5px; padding: 3px 10px; }
+.tree-topic .chip:hover { background: #fff; }
+.topicnum { font-family: var(--f-mono); font-size: 12px; font-weight: 500; opacity: .7; }
 
-/* term document */
-.doc-grid { display: grid; grid-template-columns: minmax(0, 1fr) 280px; gap: 16px; align-items: start; }
-.defs { display: grid; gap: 12px; }
-.def { border-radius: 10px; padding: 14px 16px; }
-.def .tag { font-size: 12px; font-weight: 700; display: block; margin-bottom: 4px; }
-.def p { margin: 0; font-size: 15.5px; line-height: 1.75; color: var(--ink); }
-.def.easy { background: var(--tint-easy); } .def.easy .tag { color: var(--tint-easy-fg); }
-.def.deep { background: var(--tint-deep); } .def.deep .tag { color: var(--tint-deep-fg); }
-.def.ex { background: var(--tint-ex); } .def.ex .tag { color: var(--tint-ex-fg); }
-.def.ex p { font-size: 14.5px; }
-.side ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; }
-.side li a, .side li span, .side li strong { display: inline-block; font-size: 13px; padding: 3px 10px; border-radius: 999px; background: var(--line-soft); color: var(--ink); text-decoration: none; }
-.side li a:hover { background: var(--c-basics-bg); color: var(--link); }
-.side li strong { background: var(--navy); color: #fff; }
-.side .none { color: var(--muted); font-size: 13px; margin: 0; }
-.more-links summary { cursor: pointer; color: var(--link); font-size: 13px; margin-top: 8px; }
-.more-links ul { margin-top: 8px; }
+/* term page */
+.doc-grid { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 18px; align-items: start; }
+.stack { display: grid; gap: 16px; min-width: 0; align-content: start; }
+.seg { display: inline-grid; grid-template-columns: repeat(3, auto); background: var(--soft); border-radius: 999px; padding: 3px; margin-top: 14px; }
+.seg button { border: 0; background: none; padding: 6px 16px; border-radius: 999px; font-size: 13px; font-weight: 700; cursor: pointer; color: var(--muted); }
+.seg button[aria-pressed="true"] { background: var(--night); color: #fff; }
+.def .tagline { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+.def p { margin: 0; font-size: 16.5px; line-height: 1.8; }
+.def.night p { color: #eef0ff; }
+.def.night .tagline .pill { background: var(--hard); color: var(--ink); }
+.list { list-style: none; margin: 0; padding: 0; display: grid; }
+.list li { padding: 10px 0; border-top: 1px solid var(--line); }
+.list li:first-child { border-top: 0; padding-top: 0; }
+.src a { font-weight: 600; text-decoration: none; color: var(--ink); }
+.src a:hover { color: var(--accent); text-decoration: underline; }
+.src .m { display: flex; gap: 6px; align-items: center; margin-top: 2px; font-size: 12px; color: var(--muted); flex-wrap: wrap; }
+.src .typ { font-size: 11px; font-weight: 800; padding: 1px 8px; border-radius: 999px; background: var(--soft); color: var(--accent); }
+.src .typ.official { background: var(--l1-bg); color: var(--l1); }
+.src .typ.docs { background: var(--c-basics-bg); color: var(--c-basics); }
+.src .typ.encyclopedia { background: var(--c-infra-bg); color: var(--c-infra); }
+.ext { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+.ext a { font-size: 12.5px; font-weight: 700; padding: 5px 11px; border-radius: 999px; background: var(--night); color: #fff; text-decoration: none; }
+.ext a:hover { background: var(--accent); }
 .seq { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
-.seq a { text-decoration: none; color: var(--ink); font-weight: 600; display: grid; gap: 2px; }
+.seq a { text-decoration: none; color: var(--ink); font-weight: 700; display: grid; gap: 2px; }
 .seq a small { color: var(--muted); font-size: 12px; font-weight: 400; }
 .seq a.next { text-align: right; grid-column: 2; }
-.seq a:hover { border-color: var(--amber); }
-.hist { list-style: none; margin: 0; padding: 0; }
-.hist li { display: grid; grid-template-columns: 92px auto minmax(0,1fr); gap: 10px; align-items: center; padding: 8px 0; border-top: 1px solid var(--line-soft); font-size: 13.5px; }
-.hist li:first-child { border-top: 0; padding-top: 0; }
+.more-links summary { cursor: pointer; color: var(--accent); font-size: 13px; font-weight: 700; margin-top: 10px; }
+.more-links .chips { margin-top: 8px; }
+.hist li { display: grid; grid-template-columns: 92px auto minmax(0, 1fr); gap: 10px; align-items: center; font-size: 14px; }
 .hist .d { font-family: var(--f-mono); font-size: 12.5px; color: var(--muted); }
-.gone { color: var(--muted); text-decoration: line-through; }
 
-/* timeline */
-.tl-next { font-size: 13px; color: var(--muted); margin-top: 8px; }
-.timeline { position: relative; list-style: none; margin: 0; padding: 0 0 0 28px; display: grid; gap: 16px; }
-.timeline::before { content: ""; position: absolute; left: 8px; top: 18px; bottom: 18px; width: 2px; background: var(--line); }
-.tl-day { position: relative; }
-.tl-day::before { content: ""; position: absolute; left: -26px; top: 22px; width: 14px; height: 14px; border-radius: 50%; background: var(--amber); border: 3px solid var(--page); }
-.tl-head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 12px; align-items: baseline; }
-.tl-date { font-family: var(--f-mono); font-size: 14px; font-weight: 500; color: var(--amber-deep); }
-.tl-date small { color: var(--muted); margin-left: 6px; font-family: var(--f-sans); }
-.tl-title { font-size: 20px; font-weight: 700; margin: 4px 0 0; }
-.tl-note { color: var(--body); margin: 6px 0 0; max-width: 70ch; font-size: 14px; }
-.tl-counts { display: flex; gap: 6px; flex-wrap: wrap; }
-.tl-group { margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--line-soft); }
-.tl-group h5 { font-size: 12.5px; font-weight: 700; margin: 0 0 8px; display: flex; align-items: center; gap: 8px; }
-.tl-items { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; font-size: 13px; }
-.tl-items li a, .tl-items li span.gone { display: inline-block; padding: 3px 10px; border-radius: 999px; background: var(--line-soft); color: var(--ink); text-decoration: none; }
-.tl-items li a:hover { background: var(--c-basics-bg); color: var(--link); }
-.tl-items li i { font-style: normal; font-size: 12px; color: var(--muted); margin-left: 4px; }
-.more { margin-top: 14px; background: var(--line-soft); border: 0; border-radius: 999px; padding: 6px 14px; font-size: 13px; font-weight: 600; cursor: pointer; color: var(--link); }
-
-/* index */
-.ix { columns: 3 240px; column-gap: 14px; }
-.ix-group { break-inside: avoid; margin-bottom: 14px; display: block; }
-.ix-group h2 { font-size: 22px; font-weight: 700; line-height: 1; color: var(--amber-deep); margin: 0 0 8px; }
-.ix-group a { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; padding: 4px 0; border-top: 1px solid var(--line-soft); text-decoration: none; color: var(--ink); font-size: 14px; line-height: 1.5; }
-.ix-group a:hover .k { color: var(--link); text-decoration: underline; }
-.ix-group .e { font-family: var(--f-mono); font-size: 11.5px; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 48%; }
+/* papers */
+.paper a.ttl { font-family: var(--f-display); font-size: 17px; font-weight: 700; color: var(--ink); text-decoration: none; line-height: 1.4; }
+.paper a.ttl:hover { color: var(--accent); text-decoration: underline; }
+.paper .m { font-size: 13px; color: var(--muted); margin-top: 4px; }
+.paper .m b { color: var(--ink); font-weight: 600; }
+.paper .chips { margin-top: 10px; }
+.paper-search { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 14px; }
+.paper-search input { flex: 1 1 280px; min-width: 0; border: 0; background: var(--soft); border-radius: 14px; padding: 12px 16px; font-size: 15px; }
 .toolrow { display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: center; margin-top: 14px; }
 .toolrow label { font-size: 13px; color: var(--muted); display: inline-flex; gap: 6px; align-items: center; }
-.toolrow select { border: 1px solid var(--line); background: var(--card); border-radius: 8px; padding: 4px 8px; font-size: 13px; }
+.toolrow select { border: 0; background: var(--soft); border-radius: 999px; padding: 6px 12px; font-size: 13px; }
 
-/* ranking */
-.rank { list-style: none; padding: 0; margin: 0; }
-.rank li { display: grid; grid-template-columns: 44px minmax(0, 1fr) minmax(80px, 180px); gap: 14px; align-items: center; padding: 12px 0; border-top: 1px solid var(--line-soft); }
-.rank li:first-child { border-top: 0; padding-top: 0; }
-.rank .no { font-size: 20px; font-weight: 700; color: var(--muted); font-variant-numeric: tabular-nums; text-align: right; }
-.rank li:nth-child(-n+3) .no { color: var(--amber-deep); font-size: 26px; }
-.rank .t a { font-weight: 700; font-size: 16px; color: var(--ink); text-decoration: none; }
-.rank .t a:hover { color: var(--link); }
+/* timeline */
+.tl { display: grid; gap: 14px; }
+.tl-day { display: grid; grid-template-columns: 140px minmax(0, 1fr); gap: 18px; align-items: start; }
+.tl-when { position: sticky; top: 80px; }
+.tl-when b { display: block; font-family: var(--f-display); font-size: 26px; font-weight: 800; line-height: 1.1; }
+.tl-when span { font-size: 13px; color: var(--muted); }
+.tl-title { margin: 0; font-family: var(--f-display); font-size: 21px; font-weight: 800; }
+.tl-note { margin: 6px 0 0; color: var(--body); font-size: 14.5px; max-width: 72ch; }
+.tl-counts { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 12px; }
+.tl-group { margin-top: 16px; }
+.tl-group h5 { margin: 0 0 8px; }
+.tl-items { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+.tl-items a, .tl-items .gone { display: inline-block; font-size: 13px; padding: 4px 11px; border-radius: 999px; background: var(--soft); color: var(--ink); text-decoration: none; }
+.tl-items a:hover { background: #dcd8fb; }
+.tl-items i { font-style: normal; font-size: 12px; color: var(--muted); margin-left: 4px; }
+.more { margin-top: 14px; border: 0; background: var(--night); color: #fff; border-radius: 999px; padding: 8px 16px; font-size: 13px; font-weight: 700; cursor: pointer; }
+
+/* index */
+.ix { columns: 4 230px; column-gap: 16px; }
+.ix-group { break-inside: avoid; margin-bottom: 16px; display: block; }
+.ix-group h2 { margin: 0 0 8px; font-family: var(--f-display); font-size: 26px; font-weight: 800; color: var(--accent); line-height: 1; }
+.ix-group a { display: flex; justify-content: space-between; gap: 10px; padding: 5px 0; border-top: 1px solid var(--line); text-decoration: none; color: var(--ink); font-size: 14px; }
+.ix-group a:hover .k { color: var(--accent); text-decoration: underline; }
+.ix-group .e { font-family: var(--f-mono); font-size: 11.5px; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 48%; }
+
+/* rank */
+.rank { list-style: none; margin: 0; padding: 0; display: grid; }
+.rank li { display: grid; grid-template-columns: 52px minmax(0, 1fr) minmax(90px, 200px); gap: 14px; align-items: center; padding: 12px 0; border-top: 1px solid var(--line); }
+.rank li:first-child { border-top: 0; }
+.rank .no { font-family: var(--f-display); font-weight: 800; font-size: 22px; color: var(--muted); text-align: right; }
+.rank li:nth-child(-n+3) .no { color: var(--accent); font-size: 30px; }
+.rank .t a { font-weight: 800; font-size: 16px; color: var(--ink); text-decoration: none; }
+.rank .t a:hover { color: var(--accent); }
 .rank .t small { display: block; font-family: var(--f-mono); font-size: 11.5px; color: var(--muted); }
-.rank .v { display: grid; gap: 4px; }
-.rank .bar { height: 8px; background: var(--line-soft); border-radius: 4px; overflow: hidden; }
-.rank .bar i { display: block; height: 100%; background: var(--amber); border-radius: 4px; }
-.rank .hits { font-family: var(--f-mono); font-size: 12px; color: var(--muted); text-align: right; font-variant-numeric: tabular-nums; }
-.rank-note { color: var(--body); font-size: 13.5px; margin: 8px 0 0; }
+.rank .bar { height: 10px; background: var(--soft); border-radius: 999px; overflow: hidden; }
+.rank .bar i { display: block; height: 100%; background: var(--yellow); border-radius: 999px; }
+.rank .hits { font-family: var(--f-mono); font-size: 12px; color: var(--muted); text-align: right; margin-top: 4px; }
 
-.empty { color: var(--muted); }
-.empty strong { display: block; font-size: 18px; color: var(--ink); margin-bottom: 6px; }
-.toTop { position: fixed; right: max(16px, env(safe-area-inset-right, 0px)); bottom: calc(16px + env(safe-area-inset-bottom, 0px)); width: 44px; height: 44px; border-radius: 50%; border: 0; background: var(--navy); color: #fff; cursor: pointer; font-size: 18px; box-shadow: 0 4px 12px rgba(20,33,61,.25); }
+.foot { padding-block: 0 40px; font-size: 12.5px; color: var(--muted); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; }
+.toTop { position: fixed; right: max(16px, env(safe-area-inset-right, 0px)); bottom: calc(16px + env(safe-area-inset-bottom, 0px)); width: 46px; height: 46px; border-radius: 50%; border: 0; background: var(--night); color: #fff; cursor: pointer; font-size: 18px; box-shadow: 0 6px 16px rgba(27,31,59,.25); }
 
-@media (max-width: 1060px) { .doc-grid { grid-template-columns: minmax(0, 1fr); } }
-@media (max-width: 860px) {
-  .mast-in { grid-template-columns: minmax(0, 1fr); padding-block: 20px 16px; }
-  .mast h1 { font-size: 25px; }
-  .wrap { grid-template-columns: minmax(0, 1fr); padding-block: 14px 48px; gap: 14px; }
-  .rail { position: static; max-height: none; overflow: visible; }
-  .nav { grid-template-columns: repeat(4, 1fr); gap: 4px; }
-  .nav a { justify-content: center; background: var(--line-soft); padding: 7px 4px; font-size: 13px; }
-  .nav a small { display: none; }
-  .card { padding: 16px; }
-  .page-title { font-size: 26px; }
-  .ix { columns: 2 150px; }
-  .rank li { grid-template-columns: 30px minmax(0, 1fr) 70px; gap: 10px; }
+@media (max-width: 1000px) { .doc-grid { grid-template-columns: minmax(0, 1fr); } }
+@media (max-width: 760px) {
+  .top { position: static; }
+  .pills { margin-left: 0; width: 100%; overflow-x: auto; flex-wrap: nowrap; padding-bottom: 2px; scrollbar-width: none; }
+  .top-search { max-width: none; order: 3; }
+  .hero { padding: 28px 22px 24px; border-radius: 22px; }
+  .hero h1 { font-size: 28px; }
+  .card { padding: 18px; border-radius: 18px; }
+  .page-title { font-size: 27px; }
+  .tl-day { grid-template-columns: minmax(0, 1fr); gap: 8px; }
+  .tl-when { position: static; display: flex; gap: 10px; align-items: baseline; }
+  .tl-when b { font-size: 20px; }
+  .rank li { grid-template-columns: 34px minmax(0, 1fr) 76px; gap: 10px; }
   .hist li { grid-template-columns: 84px minmax(0, 1fr); }
   .hist li .pill { display: none; }
   .seq { grid-template-columns: minmax(0, 1fr); }
   .seq a.next { grid-column: 1; }
-  .m-hide { display: none !important; }
+  .ix { columns: 2 150px; }
 }
-
-@media (prefers-reduced-motion: reduce) { .tree summary::before, a.tcard { transition: none; } }
+@media (prefers-reduced-motion: reduce) { a.tcard, a.catcard { transition: none; } }
 </style>
 
-<header class="mast">
-  <div class="mast-in">
-    <div>
-      <div class="eyebrow">AX STUDY · AI GLOSSARY WIKI</div>
-      <h1><a href="#home" data-go="home">실무 AI 용어집</a></h1>
-      <div class="sub">실무자와 개발자를 위한 AI 용어 위키 · 같은 용어를 입문과 심화 두 수준으로</div>
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#home" data-go="home"><i aria-hidden="true">AI</i><b>실무 AI 용어집</b></a>
+    <div class="top-search" id="topSearch">
+      <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M11 11l3.5 3.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      <label for="q" hidden>용어 검색</label>
+      <input id="q" type="search" placeholder="용어, 영문, 약어, 초성 검색" autocomplete="off">
     </div>
-    <div class="mast-tools">
-      <div class="search">
-        <input id="q" type="search" placeholder="용어, 영문, 약어, 초성으로 검색" autocomplete="off" aria-label="용어 검색">
-        <kbd>/</kbd>
-      </div>
-      <div class="mast-row">
-        <a class="dl" href="/*__PDF_URL__*/" /*__PDF_ATTR__*/>
-          <svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.5v8.2m0 0L4.8 6.5M8 9.7l3.2-3.2M2.5 11v2.5h11V11" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          전체 PDF <span>/*__PDF_META__*/</span>
-        </a>
-        <span class="upd" id="upd"></span>
-      </div>
-    </div>
+    <nav class="pills" aria-label="위키 메뉴">
+      <a href="#home" data-go="home">대문</a>
+      <a href="#tree" data-go="tree">트리</a>
+      <a href="#timeline" data-go="timeline">타임라인</a>
+      <a href="#index" data-go="index">색인</a>
+      <a href="#papers" data-go="papers">논문</a>
+      <a href="#rank" data-go="rank" id="navRank" hidden>인기 순위</a>
+      <a class="pdf" href="/*__PDF_URL__*/" /*__PDF_ATTR__*/>PDF 받기<span>/*__PDF_META__*/</span></a>
+    </nav>
   </div>
 </header>
-<div class="stripe"></div>
 
 <div class="wrap">
-  <aside class="rail">
-    <div class="card tight">
-      <nav class="nav" aria-label="위키 메뉴">
-        <a href="#home" data-go="home">대문</a>
-        <a href="#timeline" data-go="timeline">타임라인 <small id="navTl"></small></a>
-        <a href="#index" data-go="index">색인 <small id="navIx"></small></a>
-        <a href="#rank" data-go="rank" id="navRank" hidden>인기 순위</a>
-      </nav>
+  <section class="hero" id="hero" hidden>
+    <div style="flex: 1 1 460px; min-width: 0">
+      <h1>오늘은 어떤 AI 용어가 궁금한가요?</h1>
+      <p id="heroSub"></p>
+      <form id="heroForm" role="search">
+        <label for="q2" hidden>용어 검색</label>
+        <input id="q2" type="search" placeholder="예: RAG, 파인튜닝, ㅍㅇㅌㄴ" autocomplete="off">
+        <button type="submit">찾기</button>
+      </form>
+      <div class="quick" id="quick"></div>
     </div>
-    <div class="card tight m-hide">
-      <p class="label">설명 보기</p>
-      <div class="seg" id="view" role="group" aria-label="설명 보기">
-        <button data-v="easy" aria-pressed="false">입문</button>
-        <button data-v="both" aria-pressed="true">모두</button>
-        <button data-v="deep" aria-pressed="false">심화</button>
-      </div>
-    </div>
-    <div class="card tight m-hide" id="popular" hidden>
-      <p class="label">많이 찾는 문서</p>
-      <div class="chipline" id="popChips"></div>
-    </div>
-    <details class="card tight tree-box" id="treeBox" open>
-      <summary><p class="label">분야 트리</p></summary>
-      <div class="tree" id="tree"></div>
-    </details>
-    <div class="rail-foot m-hide" id="foot"></div>
-  </aside>
-  <main id="main" class="stack" tabindex="-1"></main>
+    <div class="hero-stats" id="heroStats"></div>
+  </section>
+  <main id="main" tabindex="-1"></main>
+  <footer class="foot"><span id="foot"></span><span>입문은 누구나 · 실무는 업무에 AI를 적용하는 사람 · 심화는 구현자 기준</span></footer>
 </div>
 <button class="toTop" id="toTop" aria-label="맨 위로" hidden>↑</button>
 
@@ -370,6 +338,7 @@ const STATS = { url: "", key: "" };
 
 const LEVELS = { 1: "입문", 2: "실무", 3: "심화" };
 const TYPES = { added: "추가", updated: "수정", moved: "이동", removed: "삭제" };
+const SRC_TYPES = { official: "공식", docs: "문서", guide: "해설", encyclopedia: "백과", article: "기사" };
 const CHO = ["ㄱ","ㄲ","ㄴ","ㄷ","ㄸ","ㄹ","ㅁ","ㅂ","ㅃ","ㅅ","ㅆ","ㅇ","ㅈ","ㅉ","ㅊ","ㅋ","ㅌ","ㅍ","ㅎ"];
 const CHO_BASE = { "ㄲ":"ㄱ","ㄸ":"ㄷ","ㅃ":"ㅂ","ㅆ":"ㅅ","ㅉ":"ㅈ" };
 const KO_INDEX = ["ㄱ","ㄴ","ㄷ","ㄹ","ㅁ","ㅂ","ㅅ","ㅇ","ㅈ","ㅊ","ㅋ","ㅌ","ㅍ","ㅎ"];
@@ -386,6 +355,18 @@ LIVE.forEach(t => (t.related || []).forEach(r => { if (!backlinks.has(r)) backli
 const histOf = new Map();
 CHANGES.forEach(c => { if (!histOf.has(c.id)) histOf.set(c.id, []); histOf.get(c.id).push(c); });
 const liveTopicTerms = tp => tp.terms.filter(id => byId.has(id) && byId.get(id).status !== "removed");
+/* 논문: 같은 논문(url 기준)을 하나로 묶고 연결된 문서를 모은다 */
+const PAPERS = (() => {
+  const m = new Map();
+  LIVE.forEach(t => (t.papers || []).forEach(p => {
+    const k = (p.url || p.title).toLowerCase();
+    if (!m.has(k)) m.set(k, Object.assign({}, p, { terms: [], cats: new Set() }));
+    const e = m.get(k); if (!e.terms.includes(t.id)) e.terms.push(t.id); e.cats.add(t.cat);
+  }));
+  return [...m.values()].map(p => Object.assign(p, { _hay: [p.title, p.authors, p.venue, p.year, ...p.terms.map(id => byId.get(id).ko + " " + byId.get(id).en)].join(" ").toLowerCase() }))
+    .sort((a, b) => (b.year || 0) - (a.year || 0) || a.title.localeCompare(b.title));
+})();
+const SOURCE_COUNT = LIVE.reduce((s, t) => s + (t.sources || []).length, 0);
 
 function choOf(s) {
   const c = s.trim().charCodeAt(0);
@@ -401,130 +382,124 @@ LIVE.forEach(t => {
 });
 
 const store = { get(k){ try { return localStorage.getItem(k); } catch(e){ return null; } }, set(k,v){ try { localStorage.setItem(k,v); } catch(e){} } };
-const state = { route: "home", q: "", view: store.get("gl-view") || "both", levels: new Set(), ixSort: store.get("gl-ixsort") || "ko", tlType: "all" };
+const state = { route: "home", q: "", view: store.get("gl-view") || "both", levels: new Set(), ixSort: store.get("gl-ixsort") || "ko", tlType: "all", pq: "", pcat: "", pera: "" };
 const $ = s => document.querySelector(s);
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;" }[c]));
-const fmtDate = d => d.replaceAll("-", ".");
+const safeUrl = u => /^https?:\/\//i.test(u || "") ? esc(u) : "#";
+const fmtDate = d => (d || "").replaceAll("-", ".");
 function hi(text, q) {
   const e = esc(text); if (!q) return e;
   const qq = esc(q).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
   return e.replace(new RegExp(qq, "gi"), m => `<mark>${m}</mark>`);
 }
-const lvBadge = l => `<span class="pill l${l}">${LEVELS[l]}</span>`;
-const catPill = (catId, label) => `<span class="pill cat c-${catId}">${esc(label ?? catById.get(catId)?.ko ?? "")}</span>`;
-const termLink = (id, cls = "") => { const t = byId.get(id); if (!t) return ""; return t.status === "removed" ? `<span class="gone">${esc(t.ko)}</span>` : `<a href="#${id}" data-go="${id}" class="${cls}">${esc(t.ko)}</a>`; };
+const lvPill = l => `<span class="pill l${l}">${LEVELS[l]}</span>`;
+const catPill = (id, label) => `<span class="pill cat c-${id}">${esc(label ?? catById.get(id)?.ko ?? "")}</span>`;
+const termLink = id => { const t = byId.get(id); if (!t) return ""; return t.status === "removed" ? `<span class="gone">${esc(t.ko)}</span>` : `<a href="#${id}" data-go="${id}">${esc(t.ko)}</a>`; };
+const termChip = (id, cls = "chip") => { const t = byId.get(id); if (!t) return ""; return t.status === "removed" ? `<span class="${cls} gone">${esc(t.ko)}</span>` : `<a class="${cls}" href="#${id}" data-go="${id}">${esc(t.ko)}</a>`; };
 const sep = `<span aria-hidden="true">›</span>`;
 const crumbs = (...parts) => `<nav class="crumbs"><a href="#home" data-go="home">대문</a>${parts.map(p => sep + p).join("")}</nav>`;
 const enOf = t => t.abbr && t.abbr !== t.en ? `${t.abbr} · ${t.en}` : t.en;
-function termCard(t, opts = {}) {
-  const tp = topicById.get(t.topic);
-  const text = opts.text ?? (state.view === "deep" ? t.deep : t.easy);
+const catCount = c => c.topics.reduce((s, tp) => s + liveTopicTerms(tp).length, 0);
+function termCard(t, o = {}) {
+  const text = o.text ?? (state.view === "deep" ? t.deep : t.easy);
+  const h = s => o.hq !== undefined ? hi(s, o.hq) : esc(s);
   return `<a class="card tcard" href="#${t.id}" data-go="${t.id}">
-    <div class="top">${opts.no ? `<span class="no">${String(opts.no).padStart(2, "0")}</span>` : catPill(tp.cat, opts.topicLabel ? tp.ko : undefined)}${lvBadge(t.level)}</div>
-    <div class="t">${opts.hq !== undefined ? hi(t.ko, opts.hq) : esc(t.ko)}</div>
-    <div class="e">${opts.hq !== undefined ? hi(enOf(t), opts.hq) : esc(enOf(t))}</div>
-    <p>${opts.hq !== undefined ? hi(text, opts.hq) : esc(text)}</p>
-  </a>`;
+    <div class="top-row">${o.no ? `<span class="num">${o.no}</span>` : catPill(t.cat)}${lvPill(t.level)}</div>
+    <div class="t">${h(t.ko)}</div><div class="e">${h(enOf(t))}</div><p>${h(text)}</p></a>`;
 }
+function weekdayOf(d) { const [y, m, dd] = d.split("-").map(Number); return "일월화수목금토"[new Date(Date.UTC(y, m - 1, dd)).getUTCDay()]; }
+function nextUpdate() {
+  // 기준일 2026-10-19(월)부터 2주 간격의 월요일
+  const base = Date.UTC(2026, 9, 19), day = 86400000, now = Date.now() + 9 * 3600000;
+  let n = base; while (n + 9 * 3600000 <= now) n += 14 * day;
+  const d = new Date(n); return `${d.getUTCFullYear()}-${String(d.getUTCMonth() + 1).padStart(2, "0")}-${String(d.getUTCDate()).padStart(2, "0")}`;
+}
+const releaseOf = d => RELEASES.find(r => r.date === d);
+function typeSummary(list) {
+  const n = {}; list.forEach(c => n[c.type] = (n[c.type] || 0) + 1);
+  return Object.keys(TYPES).filter(k => n[k]).map(k => `<span class="pill ${k}">${TYPES[k]} ${n[k]}</span>`).join(" ");
+}
+const extLinks = q => `<div class="ext">
+  <a href="https://arxiv.org/search/?query=${encodeURIComponent(q)}&amp;searchtype=all" target="_blank" rel="noopener">arXiv</a>
+  <a href="https://www.semanticscholar.org/search?q=${encodeURIComponent(q)}" target="_blank" rel="noopener">Semantic Scholar</a>
+  <a href="https://scholar.google.com/scholar?q=${encodeURIComponent(q)}" target="_blank" rel="noopener">Google Scholar</a>
+  <a href="https://www.riss.kr/search/Search.do?query=${encodeURIComponent(q)}" target="_blank" rel="noopener">RISS(국내)</a></div>`;
 
-/* ---------- 트리 ---------- */
-function buildTree() {
-  $("#tree").innerHTML = TREE.map(c => {
-    const n = c.topics.reduce((s, tp) => s + liveTopicTerms(tp).length, 0);
-    return `<details class="cat c-${c.id}" data-cat="${c.id}"><summary><i class="dot"></i><a href="#c-${c.id}" data-go="c-${c.id}">${esc(c.ko)}</a><small>${n}</small></summary>
-      ${c.topics.map(tp => `<details class="topic" data-topic="${tp.id}"><summary><a href="#t-${tp.id}" data-go="t-${tp.id}">${esc(tp.ko)}</a><small>${liveTopicTerms(tp).length}</small></summary>
-        <ul class="pages">${liveTopicTerms(tp).map(id => `<li><a href="#${id}" data-go="${id}" data-page="${id}">${esc(byId.get(id).ko)}</a></li>`).join("")}</ul></details>`).join("")}
-    </details>`;
-  }).join("");
-}
-function syncTree(catId, topicId, pageId) {
-  document.querySelectorAll("#tree a.on").forEach(a => a.classList.remove("on"));
-  if (catId) { const d = document.querySelector(`#tree details[data-cat="${catId}"]`); if (d) { d.open = true; d.querySelector(":scope > summary a").classList.add("on"); } }
-  if (topicId) { const d = document.querySelector(`#tree details[data-topic="${topicId}"]`); if (d) { d.open = true; d.querySelector(":scope > summary a").classList.add("on"); } }
-  if (pageId) { const a = document.querySelector(`#tree a[data-page="${pageId}"]`); if (a) { a.classList.add("on"); if (matchMedia("(min-width: 861px)").matches) a.scrollIntoView({ block: "nearest" }); } }
-}
-
-/* ---------- 화면: 대문 ---------- */
+/* ---------- 대문 ---------- */
 function todayTerm() {
   const d = new Date(); const seed = d.getFullYear() * 400 + d.getMonth() * 31 + d.getDate();
   const pool = LIVE.filter(t => t.level <= 2);
   return pool[(seed * 2654435761 >>> 0) % pool.length];
 }
-function typeSummary(list) {
-  const n = {}; list.forEach(c => n[c.type] = (n[c.type] || 0) + 1);
-  return Object.keys(TYPES).filter(k => n[k]).map(k => `<span class="pill ${k}">${TYPES[k]} ${n[k]}</span>`).join(" ");
-}
-const releaseOf = d => RELEASES.find(r => r.date === d);
 function viewHome() {
-  syncTree();
-  const t = todayTerm(), ttp = topicById.get(t.topic);
+  const t = todayTerm(), tp = topicById.get(t.topic);
   const days = [...new Set(CHANGES.map(c => c.date))].sort().reverse();
-  const recentRows = days.slice(0, 5).map(d => {
-    const list = CHANGES.filter(c => c.date === d);
-    const body = list.length > 6
-      ? `${esc(releaseOf(d)?.title || "변경")} ${typeSummary(list)}`
-      : list.map(c => `${termLink(c.id)} <span class="pill ${c.type}">${TYPES[c.type]}</span>`).join(" · ");
-    return `<li><span class="d">${fmtDate(d)}</span><span>${body}</span></li>`;
-  }).join("");
-  const topics = TREE.reduce((s, c) => s + c.topics.length, 0);
-  return `
-    <section class="grid g4">
-      <div class="card stat"><div class="n">${LIVE.length}</div><div class="k">문서</div></div>
-      <div class="card stat"><div class="n">${TREE.length}</div><div class="k">분야</div></div>
-      <div class="card stat"><div class="n">${topics}</div><div class="k">주제</div></div>
-      <div class="card stat"><div class="n">${fmtDate(days[0] || "").slice(5)}</div><div class="k">마지막 갱신 · 다음 ${fmtDate(nextUpdate()).slice(5)}</div></div>
-    </section>
-    <section class="grid g2">
-      <div class="card navy today"><div class="k">오늘의 용어</div>
-        <h3><a href="#${t.id}" data-go="${t.id}">${esc(t.ko)}</a></h3>
-        <div class="en">${esc(enOf(t))} · ${esc(catById.get(ttp.cat).ko)} › ${esc(ttp.ko)}</div>
+  const last = days[0], r = releaseOf(last);
+  const lv = { 1: 0, 2: 0, 3: 0 }; LIVE.forEach(x => lv[x.level]++);
+  const pop = ranking.slice(0, 8);
+  return `<section class="grid g2">
+      <article class="card today">
+        <span class="pill yellow">오늘의 용어 · ${LEVELS[t.level]}</span>
+        <h2><a href="#${t.id}" data-go="${t.id}">${esc(t.ko)}</a></h2>
+        <div class="e">${esc(enOf(t))} · ${esc(catById.get(tp.cat).ko)} › ${esc(tp.ko)}</div>
         <p>${esc(t.easy)}</p>
-        <a class="go" href="#${t.id}" data-go="${t.id}">문서 읽기 →</a></div>
-      <div class="card edge-teal"><p class="label">최근 바뀜</p>
-        <ul class="rows">${recentRows || '<li><span class="d"></span><span>아직 변경 기록이 없다.</span></li>'}</ul>
-        <div style="margin-top:12px;font-size:13px"><a href="#timeline" data-go="timeline" style="font-weight:600;text-decoration:none">타임라인 전체 보기 →</a></div></div>
+        <a class="go" href="#${t.id}" data-go="${t.id}">심화 설명까지 읽기 →</a>
+      </article>
+      <article class="card night path">
+        <div class="k">학습 경로</div>
+        <h2>입문에서 심화까지, 주제별 읽는 순서</h2>
+        <div class="lv"><div><b style="color:var(--easy)">${lv[1]}</b><span>입문 · 누구나</span></div><div><b style="color:var(--mid)">${lv[2]}</b><span>실무 · 업무 적용</span></div><div><b style="color:var(--hard)">${lv[3]}</b><span>심화 · 구현자</span></div></div>
+        <div class="recent">최근 바뀜 · ${fmtDate(last)} ${esc(r?.title || "")} · <a href="#timeline" data-go="timeline">타임라인 보기</a></div>
+      </article>
     </section>
-    <h2 class="h-sec">분야별 둘러보기 <small>${TREE.length}개 분야 · ${topics}개 주제</small></h2>
-    <section class="grid g3">${TREE.map(c => `<div class="card catcard c-${c.id}">
-      ${catPill(c.id, c.en)}
-      <h3><a href="#c-${c.id}" data-go="c-${c.id}">${esc(c.ko)}</a> <span class="cnt">${c.topics.reduce((s, tp) => s + liveTopicTerms(tp).length, 0)}</span></h3>
-      <ul>${c.topics.map(tp => `<li><a href="#t-${tp.id}" data-go="t-${tp.id}">${esc(tp.ko)}</a></li>`).join("")}</ul></div>`).join("")}</section>`;
+    ${pop.length ? `<section class="card tight"><p class="label">요즘 많이 찾는 문서</p><div class="chips">${pop.map((p, i) => `<a class="chip" href="#${p.term_id}" data-go="${p.term_id}"><b class="mono" style="color:var(--accent)">${i + 1}</b>${esc(byId.get(p.term_id).ko)}</a>`).join("")}</div></section>` : ""}
+    <h2 class="h2">분야 고르기 <small>${TREE.length}개 분야 · ${TREE.reduce((s, c) => s + c.topics.length, 0)}개 주제</small></h2>
+    <section class="grid g4">${TREE.map(c => `<a class="catcard fill c-${c.id}" href="#c-${c.id}" data-go="c-${c.id}">
+        <span class="n">${catCount(c)}</span><span class="k">${esc(c.ko)}</span><span class="s">${c.topics.map(tp => esc(tp.ko)).join(" · ")}</span></a>`).join("")}
+      <a class="catcard more" href="#tree" data-go="tree"><span class="k">위키 트리 전체 보기 →</span><span class="s" style="color:var(--muted);opacity:1">분야 › 주제 › 문서를 한 화면에</span></a>
+    </section>`;
 }
 
-/* ---------- 화면: 분야 ---------- */
+/* ---------- 트리 ---------- */
+function viewTree() {
+  return `<section class="card">${crumbs("<span>트리</span>")}<h1 class="page-title">위키 트리</h1>
+      <p class="lede">분야 ${TREE.length}개 › 주제 ${TREE.reduce((s, c) => s + c.topics.length, 0)}개 › 문서 ${LIVE.length}개. 주제 안의 문서는 읽는 순서대로 놓여 있다.</p></section>
+    ${TREE.map(c => `<section class="tree-cat fill c-${c.id}">
+      <h3><a href="#c-${c.id}" data-go="c-${c.id}">${esc(c.ko)}</a><span class="mono" style="font-size:14px;font-weight:500">${catCount(c)}개 문서</span></h3>
+      <p class="d">${esc(c.desc)}</p>
+      <div class="tree-topics">${c.topics.map((tp, i) => `<div class="tree-topic"><h4><a href="#t-${tp.id}" data-go="t-${tp.id}"><span class="topicnum">${String(i + 1).padStart(2, "0")}</span> ${esc(tp.ko)}</a><small>${liveTopicTerms(tp).length}</small></h4>
+        <div class="chips">${liveTopicTerms(tp).map(id => termChip(id)).join("")}</div></div>`).join("")}</div>
+    </section>`).join("")}`;
+}
+
+/* ---------- 분야 ---------- */
 function viewCategory(c) {
-  syncTree(c.id);
-  const n = c.topics.reduce((s, tp) => s + liveTopicTerms(tp).length, 0);
-  return `<section class="card c-${c.id}" style="border-top:4px solid var(--cf)">${crumbs("<span>분야</span>")}
-      ${catPill(c.id, c.en)}
-      <h2 class="page-title" style="margin-top:8px">${esc(c.ko)}</h2><div class="page-sub">주제 ${c.topics.length}개 · 문서 ${n}개</div>
+  return `<section class="tree-cat fill c-${c.id}">${crumbs(`<a href="#tree" data-go="tree">트리</a>`, "<span>분야</span>")}
+      <h1 class="page-title">${esc(c.ko)}</h1><div class="page-sub" style="color:inherit;opacity:.75">${esc(c.en)} · 주제 ${c.topics.length}개 · 문서 ${catCount(c)}개</div>
       <p class="lede">${esc(c.desc)}</p></section>
-    <section class="grid g2">${c.topics.map((tp, i) => `<div class="card topiccard">
-      <div class="tcard"><div class="top"><span class="no">주제 ${String(i + 1).padStart(2, "0")}</span><span class="pill ghost">${liveTopicTerms(tp).length}개 문서</span></div></div>
-      <h3 style="margin-top:6px"><a href="#t-${tp.id}" data-go="t-${tp.id}">${esc(tp.ko)}</a></h3>
-      <p class="td">${esc(tp.desc)}</p>
-      <div class="chipline">${liveTopicTerms(tp).map(id => { const t = byId.get(id); return `<a class="chip" href="#${id}" data-go="${id}">${esc(t.ko)} <span class="n">${LEVELS[t.level]}</span></a>`; }).join("")}</div></div>`).join("")}</section>`;
+    <section class="grid g2">${c.topics.map((tp, i) => `<article class="card">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:8px"><span class="pill cat c-${c.id}">주제 ${String(i + 1).padStart(2, "0")}</span><span class="mono" style="font-size:12px;color:var(--muted)">${liveTopicTerms(tp).length}개 문서</span></div>
+      <h2 style="margin:10px 0 0;font-family:var(--f-display);font-size:21px"><a href="#t-${tp.id}" data-go="t-${tp.id}" style="color:var(--ink);text-decoration:none">${esc(tp.ko)}</a></h2>
+      <p style="margin:6px 0 12px;color:var(--body);font-size:14px">${esc(tp.desc)}</p>
+      <div class="chips">${liveTopicTerms(tp).map(id => `<a class="chip" href="#${id}" data-go="${id}">${esc(byId.get(id).ko)} <span class="n">${LEVELS[byId.get(id).level]}</span></a>`).join("")}</div>
+      <a class="go" href="#t-${tp.id}" data-go="t-${tp.id}" style="display:inline-block;margin-top:14px">순서대로 읽기 →</a></article>`).join("")}</section>`;
 }
 
-/* ---------- 화면: 주제 ---------- */
+/* ---------- 주제 ---------- */
 function viewTopic(tp) {
-  const c = catById.get(tp.cat);
-  syncTree(c.id, tp.id);
-  const ids = liveTopicTerms(tp);
+  const c = catById.get(tp.cat), ids = liveTopicTerms(tp);
   const prev = c.topics[tp.idx - 1], next = c.topics[tp.idx + 1];
-  return `<section class="card c-${c.id}" style="border-top:4px solid var(--cf)">${crumbs(`<a href="#c-${c.id}" data-go="c-${c.id}">${esc(c.ko)}</a>`, "<span>주제</span>")}
-      ${catPill(c.id)}
-      <h2 class="page-title" style="margin-top:8px">${esc(tp.ko)}</h2><div class="page-sub">${esc(tp.en)} · 문서 ${ids.length}개</div>
+  return `<section class="tree-cat fill c-${c.id}">${crumbs(`<a href="#c-${c.id}" data-go="c-${c.id}">${esc(c.ko)}</a>`, "<span>주제</span>")}
+      <h1 class="page-title">${esc(tp.ko)}</h1><div class="page-sub" style="color:inherit;opacity:.75">${esc(tp.en)} · 문서 ${ids.length}개</div>
       <p class="lede">${esc(tp.desc)}</p></section>
-    <h2 class="h-sec">읽는 순서 <small>입문에서 심화로, 앞 개념을 알아야 이해되는 순서다</small></h2>
-    <section class="grid g2">${ids.map((id, i) => termCard(byId.get(id), { no: i + 1 })).join("")}</section>
+    <h2 class="h2">읽는 순서 <small>입문에서 심화로, 앞 개념을 알아야 이해되는 순서다</small></h2>
+    <section class="grid g3">${ids.map((id, i) => termCard(byId.get(id), { no: i + 1 })).join("")}</section>
     <nav class="seq">${prev ? `<a class="card tight" href="#t-${prev.id}" data-go="t-${prev.id}"><small>← 이전 주제</small>${esc(prev.ko)}</a>` : ""}${next ? `<a class="card tight next" href="#t-${next.id}" data-go="t-${next.id}"><small>다음 주제 →</small>${esc(next.ko)}</a>` : ""}</nav>`;
 }
 
-/* ---------- 화면: 문서 ---------- */
+/* ---------- 문서 ---------- */
 function viewTerm(t) {
   const tp = topicById.get(t.topic), c = catById.get(tp.cat);
-  syncTree(c.id, tp.id, t.id);
   track(t.id);
   const ids = liveTopicTerms(tp), i = ids.indexOf(t.id);
   const prev = ids[i - 1], next = ids[i + 1];
@@ -532,74 +507,110 @@ function viewTerm(t) {
   const back = (backlinks.get(t.id) || []).filter(id => id !== t.id && !rel.includes(id));
   const hist = (histOf.get(t.id) || []).slice().sort((a, b) => b.date.localeCompare(a.date));
   const showEasy = state.view !== "deep", showDeep = state.view !== "easy";
-  const list = arr => `<ul>${arr.map(id => `<li>${termLink(id)}</li>`).join("")}</ul>`;
-  return `<section class="card c-${c.id}" style="border-top:4px solid var(--cf)">
+  const srcs = t.sources || [], papers = t.papers || [];
+  const q = t.abbr && t.abbr.length > 1 && t.abbr !== t.en ? `${t.en} ${t.abbr}` : t.en;
+  return `<section class="card">
       ${crumbs(`<a href="#c-${c.id}" data-go="c-${c.id}">${esc(c.ko)}</a>`, `<a href="#t-${tp.id}" data-go="t-${tp.id}">${esc(tp.ko)}</a>`)}
-      <h2 class="page-title">${esc(t.ko)}</h2>
+      <h1 class="page-title">${esc(t.ko)}</h1>
       <div class="page-sub">${t.abbr && t.abbr !== t.en ? `<b>${esc(t.abbr)}</b> · ` : ""}${esc(t.en)}</div>
-      <div class="meta">${lvBadge(t.level)}${catPill(c.id)}<a class="pill ghost" href="#t-${tp.id}" data-go="t-${tp.id}">${esc(tp.ko)}</a>
-        <span>최초 수록 <span class="mono">${fmtDate(t.added)}</span></span><span>마지막 수정 <span class="mono">${fmtDate(t.updated)}</span></span><span>판 <span class="mono">${t.revision}</span></span></div>
+      <div class="meta">${lvPill(t.level)}${catPill(c.id)}<a class="pill ghost" href="#t-${tp.id}" data-go="t-${tp.id}">${esc(tp.ko)} · ${i + 1}/${ids.length}</a>
+        <span>최초 수록 <span class="mono">${fmtDate(t.added)}</span></span><span>마지막 수정 <span class="mono">${fmtDate(t.updated)}</span></span><span>판 <span class="mono">${t.revision}</span></span><span>출처 ${srcs.length} · 논문 ${papers.length}</span></div>
+      <div class="seg" id="view" role="group" aria-label="설명 보기">
+        <button data-v="easy" aria-pressed="${state.view === "easy"}">입문만</button><button data-v="both" aria-pressed="${state.view === "both"}">모두</button><button data-v="deep" aria-pressed="${state.view === "deep"}">심화만</button>
+      </div>
     </section>
     <div class="doc-grid">
       <div class="stack">
-        <section class="card"><div class="defs">
-          ${showEasy ? `<div class="def easy"><span class="tag">입문 · 누구나</span><p>${esc(t.easy)}</p></div>` : ""}
-          ${showDeep ? `<div class="def deep"><span class="tag">심화 · 구현자</span><p>${esc(t.deep)}</p></div>` : ""}
-          ${t.example ? `<div class="def ex"><span class="tag">💡 실무 예시</span><p>${esc(t.example)}</p></div>` : ""}
-        </div></section>
-        <section class="card"><p class="label">문서 이력 · ${hist.length}건</p>
-          <ul class="hist">${hist.map(h => `<li><span class="d">${fmtDate(h.date)}</span><span class="pill ${h.type}">${TYPES[h.type]}</span><span>${esc(h.summary)}</span></li>`).join("") || '<li><span class="none">기록 없음</span></li>'}</ul></section>
+        ${showEasy ? `<section class="card def"><div class="tagline"><span class="pill l1">입문 · 누구나</span></div><p>${esc(t.easy)}</p></section>` : ""}
+        ${showDeep ? `<section class="card night def"><div class="tagline"><span class="pill">심화 · 구현자</span></div><p>${esc(t.deep)}</p></section>` : ""}
+        ${t.example ? `<section class="card yellow def"><div class="tagline"><span class="pill yellow">실무 예시</span></div><p>${esc(t.example)}</p></section>` : ""}
+        <section class="card"><p class="label">출처 · 더 읽을거리 ${srcs.length}</p>
+          ${srcs.length ? `<ul class="list src">${srcs.map(s => `<li><a href="${safeUrl(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a>
+            <div class="m"><span class="typ ${esc(s.type)}">${SRC_TYPES[s.type] || "자료"}</span>${esc(s.publisher || "")}<span class="mono">${esc((s.url || "").replace(/^https?:\/\//, "").split("/")[0])}</span></div></li>`).join("")}</ul>`
+            : '<p class="empty" style="margin:0">아직 등록된 출처가 없다. 다음 정기 업데이트 때 보강된다.</p>'}
+        </section>
+        <section class="card"><p class="label">관련 논문 ${papers.length}</p>
+          ${papers.length ? `<ul class="list paper">${papers.map(p => `<li><a class="ttl" href="${safeUrl(p.url)}" target="_blank" rel="noopener">${esc(p.title)}</a>
+            <div class="m"><b>${esc(p.authors || "")}</b> · ${esc(p.year || "")} · ${esc(p.venue || "")}</div></li>`).join("")}</ul>`
+            : '<p class="empty" style="margin:0">이 용어는 특정 논문보다 실무·제도에서 쓰이는 말이라 대표 논문을 달지 않았다.</p>'}
+          <p class="label" style="margin:16px 0 0">이 용어로 논문 더 찾기</p>${extLinks(q)}
+        </section>
+        <section class="card"><p class="label">문서 이력 ${hist.length}</p>
+          <ul class="list hist">${hist.map(h => `<li><span class="d">${fmtDate(h.date)}</span><span class="pill ${h.type}">${TYPES[h.type]}</span><span>${esc(h.summary)}</span></li>`).join("") || "<li>기록 없음</li>"}</ul></section>
         <nav class="seq">${prev ? `<a class="card tight" href="#${prev}" data-go="${prev}"><small>← 이전 · ${esc(tp.ko)}</small>${esc(byId.get(prev).ko)}</a>` : ""}${next ? `<a class="card tight next" href="#${next}" data-go="${next}"><small>다음 · ${esc(tp.ko)} →</small>${esc(byId.get(next).ko)}</a>` : ""}</nav>
       </div>
-      <aside class="stack side">
-        <section class="card tight"><p class="label">연관 문서 · ${rel.length}</p>${rel.length ? list(rel) : '<p class="none">없음</p>'}</section>
-        <section class="card tight"><p class="label">이 문서를 가리키는 문서 · ${back.length}</p>${back.length ? list(back.slice(0, 10)) + (back.length > 10 ? `<details class="more-links"><summary>나머지 ${back.length - 10}개 보기</summary>${list(back.slice(10))}</details>` : "") : '<p class="none">없음</p>'}</section>
-        <section class="card tight"><p class="label">같은 주제 · ${esc(tp.ko)}</p><ul>${ids.map(id => `<li>${id === t.id ? `<strong>${esc(byId.get(id).ko)}</strong>` : termLink(id)}</li>`).join("")}</ul></section>
+      <aside class="stack">
+        <section class="card tight"><p class="label">연관 문서 ${rel.length}</p>${rel.length ? `<div class="chips">${rel.map(id => termChip(id)).join("")}</div>` : '<p class="empty" style="margin:0">없음</p>'}</section>
+        <section class="card tight"><p class="label">이 문서를 가리키는 문서 ${back.length}</p>${back.length ? `<div class="chips">${back.slice(0, 12).map(id => termChip(id)).join("")}</div>${back.length > 12 ? `<details class="more-links"><summary>나머지 ${back.length - 12}개</summary><div class="chips">${back.slice(12).map(id => termChip(id)).join("")}</div></details>` : ""}` : '<p class="empty" style="margin:0">없음</p>'}</section>
+        <section class="tree-cat fill c-${c.id}" style="padding:18px 20px;border-radius:18px"><p class="label" style="color:inherit;opacity:.8">같은 주제 · ${esc(tp.ko)}</p><div class="chips">${ids.map((id, k) => id === t.id ? `<span class="chip cur">${k + 1}. ${esc(byId.get(id).ko)}</span>` : `<a class="chip on-fill" href="#${id}" data-go="${id}">${k + 1}. ${esc(byId.get(id).ko)}</a>`).join("")}</div></section>
       </aside>
     </div>`;
 }
 
-/* ---------- 화면: 타임라인 ---------- */
-function weekdayOf(d) { const [y, m, dd] = d.split("-").map(Number); return "일월화수목금토"[new Date(Date.UTC(y, m - 1, dd)).getUTCDay()]; }
-function nextUpdate() {
-  // 기준일 2026-10-19(월)부터 2주 간격의 월요일 (KST 오전 9시 전후 반영)
-  const base = Date.UTC(2026, 9, 19), day = 86400000, now = Date.now() + 9 * 3600000;
-  let n = base; while (n + 9 * 3600000 <= now) n += 14 * day;
-  const d = new Date(n); return `${d.getUTCFullYear()}-${String(d.getUTCMonth() + 1).padStart(2, "0")}-${String(d.getUTCDate()).padStart(2, "0")}`;
+/* ---------- 논문 ---------- */
+const ERAS = [["", "전체"], ["2023-", "2023년 이후"], ["2018-2022", "2018–2022"], ["2010-2017", "2010–2017"], ["-2009", "2009년 이전"]];
+function inEra(y, era) {
+  if (!era) return true; if (!y) return false;
+  const [a, b] = era.split("-"); return (!a || y >= +a) && (!b || y <= +b);
 }
+function viewPapers() {
+  const q = state.pq.trim().toLowerCase();
+  const list = PAPERS.filter(p => (!q || p._hay.includes(q)) && (!state.pcat || p.cats.has(state.pcat)) && inEra(p.year, state.pera));
+  const catN = {}; PAPERS.forEach(p => p.cats.forEach(c => catN[c] = (catN[c] || 0) + 1));
+  return `<section class="card">${crumbs("<span>논문</span>")}
+      <h1 class="page-title">관련 논문 찾기</h1>
+      <p class="lede">용어집 문서에 연결된 대표 논문 ${PAPERS.length}편을 모았다. 제목·저자·학회·연도·용어로 찾고, 원하는 논문이 없으면 아래 학술 검색으로 넘어간다.</p>
+      <form class="paper-search" id="paperForm" role="search">
+        <label for="pq" hidden>논문 검색</label>
+        <input id="pq" type="search" value="${esc(state.pq)}" placeholder="예: transformer, Lewis, 2023, 검색 증강" autocomplete="off">
+      </form>
+      <div class="toolrow">
+        <div class="chips" id="eraChips">${ERAS.map(([v, l]) => `<button class="chip" data-era="${v}" aria-pressed="${state.pera === v}">${l}</button>`).join("")}</div>
+        <label for="pcat">분야 <select id="pcat"><option value="">전체 분야</option>${TREE.filter(c => catN[c.id]).map(c => `<option value="${c.id}" ${state.pcat === c.id ? "selected" : ""}>${esc(c.ko)} (${catN[c.id]})</option>`).join("")}</select></label>
+      </div>
+      <p class="label" style="margin:16px 0 0">${state.pq.trim() ? `“${esc(state.pq.trim())}” 학술 검색으로 더 찾기` : "학술 검색 바로가기"}</p>${extLinks(state.pq.trim() || "large language model")}
+    </section>
+    <h2 class="h2">${list.length}편 <small>최신 연도 순</small></h2>
+    ${list.length ? `<section class="grid g2">${list.slice(0, 120).map(p => `<article class="card paper">
+        <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px">${[...p.cats].map(c => catPill(c)).join("")}<span class="pill ghost">${esc(p.year || "연도 미상")}</span></div>
+        <a class="ttl" href="${safeUrl(p.url)}" target="_blank" rel="noopener">${hi(p.title, q)}</a>
+        <div class="m"><b>${hi(p.authors || "", q)}</b> · ${hi(p.venue || "", q)}</div>
+        <div class="chips">${p.terms.map(id => termChip(id)).join("")}</div></article>`).join("")}</section>`
+      : `<section class="card empty"><strong>맞는 논문이 없다</strong>검색어나 필터를 바꾸거나, 위의 학술 검색 링크로 찾아보자.</section>`}`;
+}
+
+/* ---------- 타임라인 ---------- */
 function viewTimeline() {
-  syncTree();
   const days = [...new Set(CHANGES.map(c => c.date).concat(RELEASES.map(r => r.date)))].sort().reverse();
   const filt = state.tlType;
   const counts = {}; CHANGES.forEach(c => counts[c.type] = (counts[c.type] || 0) + 1);
-  return `<section class="card edge-amber">${crumbs("<span>타임라인</span>")}
-      <h2 class="page-title">타임라인</h2>
-      <p class="lede">문서가 추가되고 고쳐진 기록을 날짜순으로 모았다. 정기 업데이트는 2주마다 월요일 오전에 반영된다.</p>
-      <div class="tl-next">다음 정기 업데이트 예정 <span class="mono">${fmtDate(nextUpdate())}</span> (월)</div>
-      <div class="chipline" id="tlFilter" style="margin-top:14px">
+  return `<section class="card">${crumbs("<span>타임라인</span>")}
+      <h1 class="page-title">타임라인</h1>
+      <p class="lede">문서가 추가되고 고쳐진 기록을 날짜순으로 모았다. 정기 업데이트는 2주마다 월요일 오전에 반영된다. 다음 예정일은 <b class="mono">${fmtDate(nextUpdate())}</b>.</p>
+      <div class="chips" id="tlFilter" style="margin-top:14px">
         <button class="chip" data-t="all" aria-pressed="${filt === "all"}">전체 <span class="n">${CHANGES.length}</span></button>
         ${Object.keys(TYPES).filter(k => counts[k]).map(k => `<button class="chip" data-t="${k}" aria-pressed="${filt === k}">${TYPES[k]} <span class="n">${counts[k]}</span></button>`).join("")}
       </div></section>
-    <ol class="timeline">${days.map(d => {
+    <div class="tl">${days.map(d => {
       const items = CHANGES.filter(c => c.date === d && (filt === "all" || c.type === filt));
       const r = releaseOf(d);
       if (!items.length && !r) return "";
       const byCat = new Map();
-      items.forEach(c => { const t = byId.get(c.id); const cat = t ? topicById.get(t.topic)?.cat : "_"; if (!byCat.has(cat)) byCat.set(cat, []); byCat.get(cat).push(c); });
+      items.forEach(c => { const t = byId.get(c.id); const cat = t ? t.cat : "_"; if (!byCat.has(cat)) byCat.set(cat, []); byCat.get(cat).push(c); });
       const big = items.length > 40;
-      return `<li class="tl-day"><div class="card">
-        <div class="tl-head"><div class="tl-date">${fmtDate(d)}<small>${weekdayOf(d)}요일</small></div><div class="tl-counts">${typeSummary(items)}</div></div>
-        ${r ? `<h3 class="tl-title">${esc(r.title)}</h3><p class="tl-note">${esc(r.note)}</p>` : ""}
-        <div class="tl-body" ${big ? "hidden" : ""}>${[...byCat.entries()].map(([cat, list]) => `<div class="tl-group"><h5>${catPill(cat)} <span style="color:var(--muted);font-weight:400">${list.length}</span></h5>
-          <ul class="tl-items">${list.map(c => `<li>${termLink(c.id)}${c.type !== "added" || c.summary !== "최초 수록" ? `<i>${esc(c.summary)}</i>` : ""}</li>`).join("")}</ul></div>`).join("")}</div>
-        ${big ? `<button class="more" data-more>문서 ${items.length}개 펼치기</button>` : ""}
-      </div></li>`;
-    }).join("")}</ol>`;
+      return `<div class="tl-day"><div class="tl-when"><b>${fmtDate(d).slice(5)}</b><span>${d.slice(0, 4)} · ${weekdayOf(d)}요일</span></div>
+        <article class="card">
+          ${r ? `<h2 class="tl-title">${esc(r.title)}</h2><p class="tl-note">${esc(r.note)}</p>` : ""}
+          <div class="tl-counts">${typeSummary(items)}</div>
+          <div class="tl-body" ${big ? "hidden" : ""}>${[...byCat.entries()].map(([cat, list]) => `<div class="tl-group"><h5>${catPill(cat)} <span class="mono" style="font-size:12px;color:var(--muted)">${list.length}</span></h5>
+            <ul class="tl-items">${list.map(c => `<li>${termLink(c.id)}${c.type !== "added" || c.summary !== "최초 수록" ? `<i>${esc(c.summary)}</i>` : ""}</li>`).join("")}</ul></div>`).join("")}</div>
+          ${big ? `<button class="more" data-more>문서 ${items.length}개 펼치기</button>` : ""}
+        </article></div>`;
+    }).join("")}</div>`;
 }
 
-/* ---------- 화면: 색인 ---------- */
+/* ---------- 색인 ---------- */
 function viewIndex() {
-  syncTree();
   const byEn = state.ixSort === "en";
   const list = LIVE.filter(t => !state.levels.size || state.levels.has(t.level))
     .sort((a, b) => byEn ? a.en.localeCompare(b.en, "en", { sensitivity: "base" }) : koCmp.compare(a.ko, b.ko));
@@ -611,20 +622,17 @@ function viewIndex() {
     if (a === "#") return -1; if (b === "#") return 1; return a.localeCompare(b);
   });
   const lv = { 1: 0, 2: 0, 3: 0 }; LIVE.forEach(t => lv[t.level]++);
-  return `<section class="card edge-amber">${crumbs("<span>색인</span>")}
-      <h2 class="page-title">색인</h2><div class="page-sub">${list.length} / ${LIVE.length}개 문서</div>
+  return `<section class="card">${crumbs("<span>색인</span>")}
+      <h1 class="page-title">색인</h1><div class="page-sub">${list.length} / ${LIVE.length}개 문서</div>
       <div class="toolrow">
-        <div class="chipline" id="lvChips">${[1,2,3].map(l => `<button class="chip" data-l="${l}" aria-pressed="${state.levels.has(l)}">${LEVELS[l]} <span class="n">${lv[l]}</span></button>`).join("")}</div>
+        <div class="chips" id="lvChips">${[1, 2, 3].map(l => `<button class="chip" data-l="${l}" aria-pressed="${state.levels.has(l)}">${LEVELS[l]} <span class="n">${lv[l]}</span></button>`).join("")}</div>
         <label for="ixSort">정렬 <select id="ixSort"><option value="ko" ${!byEn ? "selected" : ""}>가나다순</option><option value="en" ${byEn ? "selected" : ""}>ABC순</option></select></label>
       </div></section>
-    <div class="ix">${keys.map(k => `<section class="card tight ix-group"><h2>${esc(k)}</h2>${groups.get(k).map(t => `<a href="#${t.id}" data-go="${t.id}"><span class="k">${esc(byEn ? t.en : t.ko)}</span><span class="e">${esc(byEn ? t.ko : (t.abbr || t.en))}</span></a>`).join("")}</section>`).join("") || '<div class="card empty"><strong>맞는 문서가 없다</strong>난이도 필터를 해제해 보자.</div>'}</div>`;
+    <div class="ix">${keys.map(k => `<section class="card tight ix-group"><h2>${esc(k)}</h2>${groups.get(k).map(t => `<a href="#${t.id}" data-go="${t.id}"><span class="k">${esc(byEn ? t.en : t.ko)}</span><span class="e">${esc(byEn ? t.ko : (t.abbr || t.en))}</span></a>`).join("")}</section>`).join("") || '<section class="card empty"><strong>맞는 문서가 없다</strong>난이도 필터를 해제해 보자.</section>'}</div>`;
 }
 
-/* ---------- 화면: 검색 결과 ---------- */
-function matches(t, q) {
-  if (/^[ㄱ-ㅎ]+$/.test(q)) return t._ini.includes(q);
-  return t._hay.includes(q);
-}
+/* ---------- 검색 결과 ---------- */
+function matches(t, q) { return /^[ㄱ-ㅎ]+$/.test(q) ? t._ini.includes(q) : t._hay.includes(q); }
 function score(t, q) {
   if (/^[ㄱ-ㅎ]+$/.test(q)) return t._ini.startsWith(q) ? 2 : 1;
   if ([t.ko, t.abbr, t.en].some(v => v && v.toLowerCase() === q)) return 4;
@@ -632,16 +640,16 @@ function score(t, q) {
   if (t._name.includes(q)) return 2;
   return 1;
 }
-function searchResults() {
-  const q = state.q.trim().toLowerCase();
-  return LIVE.filter(t => matches(t, q)).sort((a, b) => score(b, q) - score(a, q) || koCmp.compare(a.ko, b.ko));
-}
+function searchResults() { const q = state.q.trim().toLowerCase(); return LIVE.filter(t => matches(t, q)).sort((a, b) => score(b, q) - score(a, q) || koCmp.compare(a.ko, b.ko)); }
 function viewSearch() {
   const q = state.q.trim(), list = searchResults();
   const hq = /^[ㄱ-ㅎ]+$/.test(q) ? "" : q;
-  return `<section class="card edge-amber"><h2 class="page-title">“${esc(q)}” 검색 결과</h2><div class="page-sub">${list.length}개 문서 · Enter를 누르면 첫 문서로 이동</div></section>
-    ${list.length ? `<section class="grid g2">${list.slice(0, 60).map(t => termCard(t, { hq, text: t.easy })).join("")}</section>`
-      : `<section class="card empty"><strong>맞는 문서가 없다</strong>검색어를 줄여 보자. 초성(예: ㅍㅇㅌㄴ → 파인튜닝)으로도 찾을 수 있다.</section>`}`;
+  const pl = hq ? PAPERS.filter(p => p._hay.includes(hq.toLowerCase())).slice(0, 4) : [];
+  return `<h2 class="h2">“${esc(q)}” 검색 결과 <small>문서 ${list.length}개${pl.length ? ` · 논문 ${pl.length}편` : ""} · Enter를 누르면 첫 문서로</small></h2>
+    ${list.length ? `<section class="grid g3">${list.slice(0, 60).map(t => termCard(t, { hq, text: t.easy })).join("")}</section>`
+      : `<section class="card empty"><strong>맞는 문서가 없다</strong>검색어를 줄여 보자. 초성(예: ㅍㅇㅌㄴ → 파인튜닝)으로도 찾을 수 있다.</section>`}
+    ${pl.length ? `<h2 class="h2">관련 논문 <small><a href="#papers" data-go="papers" data-pq="${esc(hq)}">논문에서 더 보기 →</a></small></h2>
+      <section class="grid g2">${pl.map(p => `<article class="card paper"><a class="ttl" href="${safeUrl(p.url)}" target="_blank" rel="noopener">${hi(p.title, hq)}</a><div class="m"><b>${esc(p.authors || "")}</b> · ${esc(p.year || "")} · ${esc(p.venue || "")}</div></article>`).join("")}</section>` : ""}`;
 }
 
 /* ---------- 조회 집계 · 인기 순위 ---------- */
@@ -659,27 +667,20 @@ async function loadRanking() {
     ranking = (await r.json()).filter(x => byId.has(x.term_id) && byId.get(x.term_id).status !== "removed");
     rankState = "ok";
   } catch (e) { rankState = "error"; }
-  renderPopular();
-  if (state.route === "rank") render();
-}
-function renderPopular() {
-  const top = ranking.slice(0, 6);
-  $("#popular").hidden = !top.length;
-  $("#popChips").innerHTML = top.map((r, i) => `<a class="chip pop" href="#${r.term_id}" data-go="${r.term_id}"><b>${i + 1}</b>${esc(byId.get(r.term_id).ko)}</a>`).join("");
+  if (!state.q.trim() && (state.route === "rank" || state.route === "home")) render();
 }
 function viewRank() {
-  syncTree();
-  const head = `<section class="card edge-amber">${crumbs("<span>인기 순위</span>")}<h2 class="page-title">인기 순위</h2>
-    <p class="rank-note">방문자가 열어 본 문서를 집계한 누적 순위다. 같은 사람이 한 번 방문하는 동안 같은 문서를 여러 번 봐도 1회로 센다.</p></section>`;
+  const head = `<section class="card">${crumbs("<span>인기 순위</span>")}<h1 class="page-title">인기 순위</h1>
+    <p class="lede">방문자가 열어 본 문서를 집계한 누적 순위다. 같은 사람이 한 번 방문하는 동안 같은 문서를 여러 번 봐도 1회로 센다.</p></section>`;
   const box = inner => head + `<section class="card">${inner}</section>`;
   if (!statsOn) return box(`<div class="empty"><strong>이 화면에서는 순위를 볼 수 없다</strong>공개 사이트에서 제공한다.</div>`);
   if (rankState === "loading") return box(`<div class="empty">순위를 불러오는 중…</div>`);
   if (rankState === "error") return box(`<div class="empty"><strong>순위를 불러오지 못했다</strong>잠시 후 새로고침해 보자.</div>`);
   if (!ranking.length) return box(`<div class="empty"><strong>아직 집계된 조회가 없다</strong>문서를 열어 보면 여기에 순위가 쌓인다.</div>`);
   const max = ranking[0].hits;
-  return box(`<ol class="rank">${ranking.slice(0, 30).map((r, i) => { const t = byId.get(r.term_id), tp = topicById.get(t.topic);
-    return `<li><span class="no">${i + 1}</span><span class="t"><a href="#${t.id}" data-go="${t.id}">${esc(t.ko)}</a><small>${esc(t.abbr || t.en)} · ${esc(catById.get(tp.cat).ko)}</small></span>
-      <span class="v"><span class="bar"><i style="width:${Math.max(4, Math.round(r.hits / max * 100))}%"></i></span><span class="hits">${r.hits.toLocaleString("ko-KR")}회</span></span></li>`; }).join("")}</ol>`);
+  return box(`<ol class="rank">${ranking.slice(0, 30).map((r, i) => { const t = byId.get(r.term_id);
+    return `<li><span class="no">${i + 1}</span><span class="t"><a href="#${t.id}" data-go="${t.id}">${esc(t.ko)}</a><small>${esc(t.abbr || t.en)} · ${esc(catById.get(t.cat).ko)}</small></span>
+      <span><span class="bar"><i style="width:${Math.max(4, Math.round(r.hits / max * 100))}%"></i></span><span class="hits" style="display:block">${r.hits.toLocaleString("ko-KR")}회</span></span></li>`; }).join("")}</ol>`);
 }
 function track(id) {
   if (!statsOn || !byId.has(id) || seenNow.has(id)) return;
@@ -687,76 +688,106 @@ function track(id) {
   seenNow.add(id); if (seen.includes(id)) return;
   try { sessionStorage.setItem("gl-seen", JSON.stringify(seen.concat(id))); } catch (e) {}
   fetch(sbUrl("rpc/increment_hit"), { method: "POST", headers: sbHeaders(), body: JSON.stringify({ p_term: id }), keepalive: true })
-    .then(r => { if (!r.ok) return; const row = ranking.find(x => x.term_id === id); row ? row.hits++ : ranking.push({ term_id: id, hits: 1 }); ranking.sort((a, b) => b.hits - a.hits); renderPopular(); })
+    .then(r => { if (!r.ok) return; const row = ranking.find(x => x.term_id === id); row ? row.hits++ : ranking.push({ term_id: id, hits: 1 }); ranking.sort((a, b) => b.hits - a.hits); })
     .catch(() => {});
 }
 
 /* ---------- 라우팅 ---------- */
 function render() {
-  const r = state.route, main = $("#main");
+  const r = state.route, searching = !!state.q.trim();
   let html;
-  document.querySelectorAll(".nav a").forEach(a => a.removeAttribute("aria-current"));
-  if (state.q.trim()) html = viewSearch();
+  if (searching) html = viewSearch();
+  else if (r === "tree") html = viewTree();
   else if (r === "timeline") html = viewTimeline();
   else if (r === "index") html = viewIndex();
+  else if (r === "papers") html = viewPapers();
   else if (r === "rank") html = viewRank();
   else if (r.startsWith("c-") && catById.has(r.slice(2))) html = viewCategory(catById.get(r.slice(2)));
   else if (r.startsWith("t-") && topicById.has(r.slice(2))) html = viewTopic(topicById.get(r.slice(2)));
   else if (byId.has(r) && byId.get(r).status !== "removed") html = viewTerm(byId.get(r));
-  else { state.route = "home"; html = viewHome(); syncTree(); }
-  if (!state.q.trim()) { const cur = document.querySelector(`.nav a[data-go="${state.route}"]`); if (cur) cur.setAttribute("aria-current", "page"); }
-  main.innerHTML = html;
-  const title = main.querySelector(".page-title");
-  document.title = (state.route === "home" && !state.q ? "" : (title ? title.textContent.replace(/[“”]/g, "") + " · " : "")) + "실무 AI 용어집";
+  else { state.route = "home"; html = viewHome(); }
+  const home = state.route === "home";
+  $("#hero").hidden = !home;
+  $("#topSearch").hidden = home;
+  document.querySelectorAll(".pills a[data-go]").forEach(a => {
+    if (!searching && a.dataset.go === state.route) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current");
+  });
+  $("#main").innerHTML = html;
+  const title = $("#main .page-title");
+  document.title = (home || !title ? "" : title.textContent + " · ") + "실무 AI 용어집";
 }
+function setQuery(v) { state.q = v; $("#q").value = v; $("#q2").value = v; }
 function go(route, push = true) {
   state.route = route || "home";
-  if (state.q) { state.q = ""; $("#q").value = ""; }
+  if (state.q) setQuery("");
   render();
   if (push) { try { history.pushState(null, "", "#" + state.route); } catch (e) {} }
   window.scrollTo({ top: 0 });
-  if (matchMedia("(max-width: 860px)").matches) $("#treeBox").open = false;
 }
-addEventListener("popstate", () => { const h = decodeURIComponent(location.hash.slice(1)); state.route = h || "home"; state.q = ""; $("#q").value = ""; render(); });
+addEventListener("popstate", () => { const h = decodeURIComponent(location.hash.slice(1)); state.route = h || "home"; setQuery(""); render(); });
 
 /* ---------- 이벤트 ---------- */
 document.addEventListener("click", e => {
   const a = e.target.closest("[data-go]");
-  if (a) { e.preventDefault(); go(a.dataset.go); return; }
+  if (a) { e.preventDefault(); if (a.dataset.pq !== undefined) state.pq = a.dataset.pq; go(a.dataset.go); return; }
+  const qa = e.target.closest("[data-quick]");
+  if (qa) { e.preventDefault(); setQuery(qa.dataset.quick); render(); return; }
   const more = e.target.closest("[data-more]");
   if (more) { const body = more.parentElement.querySelector(".tl-body"); body.hidden = !body.hidden; more.textContent = body.hidden ? more.textContent.replace("접기", "펼치기") : more.textContent.replace("펼치기", "접기"); return; }
   const tl = e.target.closest("#tlFilter [data-t]");
   if (tl) { state.tlType = tl.dataset.t; render(); return; }
   const lv = e.target.closest("#lvChips [data-l]");
   if (lv) { const l = +lv.dataset.l; state.levels.has(l) ? state.levels.delete(l) : state.levels.add(l); render(); return; }
+  const era = e.target.closest("#eraChips [data-era]");
+  if (era) { state.pera = era.dataset.era; render(); return; }
+  const vb = e.target.closest("#view button");
+  if (vb) { state.view = vb.dataset.v; store.set("gl-view", state.view); render(); return; }
 });
-document.addEventListener("change", e => { if (e.target.id === "ixSort") { state.ixSort = e.target.value; store.set("gl-ixsort", state.ixSort); render(); } });
-$("#view").addEventListener("click", e => { const b = e.target.closest("button"); if (!b) return; state.view = b.dataset.v; store.set("gl-view", state.view); syncView(); render(); });
-function syncView() { document.querySelectorAll("#view button").forEach(b => b.setAttribute("aria-pressed", b.dataset.v === state.view)); }
+document.addEventListener("change", e => {
+  if (e.target.id === "ixSort") { state.ixSort = e.target.value; store.set("gl-ixsort", state.ixSort); render(); }
+  if (e.target.id === "pcat") { state.pcat = e.target.value; render(); }
+});
+let ptimer;
+document.addEventListener("input", e => {
+  if (e.target.id !== "pq") return;
+  clearTimeout(ptimer);
+  ptimer = setTimeout(() => {
+    state.pq = e.target.value; const pos = e.target.selectionStart; render();
+    const el = $("#pq"); if (el) { el.focus(); try { el.setSelectionRange(pos, pos); } catch (err) {} }
+  }, 200);
+});
+document.addEventListener("submit", e => { if (e.target.id === "paperForm") e.preventDefault(); });
 let timer, trackTimer;
-$("#q").addEventListener("input", e => {
+function onSearchInput(e) {
+  const v = e.target.value, other = e.target.id === "q" ? $("#q2") : $("#q");
+  other.value = v;
   clearTimeout(timer); clearTimeout(trackTimer);
-  timer = setTimeout(() => { state.q = e.target.value; render(); }, 120);
-  trackTimer = setTimeout(() => { const q = e.target.value.trim().toLowerCase(); const t = q.length > 1 && LIVE.find(t => [t.ko, t.en, t.abbr].some(v => v && v.toLowerCase() === q)); if (t) track(t.id); }, 1500);
-});
-$("#q").addEventListener("keydown", e => {
+  timer = setTimeout(() => { state.q = v; render(); }, 120);
+  trackTimer = setTimeout(() => { const q = v.trim().toLowerCase(); const t = q.length > 1 && LIVE.find(t => [t.ko, t.en, t.abbr].some(x => x && x.toLowerCase() === q)); if (t) track(t.id); }, 1500);
+}
+function onSearchKey(e) {
   if (e.key === "Enter") { e.preventDefault(); state.q = e.target.value; const top = state.q.trim() && searchResults()[0]; if (top) go(top.id); }
-  if (e.key === "Escape") { e.target.value = ""; state.q = ""; render(); }
+  if (e.key === "Escape") { setQuery(""); render(); }
+}
+["#q", "#q2"].forEach(s => { $(s).addEventListener("input", onSearchInput); $(s).addEventListener("keydown", onSearchKey); });
+$("#heroForm").addEventListener("submit", e => { e.preventDefault(); const top = state.q.trim() && searchResults()[0]; if (top) go(top.id); });
+document.addEventListener("keydown", e => {
+  if (e.key === "/" && !/input|select|textarea/i.test(document.activeElement.tagName)) { e.preventDefault(); (state.route === "home" ? $("#q2") : $("#q")).focus(); }
 });
-document.addEventListener("keydown", e => { if (e.key === "/" && document.activeElement !== $("#q") && !/input|select|textarea/i.test(document.activeElement.tagName)) { e.preventDefault(); $("#q").focus(); } });
 const tt = $("#toTop");
 addEventListener("scroll", () => { tt.hidden = scrollY < 800; }, { passive: true });
 tt.addEventListener("click", () => scrollTo({ top: 0, behavior: "smooth" }));
 
 /* ---------- 시작 ---------- */
-buildTree(); syncView();
-$("#navTl").textContent = ([...new Set(CHANGES.map(c => c.date))].sort().pop() || "").slice(5).replace("-", ".");
-$("#navIx").textContent = LIVE.length;
-const lastDay = [...new Set(CHANGES.map(c => c.date))].sort().pop() || "";
-$("#upd").textContent = `${fmtDate(lastDay)} 갱신 · 문서 ${LIVE.length}개 · 2주마다 업데이트`;
-$("#foot").textContent = "입문은 누구나, 실무는 업무에 AI를 적용하는 사람, 심화는 구현자 기준이다.";
-if (matchMedia("(max-width: 860px)").matches) $("#treeBox").open = false;
-{ const h = decodeURIComponent(location.hash.slice(1)); state.route = h.startsWith("tab-") ? h.slice(4) : (h || "home"); }
-render();
-loadRanking();
+{
+  const lastDay = [...new Set(CHANGES.map(c => c.date))].sort().pop() || "";
+  $("#heroSub").textContent = `${LIVE.length}개 용어를 입문과 심화 두 수준으로. 출처 ${SOURCE_COUNT}건과 관련 논문 ${PAPERS.length}편을 함께 달았다.`;
+  $("#heroStats").innerHTML = `<div><b>${LIVE.length}</b><span>문서</span></div><div><b>${PAPERS.length}</b><span>논문</span></div><div><b>${fmtDate(nextUpdate()).slice(5)}</b><span>다음 업데이트</span></div>`;
+  $("#quick").innerHTML = `자주 찾는 말 ${["RAG", "파인튜닝", "AI 에이전트", "MCP", "환각", "프롬프트 엔지니어링"].map(w => `<a href="#" data-quick="${esc(w)}">${esc(w)}</a>`).join("")}`;
+  $("#foot").textContent = `${fmtDate(lastDay)} 갱신 · 문서 ${LIVE.length}개 · 출처 ${SOURCE_COUNT}건 · 논문 ${PAPERS.length}편 · 2주마다 업데이트`;
+  const h = decodeURIComponent(location.hash.slice(1));
+  state.route = h.startsWith("tab-") ? h.slice(4) : (h || "home");
+  render();
+  loadRanking();
+}
 </script>

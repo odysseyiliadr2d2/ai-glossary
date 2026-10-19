@@ -23,11 +23,15 @@
 {"id":"kebab-case-영문","ko":"한국어 표제어","en":"English Name","abbr":"약어 또는 빈 문자열",
  "cat":"분야코드","topic":"주제id","level":1,
  "easy":"비개발자용 1~2문장","deep":"구현자용 2~4문장","example":"실무 예시 한 문장(금융·기업 맥락 권장)",
- "related":["기존 id 2~5개"],"added":"TODAY","updated":"TODAY","revision":1,"status":"active"}
+ "related":["기존 id 2~5개"],"added":"TODAY","updated":"TODAY","revision":1,"status":"active",
+ "sources":[{"title":"페이지 실제 제목","url":"https://...","publisher":"발행처","type":"official|docs|guide|encyclopedia|article"}],
+ "papers":[{"title":"논문 제목","authors":"제1저자 et al.","year":2025,"venue":"학회 또는 arXiv","url":"https://arxiv.org/abs/..."}]}
 ```
 - 문체는 간결한 평서형 "~다". 마케팅 문구 금지. 특정 회사 홍보 금지(대표 사례 언급은 가능).
 - `cat`·`topic`은 `data/tree.json`에 있는 것만 쓴다. 해당 주제의 `terms` 배열에도 **학습 순서에 맞는 위치**로 id를 넣는다.
 - 들어갈 주제가 정말 없을 때만 `tree.json`에 주제를 새로 만든다(id `<분야코드>-<영문>`, 3개 이상 문서가 모일 때).
+- **출처 1~3건은 필수, 논문은 0~3편.** 실제로 열어 보거나 검색 결과에 나온 URL만 쓴다. 지어낸 URL·제목·저자·연도는 절대 넣지 않는다. 우선순위: 정부·규제기관·표준·공식 문서 → 주요 기업·연구소 해설 → 위키백과. 논문은 개념을 제안하거나 대표하는 것만(arXiv abs, ACL Anthology, DOI).
+- 출처가 없는 기존 문서(`sources`가 빈 배열)가 있으면, 회차마다 몇 개씩 출처를 보강하고 이력에 `updated`("출처 보강")로 남긴다.
 - 관련 있는 기존 문서 1~3개의 `related`에도 새 id를 추가한다(그 문서는 `updated`를 바꾸지 않는다. 링크 추가는 수정으로 치지 않는다).
 
 ### 갱신 → 해당 항목 수정

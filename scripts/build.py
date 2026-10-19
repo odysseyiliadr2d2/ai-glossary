@@ -15,7 +15,8 @@ BUILD = os.path.join(ROOT, "build")
 SITE_URL = "https://odysseyiliadr2d2.github.io/ai-glossary/"
 SUPABASE = {"url": "https://keqatughczjqhnubkydy.supabase.co", "key": "sb_publishable_DlZV7muab9bvGUiUNWh3gA_RTX9Y6MW"}
 FIELDS = ["id", "ko", "en", "abbr", "cat", "topic", "level", "easy", "deep", "example", "related",
-          "added", "updated", "revision", "status"]
+          "added", "updated", "revision", "status", "sources", "papers"]
+SRC_TYPES = {"official", "docs", "guide", "encyclopedia", "article"}
 TYPES = {"added", "updated", "moved", "removed"}
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 
@@ -50,6 +51,14 @@ def validate(terms, tree, changes, releases):
             if in_tree[t["id"]] != 1: errs.append(f"{t['id']}: 트리에 {in_tree[t['id']]}번 등장(정확히 1번이어야 함)")
             topic_terms = next(tp["terms"] for c in tree for tp in c["topics"] if tp["id"] == t["topic"])
             if t["id"] not in topic_terms: errs.append(f"{t['id']}: 자기 주제({t['topic']})의 terms 목록에 없음")
+        for s_ in t["sources"]:
+            if not str(s_.get("url", "")).startswith(("http://", "https://")) or not s_.get("title"):
+                errs.append(f"{t['id']}: 출처 형식(title·url 필요) {s_}")
+            if s_.get("type") not in SRC_TYPES: errs.append(f"{t['id']}: 출처 type {s_.get('type')}")
+        for p_ in t["papers"]:
+            if not str(p_.get("url", "")).startswith(("http://", "https://")) or not p_.get("title"):
+                errs.append(f"{t['id']}: 논문 형식(title·url 필요) {p_.get('title')}")
+            if p_.get("year") is not None and not isinstance(p_.get("year"), int): errs.append(f"{t['id']}: 논문 year는 숫자")
         bad_rel = [r for r in t["related"] if r not in idset]
         if bad_rel: errs.append(f"{t['id']}: 없는 연관 id {bad_rel}")
         if not any(c["id"] == t["id"] for c in changes): errs.append(f"{t['id']}: changelog 기록 없음")
@@ -98,7 +107,8 @@ def sync_payload(terms, tree, changes, releases):
     return {
         "nodes": nodes_for(terms, tree),
         "pages": [{"node_id": t["id"], "abbr": t["abbr"], "level": t["level"], "easy": t["easy"], "deep": t["deep"],
-                   "example": t["example"], "revision": t["revision"], "related": t["related"]} for t in terms],
+                   "example": t["example"], "revision": t["revision"], "related": t["related"],
+                   "sources": t["sources"], "papers": t["papers"]} for t in terms],
         "revisions": [{"node_id": c["id"], "rev_date": c["date"], "change_type": c["type"], "summary": c["summary"]} for c in changes],
         "releases": releases,
     }
