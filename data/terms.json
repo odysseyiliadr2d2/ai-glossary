@@ -15,7 +15,12 @@
    "planning",
    "memory-agent",
    "llm"
-  ]
+  ],
+  "topic": "agent-basics",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "tool-use",
@@ -32,7 +37,12 @@
    "tool-schema",
    "ai-agent",
    "mcp"
-  ]
+  ],
+  "topic": "agent-tools",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "function-calling",
@@ -49,7 +59,12 @@
    "tool-schema",
    "structured-output",
    "api"
-  ]
+  ],
+  "topic": "agent-tools",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "mcp",
@@ -67,7 +82,12 @@
    "tool-use",
    "a2a",
    "connector"
-  ]
+  ],
+  "topic": "agent-tools",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "a2a",
@@ -84,7 +104,12 @@
    "multi-agent",
    "handoff",
    "ai-agent"
-  ]
+  ],
+  "topic": "agent-multi",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "multi-agent",
@@ -101,7 +126,12 @@
    "subagent",
    "handoff",
    "a2a"
-  ]
+  ],
+  "topic": "agent-multi",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "agentic-workflow",
@@ -119,7 +149,12 @@
    "workflow-automation",
    "reflection",
    "autonomy-level"
-  ]
+  ],
+  "topic": "agent-basics",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "orchestration",
@@ -136,7 +171,12 @@
    "agent-framework",
    "agent-state",
    "agentic-workflow"
-  ]
+  ],
+  "topic": "agent-multi",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "computer-use",
@@ -154,7 +194,12 @@
    "agent-sandbox",
    "vlm",
    "workflow-automation"
-  ]
+  ],
+  "topic": "agent-apps",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "memory-agent",
@@ -171,7 +216,12 @@
    "agent-state",
    "vector-db",
    "context-engineering"
-  ]
+  ],
+  "topic": "agent-runtime",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "human-in-the-loop",
@@ -188,7 +238,12 @@
    "autonomy-level",
    "guardrail",
    "ai-governance"
-  ]
+  ],
+  "topic": "agent-governance",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "coding-agent",
@@ -205,7 +260,12 @@
    "agents-md",
    "agent-sandbox",
    "copilot"
-  ]
+  ],
+  "topic": "agent-apps",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "agentic-ai",
@@ -222,7 +282,12 @@
    "agentic-workflow",
    "autonomy-level",
    "generative-ai"
-  ]
+  ],
+  "topic": "agent-basics",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "agent-loop",
@@ -239,7 +304,12 @@
    "react",
    "tool-use",
    "agent-trajectory"
-  ]
+  ],
+  "topic": "agent-basics",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "react",
@@ -256,7 +326,12 @@
    "chain-of-thought",
    "tool-use",
    "reflection"
-  ]
+  ],
+  "topic": "agent-basics",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "planning",
@@ -273,7 +348,12 @@
    "reflection",
    "reasoning-model",
    "long-running-task"
-  ]
+  ],
+  "topic": "agent-basics",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "reflection",
@@ -290,7 +370,12 @@
    "llm-as-judge",
    "agentic-workflow",
    "react"
-  ]
+  ],
+  "topic": "agent-basics",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "subagent",
@@ -307,7 +392,12 @@
    "orchestration",
    "handoff",
    "context-engineering"
-  ]
+  ],
+  "topic": "agent-multi",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "agent-skills",
@@ -324,7 +414,12 @@
    "context-engineering",
    "mcp",
    "agents-md"
-  ]
+  ],
+  "topic": "agent-runtime",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "agents-md",
@@ -341,7 +436,12 @@
    "agent-skills",
    "system-prompt",
    "context-engineering"
-  ]
+  ],
+  "topic": "agent-runtime",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "browser-agent",
@@ -358,7 +458,12 @@
    "prompt-injection",
    "agent-permissions",
    "deep-research"
-  ]
+  ],
+  "topic": "agent-apps",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "agent-sandbox",
@@ -375,7 +480,12 @@
    "coding-agent",
    "computer-use",
    "prompt-injection"
-  ]
+  ],
+  "topic": "agent-governance",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "agent-permissions",
@@ -392,7 +502,12 @@
    "agent-sandbox",
    "guardrail",
    "ai-governance"
-  ]
+  ],
+  "topic": "agent-governance",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "long-running-task",
@@ -409,7 +524,12 @@
    "planning",
    "memory-agent",
    "retry-fallback"
-  ]
+  ],
+  "topic": "agent-runtime",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "agent-state",
@@ -426,7 +546,12 @@
    "long-running-task",
    "orchestration",
    "agent-framework"
-  ]
+  ],
+  "topic": "agent-runtime",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "handoff",
@@ -443,7 +568,12 @@
    "subagent",
    "a2a",
    "human-in-the-loop"
-  ]
+  ],
+  "topic": "agent-multi",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "agent-framework",
@@ -460,7 +590,12 @@
    "agent-state",
    "multi-agent",
    "observability"
-  ]
+  ],
+  "topic": "agent-multi",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "tool-schema",
@@ -477,7 +612,12 @@
    "tool-use",
    "structured-output",
    "mcp-server"
-  ]
+  ],
+  "topic": "agent-tools",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "mcp-server",
@@ -494,7 +634,12 @@
    "mcp-client",
    "connector",
    "tool-schema"
-  ]
+  ],
+  "topic": "agent-tools",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "mcp-client",
@@ -511,7 +656,12 @@
    "mcp-server",
    "connector",
    "agent-permissions"
-  ]
+  ],
+  "topic": "agent-tools",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "connector",
@@ -528,7 +678,12 @@
    "mcp-server",
    "agent-permissions",
    "data-pipeline"
-  ]
+  ],
+  "topic": "agent-tools",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "autonomy-level",
@@ -545,7 +700,12 @@
    "agent-permissions",
    "ai-agent",
    "ai-governance"
-  ]
+  ],
+  "topic": "agent-governance",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "agent-evaluation",
@@ -562,7 +722,12 @@
    "benchmark",
    "llm-as-judge",
    "agent-trajectory"
-  ]
+  ],
+  "topic": "agent-governance",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "agent-trajectory",
@@ -579,7 +744,12 @@
    "observability",
    "agent-loop",
    "agent-state"
-  ]
+  ],
+  "topic": "agent-governance",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "deep-research",
@@ -596,7 +766,12 @@
    "retrieval",
    "subagent",
    "long-running-task"
-  ]
+  ],
+  "topic": "agent-apps",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "workflow-automation",
@@ -613,7 +788,12 @@
    "computer-use",
    "document-ai",
    "ax"
-  ]
+  ],
+  "topic": "agent-basics",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "retry-fallback",
@@ -630,7 +810,12 @@
    "long-running-task",
    "latency",
    "handoff"
-  ]
+  ],
+  "topic": "agent-runtime",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "generative-ai",
@@ -647,7 +832,12 @@
    "diffusion-model",
    "multimodal",
    "foundation-model"
-  ]
+  ],
+  "topic": "genai-models",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "multimodal",
@@ -664,7 +854,12 @@
    "native-multimodal",
    "multimodal-embedding",
    "generative-ai"
-  ]
+  ],
+  "topic": "genai-vision",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "diffusion-model",
@@ -682,7 +877,12 @@
    "flow-matching",
    "text-to-image",
    "dit"
-  ]
+  ],
+  "topic": "genai-models",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "gan",
@@ -699,7 +899,12 @@
    "deepfake",
    "upscaling",
    "generative-ai"
-  ]
+  ],
+  "topic": "genai-models",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "vlm",
@@ -717,7 +922,12 @@
    "document-ai",
    "image-captioning",
    "clip"
-  ]
+  ],
+  "topic": "genai-vision",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "text-to-image",
@@ -734,7 +944,12 @@
    "text-encoder",
    "negative-prompt",
    "ai-copyright"
-  ]
+  ],
+  "topic": "genai-image",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "tts",
@@ -751,7 +966,12 @@
    "voice-cloning",
    "voice-agent",
    "realtime-voice"
-  ]
+  ],
+  "topic": "genai-audio",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "stt",
@@ -768,7 +988,12 @@
    "voice-agent",
    "realtime-voice",
    "multimodal"
-  ]
+  ],
+  "topic": "genai-audio",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "ocr",
@@ -785,7 +1010,12 @@
    "vlm",
    "multimodal",
    "workflow-automation"
-  ]
+  ],
+  "topic": "genai-vision",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "video-generation",
@@ -802,7 +1032,12 @@
    "dit",
    "deepfake",
    "content-provenance"
-  ]
+  ],
+  "topic": "genai-image",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "voice-agent",
@@ -819,7 +1054,12 @@
    "stt",
    "tts",
    "ai-agent"
-  ]
+  ],
+  "topic": "genai-audio",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "native-multimodal",
@@ -836,7 +1076,12 @@
    "vlm",
    "realtime-voice",
    "autoregressive-image-generation"
-  ]
+  ],
+  "topic": "genai-vision",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "latent-space",
@@ -853,7 +1098,12 @@
    "diffusion-model",
    "embedding",
    "denoising"
-  ]
+  ],
+  "topic": "genai-models",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "vae",
@@ -870,7 +1120,12 @@
    "diffusion-model",
    "neural-network",
    "generative-ai"
-  ]
+  ],
+  "topic": "genai-models",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "denoising",
@@ -887,7 +1142,12 @@
    "flow-matching",
    "latent-space",
    "distillation"
-  ]
+  ],
+  "topic": "genai-models",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "flow-matching",
@@ -904,7 +1164,12 @@
    "denoising",
    "dit",
    "video-generation"
-  ]
+  ],
+  "topic": "genai-models",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "dit",
@@ -921,7 +1186,12 @@
    "transformer",
    "flow-matching",
    "video-generation"
-  ]
+  ],
+  "topic": "genai-models",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "autoregressive-image-generation",
@@ -938,7 +1208,12 @@
    "native-multimodal",
    "text-to-image",
    "diffusion-model"
-  ]
+  ],
+  "topic": "genai-models",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "text-encoder",
@@ -955,7 +1230,12 @@
    "text-to-image",
    "embedding",
    "diffusion-model"
-  ]
+  ],
+  "topic": "genai-models",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "clip",
@@ -972,7 +1252,12 @@
    "text-encoder",
    "vlm",
    "zero-shot"
-  ]
+  ],
+  "topic": "genai-models",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "multimodal-embedding",
@@ -990,7 +1275,12 @@
    "vector-db",
    "rag",
    "document-ai"
-  ]
+  ],
+  "topic": "genai-vision",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "image-to-image",
@@ -1007,7 +1297,12 @@
    "controlnet",
    "text-to-image",
    "diffusion-model"
-  ]
+  ],
+  "topic": "genai-image",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "inpainting",
@@ -1024,7 +1319,12 @@
    "diffusion-model",
    "content-provenance",
    "deepfake"
-  ]
+  ],
+  "topic": "genai-image",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "controlnet",
@@ -1041,7 +1341,12 @@
    "image-to-image",
    "text-to-image",
    "fine-tuning"
-  ]
+  ],
+  "topic": "genai-image",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "negative-prompt",
@@ -1058,7 +1363,12 @@
    "prompt",
    "diffusion-model",
    "prompt-engineering"
-  ]
+  ],
+  "topic": "genai-image",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "upscaling",
@@ -1075,7 +1385,12 @@
    "diffusion-model",
    "image-to-image",
    "video-generation"
-  ]
+  ],
+  "topic": "genai-image",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "image-captioning",
@@ -1092,7 +1407,12 @@
    "vqa",
    "multimodal",
    "hallucination"
-  ]
+  ],
+  "topic": "genai-vision",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "vqa",
@@ -1109,7 +1429,12 @@
    "image-captioning",
    "document-ai",
    "multimodal"
-  ]
+  ],
+  "topic": "genai-vision",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "document-ai",
@@ -1127,7 +1452,12 @@
    "chunking",
    "structured-output",
    "workflow-automation"
-  ]
+  ],
+  "topic": "genai-vision",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "screen-understanding",
@@ -1144,7 +1474,12 @@
    "vlm",
    "browser-agent",
    "multimodal"
-  ]
+  ],
+  "topic": "genai-vision",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "realtime-voice",
@@ -1162,7 +1497,12 @@
    "tts",
    "latency",
    "native-multimodal"
-  ]
+  ],
+  "topic": "genai-audio",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "voice-cloning",
@@ -1179,7 +1519,12 @@
    "deepfake",
    "watermarking",
    "voice-agent"
-  ]
+  ],
+  "topic": "genai-audio",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "music-generation",
@@ -1196,7 +1541,12 @@
    "ai-copyright",
    "tts",
    "diffusion-model"
-  ]
+  ],
+  "topic": "genai-audio",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "3d-generation",
@@ -1213,7 +1563,12 @@
    "diffusion-model",
    "image-to-image",
    "multimodal"
-  ]
+  ],
+  "topic": "genai-image",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "deepfake",
@@ -1230,7 +1585,12 @@
    "watermarking",
    "content-provenance",
    "ai-basic-act-korea"
-  ]
+  ],
+  "topic": "genai-trust",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "content-provenance",
@@ -1247,7 +1607,12 @@
    "deepfake",
    "ai-copyright",
    "responsible-ai"
-  ]
+  ],
+  "topic": "genai-trust",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "ai-copyright",
@@ -1264,7 +1629,12 @@
    "training-data",
    "content-provenance",
    "ai-governance"
-  ]
+  ],
+  "topic": "genai-trust",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "ai",
@@ -1282,7 +1652,12 @@
    "generative-ai",
    "agi",
    "narrow-ai"
-  ]
+  ],
+  "topic": "basics-ai-concepts",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "machine-learning",
@@ -1300,7 +1675,12 @@
    "unsupervised-learning",
    "reinforcement-learning",
    "deep-learning"
-  ]
+  ],
+  "topic": "basics-ai-concepts",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "supervised-learning",
@@ -1318,7 +1698,12 @@
    "training-data",
    "data-labeling",
    "unsupervised-learning"
-  ]
+  ],
+  "topic": "basics-learning-types",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "unsupervised-learning",
@@ -1336,7 +1721,12 @@
    "anomaly-detection",
    "supervised-learning",
    "self-supervised-learning"
-  ]
+  ],
+  "topic": "basics-learning-types",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "reinforcement-learning",
@@ -1353,7 +1743,12 @@
    "rlhf",
    "reasoning-model",
    "ai-agent"
-  ]
+  ],
+  "topic": "basics-learning-types",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "overfitting",
@@ -1371,7 +1766,12 @@
    "cross-validation",
    "bias-variance-tradeoff",
    "dropout"
-  ]
+  ],
+  "topic": "basics-evaluation",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "training-data",
@@ -1389,7 +1789,12 @@
    "bias",
    "synthetic-data",
    "data-privacy"
-  ]
+  ],
+  "topic": "basics-data",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "feature",
@@ -1407,7 +1812,12 @@
    "data-leakage",
    "embedding",
    "feature-scaling"
-  ]
+  ],
+  "topic": "basics-data",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "model",
@@ -1425,7 +1835,12 @@
    "machine-learning",
    "foundation-model",
    "mlops"
-  ]
+  ],
+  "topic": "basics-ai-concepts",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "inference",
@@ -1443,7 +1858,12 @@
    "latency",
    "throughput",
    "gpu"
-  ]
+  ],
+  "topic": "basics-ai-concepts",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "parameter",
@@ -1461,7 +1881,12 @@
    "model",
    "quantization",
    "scaling-law"
-  ]
+  ],
+  "topic": "basics-ai-concepts",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "classification",
@@ -1479,7 +1904,12 @@
    "logistic-regression",
    "confusion-matrix",
    "precision-recall"
-  ]
+  ],
+  "topic": "basics-algorithms",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "regression",
@@ -1496,7 +1926,12 @@
    "classification",
    "time-series-forecasting",
    "loss-function"
-  ]
+  ],
+  "topic": "basics-algorithms",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "clustering",
@@ -1513,7 +1948,12 @@
    "anomaly-detection",
    "dimensionality-reduction",
    "embedding"
-  ]
+  ],
+  "topic": "basics-algorithms",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "data-split",
@@ -1531,7 +1971,12 @@
    "overfitting",
    "data-leakage",
    "time-series-forecasting"
-  ]
+  ],
+  "topic": "basics-data",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "underfitting",
@@ -1548,7 +1993,12 @@
    "bias-variance-tradeoff",
    "feature-engineering",
    "regularization"
-  ]
+  ],
+  "topic": "basics-evaluation",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "regularization",
@@ -1566,7 +2016,12 @@
    "early-stopping",
    "loss-function",
    "feature-scaling"
-  ]
+  ],
+  "topic": "basics-evaluation",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "hyperparameter",
@@ -1584,7 +2039,12 @@
    "batch-size",
    "cross-validation",
    "data-split"
-  ]
+  ],
+  "topic": "basics-ai-concepts",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "cross-validation",
@@ -1601,7 +2061,12 @@
    "hyperparameter",
    "overfitting",
    "class-imbalance"
-  ]
+  ],
+  "topic": "basics-evaluation",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "precision-recall",
@@ -1619,7 +2084,12 @@
    "auc-roc",
    "classification",
    "class-imbalance"
-  ]
+  ],
+  "topic": "basics-evaluation",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "f1-score",
@@ -1636,7 +2106,12 @@
    "confusion-matrix",
    "accuracy",
    "eval"
-  ]
+  ],
+  "topic": "basics-evaluation",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "confusion-matrix",
@@ -1653,7 +2128,12 @@
    "f1-score",
    "accuracy",
    "classification"
-  ]
+  ],
+  "topic": "basics-evaluation",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "accuracy",
@@ -1670,7 +2150,12 @@
    "precision-recall",
    "class-imbalance",
    "benchmark"
-  ]
+  ],
+  "topic": "basics-evaluation",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "auc-roc",
@@ -1687,7 +2172,12 @@
    "classification",
    "logistic-regression",
    "eval"
-  ]
+  ],
+  "topic": "basics-evaluation",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "bias-variance-tradeoff",
@@ -1704,7 +2194,12 @@
    "underfitting",
    "regularization",
    "ensemble-learning"
-  ]
+  ],
+  "topic": "basics-evaluation",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "anomaly-detection",
@@ -1722,7 +2217,12 @@
    "class-imbalance",
    "clustering",
    "classification"
-  ]
+  ],
+  "topic": "basics-algorithms",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "recommender-system",
@@ -1739,7 +2239,12 @@
    "machine-learning",
    "semantic-search",
    "reranking"
-  ]
+  ],
+  "topic": "basics-algorithms",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "time-series-forecasting",
@@ -1757,7 +2262,12 @@
    "lstm",
    "data-leakage",
    "transformer"
-  ]
+  ],
+  "topic": "basics-algorithms",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "ensemble-learning",
@@ -1774,7 +2284,12 @@
    "gradient-boosting",
    "decision-tree",
    "bias-variance-tradeoff"
-  ]
+  ],
+  "topic": "basics-algorithms",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "decision-tree",
@@ -1792,7 +2307,12 @@
    "ensemble-learning",
    "explainable-ai",
    "classification"
-  ]
+  ],
+  "topic": "basics-algorithms",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "random-forest",
@@ -1809,7 +2329,12 @@
    "ensemble-learning",
    "gradient-boosting",
    "feature"
-  ]
+  ],
+  "topic": "basics-algorithms",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "gradient-boosting",
@@ -1827,7 +2352,12 @@
    "random-forest",
    "gradient-descent",
    "explainable-ai"
-  ]
+  ],
+  "topic": "basics-algorithms",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "feature-engineering",
@@ -1844,7 +2374,12 @@
    "data-leakage",
    "feature-scaling",
    "data-pipeline"
-  ]
+  ],
+  "topic": "basics-data",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "feature-scaling",
@@ -1861,7 +2396,12 @@
    "data-leakage",
    "gradient-descent",
    "batch-normalization"
-  ]
+  ],
+  "topic": "basics-data",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "data-labeling",
@@ -1879,7 +2419,12 @@
    "semi-supervised-learning",
    "human-in-the-loop",
    "synthetic-data"
-  ]
+  ],
+  "topic": "basics-data",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "semi-supervised-learning",
@@ -1896,7 +2441,12 @@
    "unsupervised-learning",
    "self-supervised-learning",
    "data-labeling"
-  ]
+  ],
+  "topic": "basics-learning-types",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "self-supervised-learning",
@@ -1914,7 +2464,12 @@
    "foundation-model",
    "unsupervised-learning",
    "embedding"
-  ]
+  ],
+  "topic": "basics-learning-types",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "class-imbalance",
@@ -1931,7 +2486,12 @@
    "precision-recall",
    "anomaly-detection",
    "cross-validation"
-  ]
+  ],
+  "topic": "basics-data",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "data-leakage",
@@ -1948,7 +2508,12 @@
    "data-split",
    "feature-scaling",
    "overfitting"
-  ]
+  ],
+  "topic": "basics-data",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "dimensionality-reduction",
@@ -1965,7 +2530,12 @@
    "clustering",
    "autoencoder",
    "embedding"
-  ]
+  ],
+  "topic": "basics-data",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "logistic-regression",
@@ -1983,7 +2553,12 @@
    "explainable-ai",
    "auc-roc",
    "activation-function"
-  ]
+  ],
+  "topic": "basics-algorithms",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "agi",
@@ -2001,7 +2576,12 @@
    "turing-test",
    "responsible-ai",
    "alignment"
-  ]
+  ],
+  "topic": "basics-ai-concepts",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "narrow-ai",
@@ -2018,7 +2598,12 @@
    "ai",
    "turing-test",
    "llm"
-  ]
+  ],
+  "topic": "basics-ai-concepts",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "turing-test",
@@ -2035,7 +2620,12 @@
    "narrow-ai",
    "llm",
    "benchmark"
-  ]
+  ],
+  "topic": "basics-ai-concepts",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "neural-network",
@@ -2053,7 +2643,12 @@
    "hidden-layer",
    "activation-function",
    "backpropagation"
-  ]
+  ],
+  "topic": "dl-neural-basics",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "deep-learning",
@@ -2071,7 +2666,12 @@
    "transformer",
    "cnn",
    "gpu"
-  ]
+  ],
+  "topic": "dl-neural-basics",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "transformer",
@@ -2089,7 +2689,12 @@
    "positional-encoding",
    "llm",
    "encoder-decoder"
-  ]
+  ],
+  "topic": "dl-transformer",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "attention",
@@ -2107,7 +2712,12 @@
    "transformer",
    "softmax",
    "encoder-decoder"
-  ]
+  ],
+  "topic": "dl-transformer",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "self-attention",
@@ -2125,7 +2735,12 @@
    "transformer",
    "kv-cache",
    "context-window"
-  ]
+  ],
+  "topic": "dl-transformer",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "backpropagation",
@@ -2143,7 +2758,12 @@
    "vanishing-gradient",
    "neural-network",
    "optimizer"
-  ]
+  ],
+  "topic": "dl-training-mechanics",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "gradient-descent",
@@ -2161,7 +2781,12 @@
    "optimizer",
    "backpropagation",
    "loss-function"
-  ]
+  ],
+  "topic": "dl-training-mechanics",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "cnn",
@@ -2179,7 +2804,12 @@
    "residual-connection",
    "neural-network",
    "vlm"
-  ]
+  ],
+  "topic": "dl-architectures",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "rnn",
@@ -2197,7 +2827,12 @@
    "vanishing-gradient",
    "transformer",
    "time-series-forecasting"
-  ]
+  ],
+  "topic": "dl-architectures",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "embedding",
@@ -2215,7 +2850,12 @@
    "rag",
    "token",
    "recommender-system"
-  ]
+  ],
+  "topic": "dl-neural-basics",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "activation-function",
@@ -2232,7 +2872,12 @@
    "softmax",
    "vanishing-gradient",
    "perceptron"
-  ]
+  ],
+  "topic": "dl-neural-basics",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "loss-function",
@@ -2250,7 +2895,12 @@
    "backpropagation",
    "regularization",
    "optimizer"
-  ]
+  ],
+  "topic": "dl-training-mechanics",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "epoch",
@@ -2267,7 +2917,12 @@
    "early-stopping",
    "overfitting",
    "learning-rate"
-  ]
+  ],
+  "topic": "dl-training-mechanics",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "perceptron",
@@ -2284,7 +2939,12 @@
    "neural-network",
    "activation-function",
    "hidden-layer"
-  ]
+  ],
+  "topic": "dl-neural-basics",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "mlp",
@@ -2301,7 +2961,12 @@
    "hidden-layer",
    "neural-network",
    "activation-function"
-  ]
+  ],
+  "topic": "dl-neural-basics",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "hidden-layer",
@@ -2318,7 +2983,12 @@
    "neural-network",
    "deep-learning",
    "model-size"
-  ]
+  ],
+  "topic": "dl-neural-basics",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "dropout",
@@ -2335,7 +3005,12 @@
    "overfitting",
    "neural-network",
    "ensemble-learning"
-  ]
+  ],
+  "topic": "dl-training-techniques",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "batch-normalization",
@@ -2352,7 +3027,12 @@
    "batch-size",
    "cnn",
    "feature-scaling"
-  ]
+  ],
+  "topic": "dl-training-techniques",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "layer-normalization",
@@ -2368,7 +3048,12 @@
    "batch-normalization",
    "transformer",
    "residual-connection"
-  ]
+  ],
+  "topic": "dl-training-techniques",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "residual-connection",
@@ -2385,7 +3070,12 @@
    "transformer",
    "cnn",
    "layer-normalization"
-  ]
+  ],
+  "topic": "dl-training-techniques",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "learning-rate",
@@ -2403,7 +3093,12 @@
    "hyperparameter",
    "batch-size",
    "fine-tuning"
-  ]
+  ],
+  "topic": "dl-training-mechanics",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "optimizer",
@@ -2420,7 +3115,12 @@
    "sgd",
    "learning-rate",
    "backpropagation"
-  ]
+  ],
+  "topic": "dl-training-mechanics",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "sgd",
@@ -2437,7 +3137,12 @@
    "optimizer",
    "batch-size",
    "learning-rate"
-  ]
+  ],
+  "topic": "dl-training-mechanics",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "batch-size",
@@ -2455,7 +3160,12 @@
    "sgd",
    "gpu",
    "throughput"
-  ]
+  ],
+  "topic": "dl-training-mechanics",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "cross-entropy",
@@ -2472,7 +3182,12 @@
    "softmax",
    "classification",
    "next-token-prediction"
-  ]
+  ],
+  "topic": "dl-training-mechanics",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "softmax",
@@ -2490,7 +3205,12 @@
    "attention",
    "temperature",
    "classification"
-  ]
+  ],
+  "topic": "dl-neural-basics",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "vanishing-gradient",
@@ -2508,7 +3228,12 @@
    "activation-function",
    "lstm",
    "rnn"
-  ]
+  ],
+  "topic": "dl-training-mechanics",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "lstm",
@@ -2525,7 +3250,12 @@
    "gru",
    "vanishing-gradient",
    "time-series-forecasting"
-  ]
+  ],
+  "topic": "dl-architectures",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "gru",
@@ -2541,7 +3271,12 @@
    "lstm",
    "rnn",
    "vanishing-gradient"
-  ]
+  ],
+  "topic": "dl-architectures",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "encoder-decoder",
@@ -2559,7 +3294,12 @@
    "autoencoder",
    "rnn",
    "stt"
-  ]
+  ],
+  "topic": "dl-architectures",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "autoencoder",
@@ -2576,7 +3316,12 @@
    "anomaly-detection",
    "dimensionality-reduction",
    "encoder-decoder"
-  ]
+  ],
+  "topic": "dl-architectures",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "transfer-learning",
@@ -2593,7 +3338,12 @@
    "fine-tuning",
    "foundation-model",
    "peft"
-  ]
+  ],
+  "topic": "dl-training-techniques",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "positional-encoding",
@@ -2610,7 +3360,12 @@
    "self-attention",
    "context-window",
    "embedding"
-  ]
+  ],
+  "topic": "dl-transformer",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "multi-head-attention",
@@ -2627,7 +3382,12 @@
    "self-attention",
    "transformer",
    "kv-cache"
-  ]
+  ],
+  "topic": "dl-transformer",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "tensor",
@@ -2644,7 +3404,12 @@
    "quantization",
    "parameter",
    "neural-network"
-  ]
+  ],
+  "topic": "dl-neural-basics",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "model-size",
@@ -2662,7 +3427,12 @@
    "scaling-law",
    "moe",
    "slm"
-  ]
+  ],
+  "topic": "dl-neural-basics",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "early-stopping",
@@ -2679,7 +3449,12 @@
    "epoch",
    "regularization",
    "data-split"
-  ]
+  ],
+  "topic": "dl-training-techniques",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "gnn",
@@ -2696,7 +3471,12 @@
    "anomaly-detection",
    "embedding",
    "neural-network"
-  ]
+  ],
+  "topic": "dl-architectures",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "gpu",
@@ -2714,7 +3494,12 @@
    "cuda",
    "inference-serving",
    "datacenter-power"
-  ]
+  ],
+  "topic": "infra-hardware",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "npu",
@@ -2731,7 +3516,12 @@
    "edge-ai",
    "sovereign-ai",
    "inference-serving"
-  ]
+  ],
+  "topic": "infra-hardware",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "quantization",
@@ -2749,7 +3539,12 @@
    "gpu",
    "parameter",
    "edge-ai"
-  ]
+  ],
+  "topic": "infra-optimization",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "inference-serving",
@@ -2767,7 +3562,12 @@
    "kv-cache",
    "ttft",
    "throughput"
-  ]
+  ],
+  "topic": "infra-serving",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "latency",
@@ -2784,7 +3584,12 @@
    "throughput",
    "inference-serving",
    "sla"
-  ]
+  ],
+  "topic": "infra-serving",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "throughput",
@@ -2801,7 +3606,12 @@
    "batch-inference",
    "vllm",
    "token-cost"
-  ]
+  ],
+  "topic": "infra-serving",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "llmops",
@@ -2819,7 +3629,12 @@
    "eval",
    "model-registry",
    "guardrail"
-  ]
+  ],
+  "topic": "infra-ops",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "mlops",
@@ -2836,7 +3651,12 @@
    "model-registry",
    "drift-monitoring",
    "data-pipeline"
-  ]
+  ],
+  "topic": "infra-ops",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "api",
@@ -2853,7 +3673,12 @@
    "token-cost",
    "model-gateway",
    "function-calling"
-  ]
+  ],
+  "topic": "infra-serving",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "on-premise",
@@ -2870,7 +3695,12 @@
    "private-cloud",
    "open-weight-model",
    "tco"
-  ]
+  ],
+  "topic": "infra-deployment",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "sovereign-ai",
@@ -2888,7 +3718,12 @@
    "npu",
    "multilingual-model",
    "vendor-lock-in"
-  ]
+  ],
+  "topic": "infra-deployment",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "vllm",
@@ -2906,7 +3741,12 @@
    "throughput",
    "tensorrt",
    "open-weight-model"
-  ]
+  ],
+  "topic": "infra-serving",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "edge-ai",
@@ -2923,7 +3763,12 @@
    "npu",
    "quantization",
    "gguf"
-  ]
+  ],
+  "topic": "infra-deployment",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "observability",
@@ -2940,7 +3785,12 @@
    "drift-monitoring",
    "token-cost",
    "data-privacy"
-  ]
+  ],
+  "topic": "infra-ops",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "hbm",
@@ -2957,7 +3807,12 @@
    "kv-cache",
    "throughput",
    "datacenter-power"
-  ]
+  ],
+  "topic": "infra-hardware",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "cuda",
@@ -2974,7 +3829,12 @@
    "tensorrt",
    "vendor-lock-in",
    "air-gapped-deployment"
-  ]
+  ],
+  "topic": "infra-hardware",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "tpu",
@@ -2991,7 +3851,12 @@
    "npu",
    "flops",
    "vendor-lock-in"
-  ]
+  ],
+  "topic": "infra-hardware",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "flops",
@@ -3008,7 +3873,12 @@
    "scaling-law",
    "hbm",
    "pre-training"
-  ]
+  ],
+  "topic": "infra-hardware",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "batch-inference",
@@ -3025,7 +3895,12 @@
    "async-processing",
    "token-cost",
    "data-pipeline"
-  ]
+  ],
+  "topic": "infra-traffic",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "async-processing",
@@ -3042,7 +3917,12 @@
    "rate-limit",
    "latency",
    "agentic-workflow"
-  ]
+  ],
+  "topic": "infra-traffic",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "rate-limit",
@@ -3059,7 +3939,12 @@
    "model-gateway",
    "async-processing",
    "fallback-model"
-  ]
+  ],
+  "topic": "infra-traffic",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "token-cost",
@@ -3077,7 +3962,12 @@
    "model-gateway",
    "ai-cost",
    "tokenizer"
-  ]
+  ],
+  "topic": "infra-optimization",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "model-gateway",
@@ -3095,7 +3985,12 @@
    "vendor-lock-in",
    "observability",
    "guardrail"
-  ]
+  ],
+  "topic": "infra-traffic",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "fallback-model",
@@ -3112,7 +4007,12 @@
    "sla",
    "rate-limit",
    "slm"
-  ]
+  ],
+  "topic": "infra-traffic",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "semantic-cache",
@@ -3129,7 +4029,12 @@
    "prompt-caching",
    "token-cost",
    "latency"
-  ]
+  ],
+  "topic": "infra-optimization",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "kubernetes",
@@ -3146,7 +4051,12 @@
    "private-cloud",
    "cold-start",
    "mlops"
-  ]
+  ],
+  "topic": "infra-deployment",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "model-registry",
@@ -3163,7 +4073,12 @@
    "llmops",
    "ai-governance",
    "lora"
-  ]
+  ],
+  "topic": "infra-ops",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "ab-testing",
@@ -3180,7 +4095,12 @@
    "llmops",
    "productivity-metrics",
    "observability"
-  ]
+  ],
+  "topic": "infra-ops",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "drift-monitoring",
@@ -3197,7 +4117,12 @@
    "observability",
    "eval",
    "llmops"
-  ]
+  ],
+  "topic": "infra-ops",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "private-cloud",
@@ -3214,7 +4139,12 @@
    "on-premise",
    "kubernetes",
    "air-gapped-deployment"
-  ]
+  ],
+  "topic": "infra-deployment",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "hybrid-cloud",
@@ -3231,7 +4161,12 @@
    "on-premise",
    "model-gateway",
    "network-separation-reform"
-  ]
+  ],
+  "topic": "infra-deployment",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "air-gapped-deployment",
@@ -3249,7 +4184,12 @@
    "network-separation-reform",
    "gguf",
    "vllm"
-  ]
+  ],
+  "topic": "infra-deployment",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "gguf",
@@ -3266,7 +4206,12 @@
    "edge-ai",
    "air-gapped-deployment",
    "open-weight-model"
-  ]
+  ],
+  "topic": "infra-optimization",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "tensorrt",
@@ -3283,7 +4228,12 @@
    "vllm",
    "cuda",
    "quantization"
-  ]
+  ],
+  "topic": "infra-optimization",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "cold-start",
@@ -3300,7 +4250,12 @@
    "kubernetes",
    "inference-serving",
    "ttft"
-  ]
+  ],
+  "topic": "infra-serving",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "ttft",
@@ -3317,7 +4272,12 @@
    "prompt-caching",
    "kv-cache",
    "inference-serving"
-  ]
+  ],
+  "topic": "infra-serving",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "prompt-caching",
@@ -3335,7 +4295,12 @@
    "ttft",
    "semantic-cache",
    "system-prompt"
-  ]
+  ],
+  "topic": "infra-optimization",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "datacenter-power",
@@ -3352,7 +4317,12 @@
    "hbm",
    "tco",
    "on-premise"
-  ]
+  ],
+  "topic": "infra-hardware",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "ax",
@@ -3370,7 +4340,12 @@
    "process-redesign",
    "change-management",
    "ai-strategy"
-  ]
+  ],
+  "topic": "biz-transformation",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "dx",
@@ -3386,7 +4361,12 @@
    "ax",
    "data-driven-decision",
    "data-pipeline"
-  ]
+  ],
+  "topic": "biz-transformation",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "poc",
@@ -3403,7 +4383,12 @@
    "use-case",
    "roi",
    "ai-adoption"
-  ]
+  ],
+  "topic": "biz-strategy",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "roi",
@@ -3420,7 +4405,12 @@
    "productivity-metrics",
    "ai-cost",
    "poc"
-  ]
+  ],
+  "topic": "biz-investment",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "ai-governance",
@@ -3438,7 +4428,12 @@
    "ai-coe",
    "model-registry",
    "shadow-ai"
-  ]
+  ],
+  "topic": "biz-governance",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "use-case",
@@ -3455,7 +4450,12 @@
    "ax-roadmap",
    "roi",
    "process-redesign"
-  ]
+  ],
+  "topic": "biz-transformation",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "copilot",
@@ -3472,7 +4472,12 @@
    "human-in-the-loop",
    "coding-agent",
    "ai-adoption"
-  ]
+  ],
+  "topic": "biz-transformation",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "ai-literacy",
@@ -3489,7 +4494,12 @@
    "prompt-engineering",
    "hallucination",
    "ai-champion"
-  ]
+  ],
+  "topic": "biz-organization",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "change-management",
@@ -3506,7 +4516,12 @@
    "ai-adoption",
    "reskilling",
    "process-redesign"
-  ]
+  ],
+  "topic": "biz-organization",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "ai-adoption",
@@ -3523,7 +4538,12 @@
    "change-management",
    "enterprise-llm-portal",
    "productivity-metrics"
-  ]
+  ],
+  "topic": "biz-transformation",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "build-vs-buy",
@@ -3540,7 +4560,12 @@
    "vendor-lock-in",
    "ai-insourcing",
    "on-premise"
-  ]
+  ],
+  "topic": "biz-investment",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "ai-cost",
@@ -3557,7 +4582,12 @@
    "tco",
    "roi",
    "model-gateway"
-  ]
+  ],
+  "topic": "biz-investment",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "ax-roadmap",
@@ -3574,7 +4604,12 @@
    "ai-strategy",
    "ai-maturity-model",
    "scale-up"
-  ]
+  ],
+  "topic": "biz-strategy",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "ai-coe",
@@ -3591,7 +4626,12 @@
    "ai-champion",
    "ai-strategy",
    "ai-insourcing"
-  ]
+  ],
+  "topic": "biz-organization",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "process-redesign",
@@ -3608,7 +4648,12 @@
    "human-in-the-loop",
    "agentic-workflow",
    "productivity-metrics"
-  ]
+  ],
+  "topic": "biz-strategy",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "productivity-metrics",
@@ -3625,7 +4670,12 @@
    "ab-testing",
    "ai-adoption",
    "data-driven-decision"
-  ]
+  ],
+  "topic": "biz-investment",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "citizen-developer",
@@ -3642,7 +4692,12 @@
    "shadow-ai",
    "prompt-library",
    "ai-governance"
-  ]
+  ],
+  "topic": "biz-organization",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "scale-up",
@@ -3659,7 +4714,12 @@
    "ax-roadmap",
    "sla",
    "llmops"
-  ]
+  ],
+  "topic": "biz-strategy",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "ai-strategy",
@@ -3676,7 +4736,12 @@
    "ai-governance",
    "build-vs-buy",
    "data-driven-decision"
-  ]
+  ],
+  "topic": "biz-strategy",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "ai-insourcing",
@@ -3693,7 +4758,12 @@
    "reskilling",
    "ai-coe",
    "vendor-lock-in"
-  ]
+  ],
+  "topic": "biz-organization",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "vendor-lock-in",
@@ -3710,7 +4780,12 @@
    "build-vs-buy",
    "tco",
    "sovereign-ai"
-  ]
+  ],
+  "topic": "biz-investment",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "tco",
@@ -3728,7 +4803,12 @@
    "on-premise",
    "datacenter-power",
    "roi"
-  ]
+  ],
+  "topic": "biz-investment",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "sla",
@@ -3745,7 +4825,12 @@
    "fallback-model",
    "scale-up",
    "vendor-lock-in"
-  ]
+  ],
+  "topic": "biz-investment",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "prompt-library",
@@ -3762,7 +4847,12 @@
    "enterprise-llm-portal",
    "prompt-engineering",
    "ai-champion"
-  ]
+  ],
+  "topic": "biz-organization",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "ai-champion",
@@ -3779,7 +4869,12 @@
    "ai-coe",
    "ai-literacy",
    "prompt-library"
-  ]
+  ],
+  "topic": "biz-organization",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "reskilling",
@@ -3796,7 +4891,12 @@
    "ai-insourcing",
    "change-management",
    "ai-champion"
-  ]
+  ],
+  "topic": "biz-organization",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "ai-native",
@@ -3813,7 +4913,12 @@
    "process-redesign",
    "ai-agent",
    "ai-maturity-model"
-  ]
+  ],
+  "topic": "biz-transformation",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "enterprise-llm-portal",
@@ -3831,7 +4936,12 @@
    "shadow-ai",
    "rag",
    "ai-adoption"
-  ]
+  ],
+  "topic": "biz-governance",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "data-driven-decision",
@@ -3848,7 +4958,12 @@
    "data-pipeline",
    "dx",
    "productivity-metrics"
-  ]
+  ],
+  "topic": "biz-transformation",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "network-separation-reform",
@@ -3866,7 +4981,12 @@
    "hybrid-cloud",
    "data-privacy",
    "ai-governance"
-  ]
+  ],
+  "topic": "biz-governance",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "regulatory-sandbox",
@@ -3882,7 +5002,12 @@
    "network-separation-reform",
    "ai-governance",
    "poc"
-  ]
+  ],
+  "topic": "biz-governance",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "ai-maturity-model",
@@ -3899,7 +5024,12 @@
    "ai-adoption",
    "ai-strategy",
    "ai-native"
-  ]
+  ],
+  "topic": "biz-strategy",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "shadow-ai",
@@ -3916,7 +5046,12 @@
    "ai-governance",
    "data-privacy",
    "ai-literacy"
-  ]
+  ],
+  "topic": "biz-governance",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "llm",
@@ -3934,7 +5069,12 @@
    "foundation-model",
    "pre-training",
    "token"
-  ]
+  ],
+  "topic": "llm-concepts",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "foundation-model",
@@ -3952,7 +5092,12 @@
    "fine-tuning",
    "multimodal",
    "generative-ai"
-  ]
+  ],
+  "topic": "llm-concepts",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "token",
@@ -3970,7 +5115,12 @@
    "korean-token-efficiency",
    "ai-cost",
    "embedding"
-  ]
+  ],
+  "topic": "llm-tokens-context",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "tokenizer",
@@ -3987,7 +5137,12 @@
    "bpe",
    "korean-token-efficiency",
    "multilingual-model"
-  ]
+  ],
+  "topic": "llm-tokens-context",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "context-window",
@@ -4005,7 +5160,12 @@
    "kv-cache",
    "rag",
    "lost-in-the-middle"
-  ]
+  ],
+  "topic": "llm-tokens-context",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "next-token-prediction",
@@ -4023,7 +5183,12 @@
    "logits",
    "sampling",
    "loss-function"
-  ]
+  ],
+  "topic": "llm-concepts",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "temperature",
@@ -4041,7 +5206,12 @@
    "sampling",
    "logits",
    "greedy-decoding"
-  ]
+  ],
+  "topic": "llm-generation",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "top-p",
@@ -4058,7 +5228,12 @@
    "top-k",
    "sampling",
    "logits"
-  ]
+  ],
+  "topic": "llm-generation",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "open-weight-model",
@@ -4076,7 +5251,12 @@
    "quantization",
    "fine-tuning",
    "sovereign-ai"
-  ]
+  ],
+  "topic": "llm-model-types",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "slm",
@@ -4094,7 +5274,12 @@
    "edge-ai",
    "model-size",
    "fine-tuning"
-  ]
+  ],
+  "topic": "llm-model-types",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "moe",
@@ -4112,7 +5297,12 @@
    "parameter",
    "inference-serving",
    "scaling-law"
-  ]
+  ],
+  "topic": "llm-architecture",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "kv-cache",
@@ -4130,7 +5320,12 @@
    "vllm",
    "prompt-caching",
    "grouped-query-attention"
-  ]
+  ],
+  "topic": "llm-generation",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "scaling-law",
@@ -4148,7 +5343,12 @@
    "model-size",
    "test-time-compute",
    "emergent-abilities"
-  ]
+  ],
+  "topic": "llm-concepts",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "multilingual-model",
@@ -4165,7 +5365,12 @@
    "korean-token-efficiency",
    "continued-pre-training",
    "sovereign-ai"
-  ]
+  ],
+  "topic": "llm-model-types",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "decoder-only-model",
@@ -4183,7 +5388,12 @@
    "encoder-model",
    "next-token-prediction",
    "llm"
-  ]
+  ],
+  "topic": "llm-architecture",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "encoder-model",
@@ -4201,7 +5411,12 @@
    "decoder-only-model",
    "reranking",
    "classification"
-  ]
+  ],
+  "topic": "llm-architecture",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "autoregressive-model",
@@ -4218,7 +5433,12 @@
    "decoder-only-model",
    "speculative-decoding",
    "kv-cache"
-  ]
+  ],
+  "topic": "llm-concepts",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "emergent-abilities",
@@ -4235,7 +5455,12 @@
    "model-size",
    "benchmark",
    "llm"
-  ]
+  ],
+  "topic": "llm-concepts",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "logits",
@@ -4252,7 +5477,12 @@
    "sampling",
    "structured-output",
    "next-token-prediction"
-  ]
+  ],
+  "topic": "llm-generation",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "sampling",
@@ -4270,7 +5500,12 @@
    "top-k",
    "greedy-decoding",
    "beam-search"
-  ]
+  ],
+  "topic": "llm-generation",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "top-k",
@@ -4286,7 +5521,12 @@
    "top-p",
    "temperature",
    "sampling"
-  ]
+  ],
+  "topic": "llm-generation",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "greedy-decoding",
@@ -4303,7 +5543,12 @@
    "beam-search",
    "temperature",
    "logits"
-  ]
+  ],
+  "topic": "llm-generation",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "beam-search",
@@ -4319,7 +5564,12 @@
    "greedy-decoding",
    "sampling",
    "autoregressive-model"
-  ]
+  ],
+  "topic": "llm-generation",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "repetition-penalty",
@@ -4335,7 +5585,12 @@
    "logits",
    "sampling",
    "greedy-decoding"
-  ]
+  ],
+  "topic": "llm-generation",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "max-tokens",
@@ -4352,7 +5607,12 @@
    "context-window",
    "stop-sequence",
    "ai-cost"
-  ]
+  ],
+  "topic": "llm-tokens-context",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "stop-sequence",
@@ -4368,7 +5628,12 @@
    "max-tokens",
    "structured-output",
    "prompt-template"
-  ]
+  ],
+  "topic": "llm-generation",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "long-context",
@@ -4386,7 +5651,12 @@
    "rag",
    "rope",
    "kv-cache"
-  ]
+  ],
+  "topic": "llm-tokens-context",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "lost-in-the-middle",
@@ -4403,7 +5673,12 @@
    "context-window",
    "reranking",
    "context-engineering"
-  ]
+  ],
+  "topic": "llm-tokens-context",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "frontier-model",
@@ -4421,7 +5696,12 @@
    "scaling-law",
    "eu-ai-act",
    "responsible-ai"
-  ]
+  ],
+  "topic": "llm-model-types",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "open-source-model",
@@ -4438,7 +5718,12 @@
    "fine-tuning",
    "on-premise",
    "build-vs-buy"
-  ]
+  ],
+  "topic": "llm-model-types",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "korean-token-efficiency",
@@ -4456,7 +5741,12 @@
    "multilingual-model",
    "ai-cost",
    "bpe"
-  ]
+  ],
+  "topic": "llm-tokens-context",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "bpe",
@@ -4472,7 +5762,12 @@
    "tokenizer",
    "token",
    "korean-token-efficiency"
-  ]
+  ],
+  "topic": "llm-tokens-context",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "rope",
@@ -4489,7 +5784,12 @@
    "transformer",
    "long-context",
    "self-attention"
-  ]
+  ],
+  "topic": "llm-architecture",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "grouped-query-attention",
@@ -4505,7 +5805,12 @@
    "kv-cache",
    "attention",
    "inference-serving"
-  ]
+  ],
+  "topic": "llm-architecture",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "knowledge-cutoff",
@@ -4522,7 +5827,12 @@
    "rag",
    "hallucination",
    "tool-use"
-  ]
+  ],
+  "topic": "llm-concepts",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "multi-turn-conversation",
@@ -4539,7 +5849,12 @@
    "context-window",
    "memory-agent",
    "system-prompt"
-  ]
+  ],
+  "topic": "llm-concepts",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "chat-template",
@@ -4556,7 +5871,12 @@
    "multi-turn-conversation",
    "system-prompt",
    "sft"
-  ]
+  ],
+  "topic": "llm-generation",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "streaming-response",
@@ -4573,7 +5893,12 @@
    "api",
    "inference-serving",
    "guardrail"
-  ]
+  ],
+  "topic": "llm-generation",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "speculative-decoding",
@@ -4591,7 +5916,12 @@
    "latency",
    "vllm",
    "distillation"
-  ]
+  ],
+  "topic": "llm-generation",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "ssm",
@@ -4608,7 +5938,12 @@
    "rnn",
    "hybrid-model",
    "long-context"
-  ]
+  ],
+  "topic": "llm-architecture",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "hybrid-model",
@@ -4626,7 +5961,12 @@
    "kv-cache",
    "long-context",
    "moe"
-  ]
+  ],
+  "topic": "llm-architecture",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "world-model",
@@ -4643,7 +5983,12 @@
    "video-generation",
    "multimodal",
    "foundation-model"
-  ]
+  ],
+  "topic": "llm-architecture",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "pre-training",
@@ -4661,7 +6006,12 @@
    "training-tokens",
    "post-training",
    "foundation-model"
-  ]
+  ],
+  "topic": "training-stages",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "fine-tuning",
@@ -4679,7 +6029,12 @@
    "peft",
    "catastrophic-forgetting",
    "rag"
-  ]
+  ],
+  "topic": "training-stages",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "sft",
@@ -4697,7 +6052,12 @@
    "loss-masking",
    "rlhf",
    "post-training"
-  ]
+  ],
+  "topic": "training-stages",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "rlhf",
@@ -4715,7 +6075,12 @@
    "preference-data",
    "alignment",
    "dpo"
-  ]
+  ],
+  "topic": "training-alignment",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "dpo",
@@ -4733,7 +6098,12 @@
    "alignment",
    "sft",
    "ppo"
-  ]
+  ],
+  "topic": "training-alignment",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "lora",
@@ -4751,7 +6121,12 @@
    "adapter",
    "fine-tuning",
    "model-merging"
-  ]
+  ],
+  "topic": "training-efficient-tuning",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "peft",
@@ -4769,7 +6144,12 @@
    "adapter",
    "fine-tuning",
    "full-fine-tuning"
-  ]
+  ],
+  "topic": "training-efficient-tuning",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "distillation",
@@ -4786,7 +6166,12 @@
    "synthetic-data",
    "sft",
    "quantization"
-  ]
+  ],
+  "topic": "training-efficient-tuning",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "instruction-tuning",
@@ -4803,7 +6188,12 @@
    "chat-template",
    "post-training",
    "alignment"
-  ]
+  ],
+  "topic": "training-stages",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "synthetic-data",
@@ -4820,7 +6210,12 @@
    "data-curation",
    "data-privacy",
    "sft"
-  ]
+  ],
+  "topic": "training-data",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "alignment",
@@ -4838,7 +6233,12 @@
    "constitutional-ai",
    "responsible-ai",
    "guardrail"
-  ]
+  ],
+  "topic": "training-alignment",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "constitutional-ai",
@@ -4855,7 +6255,12 @@
    "alignment",
    "rlhf",
    "responsible-ai"
-  ]
+  ],
+  "topic": "training-alignment",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "catastrophic-forgetting",
@@ -4872,7 +6277,12 @@
    "fine-tuning",
    "peft",
    "domain-adaptation"
-  ]
+  ],
+  "topic": "training-domain-continual",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "post-training",
@@ -4890,7 +6300,12 @@
    "rlhf",
    "rlvr",
    "alignment"
-  ]
+  ],
+  "topic": "training-stages",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "data-curation",
@@ -4908,7 +6323,12 @@
    "data-contamination",
    "data-privacy",
    "synthetic-data"
-  ]
+  ],
+  "topic": "training-data",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "loss-masking",
@@ -4925,7 +6345,12 @@
    "loss-function",
    "chat-template",
    "instruction-tuning"
-  ]
+  ],
+  "topic": "training-stages",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "reward-model",
@@ -4943,7 +6368,12 @@
    "ppo",
    "reward-hacking",
    "llm-as-judge"
-  ]
+  ],
+  "topic": "training-alignment",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "preference-data",
@@ -4960,7 +6390,12 @@
    "reward-model",
    "rlhf",
    "rlaif"
-  ]
+  ],
+  "topic": "training-alignment",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "rlaif",
@@ -4977,7 +6412,12 @@
    "constitutional-ai",
    "llm-as-judge",
    "reward-model"
-  ]
+  ],
+  "topic": "training-alignment",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "ppo",
@@ -4995,7 +6435,12 @@
    "reward-model",
    "reinforcement-learning",
    "kl-penalty"
-  ]
+  ],
+  "topic": "training-alignment",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "grpo",
@@ -5012,7 +6457,12 @@
    "rlvr",
    "reasoning-model",
    "reward-model"
-  ]
+  ],
+  "topic": "training-alignment",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "rlvr",
@@ -5030,7 +6480,12 @@
    "post-training",
    "reward-hacking",
    "test-time-compute"
-  ]
+  ],
+  "topic": "training-alignment",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "reward-hacking",
@@ -5048,7 +6503,12 @@
    "rlvr",
    "alignment",
    "kl-penalty"
-  ]
+  ],
+  "topic": "training-alignment",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "kl-penalty",
@@ -5065,7 +6525,12 @@
    "rlhf",
    "reward-hacking",
    "dpo"
-  ]
+  ],
+  "topic": "training-alignment",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "qlora",
@@ -5082,7 +6547,12 @@
    "quantization",
    "peft",
    "gpu"
-  ]
+  ],
+  "topic": "training-efficient-tuning",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "adapter",
@@ -5099,7 +6569,12 @@
    "peft",
    "model-merging",
    "fine-tuning"
-  ]
+  ],
+  "topic": "training-efficient-tuning",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "full-fine-tuning",
@@ -5116,7 +6591,12 @@
    "peft",
    "mixed-precision",
    "catastrophic-forgetting"
-  ]
+  ],
+  "topic": "training-efficient-tuning",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "model-merging",
@@ -5133,7 +6613,12 @@
    "adapter",
    "fine-tuning",
    "checkpoint"
-  ]
+  ],
+  "topic": "training-efficient-tuning",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "continual-learning",
@@ -5150,7 +6635,12 @@
    "continued-pre-training",
    "domain-adaptation",
    "knowledge-cutoff"
-  ]
+  ],
+  "topic": "training-domain-continual",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "continued-pre-training",
@@ -5167,7 +6657,12 @@
    "pre-training",
    "catastrophic-forgetting",
    "multilingual-model"
-  ]
+  ],
+  "topic": "training-domain-continual",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "domain-adaptation",
@@ -5184,7 +6679,12 @@
    "fine-tuning",
    "rag",
    "catastrophic-forgetting"
-  ]
+  ],
+  "topic": "training-domain-continual",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "curriculum-learning",
@@ -5201,7 +6701,12 @@
    "data-curation",
    "rlvr",
    "training-data"
-  ]
+  ],
+  "topic": "training-data",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "checkpoint",
@@ -5218,7 +6723,12 @@
    "model-merging",
    "epoch",
    "fine-tuning"
-  ]
+  ],
+  "topic": "training-infrastructure",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "data-contamination",
@@ -5235,7 +6745,12 @@
    "eval",
    "data-curation",
    "overfitting"
-  ]
+  ],
+  "topic": "training-data",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "mixed-precision",
@@ -5252,7 +6767,12 @@
    "quantization",
    "distributed-training",
    "full-fine-tuning"
-  ]
+  ],
+  "topic": "training-infrastructure",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "distributed-training",
@@ -5270,7 +6790,12 @@
    "pipeline-parallelism",
    "gpu",
    "checkpoint"
-  ]
+  ],
+  "topic": "training-infrastructure",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "data-parallelism",
@@ -5286,7 +6811,12 @@
    "distributed-training",
    "tensor-parallelism",
    "pipeline-parallelism"
-  ]
+  ],
+  "topic": "training-infrastructure",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "tensor-parallelism",
@@ -5303,7 +6833,12 @@
    "data-parallelism",
    "pipeline-parallelism",
    "inference-serving"
-  ]
+  ],
+  "topic": "training-infrastructure",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "pipeline-parallelism",
@@ -5319,7 +6854,12 @@
    "distributed-training",
    "tensor-parallelism",
    "data-parallelism"
-  ]
+  ],
+  "topic": "training-infrastructure",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "training-tokens",
@@ -5336,7 +6876,12 @@
    "pre-training",
    "token",
    "model-size"
-  ]
+  ],
+  "topic": "training-data",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "prompt",
@@ -5353,7 +6898,12 @@
    "system-prompt",
    "llm",
    "context-window"
-  ]
+  ],
+  "topic": "prompt-basics",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "prompt-engineering",
@@ -5371,7 +6921,12 @@
    "chain-of-thought",
    "context-engineering",
    "eval"
-  ]
+  ],
+  "topic": "prompt-basics",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "system-prompt",
@@ -5388,7 +6943,12 @@
    "role-prompting",
    "guardrail",
    "prompt-injection"
-  ]
+  ],
+  "topic": "prompt-basics",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "user-prompt",
@@ -5404,7 +6964,12 @@
    "system-prompt",
    "prompt",
    "prompt-injection"
-  ]
+  ],
+  "topic": "prompt-basics",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "zero-shot",
@@ -5421,7 +6986,12 @@
    "one-shot",
    "in-context-learning",
    "instruction-tuning"
-  ]
+  ],
+  "topic": "prompt-examples",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "one-shot",
@@ -5437,7 +7007,12 @@
    "zero-shot",
    "few-shot",
    "in-context-learning"
-  ]
+  ],
+  "topic": "prompt-examples",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "few-shot",
@@ -5454,7 +7029,12 @@
    "one-shot",
    "in-context-learning",
    "prompt-template"
-  ]
+  ],
+  "topic": "prompt-examples",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "in-context-learning",
@@ -5472,7 +7052,12 @@
    "context-window",
    "fine-tuning",
    "rag"
-  ]
+  ],
+  "topic": "prompt-examples",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "chain-of-thought",
@@ -5489,7 +7074,12 @@
    "self-consistency",
    "tree-of-thoughts",
    "test-time-compute"
-  ]
+  ],
+  "topic": "prompt-reasoning",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "self-consistency",
@@ -5506,7 +7096,12 @@
    "temperature",
    "test-time-compute",
    "tree-of-thoughts"
-  ]
+  ],
+  "topic": "prompt-reasoning",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "tree-of-thoughts",
@@ -5523,7 +7118,12 @@
    "self-consistency",
    "test-time-compute",
    "reasoning-model"
-  ]
+  ],
+  "topic": "prompt-reasoning",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "reasoning-model",
@@ -5541,7 +7141,12 @@
    "extended-thinking",
    "thinking-budget",
    "reinforcement-learning"
-  ]
+  ],
+  "topic": "prompt-reasoning",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "test-time-compute",
@@ -5559,7 +7164,12 @@
    "self-consistency",
    "scaling-law",
    "inference"
-  ]
+  ],
+  "topic": "prompt-reasoning",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "extended-thinking",
@@ -5576,7 +7186,12 @@
    "thinking-budget",
    "chain-of-thought",
    "test-time-compute"
-  ]
+  ],
+  "topic": "prompt-reasoning",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "thinking-budget",
@@ -5593,7 +7208,12 @@
    "reasoning-model",
    "test-time-compute",
    "ai-cost"
-  ]
+  ],
+  "topic": "prompt-reasoning",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "role-prompting",
@@ -5609,7 +7229,12 @@
    "system-prompt",
    "prompt-engineering",
    "prompt"
-  ]
+  ],
+  "topic": "prompt-basics",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "prompt-template",
@@ -5626,7 +7251,12 @@
    "prompt-versioning",
    "few-shot",
    "delimiter"
-  ]
+  ],
+  "topic": "prompt-ops",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "prompt-chaining",
@@ -5643,7 +7273,12 @@
    "prompt-template",
    "orchestration",
    "structured-output"
-  ]
+  ],
+  "topic": "prompt-ops",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "meta-prompting",
@@ -5659,7 +7294,12 @@
    "prompt-optimization",
    "prompt-engineering",
    "llm-as-judge"
-  ]
+  ],
+  "topic": "prompt-ops",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "prompt-optimization",
@@ -5676,7 +7316,12 @@
    "eval",
    "few-shot",
    "prompt-engineering"
-  ]
+  ],
+  "topic": "prompt-ops",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "structured-output",
@@ -5693,7 +7338,12 @@
    "function-calling",
    "prompt-chaining",
    "ocr"
-  ]
+  ],
+  "topic": "prompt-structure",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "output-formatting",
@@ -5709,7 +7359,12 @@
    "structured-output",
    "prefill",
    "prompt-template"
-  ]
+  ],
+  "topic": "prompt-structure",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "prefill",
@@ -5725,7 +7380,12 @@
    "output-formatting",
    "structured-output",
    "prompt"
-  ]
+  ],
+  "topic": "prompt-structure",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "xml-tags",
@@ -5742,7 +7402,12 @@
    "prompt-template",
    "output-formatting",
    "prompt-injection"
-  ]
+  ],
+  "topic": "prompt-structure",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "delimiter",
@@ -5758,7 +7423,12 @@
    "xml-tags",
    "prompt-template",
    "prompt-injection"
-  ]
+  ],
+  "topic": "prompt-structure",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "summarization-prompt",
@@ -5774,7 +7444,12 @@
    "prompt-template",
    "output-formatting",
    "hallucination"
-  ]
+  ],
+  "topic": "prompt-basics",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "step-back-prompting",
@@ -5790,7 +7465,12 @@
    "chain-of-thought",
    "query-rewriting",
    "prompt-engineering"
-  ]
+  ],
+  "topic": "prompt-reasoning",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "context-engineering",
@@ -5808,7 +7488,12 @@
    "rag",
    "memory-agent",
    "contextual-compression"
-  ]
+  ],
+  "topic": "prompt-basics",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "prompt-versioning",
@@ -5825,7 +7510,12 @@
    "llmops",
    "eval",
    "observability"
-  ]
+  ],
+  "topic": "prompt-ops",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "vibe-coding",
@@ -5842,7 +7532,12 @@
    "ai-agent",
    "prompt",
    "ai-literacy"
-  ]
+  ],
+  "topic": "prompt-ops",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "rag",
@@ -5860,7 +7555,12 @@
    "chunking",
    "embedding",
    "grounding"
-  ]
+  ],
+  "topic": "rag-basics",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "retrieval",
@@ -5878,7 +7578,12 @@
    "bm25",
    "hybrid-search",
    "top-k-retrieval"
-  ]
+  ],
+  "topic": "rag-basics",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "vector-db",
@@ -5896,7 +7601,12 @@
    "ann",
    "semantic-search",
    "rag"
-  ]
+  ],
+  "topic": "rag-vector",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "embedding-model",
@@ -5913,7 +7623,12 @@
    "vector-db",
    "semantic-search",
    "multilingual-model"
-  ]
+  ],
+  "topic": "rag-vector",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "cosine-similarity",
@@ -5930,7 +7645,12 @@
    "semantic-search",
    "vector-db",
    "ann"
-  ]
+  ],
+  "topic": "rag-vector",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "semantic-search",
@@ -5948,7 +7668,12 @@
    "hybrid-search",
    "bm25",
    "retrieval"
-  ]
+  ],
+  "topic": "rag-vector",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "bm25",
@@ -5965,7 +7690,12 @@
    "semantic-search",
    "retrieval",
    "reranking"
-  ]
+  ],
+  "topic": "rag-advanced",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "hybrid-search",
@@ -5982,7 +7712,12 @@
    "semantic-search",
    "reranking",
    "retrieval"
-  ]
+  ],
+  "topic": "rag-advanced",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "reranking",
@@ -5999,7 +7734,12 @@
    "hybrid-search",
    "top-k-retrieval",
    "rag"
-  ]
+  ],
+  "topic": "rag-advanced",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "top-k-retrieval",
@@ -6016,7 +7756,12 @@
    "reranking",
    "context-window",
    "eval"
-  ]
+  ],
+  "topic": "rag-advanced",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "chunking",
@@ -6034,7 +7779,12 @@
    "embedding",
    "rag",
    "metadata-filtering"
-  ]
+  ],
+  "topic": "rag-ingestion",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "chunk-overlap",
@@ -6050,7 +7800,12 @@
    "chunking",
    "embedding",
    "contextual-retrieval"
-  ]
+  ],
+  "topic": "rag-ingestion",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "contextual-retrieval",
@@ -6067,7 +7822,12 @@
    "chunk-overlap",
    "hybrid-search",
    "rag"
-  ]
+  ],
+  "topic": "rag-ingestion",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "ann",
@@ -6084,7 +7844,12 @@
    "vector-index",
    "vector-db",
    "cosine-similarity"
-  ]
+  ],
+  "topic": "rag-vector",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "hnsw",
@@ -6100,7 +7865,12 @@
    "ann",
    "vector-index",
    "vector-db"
-  ]
+  ],
+  "topic": "rag-vector",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "vector-index",
@@ -6116,7 +7886,12 @@
    "hnsw",
    "ann",
    "vector-db"
-  ]
+  ],
+  "topic": "rag-vector",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "metadata-filtering",
@@ -6133,7 +7908,12 @@
    "metadata-management",
    "chunking",
    "retrieval"
-  ]
+  ],
+  "topic": "rag-advanced",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "query-rewriting",
@@ -6150,7 +7930,12 @@
    "multi-hop-retrieval",
    "retrieval",
    "step-back-prompting"
-  ]
+  ],
+  "topic": "rag-advanced",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "hyde",
@@ -6167,7 +7952,12 @@
    "semantic-search",
    "embedding",
    "retrieval"
-  ]
+  ],
+  "topic": "rag-advanced",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "multi-hop-retrieval",
@@ -6184,7 +7974,12 @@
    "knowledge-graph",
    "query-rewriting",
    "graphrag"
-  ]
+  ],
+  "topic": "rag-advanced",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "agentic-rag",
@@ -6202,7 +7997,12 @@
    "tool-use",
    "multi-hop-retrieval",
    "text-to-sql"
-  ]
+  ],
+  "topic": "rag-advanced",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "contextual-compression",
@@ -6219,7 +8019,12 @@
    "reranking",
    "context-window",
    "rag"
-  ]
+  ],
+  "topic": "rag-advanced",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "grounding",
@@ -6236,7 +8041,12 @@
    "hallucination",
    "eval",
    "explainable-ai"
-  ]
+  ],
+  "topic": "rag-basics",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "document-parsing",
@@ -6253,7 +8063,12 @@
    "chunking",
    "unstructured-data",
    "vlm"
-  ]
+  ],
+  "topic": "rag-ingestion",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "knowledge-base",
@@ -6270,7 +8085,12 @@
    "vector-db",
    "knowledge-graph",
    "data-catalog"
-  ]
+  ],
+  "topic": "rag-basics",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "knowledge-graph",
@@ -6287,7 +8107,12 @@
    "multi-hop-retrieval",
    "knowledge-base",
    "rag"
-  ]
+  ],
+  "topic": "rag-structured",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "graphrag",
@@ -6304,7 +8129,12 @@
    "rag",
    "multi-hop-retrieval",
    "vector-db"
-  ]
+  ],
+  "topic": "rag-structured",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "long-context-vs-rag",
@@ -6321,7 +8151,12 @@
    "rag",
    "cag",
    "ai-cost"
-  ]
+  ],
+  "topic": "rag-basics",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "cag",
@@ -6338,7 +8173,12 @@
    "long-context-vs-rag",
    "rag",
    "context-window"
-  ]
+  ],
+  "topic": "rag-basics",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "text-to-sql",
@@ -6356,7 +8196,12 @@
    "data-catalog",
    "agentic-rag",
    "structured-data"
-  ]
+  ],
+  "topic": "rag-structured",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "semantic-layer",
@@ -6373,7 +8218,12 @@
    "metadata-management",
    "data-catalog",
    "structured-data"
-  ]
+  ],
+  "topic": "rag-structured",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "data-pipeline",
@@ -6391,7 +8241,12 @@
    "embedding",
    "rag",
    "metadata-management"
-  ]
+  ],
+  "topic": "rag-data",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "structured-data",
@@ -6407,7 +8262,12 @@
    "unstructured-data",
    "text-to-sql",
    "data-lakehouse"
-  ]
+  ],
+  "topic": "rag-data",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "unstructured-data",
@@ -6424,7 +8284,12 @@
    "document-parsing",
    "rag",
    "stt"
-  ]
+  ],
+  "topic": "rag-data",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "data-lakehouse",
@@ -6441,7 +8306,12 @@
    "structured-data",
    "unstructured-data",
    "data-catalog"
-  ]
+  ],
+  "topic": "rag-data",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "data-quality",
@@ -6458,7 +8328,12 @@
    "metadata-management",
    "training-data",
    "ai-governance"
-  ]
+  ],
+  "topic": "rag-data",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "metadata-management",
@@ -6476,7 +8351,12 @@
    "semantic-layer",
    "data-quality",
    "metadata-filtering"
-  ]
+  ],
+  "topic": "rag-data",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "data-catalog",
@@ -6493,7 +8373,12 @@
    "text-to-sql",
    "data-lakehouse",
    "knowledge-base"
-  ]
+  ],
+  "topic": "rag-data",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "hallucination",
@@ -6511,7 +8396,12 @@
    "llm",
    "eval",
    "guardrail"
-  ]
+  ],
+  "topic": "safety-trustworthiness",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "guardrail",
@@ -6529,7 +8419,12 @@
    "prompt-injection",
    "jailbreak",
    "responsible-ai"
-  ]
+  ],
+  "topic": "safety-security",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "red-teaming",
@@ -6547,7 +8442,12 @@
    "eval",
    "adversarial-attack",
    "guardrail"
-  ]
+  ],
+  "topic": "safety-security",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "prompt-injection",
@@ -6565,7 +8465,12 @@
    "system-prompt",
    "guardrail",
    "ai-agent"
-  ]
+  ],
+  "topic": "safety-security",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "jailbreak",
@@ -6583,7 +8488,12 @@
    "red-teaming",
    "alignment",
    "guardrail"
-  ]
+  ],
+  "topic": "safety-security",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "bias",
@@ -6601,7 +8511,12 @@
    "responsible-ai",
    "high-impact-ai",
    "explainable-ai"
-  ]
+  ],
+  "topic": "safety-trustworthiness",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "explainable-ai",
@@ -6619,7 +8534,12 @@
    "high-impact-ai",
    "financial-ai-guidelines",
    "model"
-  ]
+  ],
+  "topic": "safety-trustworthiness",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "benchmark",
@@ -6637,7 +8557,12 @@
    "mmlu",
    "swe-bench",
    "data-contamination"
-  ]
+  ],
+  "topic": "safety-evaluation",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "llm-as-judge",
@@ -6655,7 +8580,12 @@
    "regression-testing",
    "golden-dataset",
    "groundedness"
-  ]
+  ],
+  "topic": "safety-evaluation",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "eval",
@@ -6673,7 +8603,12 @@
    "llm-as-judge",
    "offline-online-eval",
    "llmops"
-  ]
+  ],
+  "topic": "safety-evaluation",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "ai-basic-act-korea",
@@ -6691,7 +8626,12 @@
    "eu-ai-act",
    "ai-governance",
    "responsible-ai"
-  ]
+  ],
+  "topic": "safety-regulation",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "eu-ai-act",
@@ -6709,7 +8649,12 @@
    "watermarking",
    "ai-governance",
    "foundation-model"
-  ]
+  ],
+  "topic": "safety-regulation",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "responsible-ai",
@@ -6727,7 +8672,12 @@
    "explainable-ai",
    "model-card",
    "ai-risk-management-framework"
-  ]
+  ],
+  "topic": "safety-trustworthiness",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "data-privacy",
@@ -6745,7 +8695,12 @@
    "data-exfiltration",
    "on-premise",
    "training-data"
-  ]
+  ],
+  "topic": "safety-data-protection",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "watermarking",
@@ -6763,7 +8718,12 @@
    "generative-ai",
    "ai-basic-act-korea",
    "eu-ai-act"
-  ]
+  ],
+  "topic": "safety-transparency",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "high-impact-ai",
@@ -6781,7 +8741,12 @@
    "human-in-the-loop",
    "explainable-ai",
    "financial-ai-guidelines"
-  ]
+  ],
+  "topic": "safety-regulation",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "ai-generated-content-labeling",
@@ -6799,7 +8764,12 @@
    "ai-basic-act-korea",
    "eu-ai-act",
    "generative-ai"
-  ]
+  ],
+  "topic": "safety-regulation",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "financial-ai-guidelines",
@@ -6817,7 +8787,12 @@
    "ai-governance",
    "ai-risk-management-framework",
    "human-in-the-loop"
-  ]
+  ],
+  "topic": "safety-regulation",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "ai-risk-management-framework",
@@ -6835,7 +8810,12 @@
    "financial-ai-guidelines",
    "audit-trail",
    "high-impact-ai"
-  ]
+  ],
+  "topic": "safety-regulation",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "pseudonymization",
@@ -6853,7 +8833,12 @@
    "training-data",
    "data-exfiltration",
    "synthetic-data"
-  ]
+  ],
+  "topic": "safety-data-protection",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "data-exfiltration",
@@ -6871,7 +8856,12 @@
    "prompt-injection",
    "pii-masking",
    "model-extraction"
-  ]
+  ],
+  "topic": "safety-data-protection",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "model-card",
@@ -6889,7 +8879,12 @@
    "audit-trail",
    "ai-governance",
    "model"
-  ]
+  ],
+  "topic": "safety-transparency",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "system-card",
@@ -6907,7 +8902,12 @@
    "responsible-scaling-policy",
    "eval",
    "foundation-model"
-  ]
+  ],
+  "topic": "safety-transparency",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "audit-trail",
@@ -6925,7 +8925,12 @@
    "explainable-ai",
    "model-card",
    "llmops"
-  ]
+  ],
+  "topic": "safety-transparency",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "fairness",
@@ -6943,7 +8948,12 @@
    "explainable-ai",
    "high-impact-ai",
    "eval"
-  ]
+  ],
+  "topic": "safety-trustworthiness",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "sycophancy",
@@ -6961,7 +8971,12 @@
    "reward-hacking",
    "hallucination",
    "eval"
-  ]
+  ],
+  "topic": "safety-trustworthiness",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "groundedness",
@@ -6979,7 +8994,12 @@
    "llm-as-judge",
    "eval",
    "retrieval"
-  ]
+  ],
+  "topic": "safety-trustworthiness",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "accuracy-metric",
@@ -6997,7 +9017,12 @@
    "eval",
    "benchmark",
    "golden-dataset"
-  ]
+  ],
+  "topic": "safety-evaluation",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "golden-dataset",
@@ -7015,7 +9040,12 @@
    "benchmark",
    "llm-as-judge",
    "data-contamination"
-  ]
+  ],
+  "topic": "safety-evaluation",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "regression-testing",
@@ -7033,7 +9063,12 @@
    "prompt-engineering",
    "llmops",
    "llm-as-judge"
-  ]
+  ],
+  "topic": "safety-evaluation",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "offline-online-eval",
@@ -7051,7 +9086,12 @@
    "observability",
    "human-evaluation",
    "llmops"
-  ]
+  ],
+  "topic": "safety-evaluation",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "human-evaluation",
@@ -7069,7 +9109,12 @@
    "human-in-the-loop",
    "rlhf",
    "golden-dataset"
-  ]
+  ],
+  "topic": "safety-evaluation",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "leaderboard",
@@ -7087,7 +9132,12 @@
    "mmlu",
    "data-contamination",
    "llm"
-  ]
+  ],
+  "topic": "safety-evaluation",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "mmlu",
@@ -7105,7 +9155,12 @@
    "data-contamination",
    "swe-bench",
    "llm"
-  ]
+  ],
+  "topic": "safety-evaluation",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "swe-bench",
@@ -7123,7 +9178,12 @@
    "ai-agent",
    "leaderboard",
    "eval"
-  ]
+  ],
+  "topic": "safety-evaluation",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "jailbreak-defense",
@@ -7141,7 +9201,12 @@
    "content-filter",
    "red-teaming",
    "regression-testing"
-  ]
+  ],
+  "topic": "safety-security",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "content-filter",
@@ -7159,7 +9224,12 @@
    "pii-masking",
    "responsible-ai",
    "latency"
-  ]
+  ],
+  "topic": "safety-security",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "pii-masking",
@@ -7177,7 +9247,12 @@
    "guardrail",
    "data-exfiltration",
    "content-filter"
-  ]
+  ],
+  "topic": "safety-data-protection",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "indirect-prompt-injection",
@@ -7195,7 +9270,12 @@
    "tool-use",
    "human-in-the-loop",
    "rag"
-  ]
+  ],
+  "topic": "safety-security",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "data-poisoning",
@@ -7213,7 +9293,12 @@
    "adversarial-attack",
    "rag",
    "model-extraction"
-  ]
+  ],
+  "topic": "safety-security",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "model-extraction",
@@ -7231,7 +9316,12 @@
    "data-exfiltration",
    "api",
    "data-poisoning"
-  ]
+  ],
+  "topic": "safety-security",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "adversarial-attack",
@@ -7249,7 +9339,12 @@
    "jailbreak",
    "model-extraction",
    "ocr"
-  ]
+  ],
+  "topic": "safety-security",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "ai-safety-institute",
@@ -7267,7 +9362,12 @@
    "ai-basic-act-korea",
    "responsible-scaling-policy",
    "foundation-model"
-  ]
+  ],
+  "topic": "safety-regulation",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "responsible-scaling-policy",
@@ -7285,7 +9385,12 @@
    "alignment",
    "eval",
    "foundation-model"
-  ]
+  ],
+  "topic": "safety-regulation",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  },
  {
   "id": "mechanistic-interpretability",
@@ -7303,6 +9408,11 @@
    "neural-network",
    "transformer",
    "feature"
-  ]
+  ],
+  "topic": "safety-trustworthiness",
+  "added": "2026-10-19",
+  "updated": "2026-10-19",
+  "revision": 1,
+  "status": "active"
  }
 ]

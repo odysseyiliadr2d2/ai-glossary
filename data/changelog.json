@@ -1,0 +1,2534 @@
+[
+ {
+  "date": "2026-10-19",
+  "id": "ai-agent",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "tool-use",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "function-calling",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "mcp",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "a2a",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "multi-agent",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "agentic-workflow",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "orchestration",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "computer-use",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "memory-agent",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "human-in-the-loop",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "coding-agent",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "agentic-ai",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "agent-loop",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "react",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "planning",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "reflection",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "subagent",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "agent-skills",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "agents-md",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "browser-agent",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "agent-sandbox",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "agent-permissions",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "long-running-task",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "agent-state",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "handoff",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "agent-framework",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "tool-schema",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "mcp-server",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "mcp-client",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "connector",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "autonomy-level",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "agent-evaluation",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "agent-trajectory",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "deep-research",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "workflow-automation",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "retry-fallback",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "generative-ai",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "multimodal",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "diffusion-model",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "gan",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "vlm",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "text-to-image",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "tts",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "stt",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "ocr",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "video-generation",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "voice-agent",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "native-multimodal",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "latent-space",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "vae",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "denoising",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "flow-matching",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "dit",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "autoregressive-image-generation",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "text-encoder",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "clip",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "multimodal-embedding",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "image-to-image",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "inpainting",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "controlnet",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "negative-prompt",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "upscaling",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "image-captioning",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "vqa",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "document-ai",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "screen-understanding",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "realtime-voice",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "voice-cloning",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "music-generation",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "3d-generation",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "deepfake",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "content-provenance",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "ai-copyright",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "ai",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "machine-learning",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "supervised-learning",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "unsupervised-learning",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "reinforcement-learning",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "overfitting",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "training-data",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "feature",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "model",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "inference",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "parameter",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "classification",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "regression",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "clustering",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "data-split",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "underfitting",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "regularization",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "hyperparameter",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "cross-validation",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "precision-recall",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "f1-score",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "confusion-matrix",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "accuracy",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "auc-roc",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "bias-variance-tradeoff",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "anomaly-detection",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "recommender-system",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "time-series-forecasting",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "ensemble-learning",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "decision-tree",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "random-forest",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "gradient-boosting",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "feature-engineering",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "feature-scaling",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "data-labeling",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "semi-supervised-learning",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "self-supervised-learning",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "class-imbalance",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "data-leakage",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "dimensionality-reduction",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "logistic-regression",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "agi",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "narrow-ai",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "turing-test",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "neural-network",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "deep-learning",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "transformer",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "attention",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "self-attention",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "backpropagation",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "gradient-descent",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "cnn",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "rnn",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "embedding",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "activation-function",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "loss-function",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "epoch",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "perceptron",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "mlp",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "hidden-layer",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "dropout",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "batch-normalization",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "layer-normalization",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "residual-connection",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "learning-rate",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "optimizer",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "sgd",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "batch-size",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "cross-entropy",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "softmax",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "vanishing-gradient",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "lstm",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "gru",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "encoder-decoder",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "autoencoder",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "transfer-learning",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "positional-encoding",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "multi-head-attention",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "tensor",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "model-size",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "early-stopping",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "gnn",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "gpu",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "npu",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "quantization",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "inference-serving",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "latency",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "throughput",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "llmops",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "mlops",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "api",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "on-premise",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "sovereign-ai",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "vllm",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "edge-ai",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "observability",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "hbm",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "cuda",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "tpu",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "flops",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "batch-inference",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "async-processing",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "rate-limit",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "token-cost",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "model-gateway",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "fallback-model",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "semantic-cache",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "kubernetes",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "model-registry",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "ab-testing",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "drift-monitoring",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "private-cloud",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "hybrid-cloud",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "air-gapped-deployment",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "gguf",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "tensorrt",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "cold-start",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "ttft",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "prompt-caching",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "datacenter-power",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "ax",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "dx",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "poc",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "roi",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "ai-governance",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "use-case",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "copilot",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "ai-literacy",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "change-management",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "ai-adoption",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "build-vs-buy",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "ai-cost",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "ax-roadmap",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "ai-coe",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "process-redesign",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "productivity-metrics",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "citizen-developer",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "scale-up",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "ai-strategy",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "ai-insourcing",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "vendor-lock-in",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "tco",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "sla",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "prompt-library",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "ai-champion",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "reskilling",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "ai-native",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "enterprise-llm-portal",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "data-driven-decision",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "network-separation-reform",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "regulatory-sandbox",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "ai-maturity-model",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "shadow-ai",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "llm",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "foundation-model",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "token",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "tokenizer",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "context-window",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "next-token-prediction",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "temperature",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "top-p",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "open-weight-model",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "slm",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "moe",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "kv-cache",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "scaling-law",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "multilingual-model",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "decoder-only-model",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "encoder-model",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "autoregressive-model",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "emergent-abilities",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "logits",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "sampling",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "top-k",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "greedy-decoding",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "beam-search",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "repetition-penalty",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "max-tokens",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "stop-sequence",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "long-context",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "lost-in-the-middle",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "frontier-model",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "open-source-model",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "korean-token-efficiency",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "bpe",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "rope",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "grouped-query-attention",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "knowledge-cutoff",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "multi-turn-conversation",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "chat-template",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "streaming-response",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "speculative-decoding",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "ssm",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "hybrid-model",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "world-model",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "pre-training",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "fine-tuning",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "sft",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "rlhf",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "dpo",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "lora",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "peft",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "distillation",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "instruction-tuning",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "synthetic-data",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "alignment",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "constitutional-ai",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "catastrophic-forgetting",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "post-training",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "data-curation",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "loss-masking",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "reward-model",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "preference-data",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "rlaif",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "ppo",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "grpo",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "rlvr",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "reward-hacking",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "kl-penalty",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "qlora",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "adapter",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "full-fine-tuning",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "model-merging",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "continual-learning",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "continued-pre-training",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "domain-adaptation",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "curriculum-learning",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "checkpoint",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "data-contamination",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "mixed-precision",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "distributed-training",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "data-parallelism",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "tensor-parallelism",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "pipeline-parallelism",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "training-tokens",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "prompt",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "prompt-engineering",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "system-prompt",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "user-prompt",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "zero-shot",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "one-shot",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "few-shot",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "in-context-learning",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "chain-of-thought",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "self-consistency",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "tree-of-thoughts",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "reasoning-model",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "test-time-compute",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "extended-thinking",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "thinking-budget",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "role-prompting",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "prompt-template",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "prompt-chaining",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "meta-prompting",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "prompt-optimization",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "structured-output",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "output-formatting",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "prefill",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "xml-tags",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "delimiter",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "summarization-prompt",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "step-back-prompting",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "context-engineering",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "prompt-versioning",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "vibe-coding",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "rag",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "retrieval",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "vector-db",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "embedding-model",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "cosine-similarity",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "semantic-search",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "bm25",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "hybrid-search",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "reranking",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "top-k-retrieval",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "chunking",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "chunk-overlap",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "contextual-retrieval",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "ann",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "hnsw",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "vector-index",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "metadata-filtering",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "query-rewriting",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "hyde",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "multi-hop-retrieval",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "agentic-rag",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "contextual-compression",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "grounding",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "document-parsing",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "knowledge-base",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "knowledge-graph",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "graphrag",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "long-context-vs-rag",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "cag",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "text-to-sql",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "semantic-layer",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "data-pipeline",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "structured-data",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "unstructured-data",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "data-lakehouse",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "data-quality",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "metadata-management",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "data-catalog",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "hallucination",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "guardrail",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "red-teaming",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "prompt-injection",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "jailbreak",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "bias",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "explainable-ai",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "benchmark",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "llm-as-judge",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "eval",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "ai-basic-act-korea",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "eu-ai-act",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "responsible-ai",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "data-privacy",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "watermarking",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "high-impact-ai",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "ai-generated-content-labeling",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "financial-ai-guidelines",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "ai-risk-management-framework",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "pseudonymization",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "data-exfiltration",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "model-card",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "system-card",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "audit-trail",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "fairness",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "sycophancy",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "groundedness",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "accuracy-metric",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "golden-dataset",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "regression-testing",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "offline-online-eval",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "human-evaluation",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "leaderboard",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "mmlu",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "swe-bench",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "jailbreak-defense",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "content-filter",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "pii-masking",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "indirect-prompt-injection",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "data-poisoning",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "model-extraction",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "adversarial-attack",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "ai-safety-institute",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "responsible-scaling-policy",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-10-19",
+  "id": "mechanistic-interpretability",
+  "type": "added",
+  "summary": "최초 수록"
+ }
+]

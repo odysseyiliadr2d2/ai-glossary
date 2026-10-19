@@ -1,0 +1,992 @@
+[
+ {
+  "id": "basics",
+  "ko": "AI 기초·머신러닝",
+  "en": "AI Basics & Machine Learning",
+  "desc": "AI와 머신러닝을 처음 접할 때 알아야 할 기초 개념을 모은 분야다. 학습 방식, 데이터 준비, 대표 알고리즘, 성능 평가까지 이후 모든 분야의 바탕이 되는 용어를 다룬다.",
+  "topics": [
+   {
+    "id": "basics-ai-concepts",
+    "ko": "AI 기본 개념",
+    "en": "AI Fundamentals",
+    "desc": "AI와 머신러닝이 무엇이고 모델이 어떻게 배우고 답하는지에 대한 출발점이 되는 개념이다.",
+    "terms": [
+     "ai",
+     "machine-learning",
+     "narrow-ai",
+     "agi",
+     "turing-test",
+     "model",
+     "inference",
+     "parameter",
+     "hyperparameter"
+    ]
+   },
+   {
+    "id": "basics-learning-types",
+    "ko": "학습 방식",
+    "en": "Learning Paradigms",
+    "desc": "정답 유무와 피드백 방식에 따라 나뉘는 머신러닝의 학습 유형이다.",
+    "terms": [
+     "supervised-learning",
+     "unsupervised-learning",
+     "reinforcement-learning",
+     "semi-supervised-learning",
+     "self-supervised-learning"
+    ]
+   },
+   {
+    "id": "basics-data",
+    "ko": "데이터 준비",
+    "en": "Data Preparation",
+    "desc": "모델 성능을 좌우하는 학습 데이터를 모으고, 표시하고, 가공하고, 나누는 과정의 용어다.",
+    "terms": [
+     "training-data",
+     "feature",
+     "data-labeling",
+     "data-split",
+     "feature-engineering",
+     "feature-scaling",
+     "class-imbalance",
+     "dimensionality-reduction",
+     "data-leakage"
+    ]
+   },
+   {
+    "id": "basics-algorithms",
+    "ko": "과제와 알고리즘",
+    "en": "Tasks & Algorithms",
+    "desc": "분류·회귀·군집화 같은 대표 과제와 이를 푸는 전통적 머신러닝 알고리즘을 다룬다.",
+    "terms": [
+     "classification",
+     "regression",
+     "clustering",
+     "decision-tree",
+     "logistic-regression",
+     "anomaly-detection",
+     "time-series-forecasting",
+     "recommender-system",
+     "ensemble-learning",
+     "random-forest",
+     "gradient-boosting"
+    ]
+   },
+   {
+    "id": "basics-evaluation",
+    "ko": "평가와 일반화",
+    "en": "Evaluation & Generalization",
+    "desc": "모델이 처음 보는 데이터에서도 잘 맞는지 확인하고 측정하는 방법과 지표다.",
+    "terms": [
+     "overfitting",
+     "accuracy",
+     "underfitting",
+     "regularization",
+     "cross-validation",
+     "confusion-matrix",
+     "precision-recall",
+     "f1-score",
+     "auc-roc",
+     "bias-variance-tradeoff"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "dl",
+  "ko": "딥러닝·신경망",
+  "en": "Deep Learning",
+  "desc": "여러 층의 신경망으로 데이터를 학습하는 딥러닝의 구조와 원리를 다루는 분야다. 신경망의 기본 구성부터 학습 알고리즘, 대표 구조, 오늘날 LLM의 뼈대인 트랜스포머까지 정리한다.",
+  "topics": [
+   {
+    "id": "dl-neural-basics",
+    "ko": "신경망 기초",
+    "en": "Neural Network Basics",
+    "desc": "인공 뉴런과 층, 활성화 함수 등 신경망을 이루는 기본 구성 요소다.",
+    "terms": [
+     "neural-network",
+     "deep-learning",
+     "perceptron",
+     "mlp",
+     "hidden-layer",
+     "activation-function",
+     "softmax",
+     "tensor",
+     "embedding",
+     "model-size"
+    ]
+   },
+   {
+    "id": "dl-training-mechanics",
+    "ko": "학습 원리",
+    "en": "Training Mechanics",
+    "desc": "신경망이 오차를 계산하고 내부 값을 고쳐 나가며 학습하는 원리다.",
+    "terms": [
+     "loss-function",
+     "gradient-descent",
+     "backpropagation",
+     "learning-rate",
+     "optimizer",
+     "epoch",
+     "batch-size",
+     "cross-entropy",
+     "sgd",
+     "vanishing-gradient"
+    ]
+   },
+   {
+    "id": "dl-training-techniques",
+    "ko": "학습 기법",
+    "en": "Training Techniques",
+    "desc": "깊은 신경망을 안정적으로 학습시키고 과적합을 막거나 기존 학습을 재활용하는 기법이다.",
+    "terms": [
+     "dropout",
+     "early-stopping",
+     "transfer-learning",
+     "batch-normalization",
+     "layer-normalization",
+     "residual-connection"
+    ]
+   },
+   {
+    "id": "dl-architectures",
+    "ko": "신경망 구조",
+    "en": "Network Architectures",
+    "desc": "이미지, 순서 데이터, 관계 데이터 등 데이터 유형에 맞춰 발전한 대표 신경망 구조다.",
+    "terms": [
+     "cnn",
+     "rnn",
+     "lstm",
+     "encoder-decoder",
+     "gru",
+     "autoencoder",
+     "gnn"
+    ]
+   },
+   {
+    "id": "dl-transformer",
+    "ko": "트랜스포머",
+    "en": "Transformer",
+    "desc": "어텐션을 중심으로 한 트랜스포머 구조와 그 구성 요소로, 현대 LLM의 기반이다.",
+    "terms": [
+     "attention",
+     "transformer",
+     "self-attention",
+     "multi-head-attention",
+     "positional-encoding"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "llm",
+  "ko": "LLM·언어모델",
+  "en": "Large Language Models",
+  "desc": "방대한 글로 학습해 사람처럼 글을 이해하고 생성하는 대규모 언어모델을 다루는 분야다. 기본 개념과 모델 종류, 토큰과 컨텍스트, 답변 생성 방식, 내부 구조를 차례로 정리한다.",
+  "topics": [
+   {
+    "id": "llm-concepts",
+    "ko": "LLM 기본 개념",
+    "en": "LLM Fundamentals",
+    "desc": "LLM이 무엇이고 어떤 원리로 글을 만들며 규모가 커질 때 어떤 특성이 나타나는지 다룬다.",
+    "terms": [
+     "llm",
+     "foundation-model",
+     "knowledge-cutoff",
+     "multi-turn-conversation",
+     "next-token-prediction",
+     "autoregressive-model",
+     "emergent-abilities",
+     "scaling-law"
+    ]
+   },
+   {
+    "id": "llm-model-types",
+    "ko": "모델 종류",
+    "en": "Model Types",
+    "desc": "공개 범위, 크기, 언어 지원에 따라 나뉘는 언어모델의 유형이다.",
+    "terms": [
+     "frontier-model",
+     "open-weight-model",
+     "open-source-model",
+     "slm",
+     "multilingual-model"
+    ]
+   },
+   {
+    "id": "llm-tokens-context",
+    "ko": "토큰과 컨텍스트",
+    "en": "Tokens & Context",
+    "desc": "LLM이 글을 처리하는 단위인 토큰과 한 번에 다룰 수 있는 입력 분량에 관한 개념이다.",
+    "terms": [
+     "token",
+     "context-window",
+     "max-tokens",
+     "tokenizer",
+     "korean-token-efficiency",
+     "long-context",
+     "bpe",
+     "lost-in-the-middle"
+    ]
+   },
+   {
+    "id": "llm-generation",
+    "ko": "생성과 디코딩",
+    "en": "Generation & Decoding",
+    "desc": "모델이 다음 토큰을 고르고 답변을 만들어 내는 방식과 이를 조절하는 설정이다.",
+    "terms": [
+     "temperature",
+     "sampling",
+     "greedy-decoding",
+     "top-k",
+     "top-p",
+     "stop-sequence",
+     "streaming-response",
+     "logits",
+     "beam-search",
+     "repetition-penalty",
+     "chat-template",
+     "kv-cache",
+     "speculative-decoding"
+    ]
+   },
+   {
+    "id": "llm-architecture",
+    "ko": "모델 구조",
+    "en": "Model Architecture",
+    "desc": "LLM 내부의 구조 선택과 트랜스포머를 넘어서는 새로운 설계 방향을 다룬다.",
+    "terms": [
+     "decoder-only-model",
+     "encoder-model",
+     "moe",
+     "rope",
+     "grouped-query-attention",
+     "ssm",
+     "hybrid-model",
+     "world-model"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "training",
+  "ko": "학습·튜닝·정렬",
+  "en": "Training, Tuning & Alignment",
+  "desc": "언어모델을 만들고 다듬는 학습 과정을 다루는 분야다. 사전학습과 파인튜닝의 단계, 학습 데이터, 효율적 튜닝, 정렬과 강화학습, 대규모 학습 인프라를 정리한다.",
+  "topics": [
+   {
+    "id": "training-stages",
+    "ko": "학습 단계",
+    "en": "Training Stages",
+    "desc": "사전학습에서 파인튜닝·사후학습으로 이어지는 언어모델 학습의 큰 흐름이다.",
+    "terms": [
+     "pre-training",
+     "fine-tuning",
+     "post-training",
+     "sft",
+     "instruction-tuning",
+     "loss-masking"
+    ]
+   },
+   {
+    "id": "training-data",
+    "ko": "학습 데이터",
+    "en": "Training Data",
+    "desc": "모델 학습에 쓰이는 데이터의 양, 생성, 정제, 순서, 오염 문제를 다룬다.",
+    "terms": [
+     "training-tokens",
+     "synthetic-data",
+     "data-curation",
+     "curriculum-learning",
+     "data-contamination"
+    ]
+   },
+   {
+    "id": "training-efficient-tuning",
+    "ko": "효율적 튜닝",
+    "en": "Efficient Tuning",
+    "desc": "적은 자원으로 모델을 고치거나 작게 만들거나 합치는 파인튜닝 기법이다.",
+    "terms": [
+     "peft",
+     "lora",
+     "distillation",
+     "adapter",
+     "qlora",
+     "full-fine-tuning",
+     "model-merging"
+    ]
+   },
+   {
+    "id": "training-domain-continual",
+    "ko": "도메인 적응",
+    "en": "Domain Adaptation & Continual Learning",
+    "desc": "범용 모델을 특정 분야에 맞추고 새 지식을 잊지 않고 계속 배우게 하는 방법이다.",
+    "terms": [
+     "domain-adaptation",
+     "continued-pre-training",
+     "catastrophic-forgetting",
+     "continual-learning"
+    ]
+   },
+   {
+    "id": "training-alignment",
+    "ko": "정렬과 강화학습",
+    "en": "Alignment & RL",
+    "desc": "사람의 선호와 원칙에 맞게 모델 행동을 다듬는 정렬 기법과 강화학습 알고리즘이다.",
+    "terms": [
+     "alignment",
+     "preference-data",
+     "rlhf",
+     "reward-model",
+     "dpo",
+     "rlaif",
+     "constitutional-ai",
+     "ppo",
+     "kl-penalty",
+     "grpo",
+     "rlvr",
+     "reward-hacking"
+    ]
+   },
+   {
+    "id": "training-infrastructure",
+    "ko": "학습 인프라",
+    "en": "Training Infrastructure",
+    "desc": "큰 모델을 여러 GPU에 나눠 빠르고 안정적으로 학습시키는 기술이다.",
+    "terms": [
+     "checkpoint",
+     "mixed-precision",
+     "distributed-training",
+     "data-parallelism",
+     "tensor-parallelism",
+     "pipeline-parallelism"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "prompt",
+  "ko": "프롬프트·추론",
+  "en": "Prompting & Reasoning",
+  "desc": "AI에게 원하는 결과를 얻기 위해 지시문과 맥락을 설계하는 방법을 다룬다. 기본 작성법부터 예시 활용, 출력 형식 고정, 추론 유도, 운영·관리까지 실무에서 바로 쓰는 기법을 모았다.",
+  "topics": [
+   {
+    "id": "prompt-basics",
+    "ko": "프롬프트 기초",
+    "en": "Prompt Basics",
+    "desc": "프롬프트가 무엇이고 어떤 종류가 있는지, 역할과 맥락을 어떻게 주는지 다룬다. 모든 기법의 출발점이다.",
+    "terms": [
+     "prompt",
+     "prompt-engineering",
+     "user-prompt",
+     "role-prompting",
+     "summarization-prompt",
+     "system-prompt",
+     "context-engineering"
+    ]
+   },
+   {
+    "id": "prompt-examples",
+    "ko": "예시 활용",
+    "en": "Learning from Examples",
+    "desc": "예시를 몇 개 보여 주느냐에 따라 달라지는 프롬프트 방식을 다룬다. 재학습 없이 질문 안의 예시만으로 새 작업을 가르치는 원리다.",
+    "terms": [
+     "zero-shot",
+     "one-shot",
+     "few-shot",
+     "in-context-learning"
+    ]
+   },
+   {
+    "id": "prompt-structure",
+    "ko": "구조와 출력 형식",
+    "en": "Structure and Output Format",
+    "desc": "프롬프트의 구역을 나누고 답변의 모양을 정해 두는 기법을 다룬다. 프로그램이 결과를 바로 처리하게 하려면 꼭 필요하다.",
+    "terms": [
+     "delimiter",
+     "output-formatting",
+     "xml-tags",
+     "structured-output",
+     "prefill"
+    ]
+   },
+   {
+    "id": "prompt-reasoning",
+    "ko": "추론 유도",
+    "en": "Eliciting Reasoning",
+    "desc": "AI가 답하기 전에 더 깊이 생각하도록 이끄는 기법과 추론 모델을 다룬다. 어려운 분석·계산 문제의 정확도를 높이는 방법이다.",
+    "terms": [
+     "chain-of-thought",
+     "reasoning-model",
+     "extended-thinking",
+     "self-consistency",
+     "tree-of-thoughts",
+     "step-back-prompting",
+     "test-time-compute",
+     "thinking-budget"
+    ]
+   },
+   {
+    "id": "prompt-ops",
+    "ko": "프롬프트 운영",
+    "en": "Prompt Operations",
+    "desc": "프롬프트를 양식으로 만들고, 단계로 엮고, 이력과 성능을 관리하는 실무 방법을 다룬다. 개인 요령을 팀의 자산으로 바꾸는 단계다.",
+    "terms": [
+     "vibe-coding",
+     "prompt-template",
+     "prompt-chaining",
+     "meta-prompting",
+     "prompt-versioning",
+     "prompt-optimization"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "rag",
+  "ko": "RAG·검색·데이터",
+  "en": "RAG, Retrieval & Data",
+  "desc": "AI가 사내 문서와 데이터를 찾아 근거로 삼아 답하게 하는 검색 증강 생성(RAG)을 다룬다. 데이터 준비, 문서 가공, 벡터 검색, 검색 고도화, 정형 데이터 연계까지 구축 순서대로 정리했다.",
+  "topics": [
+   {
+    "id": "rag-basics",
+    "ko": "RAG 기초",
+    "en": "RAG Fundamentals",
+    "desc": "RAG가 무엇이고 왜 쓰는지, 근거 기반 응답과 대안 방식을 다룬다. 설계 전에 먼저 잡아야 할 개념이다.",
+    "terms": [
+     "rag",
+     "knowledge-base",
+     "retrieval",
+     "grounding",
+     "long-context-vs-rag",
+     "cag"
+    ]
+   },
+   {
+    "id": "rag-data",
+    "ko": "데이터 기반",
+    "en": "Data Foundation",
+    "desc": "RAG와 AI 활용의 재료가 되는 데이터의 종류와 관리 체계를 다룬다. 데이터 품질과 메타데이터가 답변 품질을 좌우한다.",
+    "terms": [
+     "structured-data",
+     "unstructured-data",
+     "data-pipeline",
+     "data-quality",
+     "metadata-management",
+     "data-catalog",
+     "data-lakehouse"
+    ]
+   },
+   {
+    "id": "rag-ingestion",
+    "ko": "문서 준비",
+    "en": "Document Ingestion",
+    "desc": "원본 파일에서 내용을 뽑아 검색하기 좋은 조각으로 나누는 과정을 다룬다. 검색 정확도의 절반은 이 단계에서 정해진다.",
+    "terms": [
+     "document-parsing",
+     "chunking",
+     "chunk-overlap",
+     "contextual-retrieval"
+    ]
+   },
+   {
+    "id": "rag-vector",
+    "ko": "벡터 검색",
+    "en": "Vector Search",
+    "desc": "문장을 벡터로 바꿔 의미가 비슷한 문서를 찾는 원리와 저장소를 다룬다. 대용량에서도 빠르게 찾는 색인 구조까지 포함한다.",
+    "terms": [
+     "embedding-model",
+     "vector-db",
+     "semantic-search",
+     "cosine-similarity",
+     "vector-index",
+     "ann",
+     "hnsw"
+    ]
+   },
+   {
+    "id": "rag-advanced",
+    "ko": "검색 고도화",
+    "en": "Advanced Retrieval",
+    "desc": "검색 결과를 넓히고, 좁히고, 다시 정렬해 정확도를 끌어올리는 기법을 다룬다. 기본 RAG의 한계를 넘는 실무 개선 방법이다.",
+    "terms": [
+     "top-k-retrieval",
+     "metadata-filtering",
+     "hybrid-search",
+     "reranking",
+     "query-rewriting",
+     "bm25",
+     "contextual-compression",
+     "hyde",
+     "multi-hop-retrieval",
+     "agentic-rag"
+    ]
+   },
+   {
+    "id": "rag-structured",
+    "ko": "정형 지식 연계",
+    "en": "Structured Knowledge",
+    "desc": "지식 그래프와 데이터베이스처럼 구조화된 지식을 AI 질의응답에 연결하는 방법을 다룬다. 관계 추적과 수치 조회에 강하다.",
+    "terms": [
+     "knowledge-graph",
+     "text-to-sql",
+     "graphrag",
+     "semantic-layer"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "agent",
+  "ko": "AI 에이전트·도구",
+  "en": "AI Agents & Tools",
+  "desc": "목표를 받아 스스로 계획하고 도구를 써서 일을 끝내는 AI 에이전트를 다룬다. 작동 원리, 도구 연결, 기억과 실행 관리, 협업 구조, 활용 사례, 통제와 평가 순으로 정리했다.",
+  "topics": [
+   {
+    "id": "agent-basics",
+    "ko": "에이전트 기초",
+    "en": "Agent Fundamentals",
+    "desc": "에이전트가 무엇이고 생각-행동-점검을 어떻게 반복하는지 다룬다. 계획과 자기 검토 같은 핵심 능력도 함께 본다.",
+    "terms": [
+     "agentic-ai",
+     "ai-agent",
+     "workflow-automation",
+     "agent-loop",
+     "agentic-workflow",
+     "planning",
+     "reflection",
+     "react"
+    ]
+   },
+   {
+    "id": "agent-tools",
+    "ko": "도구 연결",
+    "en": "Tools and Integration",
+    "desc": "에이전트가 외부 도구와 시스템을 호출하는 방법과 표준 규격(MCP)을 다룬다. 에이전트가 실제 일을 하게 만드는 연결 고리다.",
+    "terms": [
+     "tool-use",
+     "function-calling",
+     "mcp",
+     "connector",
+     "tool-schema",
+     "mcp-server",
+     "mcp-client"
+    ]
+   },
+   {
+    "id": "agent-runtime",
+    "ko": "기억과 실행 관리",
+    "en": "Memory and Runtime",
+    "desc": "에이전트가 기억을 유지하고, 업무 지침을 불러 쓰고, 긴 작업을 실패 없이 이어 가는 방법을 다룬다.",
+    "terms": [
+     "memory-agent",
+     "agent-skills",
+     "agent-state",
+     "long-running-task",
+     "agents-md",
+     "retry-fallback"
+    ]
+   },
+   {
+    "id": "agent-multi",
+    "ko": "멀티 에이전트",
+    "en": "Multi-Agent Systems",
+    "desc": "여러 에이전트가 역할을 나눠 협업하고 일을 주고받는 구조를 다룬다. 이를 만드는 프레임워크와 프로토콜도 포함한다.",
+    "terms": [
+     "multi-agent",
+     "orchestration",
+     "subagent",
+     "handoff",
+     "a2a",
+     "agent-framework"
+    ]
+   },
+   {
+    "id": "agent-apps",
+    "ko": "에이전트 활용",
+    "en": "Agent Applications",
+    "desc": "화면 조작, 웹 탐색, 코딩, 조사 보고서처럼 이미 실무에 쓰이는 에이전트 유형을 다룬다.",
+    "terms": [
+     "computer-use",
+     "browser-agent",
+     "coding-agent",
+     "deep-research"
+    ]
+   },
+   {
+    "id": "agent-governance",
+    "ko": "통제와 평가",
+    "en": "Control and Evaluation",
+    "desc": "에이전트에게 어디까지 맡길지 정하고, 안전하게 격리하고, 성과를 측정하는 방법을 다룬다. 업무 도입 전에 반드시 갖춰야 할 장치다.",
+    "terms": [
+     "human-in-the-loop",
+     "agent-permissions",
+     "autonomy-level",
+     "agent-sandbox",
+     "agent-evaluation",
+     "agent-trajectory"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "genai",
+  "ko": "생성 AI·멀티모달",
+  "en": "Generative AI & Multimodal",
+  "desc": "글, 이미지, 음성, 영상 같은 새로운 콘텐츠를 만들어 내는 생성형 AI를 다룬다. 생성 모델의 원리, 이미지·영상 생성, 멀티모달 이해, 음성 기술, 생성물의 신뢰 문제를 정리했다.",
+  "topics": [
+   {
+    "id": "genai-models",
+    "ko": "생성 모델 원리",
+    "en": "Generative Model Principles",
+    "desc": "생성형 AI가 잡음이나 압축된 표현에서 콘텐츠를 만들어 내는 원리를 다룬다. 확산 모델과 그 구성 요소가 중심이다.",
+    "terms": [
+     "generative-ai",
+     "diffusion-model",
+     "gan",
+     "latent-space",
+     "vae",
+     "denoising",
+     "flow-matching",
+     "text-encoder",
+     "clip",
+     "dit",
+     "autoregressive-image-generation"
+    ]
+   },
+   {
+    "id": "genai-image",
+    "ko": "이미지·영상 생성",
+    "en": "Image and Video Generation",
+    "desc": "글이나 그림을 입력해 이미지·영상·3D를 만들고 고치는 기술을 다룬다. 원하는 결과를 얻기 위한 제어 기법도 포함한다.",
+    "terms": [
+     "text-to-image",
+     "image-to-image",
+     "inpainting",
+     "negative-prompt",
+     "upscaling",
+     "video-generation",
+     "controlnet",
+     "3d-generation"
+    ]
+   },
+   {
+    "id": "genai-vision",
+    "ko": "멀티모달 이해",
+    "en": "Multimodal Understanding",
+    "desc": "AI가 이미지, 문서, 화면을 보고 내용을 이해하는 기술을 다룬다. 문서 자동화와 에이전트의 눈 역할을 한다.",
+    "terms": [
+     "multimodal",
+     "ocr",
+     "vlm",
+     "image-captioning",
+     "vqa",
+     "document-ai",
+     "native-multimodal",
+     "multimodal-embedding",
+     "screen-understanding"
+    ]
+   },
+   {
+    "id": "genai-audio",
+    "ko": "음성·오디오",
+    "en": "Speech and Audio",
+    "desc": "말을 글로, 글을 말로 바꾸고 음성으로 대화하거나 음악을 만드는 기술을 다룬다.",
+    "terms": [
+     "tts",
+     "stt",
+     "voice-cloning",
+     "voice-agent",
+     "music-generation",
+     "realtime-voice"
+    ]
+   },
+   {
+    "id": "genai-trust",
+    "ko": "생성물 신뢰",
+    "en": "Trust in Generated Content",
+    "desc": "AI 생성물의 악용, 저작권, 출처 확인 문제를 다룬다. 생성형 AI를 업무에 쓸 때 함께 챙겨야 할 쟁점이다.",
+    "terms": [
+     "deepfake",
+     "ai-copyright",
+     "content-provenance"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "infra",
+  "ko": "인프라·배포·LLMOps",
+  "en": "Infrastructure & LLMOps",
+  "desc": "AI 모델을 실제 서비스로 돌리기 위한 하드웨어, 배포 환경, 서빙, 운영 기술을 다룬다. 칩과 서버에서 시작해 응답 속도, 비용, 운영 체계까지 이어지는 흐름으로 정리했다.",
+  "topics": [
+   {
+    "id": "infra-hardware",
+    "ko": "하드웨어·칩",
+    "en": "Hardware & Chips",
+    "desc": "AI 연산을 떠받치는 칩과 메모리, 전력에 관한 주제다. GPU를 출발점으로 전용 칩과 성능 단위를 함께 다룬다.",
+    "terms": [
+     "gpu",
+     "npu",
+     "hbm",
+     "datacenter-power",
+     "flops",
+     "tpu",
+     "cuda"
+    ]
+   },
+   {
+    "id": "infra-deployment",
+    "ko": "배포 환경",
+    "en": "Deployment Environments",
+    "desc": "AI 모델과 서버를 어디에 두고 운영할지에 관한 주제다. 온프레미스, 클라우드, 폐쇄망, 엣지 등 선택지를 비교한다.",
+    "terms": [
+     "on-premise",
+     "private-cloud",
+     "hybrid-cloud",
+     "air-gapped-deployment",
+     "edge-ai",
+     "sovereign-ai",
+     "kubernetes"
+    ]
+   },
+   {
+    "id": "infra-serving",
+    "ko": "추론 서빙",
+    "en": "Inference Serving",
+    "desc": "학습된 모델을 띄워 사용자 요청에 답하게 하는 서빙의 기본 개념이다. 지연 시간과 처리량 같은 핵심 지표와 대표 엔진을 다룬다.",
+    "terms": [
+     "api",
+     "latency",
+     "inference-serving",
+     "throughput",
+     "ttft",
+     "cold-start",
+     "vllm"
+    ]
+   },
+   {
+    "id": "infra-traffic",
+    "ko": "호출 관리",
+    "en": "Request Management",
+    "desc": "모델 호출을 어떻게 모으고 나누고 제한할지에 관한 주제다. 대량 처리 방식과 장애에 대비한 우회 구조를 다룬다.",
+    "terms": [
+     "async-processing",
+     "batch-inference",
+     "rate-limit",
+     "model-gateway",
+     "fallback-model"
+    ]
+   },
+   {
+    "id": "infra-optimization",
+    "ko": "성능·비용 최적화",
+    "en": "Performance & Cost Optimization",
+    "desc": "같은 자원으로 더 빠르고 싸게 모델을 돌리는 기법을 모았다. 토큰 비용 이해에서 시작해 양자화, 캐싱, 최적화 도구로 넘어간다.",
+    "terms": [
+     "token-cost",
+     "quantization",
+     "prompt-caching",
+     "semantic-cache",
+     "gguf",
+     "tensorrt"
+    ]
+   },
+   {
+    "id": "infra-ops",
+    "ko": "운영·MLOps",
+    "en": "Operations & MLOps",
+    "desc": "AI 서비스를 배포한 뒤 안정적으로 관리하고 개선하는 운영 체계다. 관측, 실험, 버전 관리, 성능 변화 감시를 다룬다.",
+    "terms": [
+     "mlops",
+     "llmops",
+     "observability",
+     "ab-testing",
+     "model-registry",
+     "drift-monitoring"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "safety",
+  "ko": "평가·안전·규제",
+  "en": "Evaluation, Safety & Regulation",
+  "desc": "AI를 믿고 쓸 수 있게 만드는 신뢰성, 평가, 보안, 개인정보 보호, 규제를 다룬다. AI가 틀리는 방식을 이해하는 데서 시작해 측정하고 방어하고 법적 의무를 지키는 순서로 정리했다.",
+  "topics": [
+   {
+    "id": "safety-trustworthiness",
+    "ko": "신뢰성 기본",
+    "en": "Trustworthy AI Basics",
+    "desc": "AI가 틀리거나 치우치는 대표적인 방식과 이를 다루는 원칙을 모았다. 환각, 편향, 공정성, 설명 가능성이 핵심이다.",
+    "terms": [
+     "responsible-ai",
+     "hallucination",
+     "bias",
+     "fairness",
+     "sycophancy",
+     "groundedness",
+     "explainable-ai",
+     "mechanistic-interpretability"
+    ]
+   },
+   {
+    "id": "safety-evaluation",
+    "ko": "평가",
+    "en": "Evaluation",
+    "desc": "AI가 원하는 대로 동작하는지 측정하는 방법을 다룬다. 벤치마크와 지표에서 시작해 실무 평가 체계로 넘어간다.",
+    "terms": [
+     "benchmark",
+     "leaderboard",
+     "accuracy-metric",
+     "eval",
+     "mmlu",
+     "golden-dataset",
+     "human-evaluation",
+     "llm-as-judge",
+     "regression-testing",
+     "offline-online-eval",
+     "swe-bench"
+    ]
+   },
+   {
+    "id": "safety-security",
+    "ko": "공격과 방어",
+    "en": "Attacks & Defenses",
+    "desc": "AI를 겨냥한 공격 기법과 이를 막는 안전장치를 다룬다. 프롬프트 공격과 가드레일에서 시작해 모델·데이터 공격으로 넓힌다.",
+    "terms": [
+     "prompt-injection",
+     "jailbreak",
+     "guardrail",
+     "content-filter",
+     "red-teaming",
+     "indirect-prompt-injection",
+     "jailbreak-defense",
+     "data-poisoning",
+     "adversarial-attack",
+     "model-extraction"
+    ]
+   },
+   {
+    "id": "safety-data-protection",
+    "ko": "데이터 보호",
+    "en": "Data Protection",
+    "desc": "AI에 넣고 꺼내는 데이터 속 개인정보와 기밀을 지키는 방법이다. 가명처리, 마스킹, 유출 방지를 다룬다.",
+    "terms": [
+     "data-privacy",
+     "pseudonymization",
+     "pii-masking",
+     "data-exfiltration"
+    ]
+   },
+   {
+    "id": "safety-transparency",
+    "ko": "투명성·기록",
+    "en": "Transparency & Records",
+    "desc": "AI 생성물과 모델, 처리 과정을 드러내고 기록하는 방법이다. 표시 기술과 설명 문서, 감사 기록을 다룬다.",
+    "terms": [
+     "watermarking",
+     "model-card",
+     "audit-trail",
+     "system-card"
+    ]
+   },
+   {
+    "id": "safety-regulation",
+    "ko": "법·규제",
+    "en": "Law & Regulation",
+    "desc": "AI에 적용되는 국내외 법과 지침, 위험관리 체계를 정리했다. 인공지능 기본법과 EU 인공지능법, 금융권 가이드라인이 중심이다.",
+    "terms": [
+     "ai-basic-act-korea",
+     "eu-ai-act",
+     "ai-generated-content-labeling",
+     "high-impact-ai",
+     "financial-ai-guidelines",
+     "ai-risk-management-framework",
+     "ai-safety-institute",
+     "responsible-scaling-policy"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "biz",
+  "ko": "AX·비즈니스 적용",
+  "en": "AX & Business Adoption",
+  "desc": "조직이 AI를 도입하고 확산해 일하는 방식을 바꾸는 과정을 다룬다. 전환의 기본 개념에서 시작해 전략, 비용 판단, 조직과 인재, 거버넌스 순서로 정리했다.",
+  "topics": [
+   {
+    "id": "biz-transformation",
+    "ko": "AI 전환 기본",
+    "en": "AI Transformation Basics",
+    "desc": "디지털 전환과 AI 전환의 차이, AI를 업무에 들이는 기본 개념을 다룬다. 활용 사례와 코파일럿처럼 현장에서 바로 접하는 용어가 중심이다.",
+    "terms": [
+     "dx",
+     "ax",
+     "ai-adoption",
+     "use-case",
+     "copilot",
+     "data-driven-decision",
+     "ai-native"
+    ]
+   },
+   {
+    "id": "biz-strategy",
+    "ko": "전략·로드맵",
+    "en": "Strategy & Roadmap",
+    "desc": "AI 전환을 어떤 방향과 순서로 추진할지에 관한 주제다. 개념 검증에서 전략 수립, 업무 재설계, 전사 확산까지 이어진다.",
+    "terms": [
+     "poc",
+     "ai-strategy",
+     "ai-maturity-model",
+     "ax-roadmap",
+     "process-redesign",
+     "scale-up"
+    ]
+   },
+   {
+    "id": "biz-investment",
+    "ko": "비용·투자 판단",
+    "en": "Cost & Investment",
+    "desc": "AI 도입의 효과와 비용을 따지고 구축 방식을 정하는 데 필요한 개념이다. 투자 대비 효과, 총소유비용, 벤더 선택을 다룬다.",
+    "terms": [
+     "roi",
+     "ai-cost",
+     "tco",
+     "productivity-metrics",
+     "build-vs-buy",
+     "vendor-lock-in",
+     "sla"
+    ]
+   },
+   {
+    "id": "biz-organization",
+    "ko": "조직·인재",
+    "en": "Organization & Talent",
+    "desc": "AI를 실제로 쓰고 정착시키는 사람과 조직에 관한 주제다. AI 리터러시와 변화관리, 전담 조직, 역량 내재화를 다룬다.",
+    "terms": [
+     "ai-literacy",
+     "change-management",
+     "ai-coe",
+     "ai-champion",
+     "reskilling",
+     "citizen-developer",
+     "prompt-library",
+     "ai-insourcing"
+    ]
+   },
+   {
+    "id": "biz-governance",
+    "ko": "거버넌스·제도",
+    "en": "Governance & Policy",
+    "desc": "조직 안에서 AI 사용을 통제하고 제도 변화에 대응하는 주제다. 사내 AI 통제와 금융권 망분리 규제 개선을 함께 다룬다.",
+    "terms": [
+     "ai-governance",
+     "shadow-ai",
+     "enterprise-llm-portal",
+     "network-separation-reform",
+     "regulatory-sandbox"
+    ]
+   }
+  ]
+ }
+]

@@ -1,0 +1,686 @@
+<title>실무 AI 용어집</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="비개발자와 개발자를 함께 위한 실무 AI 용어 위키. 분야·주제별 트리, 입문·심화 설명, 날짜별 변경 타임라인.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@500;700&family=IBM+Plex+Sans+KR:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: wiki — sticky navigation rail (search, wiki tree) on the left, one document at a time on the right; rail stacks above on phones */
+:root {
+  --bg: #F3F5F4;
+  --surface: #FFFFFF;
+  --ink: #15201E;
+  --muted: #5B6B67;
+  --rule: #D7DEDB;
+  --accent: #0E6B62;
+  --accent-soft: #DCEEEA;
+  --hl: #FFF2B8;
+  --l1: #2F7D3A; --l1-bg: #E3F2E3;
+  --l2: #9A5B00; --l2-bg: #FBEBD2;
+  --l3: #A1314F; --l3-bg: #F8E0E7;
+  --f-display: "Hahmlet", "Nanum Myeongjo", "AppleMyungjo", serif;
+  --f-body: "IBM Plex Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
+  --f-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0F1513; --surface: #161E1B; --ink: #E4ECE9; --muted: #93A49F; --rule: #2A3632;
+    --accent: #5CC7B8; --accent-soft: #1C3530; --hl: #4A4114;
+    --l1: #8BD394; --l1-bg: #1D3320; --l2: #F0B860; --l2-bg: #3A2C14; --l3: #F08AA6; --l3-bg: #3E1D27;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0F1513; --surface: #161E1B; --ink: #E4ECE9; --muted: #93A49F; --rule: #2A3632;
+  --accent: #5CC7B8; --accent-soft: #1C3530; --hl: #4A4114;
+  --l1: #8BD394; --l1-bg: #1D3320; --l2: #F0B860; --l2-bg: #3A2C14; --l3: #F08AA6; --l3-bg: #3E1D27;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+body { background: var(--bg); color: var(--ink); font-family: var(--f-body); font-size: 15px; line-height: 1.7; word-break: keep-all; overflow-wrap: anywhere; margin: 0; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bg); }
+a { color: var(--accent); }
+button, input, select { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.wrap { max-width: 1220px; margin: 0 auto; padding-block: 0 64px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); display: grid; grid-template-columns: 300px minmax(0, 1fr); gap: 48px; }
+
+/* ---------- rail ---------- */
+.rail { position: sticky; top: env(safe-area-inset-top, 0px); align-self: start; max-height: 100vh; overflow-y: auto; padding-block: 28px 24px; display: flex; flex-direction: column; gap: 18px; scrollbar-width: thin; }
+.brand a.home { text-decoration: none; color: var(--ink); }
+.brand h1 { font-family: var(--f-display); font-weight: 700; font-size: 28px; line-height: 1.2; margin: 0; letter-spacing: -0.01em; }
+.brand p { margin: 6px 0 0; color: var(--muted); font-size: 13px; line-height: 1.6; }
+.dl { margin-top: 12px; display: inline-flex; align-items: center; gap: 7px; padding: 7px 12px; border: 1.5px solid var(--accent); border-radius: 8px; color: var(--accent); text-decoration: none; font-size: 13px; font-weight: 600; }
+.dl:hover { background: var(--accent); color: var(--bg); }
+.dl span { font-family: var(--f-mono); font-size: 11px; font-weight: 400; opacity: .8; }
+
+.search { position: relative; }
+.search input { width: 100%; padding: 11px 36px 11px 14px; border: 1.5px solid var(--rule); border-radius: 8px; background: var(--surface); font-size: 15px; }
+.search input:focus { border-color: var(--accent); outline: none; }
+.search kbd { position: absolute; right: 10px; top: 50%; transform: translateY(-50%); font-family: var(--f-mono); font-size: 11px; color: var(--muted); border: 1px solid var(--rule); border-radius: 4px; padding: 0 5px; }
+.search input:not(:placeholder-shown) + kbd { display: none; }
+@media (hover: none) { .search kbd { display: none; } }
+
+.nav { display: grid; gap: 2px; }
+.nav a { display: flex; justify-content: space-between; align-items: baseline; padding: 6px 10px; border-radius: 6px; text-decoration: none; color: var(--ink); font-weight: 500; font-size: 14px; }
+.nav a:hover { background: var(--accent-soft); }
+.nav a[aria-current="page"] { background: var(--ink); color: var(--bg); }
+.nav a small { font-family: var(--f-mono); font-size: 11px; color: var(--muted); font-weight: 400; }
+.nav a[aria-current="page"] small { color: inherit; opacity: .75; }
+
+.group-label { font-size: 11px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 0 0 8px; }
+.seg { display: grid; grid-template-columns: repeat(3, 1fr); border: 1.5px solid var(--rule); border-radius: 8px; overflow: hidden; }
+.seg button { background: var(--surface); border: 0; padding: 6px 4px; font-size: 13px; cursor: pointer; border-right: 1px solid var(--rule); }
+.seg button:last-child { border-right: 0; }
+.seg button[aria-pressed="true"] { background: var(--ink); color: var(--bg); font-weight: 600; }
+
+/* wiki tree */
+.tree-box > summary { list-style: none; cursor: pointer; }
+.tree-box > summary::-webkit-details-marker { display: none; }
+.tree-box > summary .group-label { display: inline; }
+.tree { font-size: 14px; }
+.tree details { margin: 0; }
+.tree summary { list-style: none; cursor: pointer; display: flex; align-items: baseline; gap: 6px; padding: 3px 4px; border-radius: 4px; }
+.tree summary::-webkit-details-marker { display: none; }
+.tree summary::before { content: "▸"; font-size: 10px; color: var(--muted); width: 10px; flex: none; transition: transform .15s; }
+.tree details[open] > summary::before { transform: rotate(90deg); }
+.tree summary:hover { background: var(--accent-soft); }
+.tree summary a { color: var(--ink); text-decoration: none; flex: 1; min-width: 0; }
+.tree summary small { font-family: var(--f-mono); font-size: 10.5px; color: var(--muted); }
+.tree .cat > summary a { font-weight: 600; }
+.tree .topic { margin-left: 14px; border-left: 1px solid var(--rule); padding-left: 4px; }
+.tree .pages { margin: 0 0 4px 22px; padding: 0; list-style: none; border-left: 1px solid var(--rule); }
+.tree .pages a { display: block; padding: 1px 8px; font-size: 13px; color: var(--muted); text-decoration: none; border-radius: 4px; }
+.tree .pages a:hover { color: var(--ink); background: var(--accent-soft); }
+.tree a.on { color: var(--accent) !important; font-weight: 600; }
+
+.rail-foot { font-size: 12px; color: var(--muted); line-height: 1.6; }
+
+/* ---------- main ---------- */
+main { padding-block: 28px 0; min-width: 0; }
+.crumbs { font-size: 13px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 4px 6px; margin-bottom: 10px; }
+.crumbs a { color: var(--muted); text-decoration: none; }
+.crumbs a:hover { color: var(--accent); text-decoration: underline; }
+.crumbs span[aria-hidden] { opacity: .5; }
+.page-title { font-family: var(--f-display); font-weight: 700; font-size: 38px; line-height: 1.2; margin: 0; letter-spacing: -0.01em; text-wrap: balance; }
+.page-sub { font-family: var(--f-mono); font-size: 14px; color: var(--muted); margin-top: 4px; }
+.page-sub b { color: var(--ink); font-weight: 500; }
+.lede { font-size: 16px; color: var(--muted); max-width: 66ch; margin: 12px 0 0; }
+.head-rule { border: 0; border-top: 2px solid var(--ink); margin: 18px 0 0; }
+.section-h { font-family: var(--f-display); font-weight: 700; font-size: 21px; margin: 34px 0 10px; display: flex; align-items: baseline; gap: 10px; }
+.section-h small { font-family: var(--f-body); font-size: 13px; color: var(--muted); font-weight: 400; }
+
+.badge { font-size: 11.5px; font-weight: 600; padding: 1px 8px; border-radius: 4px; white-space: nowrap; display: inline-block; line-height: 1.6; }
+.badge.cat { background: var(--accent-soft); color: var(--accent); font-weight: 500; text-decoration: none; }
+.badge.l1 { background: var(--l1-bg); color: var(--l1); }
+.badge.l2 { background: var(--l2-bg); color: var(--l2); }
+.badge.l3 { background: var(--l3-bg); color: var(--l3); }
+.badge.added { background: var(--l1-bg); color: var(--l1); }
+.badge.updated { background: var(--l2-bg); color: var(--l2); }
+.badge.moved { background: var(--accent-soft); color: var(--accent); }
+.badge.removed { background: var(--l3-bg); color: var(--l3); }
+
+/* term document */
+.doc-meta { display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: center; margin-top: 12px; font-size: 12.5px; color: var(--muted); }
+.doc-meta .mono { font-family: var(--f-mono); font-variant-numeric: tabular-nums; }
+.doc-grid { display: grid; grid-template-columns: minmax(0, 1fr) 240px; gap: 40px; margin-top: 22px; }
+.defs { display: grid; gap: 16px; max-width: 70ch; }
+.def { display: grid; grid-template-columns: 48px minmax(0, 1fr); gap: 14px; }
+.def .tag { font-size: 11.5px; font-weight: 600; letter-spacing: .04em; color: var(--muted); padding-top: 5px; border-top: 2px solid var(--rule); }
+.def.easy .tag { border-color: var(--l1); color: var(--l1); }
+.def.deep .tag { border-color: var(--l3); color: var(--l3); }
+.def.ex .tag { border-color: var(--accent); color: var(--accent); }
+.def p { margin: 0; font-size: 16px; }
+.def.ex p { color: var(--muted); font-size: 15px; }
+.side { display: grid; gap: 22px; align-content: start; font-size: 13.5px; }
+.side h4 { font-size: 11px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 0 0 6px; }
+.side ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 3px; }
+.side li a { text-decoration: none; border-bottom: 1px dashed currentColor; }
+.side li a:hover { border-bottom-style: solid; }
+.more-links summary { cursor: pointer; color: var(--accent); font-size: 13px; margin-top: 6px; }
+.more-links ul { margin-top: 6px; }
+.side .none { color: var(--muted); font-size: 13px; }
+.seq { display: flex; justify-content: space-between; gap: 12px; margin-top: 36px; border-top: 1px solid var(--rule); padding-top: 14px; font-size: 13.5px; }
+.seq a { text-decoration: none; display: grid; max-width: 48%; }
+.seq a small { color: var(--muted); font-size: 11.5px; }
+.seq a.next { text-align: right; margin-left: auto; }
+.hist { list-style: none; margin: 0; padding: 0; }
+.hist li { display: grid; grid-template-columns: 92px auto minmax(0,1fr); gap: 8px; align-items: baseline; padding: 6px 0; border-bottom: 1px solid var(--rule); font-size: 13.5px; }
+.hist .d { font-family: var(--f-mono); font-size: 12.5px; color: var(--muted); }
+
+/* lists (category, topic, search, index) */
+.tlist { list-style: none; margin: 0; padding: 0; }
+.tlist li { padding: 14px 0; border-bottom: 1px solid var(--rule); display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 4px 14px; }
+.tlist .no { font-family: var(--f-display); font-weight: 700; font-size: 18px; color: var(--accent); min-width: 26px; text-align: right; font-variant-numeric: tabular-nums; }
+.tlist .nono { grid-template-columns: minmax(0, 1fr); }
+.tlist .h { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; }
+.tlist .h a { font-family: var(--f-display); font-weight: 700; font-size: 18px; color: var(--ink); text-decoration: none; }
+.tlist .h a:hover { text-decoration: underline; text-decoration-color: var(--rule); }
+.tlist .h .en { font-family: var(--f-mono); font-size: 12.5px; color: var(--muted); }
+.tlist p { margin: 0; color: var(--ink); max-width: 72ch; font-size: 14.5px; }
+.tlist .body { grid-column: 2; }
+.tlist .nono .body { grid-column: 1; }
+.topic-block { margin-top: 30px; }
+.topic-block h3 { font-family: var(--f-display); font-size: 20px; margin: 0; }
+.topic-block h3 a { color: var(--ink); text-decoration: none; }
+.topic-block h3 a:hover { color: var(--accent); }
+.topic-block .td { color: var(--muted); font-size: 14px; margin: 4px 0 8px; max-width: 70ch; }
+.chipline { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { border: 1px solid var(--rule); background: var(--surface); border-radius: 999px; padding: 2px 11px; font-size: 13px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; text-decoration: none; color: var(--ink); }
+.chip .n { font-family: var(--f-mono); font-size: 11px; color: var(--muted); }
+.chip:hover { border-color: var(--accent); }
+.chip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--bg); }
+.chip[aria-pressed="true"] .n { color: inherit; }
+.chip.lv1[aria-pressed="true"] { background: var(--l1); border-color: var(--l1); }
+.chip.lv2[aria-pressed="true"] { background: var(--l2); border-color: var(--l2); }
+.chip.lv3[aria-pressed="true"] { background: var(--l3); border-color: var(--l3); }
+.chip.pop b { font-family: var(--f-mono); font-size: 11px; color: var(--accent); font-weight: 500; }
+mark { background: var(--hl); color: inherit; border-radius: 2px; padding: 0 1px; }
+
+/* home */
+.home-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 0 32px; margin-top: 8px; }
+.cat-card { padding: 16px 0 18px; border-top: 1px solid var(--rule); }
+.cat-card h3 { font-family: var(--f-display); font-size: 19px; margin: 0; display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+.cat-card h3 a { color: var(--ink); text-decoration: none; }
+.cat-card h3 a:hover { color: var(--accent); }
+.cat-card h3 small { font-family: var(--f-mono); font-size: 11.5px; color: var(--muted); font-weight: 400; }
+.cat-card ul { list-style: none; margin: 8px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 4px 12px; font-size: 13.5px; }
+.cat-card ul a { color: var(--muted); text-decoration: none; }
+.cat-card ul a:hover { color: var(--accent); text-decoration: underline; }
+.feature { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: 36px; margin-top: 24px; }
+.today { border-left: 3px solid var(--accent); padding: 4px 0 4px 18px; }
+.today .k { font-size: 11px; font-weight: 600; letter-spacing: .08em; color: var(--accent); }
+.today h3 { font-family: var(--f-display); font-size: 24px; margin: 4px 0 0; }
+.today h3 a { color: var(--ink); text-decoration: none; }
+.today .en { font-family: var(--f-mono); font-size: 12.5px; color: var(--muted); }
+.today p { margin: 8px 0 0; }
+.recent ul { list-style: none; margin: 0; padding: 0; }
+.recent li { display: grid; grid-template-columns: 86px minmax(0, 1fr); gap: 10px; padding: 6px 0; border-bottom: 1px solid var(--rule); font-size: 14px; }
+.recent .d { font-family: var(--f-mono); font-size: 12px; color: var(--muted); }
+.stats { display: flex; gap: 28px; flex-wrap: wrap; margin-top: 16px; }
+.stats div b { display: block; font-family: var(--f-display); font-size: 30px; line-height: 1.1; color: var(--accent); font-variant-numeric: tabular-nums; }
+.stats div span { font-size: 12.5px; color: var(--muted); }
+
+/* timeline */
+.tl-filter { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 18px; }
+.timeline { position: relative; margin: 24px 0 0; padding: 0 0 0 28px; list-style: none; }
+.timeline::before { content: ""; position: absolute; left: 7px; top: 8px; bottom: 8px; width: 2px; background: var(--rule); }
+.tl-day { position: relative; padding-bottom: 32px; }
+.tl-day::before { content: ""; position: absolute; left: -26px; top: 7px; width: 12px; height: 12px; border-radius: 50%; background: var(--bg); border: 3px solid var(--accent); }
+.tl-date { font-family: var(--f-mono); font-size: 14px; font-weight: 500; color: var(--accent); font-variant-numeric: tabular-nums; }
+.tl-date small { color: var(--muted); font-weight: 400; margin-left: 6px; }
+.tl-title { font-family: var(--f-display); font-weight: 700; font-size: 22px; margin: 2px 0 0; }
+.tl-note { color: var(--muted); margin: 6px 0 0; max-width: 68ch; font-size: 14.5px; }
+.tl-counts { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 10px; }
+.tl-group { margin-top: 14px; }
+.tl-group h5 { font-size: 12px; font-weight: 600; color: var(--muted); margin: 0 0 4px; letter-spacing: .02em; }
+.tl-items { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 14px; }
+.tl-items li { display: inline-flex; gap: 6px; align-items: baseline; }
+.tl-items li i { font-style: normal; font-size: 12px; color: var(--muted); }
+.tl-items a { text-decoration: none; border-bottom: 1px dashed currentColor; }
+.tl-items .gone { color: var(--muted); text-decoration: line-through; }
+.more { margin-top: 10px; background: none; border: 1px solid var(--rule); border-radius: 6px; padding: 3px 10px; font-size: 13px; cursor: pointer; color: var(--accent); }
+.tl-next { margin-top: 4px; font-size: 13px; color: var(--muted); }
+
+/* index */
+.ix { columns: 3 220px; column-gap: 36px; margin-top: 22px; }
+.ix-group { break-inside: avoid; margin-bottom: 22px; }
+.ix-group h2 { font-family: var(--f-display); font-weight: 700; font-size: 26px; line-height: 1; color: var(--accent); margin: 0 0 8px; }
+.ix-group a { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; padding: 4px 0; border-bottom: 1px dotted var(--rule); text-decoration: none; color: var(--ink); font-size: 14px; line-height: 1.5; }
+.ix-group a:hover .k { color: var(--accent); text-decoration: underline; }
+.ix-group .e { font-family: var(--f-mono); font-size: 11.5px; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 48%; }
+.toolrow { display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: center; margin-top: 16px; }
+.toolrow label { font-size: 13px; color: var(--muted); display: inline-flex; gap: 6px; align-items: center; }
+.toolrow select { border: 1px solid var(--rule); background: var(--surface); border-radius: 6px; padding: 3px 6px; font-size: 13px; }
+
+/* ranking */
+.rank-note { color: var(--muted); font-size: 13px; margin: 12px 0 0; max-width: 68ch; }
+.rank { list-style: none; padding: 0; margin: 12px 0 0; max-width: 760px; }
+.rank li { display: grid; grid-template-columns: 44px minmax(0, 1fr) minmax(80px, 160px); gap: 14px; align-items: center; padding: 12px 0; border-bottom: 1px solid var(--rule); }
+.rank .no { font-family: var(--f-display); font-weight: 700; font-size: 20px; color: var(--muted); font-variant-numeric: tabular-nums; text-align: right; }
+.rank li:nth-child(-n+3) .no { color: var(--accent); font-size: 28px; }
+.rank .t a { font-family: var(--f-display); font-weight: 700; font-size: 17px; color: var(--ink); text-decoration: none; }
+.rank .t small { display: block; font-family: var(--f-mono); font-size: 11.5px; color: var(--muted); }
+.rank .v { display: grid; gap: 4px; }
+.rank .bar { height: 6px; background: var(--accent-soft); border-radius: 3px; overflow: hidden; }
+.rank .bar i { display: block; height: 100%; background: var(--accent); border-radius: 3px; }
+.rank .hits { font-family: var(--f-mono); font-size: 12px; color: var(--muted); text-align: right; font-variant-numeric: tabular-nums; }
+
+.empty { padding: 40px 0; color: var(--muted); }
+.empty strong { display: block; font-family: var(--f-display); font-size: 20px; color: var(--ink); margin-bottom: 6px; }
+.toTop { position: fixed; right: max(16px, env(safe-area-inset-right, 0px)); bottom: calc(16px + env(safe-area-inset-bottom, 0px)); width: 42px; height: 42px; border-radius: 50%; border: 1px solid var(--rule); background: var(--surface); cursor: pointer; font-size: 18px; box-shadow: 0 2px 8px rgba(0,0,0,.08); }
+
+@media (max-width: 960px) { .doc-grid, .feature { grid-template-columns: minmax(0, 1fr); gap: 24px; } }
+@media (max-width: 860px) {
+  .wrap { grid-template-columns: minmax(0, 1fr); gap: 0; }
+  .rail { position: static; max-height: none; overflow: visible; padding-block: 20px 8px; gap: 14px; }
+  .brand h1 { font-size: 25px; }
+  .search { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--bg); padding-block: 8px; }
+  .nav { grid-template-columns: repeat(4, 1fr); gap: 4px; }
+  .nav a { justify-content: center; border: 1px solid var(--rule); background: var(--surface); padding: 6px 4px; font-size: 13px; }
+  .nav a small { display: none; }
+  main { padding-block: 12px 0; }
+  .page-title { font-size: 30px; }
+  .def { grid-template-columns: minmax(0, 1fr); gap: 4px; }
+  .def .tag { border-top: 0; padding-top: 0; }
+  .ix { columns: 2 150px; column-gap: 20px; }
+  .rank li { grid-template-columns: 34px minmax(0, 1fr) 72px; gap: 10px; }
+  .hist li { grid-template-columns: 84px minmax(0, 1fr); }
+  .hist li .badge { display: none; }
+}
+@media (prefers-reduced-motion: reduce) { .tree summary::before { transition: none; } }
+</style>
+
+<div class="wrap">
+  <aside class="rail">
+    <div class="brand">
+      <a class="home" href="#home" data-go="home"><h1>실무 AI 용어집</h1></a>
+      <p>AX 전환을 함께 하는 실무자와 개발자를 위한 AI 용어 위키. 같은 용어를 입문과 심화 두 수준으로 풀었다.</p>
+      <a class="dl" href="/*__PDF_URL__*/" /*__PDF_ATTR__*/>
+        <svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.5v8.2m0 0L4.8 6.5M8 9.7l3.2-3.2M2.5 11v2.5h11V11" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        전체 용어 PDF 받기 <span>/*__PDF_META__*/</span>
+      </a>
+    </div>
+    <div class="search">
+      <input id="q" type="search" placeholder="용어, 영문, 약어, 초성으로 검색" autocomplete="off" aria-label="용어 검색">
+      <kbd>/</kbd>
+    </div>
+    <nav class="nav" aria-label="위키 메뉴">
+      <a href="#home" data-go="home">대문</a>
+      <a href="#timeline" data-go="timeline">타임라인 <small id="navTl"></small></a>
+      <a href="#index" data-go="index">색인 <small id="navIx"></small></a>
+      <a href="#rank" data-go="rank" id="navRank" hidden>인기 순위</a>
+    </nav>
+    <div>
+      <p class="group-label">설명 보기</p>
+      <div class="seg" id="view" role="group" aria-label="설명 보기">
+        <button data-v="easy" aria-pressed="false">입문</button>
+        <button data-v="both" aria-pressed="true">모두</button>
+        <button data-v="deep" aria-pressed="false">심화</button>
+      </div>
+    </div>
+    <div id="popular" hidden>
+      <p class="group-label">많이 찾는 문서</p>
+      <div class="chipline" id="popChips"></div>
+    </div>
+    <details class="tree-box" id="treeBox" open>
+      <summary><p class="group-label">분야 트리</p></summary>
+      <div class="tree" id="tree"></div>
+    </details>
+    <div class="rail-foot" id="foot"></div>
+  </aside>
+  <main id="main" tabindex="-1"></main>
+</div>
+<button class="toTop" id="toTop" aria-label="맨 위로" hidden>↑</button>
+
+<script>
+const TERMS = /*__DATA__*/[];
+const TREE = /*__TREE__*/[];
+const CHANGES = /*__CHANGES__*/[];
+const RELEASES = /*__RELEASES__*/[];
+/* 조회 순위 집계 설정 — Supabase 프로젝트 URL과 publishable 키. 비워 두면 순위 기능은 숨겨진다. */
+const STATS = { url: "", key: "" };
+
+const LEVELS = { 1: "입문", 2: "실무", 3: "심화" };
+const TYPES = { added: "추가", updated: "수정", moved: "이동", removed: "삭제" };
+const CHO = ["ㄱ","ㄲ","ㄴ","ㄷ","ㄸ","ㄹ","ㅁ","ㅂ","ㅃ","ㅅ","ㅆ","ㅇ","ㅈ","ㅉ","ㅊ","ㅋ","ㅌ","ㅍ","ㅎ"];
+const CHO_BASE = { "ㄲ":"ㄱ","ㄸ":"ㄷ","ㅃ":"ㅂ","ㅆ":"ㅅ","ㅉ":"ㅈ" };
+const KO_INDEX = ["ㄱ","ㄴ","ㄷ","ㄹ","ㅁ","ㅂ","ㅅ","ㅇ","ㅈ","ㅊ","ㅋ","ㅌ","ㅍ","ㅎ"];
+const koCmp = new Intl.Collator("ko");
+
+/* ---------- 인덱스 구성 ---------- */
+const LIVE = TERMS.filter(t => t.status !== "removed");
+const byId = new Map(TERMS.map(t => [t.id, t]));
+const catById = new Map(TREE.map(c => [c.id, c]));
+const topicById = new Map();
+TREE.forEach(c => c.topics.forEach((tp, i) => topicById.set(tp.id, Object.assign(tp, { cat: c.id, idx: i }))));
+const backlinks = new Map();
+LIVE.forEach(t => (t.related || []).forEach(r => { if (!backlinks.has(r)) backlinks.set(r, []); backlinks.get(r).push(t.id); }));
+const histOf = new Map();
+CHANGES.forEach(c => { if (!histOf.has(c.id)) histOf.set(c.id, []); histOf.get(c.id).push(c); });
+const liveTopicTerms = tp => tp.terms.filter(id => byId.has(id) && byId.get(id).status !== "removed");
+
+function choOf(s) {
+  const c = s.trim().charCodeAt(0);
+  if (c >= 0xAC00 && c <= 0xD7A3) { const ch = CHO[Math.floor((c - 0xAC00) / 588)]; return CHO_BASE[ch] || ch; }
+  const L = s.trim()[0].toUpperCase();
+  return /[A-Z]/.test(L) ? L : "#";
+}
+function initials(s) { let o = ""; for (const ch of s) { const c = ch.charCodeAt(0); o += (c >= 0xAC00 && c <= 0xD7A3) ? CHO[Math.floor((c - 0xAC00) / 588)] : ch.toLowerCase(); } return o; }
+LIVE.forEach(t => {
+  t._hay = [t.ko, t.en, t.abbr, t.easy, t.deep, t.example].join(" ").toLowerCase();
+  t._name = [t.ko, t.en, t.abbr].join(" ").toLowerCase();
+  t._ini = initials(t.ko.replace(/\s/g, ""));
+});
+
+const store = { get(k){ try { return localStorage.getItem(k); } catch(e){ return null; } }, set(k,v){ try { localStorage.setItem(k,v); } catch(e){} } };
+const state = { route: "home", q: "", view: store.get("gl-view") || "both", levels: new Set(), ixSort: store.get("gl-ixsort") || "ko", tlType: "all" };
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;" }[c]));
+const fmtDate = d => d.replaceAll("-", ".");
+function hi(text, q) {
+  const e = esc(text); if (!q) return e;
+  const qq = esc(q).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  return e.replace(new RegExp(qq, "gi"), m => `<mark>${m}</mark>`);
+}
+const lvBadge = l => `<span class="badge l${l}">${LEVELS[l]}</span>`;
+const termLink = (id, cls = "") => { const t = byId.get(id); if (!t) return ""; return t.status === "removed" ? `<span class="gone">${esc(t.ko)}</span>` : `<a href="#${id}" data-go="${id}" class="${cls}">${esc(t.ko)}</a>`; };
+const sep = `<span aria-hidden="true">›</span>`;
+
+/* ---------- 트리 ---------- */
+function buildTree() {
+  $("#tree").innerHTML = TREE.map(c => {
+    const n = c.topics.reduce((s, tp) => s + liveTopicTerms(tp).length, 0);
+    return `<details class="cat" data-cat="${c.id}"><summary><a href="#c-${c.id}" data-go="c-${c.id}">${esc(c.ko)}</a><small>${n}</small></summary>
+      ${c.topics.map(tp => `<details class="topic" data-topic="${tp.id}"><summary><a href="#t-${tp.id}" data-go="t-${tp.id}">${esc(tp.ko)}</a><small>${liveTopicTerms(tp).length}</small></summary>
+        <ul class="pages">${liveTopicTerms(tp).map(id => `<li><a href="#${id}" data-go="${id}" data-page="${id}">${esc(byId.get(id).ko)}</a></li>`).join("")}</ul></details>`).join("")}
+    </details>`;
+  }).join("");
+}
+function syncTree(catId, topicId, pageId) {
+  document.querySelectorAll("#tree a.on").forEach(a => a.classList.remove("on"));
+  if (catId) { const d = document.querySelector(`#tree details[data-cat="${catId}"]`); if (d) { d.open = true; d.querySelector(":scope > summary a").classList.add("on"); } }
+  if (topicId) { const d = document.querySelector(`#tree details[data-topic="${topicId}"]`); if (d) { d.open = true; d.querySelector(":scope > summary a").classList.add("on"); } }
+  if (pageId) { const a = document.querySelector(`#tree a[data-page="${pageId}"]`); if (a) { a.classList.add("on"); if (matchMedia("(min-width: 861px)").matches) a.scrollIntoView({ block: "nearest" }); } }
+}
+
+/* ---------- 화면: 대문 ---------- */
+function todayTerm() {
+  const d = new Date(); const seed = d.getFullYear() * 400 + d.getMonth() * 31 + d.getDate();
+  const pool = LIVE.filter(t => t.level <= 2);
+  return pool[(seed * 2654435761 >>> 0) % pool.length];
+}
+function viewHome() {
+  const t = todayTerm();
+  const recentDays = [...new Set(CHANGES.map(c => c.date))].sort().reverse();
+  const recent = CHANGES.filter(c => c.date === recentDays[0]);
+  const recentList = recent.length > 8
+    ? `<li><span class="d">${fmtDate(recentDays[0])}</span><span>${esc(releaseOf(recentDays[0])?.title || "변경")} · 문서 ${recent.length}개 ${typeSummary(recent)} <a href="#timeline" data-go="timeline">타임라인에서 보기</a></span></li>`
+      + recentDays.slice(1, 4).map(d => `<li><span class="d">${fmtDate(d)}</span><span>${esc(releaseOf(d)?.title || "")} ${typeSummary(CHANGES.filter(c => c.date === d))}</span></li>`).join("")
+    : recent.map(c => `<li><span class="d">${fmtDate(c.date)}</span><span>${termLink(c.id)} <span class="badge ${c.type}">${TYPES[c.type]}</span></span></li>`).join("");
+  const topics = TREE.reduce((s, c) => s + c.topics.length, 0);
+  return `<h2 class="page-title">대문</h2>
+    <p class="lede">분야 → 주제 → 문서로 이어지는 트리를 따라 읽거나, 검색창에서 바로 찾는다. 새 용어와 바뀐 내용은 2주마다 반영되고 타임라인에 날짜별로 남는다.</p>
+    <div class="stats"><div><b>${LIVE.length}</b><span>문서</span></div><div><b>${TREE.length}</b><span>분야</span></div><div><b>${topics}</b><span>주제</span></div><div><b>${fmtDate(recentDays[0] || "")}</b><span>마지막 갱신</span></div></div>
+    <hr class="head-rule">
+    <div class="feature">
+      <div class="today"><div class="k">오늘의 용어</div>
+        <h3><a href="#${t.id}" data-go="${t.id}">${esc(t.ko)}</a></h3>
+        <div class="en">${esc(t.abbr && t.abbr !== t.en ? t.abbr + " · " + t.en : t.en)}</div>
+        <p>${esc(t.easy)}</p></div>
+      <div class="recent"><h4 class="group-label">최근 바뀜</h4><ul>${recentList || '<li><span class="d"></span><span>아직 변경 기록이 없다.</span></li>'}</ul></div>
+    </div>
+    <h3 class="section-h">분야별 둘러보기 <small>${TREE.length}개 분야 · ${topics}개 주제</small></h3>
+    <div class="home-grid">${TREE.map(c => `<section class="cat-card"><h3><a href="#c-${c.id}" data-go="c-${c.id}">${esc(c.ko)}</a><small>${c.topics.reduce((s, tp) => s + liveTopicTerms(tp).length, 0)}</small></h3>
+      <ul>${c.topics.map(tp => `<li><a href="#t-${tp.id}" data-go="t-${tp.id}">${esc(tp.ko)}</a></li>`).join("")}</ul></section>`).join("")}</div>`;
+}
+function typeSummary(list) {
+  const n = {}; list.forEach(c => n[c.type] = (n[c.type] || 0) + 1);
+  return Object.keys(TYPES).filter(k => n[k]).map(k => `<span class="badge ${k}">${TYPES[k]} ${n[k]}</span>`).join(" ");
+}
+const releaseOf = d => RELEASES.find(r => r.date === d);
+
+/* ---------- 화면: 분야 ---------- */
+function viewCategory(c) {
+  syncTree(c.id);
+  const n = c.topics.reduce((s, tp) => s + liveTopicTerms(tp).length, 0);
+  return `<nav class="crumbs"><a href="#home" data-go="home">대문</a>${sep}<span>분야</span></nav>
+    <h2 class="page-title">${esc(c.ko)}</h2><div class="page-sub">${esc(c.en)} · 주제 ${c.topics.length}개 · 문서 ${n}개</div>
+    <p class="lede">${esc(c.desc)}</p><hr class="head-rule">
+    ${c.topics.map(tp => `<section class="topic-block"><h3><a href="#t-${tp.id}" data-go="t-${tp.id}">${esc(tp.ko)}</a></h3>
+      <p class="td">${esc(tp.desc)}</p>
+      <div class="chipline">${liveTopicTerms(tp).map(id => { const t = byId.get(id); return `<a class="chip" href="#${id}" data-go="${id}">${esc(t.ko)} <span class="n">${LEVELS[t.level]}</span></a>`; }).join("")}</div></section>`).join("")}`;
+}
+
+/* ---------- 화면: 주제 ---------- */
+function viewTopic(tp) {
+  const c = catById.get(tp.cat);
+  syncTree(c.id, tp.id);
+  const ids = liveTopicTerms(tp);
+  const prev = c.topics[tp.idx - 1], next = c.topics[tp.idx + 1];
+  return `<nav class="crumbs"><a href="#home" data-go="home">대문</a>${sep}<a href="#c-${c.id}" data-go="c-${c.id}">${esc(c.ko)}</a>${sep}<span>주제</span></nav>
+    <h2 class="page-title">${esc(tp.ko)}</h2><div class="page-sub">${esc(tp.en)} · 문서 ${ids.length}개</div>
+    <p class="lede">${esc(tp.desc)}</p><hr class="head-rule">
+    <h3 class="section-h">읽는 순서 <small>입문에서 심화로, 앞 개념을 알아야 이해되는 순서다</small></h3>
+    <ol class="tlist">${ids.map((id, i) => { const t = byId.get(id); return `<li><span class="no">${i + 1}</span>
+      <div class="h"><a href="#${id}" data-go="${id}">${esc(t.ko)}</a><span class="en">${esc(t.abbr && t.abbr !== t.en ? t.abbr : t.en)}</span>${lvBadge(t.level)}</div>
+      <div class="body"><p>${esc(state.view === "deep" ? t.deep : t.easy)}</p></div></li>`; }).join("")}</ol>
+    <nav class="seq">${prev ? `<a href="#t-${prev.id}" data-go="t-${prev.id}"><small>이전 주제</small>${esc(prev.ko)}</a>` : ""}${next ? `<a class="next" href="#t-${next.id}" data-go="t-${next.id}"><small>다음 주제</small>${esc(next.ko)}</a>` : ""}</nav>`;
+}
+
+/* ---------- 화면: 문서 ---------- */
+function viewTerm(t) {
+  const tp = topicById.get(t.topic), c = catById.get(tp.cat);
+  syncTree(c.id, tp.id, t.id);
+  track(t.id);
+  const ids = liveTopicTerms(tp), i = ids.indexOf(t.id);
+  const prev = ids[i - 1], next = ids[i + 1];
+  const rel = (t.related || []).filter(id => byId.has(id) && id !== t.id);
+  const back = (backlinks.get(t.id) || []).filter(id => id !== t.id && !rel.includes(id));
+  const hist = (histOf.get(t.id) || []).slice().sort((a, b) => b.date.localeCompare(a.date));
+  const showEasy = state.view !== "deep", showDeep = state.view !== "easy";
+  return `<nav class="crumbs"><a href="#home" data-go="home">대문</a>${sep}<a href="#c-${c.id}" data-go="c-${c.id}">${esc(c.ko)}</a>${sep}<a href="#t-${tp.id}" data-go="t-${tp.id}">${esc(tp.ko)}</a></nav>
+    <h2 class="page-title">${esc(t.ko)}</h2>
+    <div class="page-sub">${t.abbr && t.abbr !== t.en ? `<b>${esc(t.abbr)}</b> · ` : ""}${esc(t.en)}</div>
+    <div class="doc-meta">${lvBadge(t.level)}<a class="badge cat" href="#t-${tp.id}" data-go="t-${tp.id}">${esc(tp.ko)}</a>
+      <span>최초 수록 <span class="mono">${fmtDate(t.added)}</span></span><span>마지막 수정 <span class="mono">${fmtDate(t.updated)}</span></span><span>판 <span class="mono">${t.revision}</span></span></div>
+    <hr class="head-rule">
+    <div class="doc-grid">
+      <div>
+        <div class="defs">
+          ${showEasy ? `<div class="def easy"><span class="tag">입문</span><p>${esc(t.easy)}</p></div>` : ""}
+          ${showDeep ? `<div class="def deep"><span class="tag">심화</span><p>${esc(t.deep)}</p></div>` : ""}
+          ${t.example ? `<div class="def ex"><span class="tag">예시</span><p>${esc(t.example)}</p></div>` : ""}
+        </div>
+        <h3 class="section-h">문서 이력 <small>${hist.length}건</small></h3>
+        <ul class="hist">${hist.map(h => `<li><span class="d">${fmtDate(h.date)}</span><span class="badge ${h.type}">${TYPES[h.type]}</span><span>${esc(h.summary)}</span></li>`).join("") || '<li><span class="none">기록 없음</span></li>'}</ul>
+        <nav class="seq">${prev ? `<a href="#${prev}" data-go="${prev}"><small>이전 · ${esc(tp.ko)}</small>${esc(byId.get(prev).ko)}</a>` : ""}${next ? `<a class="next" href="#${next}" data-go="${next}"><small>다음 · ${esc(tp.ko)}</small>${esc(byId.get(next).ko)}</a>` : ""}</nav>
+      </div>
+      <aside class="side">
+        <div><h4>연관 문서</h4>${rel.length ? `<ul>${rel.map(id => `<li>${termLink(id)}</li>`).join("")}</ul>` : '<p class="none">없음</p>'}</div>
+        <div><h4>이 문서를 가리키는 문서 · ${back.length}</h4>${back.length ? `<ul>${back.slice(0, 10).map(id => `<li>${termLink(id)}</li>`).join("")}</ul>${back.length > 10 ? `<details class="more-links"><summary>나머지 ${back.length - 10}개 보기</summary><ul>${back.slice(10).map(id => `<li>${termLink(id)}</li>`).join("")}</ul></details>` : ""}` : '<p class="none">없음</p>'}</div>
+        <div><h4>같은 주제 · ${esc(tp.ko)}</h4><ul>${ids.map(id => `<li>${id === t.id ? `<strong>${esc(byId.get(id).ko)}</strong>` : termLink(id)}</li>`).join("")}</ul></div>
+      </aside>
+    </div>`;
+}
+
+/* ---------- 화면: 타임라인 ---------- */
+function viewTimeline() {
+  const days = [...new Set(CHANGES.map(c => c.date).concat(RELEASES.map(r => r.date)))].sort().reverse();
+  const filt = state.tlType;
+  const counts = {}; CHANGES.forEach(c => counts[c.type] = (counts[c.type] || 0) + 1);
+  const next = nextUpdate();
+  return `<nav class="crumbs"><a href="#home" data-go="home">대문</a>${sep}<span>타임라인</span></nav>
+    <h2 class="page-title">타임라인</h2>
+    <p class="lede">문서가 추가되고 고쳐진 기록을 날짜순으로 모았다. 정기 업데이트는 2주마다 월요일 오전에 반영된다.</p>
+    <div class="tl-next">다음 정기 업데이트 예정 <span style="font-family:var(--f-mono)">${fmtDate(next)}</span></div>
+    <div class="tl-filter" id="tlFilter">
+      <button class="chip" data-t="all" aria-pressed="${filt === "all"}">전체 <span class="n">${CHANGES.length}</span></button>
+      ${Object.keys(TYPES).filter(k => counts[k]).map(k => `<button class="chip" data-t="${k}" aria-pressed="${filt === k}">${TYPES[k]} <span class="n">${counts[k]}</span></button>`).join("")}
+    </div>
+    <ol class="timeline">${days.map(d => {
+      const items = CHANGES.filter(c => c.date === d && (filt === "all" || c.type === filt));
+      const r = releaseOf(d);
+      if (!items.length && !r) return "";
+      const byCat = new Map();
+      items.forEach(c => { const t = byId.get(c.id); const cat = t ? topicById.get(t.topic)?.cat : "_"; if (!byCat.has(cat)) byCat.set(cat, []); byCat.get(cat).push(c); });
+      const big = items.length > 40;
+      return `<li class="tl-day"><div class="tl-date">${fmtDate(d)}<small>${weekdayOf(d)}요일</small></div>
+        ${r ? `<h3 class="tl-title">${esc(r.title)}</h3><p class="tl-note">${esc(r.note)}</p>` : ""}
+        <div class="tl-counts">${typeSummary(items)}</div>
+        <div class="tl-body" ${big ? "hidden" : ""}>${[...byCat.entries()].map(([cat, list]) => `<div class="tl-group"><h5>${esc(catById.get(cat)?.ko || "기타")} · ${list.length}</h5>
+          <ul class="tl-items">${list.map(c => `<li>${termLink(c.id)}${c.type !== "added" || c.summary !== "최초 수록" ? `<i>${esc(c.summary)}</i>` : ""}</li>`).join("")}</ul></div>`).join("")}</div>
+        ${big ? `<button class="more" data-more>문서 ${items.length}개 펼치기</button>` : ""}
+      </li>`;
+    }).join("")}</ol>`;
+}
+function weekdayOf(d) { const [y, m, dd] = d.split("-").map(Number); return "일월화수목금토"[new Date(Date.UTC(y, m - 1, dd)).getUTCDay()]; }
+function nextUpdate() {
+  // 기준일 2026-10-19(월)부터 2주 간격의 월요일
+  const base = Date.UTC(2026, 9, 19), day = 86400000, now = Date.now() + 9 * 3600000;
+  let n = base; while (n + 9 * 3600000 <= now) n += 14 * day;
+  const d = new Date(n); return `${d.getUTCFullYear()}-${String(d.getUTCMonth() + 1).padStart(2, "0")}-${String(d.getUTCDate()).padStart(2, "0")}`;
+}
+
+/* ---------- 화면: 색인 ---------- */
+function viewIndex() {
+  const byEn = state.ixSort === "en";
+  const list = LIVE.filter(t => !state.levels.size || state.levels.has(t.level))
+    .sort((a, b) => byEn ? a.en.localeCompare(b.en, "en", { sensitivity: "base" }) : koCmp.compare(a.ko, b.ko));
+  const groups = new Map();
+  list.forEach(t => { const k = byEn ? choOf(t.en) : choOf(t.ko); if (!groups.has(k)) groups.set(k, []); groups.get(k).push(t); });
+  const keys = [...groups.keys()].sort((a, b) => {
+    const ia = byEn ? -1 : KO_INDEX.indexOf(a), ib = byEn ? -1 : KO_INDEX.indexOf(b);
+    if (ia !== -1 || ib !== -1) return (ia === -1 ? 99 : ia) - (ib === -1 ? 99 : ib);
+    if (a === "#") return -1; if (b === "#") return 1; return a.localeCompare(b);
+  });
+  const lv = { 1: 0, 2: 0, 3: 0 }; LIVE.forEach(t => lv[t.level]++);
+  return `<nav class="crumbs"><a href="#home" data-go="home">대문</a>${sep}<span>색인</span></nav>
+    <h2 class="page-title">색인</h2><div class="page-sub">${list.length} / ${LIVE.length}개 문서</div>
+    <div class="toolrow">
+      <div class="chipline" id="lvChips">${[1,2,3].map(l => `<button class="chip lv${l}" data-l="${l}" aria-pressed="${state.levels.has(l)}">${LEVELS[l]} <span class="n">${lv[l]}</span></button>`).join("")}</div>
+      <label for="ixSort">정렬 <select id="ixSort"><option value="ko" ${!byEn ? "selected" : ""}>가나다순</option><option value="en" ${byEn ? "selected" : ""}>ABC순</option></select></label>
+    </div>
+    <hr class="head-rule">
+    <div class="ix">${keys.map(k => `<section class="ix-group"><h2>${esc(k)}</h2>${groups.get(k).map(t => `<a href="#${t.id}" data-go="${t.id}"><span class="k">${esc(byEn ? t.en : t.ko)}</span><span class="e">${esc(byEn ? t.ko : (t.abbr || t.en))}</span></a>`).join("")}</section>`).join("") || '<div class="empty"><strong>맞는 문서가 없다</strong>난이도 필터를 해제해 보자.</div>'}</div>`;
+}
+
+/* ---------- 화면: 검색 결과 ---------- */
+function matches(t, q) {
+  if (/^[ㄱ-ㅎ]+$/.test(q)) return t._ini.includes(q);
+  return t._hay.includes(q);
+}
+function score(t, q) {
+  if (/^[ㄱ-ㅎ]+$/.test(q)) return t._ini.startsWith(q) ? 2 : 1;
+  if ([t.ko, t.abbr, t.en].some(v => v && v.toLowerCase() === q)) return 4;
+  if (t._name.startsWith(q)) return 3;
+  if (t._name.includes(q)) return 2;
+  return 1;
+}
+function searchResults() {
+  const q = state.q.trim().toLowerCase();
+  return LIVE.filter(t => matches(t, q)).sort((a, b) => score(b, q) - score(a, q) || koCmp.compare(a.ko, b.ko));
+}
+function viewSearch() {
+  const q = state.q.trim(), list = searchResults();
+  const hq = /^[ㄱ-ㅎ]+$/.test(q) ? "" : q;
+  return `<h2 class="page-title">“${esc(q)}” 검색 결과</h2><div class="page-sub">${list.length}개 문서 · Enter를 누르면 첫 문서로 이동</div><hr class="head-rule">
+    ${list.length ? `<ul class="tlist">${list.slice(0, 80).map(t => { const tp = topicById.get(t.topic); return `<li class="nono"><div class="h"><a href="#${t.id}" data-go="${t.id}">${hi(t.ko, hq)}</a><span class="en">${hi(t.abbr && t.abbr !== t.en ? t.abbr + " · " + t.en : t.en, hq)}</span>${lvBadge(t.level)}<span class="badge cat">${esc(catById.get(tp.cat).ko)} › ${esc(tp.ko)}</span></div>
+      <div class="body"><p>${hi(t.easy, hq)}</p></div></li>`; }).join("")}</ul>`
+      : `<div class="empty"><strong>맞는 문서가 없다</strong>검색어를 줄여 보자. 초성(예: ㅍㅇㅌㄴ → 파인튜닝)으로도 찾을 수 있다.</div>`}`;
+}
+
+/* ---------- 조회 집계 · 인기 순위 ---------- */
+const statsOn = !!(STATS.url && STATS.key);
+const sbUrl = p => STATS.url.replace(/\/+$/, "") + "/rest/v1/" + p;
+const sbHeaders = () => Object.assign({ apikey: STATS.key, "Content-Type": "application/json" }, STATS.key.startsWith("eyJ") ? { Authorization: "Bearer " + STATS.key } : {});
+let ranking = [], rankState = "loading";
+const seenNow = new Set();
+async function loadRanking() {
+  if (!statsOn) return;
+  $("#navRank").hidden = false;
+  try {
+    const r = await fetch(sbUrl("term_hits?select=term_id,hits&hits=gt.0&order=hits.desc&limit=50"), { headers: sbHeaders() });
+    if (!r.ok) throw new Error(r.status);
+    ranking = (await r.json()).filter(x => byId.has(x.term_id) && byId.get(x.term_id).status !== "removed");
+    rankState = "ok";
+  } catch (e) { rankState = "error"; }
+  renderPopular();
+  if (state.route === "rank") render();
+}
+function renderPopular() {
+  const top = ranking.slice(0, 6);
+  $("#popular").hidden = !top.length;
+  $("#popChips").innerHTML = top.map((r, i) => `<a class="chip pop" href="#${r.term_id}" data-go="${r.term_id}"><b>${i + 1}</b>${esc(byId.get(r.term_id).ko)}</a>`).join("");
+}
+function viewRank() {
+  const head = `<nav class="crumbs"><a href="#home" data-go="home">대문</a>${sep}<span>인기 순위</span></nav><h2 class="page-title">인기 순위</h2>
+    <p class="rank-note">방문자가 열어 본 문서를 집계한 누적 순위다. 같은 사람이 한 번 방문하는 동안 같은 문서를 여러 번 봐도 1회로 센다.</p><hr class="head-rule">`;
+  if (!statsOn) return head + `<div class="empty"><strong>이 화면에서는 순위를 볼 수 없다</strong>공개 사이트에서 제공한다.</div>`;
+  if (rankState === "loading") return head + `<div class="empty">순위를 불러오는 중…</div>`;
+  if (rankState === "error") return head + `<div class="empty"><strong>순위를 불러오지 못했다</strong>잠시 후 새로고침해 보자.</div>`;
+  if (!ranking.length) return head + `<div class="empty"><strong>아직 집계된 조회가 없다</strong>문서를 열어 보면 여기에 순위가 쌓인다.</div>`;
+  const max = ranking[0].hits;
+  return head + `<ol class="rank">${ranking.slice(0, 30).map((r, i) => { const t = byId.get(r.term_id), tp = topicById.get(t.topic);
+    return `<li><span class="no">${i + 1}</span><span class="t"><a href="#${t.id}" data-go="${t.id}">${esc(t.ko)}</a><small>${esc(t.abbr || t.en)} · ${esc(catById.get(tp.cat).ko)}</small></span>
+      <span class="v"><span class="bar"><i style="width:${Math.max(4, Math.round(r.hits / max * 100))}%"></i></span><span class="hits">${r.hits.toLocaleString("ko-KR")}회</span></span></li>`; }).join("")}</ol>`;
+}
+function track(id) {
+  if (!statsOn || !byId.has(id) || seenNow.has(id)) return;
+  let seen = []; try { seen = JSON.parse(sessionStorage.getItem("gl-seen") || "[]"); } catch (e) {}
+  seenNow.add(id); if (seen.includes(id)) return;
+  try { sessionStorage.setItem("gl-seen", JSON.stringify(seen.concat(id))); } catch (e) {}
+  fetch(sbUrl("rpc/increment_hit"), { method: "POST", headers: sbHeaders(), body: JSON.stringify({ p_term: id }), keepalive: true })
+    .then(r => { if (!r.ok) return; const row = ranking.find(x => x.term_id === id); row ? row.hits++ : ranking.push({ term_id: id, hits: 1 }); ranking.sort((a, b) => b.hits - a.hits); renderPopular(); })
+    .catch(() => {});
+}
+
+/* ---------- 라우팅 ---------- */
+function render() {
+  const r = state.route, main = $("#main");
+  let html;
+  document.querySelectorAll(".nav a").forEach(a => a.removeAttribute("aria-current"));
+  if (state.q.trim()) html = viewSearch();
+  else if (r === "timeline") html = viewTimeline();
+  else if (r === "index") html = viewIndex();
+  else if (r === "rank") html = viewRank();
+  else if (r.startsWith("c-") && catById.has(r.slice(2))) html = viewCategory(catById.get(r.slice(2)));
+  else if (r.startsWith("t-") && topicById.has(r.slice(2))) html = viewTopic(topicById.get(r.slice(2)));
+  else if (byId.has(r) && byId.get(r).status !== "removed") html = viewTerm(byId.get(r));
+  else { state.route = "home"; html = viewHome(); syncTree(); }
+  if (!state.q.trim()) { const cur = document.querySelector(`.nav a[data-go="${state.route}"]`); if (cur) cur.setAttribute("aria-current", "page"); }
+  main.innerHTML = html;
+  const title = main.querySelector(".page-title");
+  document.title = (state.route === "home" && !state.q ? "" : (title ? title.textContent.replace(/[“”]/g, "") + " · " : "")) + "실무 AI 용어집";
+}
+function go(route, push = true) {
+  state.route = route || "home";
+  if (state.q) { state.q = ""; $("#q").value = ""; }
+  render();
+  if (push) { try { history.pushState(null, "", "#" + state.route); } catch (e) {} }
+  window.scrollTo({ top: 0 });
+  if (matchMedia("(max-width: 860px)").matches) $("#treeBox").open = false;
+}
+addEventListener("popstate", () => { const h = decodeURIComponent(location.hash.slice(1)); state.route = h || "home"; state.q = ""; $("#q").value = ""; render(); });
+
+/* ---------- 이벤트 ---------- */
+document.addEventListener("click", e => {
+  const a = e.target.closest("[data-go]");
+  if (a) { e.preventDefault(); go(a.dataset.go); return; }
+  const more = e.target.closest("[data-more]");
+  if (more) { const body = more.parentElement.querySelector(".tl-body"); body.hidden = !body.hidden; more.textContent = body.hidden ? more.textContent.replace("접기", "펼치기") : more.textContent.replace("펼치기", "접기"); return; }
+  const tl = e.target.closest("#tlFilter [data-t]");
+  if (tl) { state.tlType = tl.dataset.t; render(); return; }
+  const lv = e.target.closest("#lvChips [data-l]");
+  if (lv) { const l = +lv.dataset.l; state.levels.has(l) ? state.levels.delete(l) : state.levels.add(l); render(); return; }
+});
+document.addEventListener("change", e => { if (e.target.id === "ixSort") { state.ixSort = e.target.value; store.set("gl-ixsort", state.ixSort); render(); } });
+$("#view").addEventListener("click", e => { const b = e.target.closest("button"); if (!b) return; state.view = b.dataset.v; store.set("gl-view", state.view); syncView(); render(); });
+function syncView() { document.querySelectorAll("#view button").forEach(b => b.setAttribute("aria-pressed", b.dataset.v === state.view)); }
+let timer, trackTimer;
+$("#q").addEventListener("input", e => {
+  clearTimeout(timer); clearTimeout(trackTimer);
+  timer = setTimeout(() => { state.q = e.target.value; render(); }, 120);
+  trackTimer = setTimeout(() => { const q = e.target.value.trim().toLowerCase(); const t = q.length > 1 && LIVE.find(t => [t.ko, t.en, t.abbr].some(v => v && v.toLowerCase() === q)); if (t) track(t.id); }, 1500);
+});
+$("#q").addEventListener("keydown", e => {
+  if (e.key === "Enter") { e.preventDefault(); state.q = e.target.value; const top = state.q.trim() && searchResults()[0]; if (top) go(top.id); }
+  if (e.key === "Escape") { e.target.value = ""; state.q = ""; render(); }
+});
+document.addEventListener("keydown", e => { if (e.key === "/" && document.activeElement !== $("#q") && !/input|select|textarea/i.test(document.activeElement.tagName)) { e.preventDefault(); $("#q").focus(); } });
+const tt = $("#toTop");
+addEventListener("scroll", () => { tt.hidden = scrollY < 800; }, { passive: true });
+tt.addEventListener("click", () => scrollTo({ top: 0, behavior: "smooth" }));
+
+/* ---------- 시작 ---------- */
+buildTree(); syncView();
+$("#navTl").textContent = ([...new Set(CHANGES.map(c => c.date))].sort().pop() || "").slice(5).replace("-", ".");
+$("#navIx").textContent = LIVE.length;
+const lastDay = [...new Set(CHANGES.map(c => c.date))].sort().pop() || "";
+$("#foot").innerHTML = `${fmtDate(lastDay)} 갱신 · 문서 ${LIVE.length}개<br>입문은 누구나, 실무는 업무에 AI를 적용하는 사람, 심화는 구현자 기준이다.`;
+if (matchMedia("(max-width: 860px)").matches) $("#treeBox").open = false;
+{ const h = decodeURIComponent(location.hash.slice(1)); state.route = h.startsWith("tab-") ? h.slice(4) : (h || "home"); }
+render();
+loadRanking();
+</script>
