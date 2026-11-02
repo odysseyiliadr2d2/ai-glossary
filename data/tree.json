@@ -567,6 +567,7 @@
      "function-calling",
      "mcp",
      "connector",
+     "llms-txt",
      "tool-schema",
      "mcp-server",
      "mcp-client"
@@ -609,7 +610,8 @@
      "computer-use",
      "browser-agent",
      "coding-agent",
-     "deep-research"
+     "deep-research",
+     "agentic-commerce"
     ]
    },
    {
@@ -826,7 +828,8 @@
      "sycophancy",
      "groundedness",
      "explainable-ai",
-     "mechanistic-interpretability"
+     "mechanistic-interpretability",
+     "cot-monitoring"
     ]
    },
    {
@@ -887,7 +890,8 @@
      "watermarking",
      "model-card",
      "audit-trail",
-     "system-card"
+     "system-card",
+     "model-spec"
     ]
    },
    {
@@ -937,6 +941,7 @@
     "terms": [
      "poc",
      "ai-strategy",
+     "generative-engine-optimization",
      "ai-maturity-model",
      "ax-roadmap",
      "process-redesign",

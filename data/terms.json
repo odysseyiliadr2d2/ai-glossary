@@ -209,7 +209,7 @@
   "cat": "agent",
   "level": 2,
   "easy": "AI와 외부 도구·데이터를 연결하는 표준 규격이다. USB-C처럼 한 번 규격에 맞춰 만들면 여러 AI 앱에서 같은 연결을 재사용할 수 있다.",
-  "deep": "Anthropic이 2024년 11월 공개한 개방형 프로토콜로, 2025년 12월 리눅스 재단 산하 Agentic AI Foundation(AAIF)에 기증되어 중립적 거버넌스 아래에서 관리된다. 호스트 애플리케이션 안의 클라이언트가 서버에 연결하고, 서버는 도구(tools), 리소스(resources), 프롬프트(prompts)를 노출하며 JSON-RPC 기반으로 통신한다. 로컬(stdio)과 원격(HTTP 기반) 전송, OAuth 기반 인가를 지원하며, 도구 설명을 통한 프롬프트 인젝션이나 과도한 권한 부여 같은 보안 위험을 별도로 관리해야 한다.",
+  "deep": "Anthropic이 2024년 11월 공개한 개방형 프로토콜로, 2025년 12월 리눅스 재단 산하 Agentic AI Foundation(AAIF)에 기증되어 중립적 거버넌스 아래에서 관리된다. 클라이언트가 서버에 연결하고, 서버는 도구(tools), 리소스(resources), 프롬프트(prompts)를 노출하며 JSON-RPC 기반으로 통신한다. 2026년 7월 28일 개정 규격에서 초기화 핸드셰이크와 세션을 없앤 무상태(stateless) 구조로 바뀌어 요청마다 프로토콜 버전과 클라이언트 기능을 담고, 장기 작업(Tasks)은 공식 확장으로 분리됐으며 Roots·Sampling·Logging 기능은 폐기 예정(최소 12개월 유예)으로 지정됐다. 로컬(stdio)과 원격(Streamable HTTP) 전송, OAuth 기반 인가를 지원하며, 도구 설명을 통한 프롬프트 인젝션이나 과도한 권한 부여 같은 보안 위험을 별도로 관리해야 한다.",
   "example": "사내 DW 조회, 문서관리시스템 검색을 각각 MCP 서버로 만들어 두면 여러 AI 클라이언트가 동일한 서버를 그대로 연결해 쓸 수 있다.",
   "related": [
    "mcp-server",
@@ -220,8 +220,8 @@
   ],
   "topic": "agent-tools",
   "added": "2026-10-19",
-  "updated": "2026-10-19",
-  "revision": 1,
+  "updated": "2026-11-02",
+  "revision": 2,
   "status": "active",
   "sources": [
    {
@@ -237,10 +237,10 @@
     "type": "official"
    },
    {
-    "title": "Model Context Protocol",
-    "url": "https://en.wikipedia.org/wiki/Model_Context_Protocol",
-    "publisher": "Wikipedia",
-    "type": "encyclopedia"
+    "title": "Key Changes - Model Context Protocol (2026-07-28)",
+    "url": "https://modelcontextprotocol.io/specification/2026-07-28/changelog",
+    "publisher": "Model Context Protocol",
+    "type": "official"
    }
   ],
   "papers": [
@@ -1161,7 +1161,8 @@
    "computer-use",
    "prompt-injection",
    "agent-permissions",
-   "deep-research"
+   "deep-research",
+   "agentic-commerce"
   ],
   "topic": "agent-apps",
   "added": "2026-10-19",
@@ -1254,7 +1255,8 @@
    "human-in-the-loop",
    "agent-sandbox",
    "guardrail",
-   "ai-governance"
+   "ai-governance",
+   "agentic-commerce"
   ],
   "topic": "agent-governance",
   "added": "2026-10-19",
@@ -1591,7 +1593,8 @@
    "mcp",
    "mcp-server",
    "agent-permissions",
-   "data-pipeline"
+   "data-pipeline",
+   "llms-txt"
   ],
   "topic": "agent-tools",
   "added": "2026-10-19",
@@ -7472,10 +7475,17 @@
   ],
   "topic": "dl-training-techniques",
   "added": "2026-10-19",
-  "updated": "2026-10-19",
-  "revision": 1,
+  "updated": "2026-11-02",
+  "revision": 2,
   "status": "active",
-  "sources": [],
+  "sources": [
+   {
+    "title": "LayerNorm — PyTorch main documentation",
+    "url": "https://docs.pytorch.org/docs/main/generated/torch.nn.LayerNorm.html",
+    "publisher": "PyTorch",
+    "type": "docs"
+   }
+  ],
   "papers": [
    {
     "title": "Layer Normalization",
@@ -10827,7 +10837,8 @@
    "ax-roadmap",
    "ai-governance",
    "build-vs-buy",
-   "data-driven-decision"
+   "data-driven-decision",
+   "generative-engine-optimization"
   ],
   "topic": "biz-strategy",
   "added": "2026-10-19",
@@ -14606,7 +14617,8 @@
    "rlhf",
    "rlvr",
    "alignment",
-   "kl-penalty"
+   "kl-penalty",
+   "cot-monitoring"
   ],
   "topic": "training-alignment",
   "added": "2026-10-19",
@@ -16179,7 +16191,8 @@
    "test-time-compute",
    "extended-thinking",
    "thinking-budget",
-   "reinforcement-learning"
+   "reinforcement-learning",
+   "cot-monitoring"
   ],
   "topic": "prompt-reasoning",
   "added": "2026-10-19",
@@ -17340,7 +17353,8 @@
    "vector-db",
    "hybrid-search",
    "bm25",
-   "retrieval"
+   "retrieval",
+   "generative-engine-optimization"
   ],
   "topic": "rag-vector",
   "added": "2026-10-19",
@@ -18599,10 +18613,17 @@
   ],
   "topic": "rag-structured",
   "added": "2026-10-19",
-  "updated": "2026-10-19",
-  "revision": 1,
+  "updated": "2026-11-02",
+  "revision": 2,
   "status": "active",
-  "sources": [],
+  "sources": [
+   {
+    "title": "Getting AI to write good SQL: Text-to-SQL techniques explained",
+    "url": "https://cloud.google.com/blog/products/databases/techniques-for-improving-text-to-sql",
+    "publisher": "Google Cloud",
+    "type": "guide"
+   }
+  ],
   "papers": [
    {
     "title": "다국어 BERT를 활용한 한국어 자연어 질의의 SQL 변환",
@@ -19990,7 +20011,8 @@
    "responsible-ai",
    "audit-trail",
    "ai-governance",
-   "model"
+   "model",
+   "model-spec"
   ],
   "topic": "safety-transparency",
   "added": "2026-10-19",
@@ -20032,7 +20054,8 @@
    "red-teaming",
    "responsible-scaling-policy",
    "eval",
-   "foundation-model"
+   "foundation-model",
+   "model-spec"
   ],
   "topic": "safety-transparency",
   "added": "2026-10-19",
@@ -20151,10 +20174,17 @@
   ],
   "topic": "safety-trustworthiness",
   "added": "2026-10-19",
-  "updated": "2026-10-19",
-  "revision": 1,
+  "updated": "2026-11-02",
+  "revision": 2,
   "status": "active",
-  "sources": [],
+  "sources": [
+   {
+    "title": "Towards understanding sycophancy in language models",
+    "url": "https://www.anthropic.com/research/towards-understanding-sycophancy-in-language-models",
+    "publisher": "Anthropic",
+    "type": "official"
+   }
+  ],
   "papers": [
    {
     "title": "Towards Understanding Sycophancy in Language Models",
@@ -21018,6 +21048,260 @@
     "url": "https://arxiv.org/abs/2309.08600",
     "region": "intl",
     "title_ko": "희소 오토인코더는 언어모델에서 해석 가능성이 높은 특징을 찾아낸다"
+   }
+  ]
+ },
+ {
+  "id": "agentic-commerce",
+  "ko": "에이전틱 커머스",
+  "en": "Agentic Commerce",
+  "abbr": "",
+  "cat": "agent",
+  "topic": "agent-apps",
+  "level": 2,
+  "easy": "AI 에이전트가 사용자를 대신해 상품을 찾고 비교한 뒤 결제까지 마치는 쇼핑·거래 방식이다.",
+  "deep": "에이전트가 상품 카탈로그 조회, 장바구니 구성, 결제, 주문 추적을 판매자 시스템과 직접 주고받는다. 이를 위해 Stripe·OpenAI·Meta의 Agentic Commerce Protocol(ACP), Google이 유통사들과 만든 Universal Commerce Protocol(UCP), 결제 위임을 다루는 Agent Payments Protocol(AP2) 같은 개방형 규격이 나왔으며, OAuth 기반 권한 위임과 결제 토큰 교환으로 카드 정보를 에이전트에 직접 넘기지 않는다. 사용자 의도 확인, 구매 한도, 사기·오주문 책임 소재, 에이전트 트래픽 식별이 실무 과제다.",
+  "example": "카드사가 고객 에이전트의 결제 요청에 위임 한도와 사용자 승인 기록이 있는지 확인한 뒤 승인한다.",
+  "related": [
+   "ai-agent",
+   "browser-agent",
+   "agent-permissions",
+   "mcp",
+   "a2a"
+  ],
+  "added": "2026-11-02",
+  "updated": "2026-11-02",
+  "revision": 1,
+  "status": "active",
+  "sources": [
+   {
+    "title": "Agentic Commerce Protocol",
+    "url": "https://docs.stripe.com/agentic-commerce/protocols/acp",
+    "publisher": "Stripe",
+    "type": "docs"
+   },
+   {
+    "title": "Under the Hood: Universal Commerce Protocol (UCP)",
+    "url": "https://developers.googleblog.com/under-the-hood-universal-commerce-protocol-ucp/",
+    "publisher": "Google for Developers",
+    "type": "official"
+   },
+   {
+    "title": "AI 에이전트 시대, 커머스의 판이 바뀐다",
+    "url": "https://www.samsungsds.com/kr/insights/changing-the-ai-commerce-landscape.html",
+    "publisher": "삼성SDS",
+    "type": "article"
+   }
+  ],
+  "papers": [
+   {
+    "title": "인공지능(AI) 기반 전자상거래에서의 소비자 보호",
+    "title_ko": "인공지능(AI) 기반 전자상거래에서의 소비자 보호",
+    "authors": "",
+    "year": null,
+    "venue": "",
+    "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003313605",
+    "region": "kr"
+   },
+   {
+    "title": "지능형 에이전트를 사용한 계약체결에서의 소비자 보호 ―약관의 편입 및 정보제공의무를 중심으로―",
+    "title_ko": "지능형 에이전트를 사용한 계약체결에서의 소비자 보호 ―약관의 편입 및 정보제공의무를 중심으로―",
+    "authors": "",
+    "year": null,
+    "venue": "",
+    "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002500689",
+    "region": "kr"
+   },
+   {
+    "title": "What Is Your AI Agent Buying? Evaluation, Biases, Model Dependence, & Emerging Implications for Agentic E-Commerce",
+    "title_ko": "AI 에이전트는 무엇을 사는가? 에이전틱 이커머스의 평가, 편향, 모델 의존성과 새로운 시사점",
+    "authors": "Allouah et al.",
+    "year": 2025,
+    "venue": "arXiv",
+    "url": "https://arxiv.org/abs/2508.02630",
+    "region": "intl"
+   }
+  ]
+ },
+ {
+  "id": "llms-txt",
+  "ko": "llms.txt",
+  "en": "llms.txt",
+  "abbr": "",
+  "cat": "agent",
+  "topic": "agent-tools",
+  "level": 2,
+  "easy": "웹사이트가 AI와 에이전트에게 사이트의 핵심 내용과 주요 링크를 요약해 알려 주려고 루트 경로에 두는 마크다운 파일이다.",
+  "deep": "Jeremy Howard가 제안한 관례로, 사이트 루트의 /llms.txt에 H1 제목, 짧은 요약, 섹션별 링크 목록을 마크다운으로 적는다. 에이전트가 사이트 전체를 크롤링하지 않고도 구조와 핵심 문서를 파악하게 돕는다. robots.txt처럼 접근 허용을 정하는 규칙이 아니라 읽을거리 안내에 가까우며, 아직 선택 사항인 관례라 모든 AI 서비스가 읽는다는 보장은 없다.",
+  "example": "사내 개발자 포털에 llms.txt를 두어 코딩 에이전트가 API 문서와 인증 가이드를 먼저 찾게 한다.",
+  "related": [
+   "connector",
+   "browser-agent",
+   "context-engineering",
+   "rag"
+  ],
+  "added": "2026-11-02",
+  "updated": "2026-11-02",
+  "revision": 1,
+  "status": "active",
+  "sources": [
+   {
+    "title": "llms.txt | Lighthouse | Chrome for Developers",
+    "url": "https://developer.chrome.com/docs/lighthouse/agentic-browsing/llms-txt",
+    "publisher": "Google",
+    "type": "docs"
+   },
+   {
+    "title": "Meet llms.txt, a proposed standard for AI website content crawling",
+    "url": "https://searchengineland.com/llms-txt-proposed-standard-453676",
+    "publisher": "Search Engine Land",
+    "type": "article"
+   }
+  ],
+  "papers": []
+ },
+ {
+  "id": "model-spec",
+  "ko": "모델 스펙",
+  "en": "Model Spec",
+  "abbr": "",
+  "cat": "safety",
+  "topic": "safety-transparency",
+  "level": 2,
+  "easy": "AI 모델이 어떻게 행동해야 하는지, 지시가 충돌하면 무엇을 우선하는지를 개발사가 글로 정리해 공개한 행동 기준 문서다.",
+  "deep": "OpenAI가 2024년 5월 처음 공개하고 이후 개정해 온 문서로, 목표·규칙·기본 동작으로 구성되며 플랫폼·개발자·사용자 지시의 우선순위(chain of command)를 정한다. 2025년 개정판은 CC0로 공개돼 다른 조직도 참고·변형할 수 있다. 시스템 카드가 출시 시점의 평가 결과를 담는다면 모델 스펙은 의도한 행동 원칙을 담으며, 학습 데이터·평가 기준의 근거로 쓰인다.",
+  "example": "외부 LLM 도입 시 공급사 모델 스펙의 지시 우선순위 규칙을 확인해 사내 시스템 프롬프트 설계에 반영한다.",
+  "related": [
+   "system-card",
+   "model-card",
+   "alignment",
+   "constitutional-ai",
+   "system-prompt"
+  ],
+  "added": "2026-11-02",
+  "updated": "2026-11-02",
+  "revision": 1,
+  "status": "active",
+  "sources": [
+   {
+    "title": "Introducing the Model Spec",
+    "url": "https://openai.com/index/introducing-the-model-spec/",
+    "publisher": "OpenAI",
+    "type": "official"
+   },
+   {
+    "title": "Sharing the latest Model Spec",
+    "url": "https://openai.com/index/sharing-the-latest-model-spec/",
+    "publisher": "OpenAI",
+    "type": "official"
+   }
+  ],
+  "papers": []
+ },
+ {
+  "id": "cot-monitoring",
+  "ko": "사고 과정 모니터링",
+  "en": "Chain-of-Thought Monitoring",
+  "abbr": "CoT 모니터링",
+  "cat": "safety",
+  "topic": "safety-trustworthiness",
+  "level": 3,
+  "easy": "추론 모델이 답을 내기 전에 쓰는 생각 과정(사고 사슬)을 다른 모델이 읽어 보고 위험한 의도나 부정행위를 잡아내는 안전 기법이다.",
+  "deep": "모니터 모델이 에이전트의 사고 사슬·행동·출력을 함께 검토해 보상 해킹이나 허용 범위를 벗어난 행동을 표시한다. 행동과 최종 출력만 볼 때보다 탐지율이 높다는 연구가 있으나, 사고 사슬 자체에 강한 학습 압력을 주면 모델이 의도를 숨기는 난독화가 생길 수 있어 '모니터링 가능성'을 지키는 학습·배포 결정이 함께 논의된다. 완벽하지 않으므로 다른 안전장치와 병행한다.",
+  "example": "코딩 에이전트 로그를 모니터 모델로 점검해 테스트를 조작하려는 추론이 보이면 작업을 멈추고 담당자에게 알린다.",
+  "related": [
+   "reasoning-model",
+   "chain-of-thought",
+   "reward-hacking",
+   "llm-as-judge",
+   "agent-trajectory"
+  ],
+  "added": "2026-11-02",
+  "updated": "2026-11-02",
+  "revision": 1,
+  "status": "active",
+  "sources": [
+   {
+    "title": "Detecting misbehavior in frontier reasoning models",
+    "url": "https://openai.com/index/chain-of-thought-monitoring/",
+    "publisher": "OpenAI",
+    "type": "official"
+   },
+   {
+    "title": "Evaluating chain-of-thought monitorability",
+    "url": "https://openai.com/index/evaluating-chain-of-thought-monitorability/",
+    "publisher": "OpenAI",
+    "type": "official"
+   }
+  ],
+  "papers": [
+   {
+    "title": "Chain of Thought Monitorability: A New and Fragile Opportunity for AI Safety",
+    "title_ko": "사고 사슬 모니터링 가능성: AI 안전을 위한 새롭지만 취약한 기회",
+    "authors": "Korbak et al.",
+    "year": 2025,
+    "venue": "arXiv",
+    "url": "https://arxiv.org/abs/2507.11473",
+    "region": "intl"
+   },
+   {
+    "title": "Monitoring Reasoning Models for Misbehavior and the Risks of Promoting Obfuscation",
+    "title_ko": "추론 모델의 부정행위 모니터링과 난독화 유발 위험",
+    "authors": "Baker et al.",
+    "year": 2025,
+    "venue": "arXiv",
+    "url": "https://arxiv.org/abs/2503.11926",
+    "region": "intl"
+   }
+  ]
+ },
+ {
+  "id": "generative-engine-optimization",
+  "ko": "생성형 엔진 최적화",
+  "en": "Generative Engine Optimization",
+  "abbr": "GEO",
+  "cat": "biz",
+  "topic": "biz-strategy",
+  "level": 2,
+  "easy": "AI 검색·챗봇이 답변을 만들 때 우리 콘텐츠가 인용되거나 언급되도록 콘텐츠와 사이트를 정비하는 활동이다.",
+  "deep": "검색 결과 순위를 다루는 SEO와 달리, LLM이 문서를 검색·요약해 답을 생성할 때의 노출(인용·언급)을 목표로 한다. 2023년 논문에서 용어와 GEO-bench가 제안됐고, 출처·통계·인용문 보강 같은 방법이 노출을 높였다고 보고됐다. 답변 엔진 최적화(AEO)와 혼용되며, 주요 검색 기업은 SEO 기본기가 여전히 핵심이라는 입장이어서 효과 측정은 AI 답변 내 인용 모니터링으로 한다.",
+  "example": "금융 상품 안내 페이지에 공식 수치와 출처를 명확히 적어 AI 검색 답변에서 자사 자료가 인용되는지 매월 점검한다.",
+  "related": [
+   "rag",
+   "semantic-search",
+   "grounding",
+   "ai-strategy"
+  ],
+  "added": "2026-11-02",
+  "updated": "2026-11-02",
+  "revision": 1,
+  "status": "active",
+  "sources": [
+   {
+    "title": "Generative engine optimization",
+    "url": "https://en.wikipedia.org/wiki/Generative_engine_optimization",
+    "publisher": "Wikipedia",
+    "type": "encyclopedia"
+   }
+  ],
+  "papers": [
+   {
+    "title": "생성형 AI 시대 마케팅 투명성과 검색 최적화 전략 : 맥락적 투명성 이론과 스타트업 브랜드 구축 프레임워크",
+    "title_ko": "생성형 AI 시대 마케팅 투명성과 검색 최적화 전략 : 맥락적 투명성 이론과 스타트업 브랜드 구축 프레임워크",
+    "authors": "",
+    "year": null,
+    "venue": "",
+    "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003247375",
+    "region": "kr"
+   },
+   {
+    "title": "GEO: Generative Engine Optimization",
+    "title_ko": "GEO: 생성형 엔진 최적화",
+    "authors": "Aggarwal et al.",
+    "year": 2023,
+    "venue": "KDD 2024",
+    "url": "https://arxiv.org/abs/2311.09735",
+    "region": "intl"
    }
   ]
  }

@@ -2530,5 +2530,59 @@
   "id": "mechanistic-interpretability",
   "type": "added",
   "summary": "최초 수록"
+ },
+ {
+  "date": "2026-11-02",
+  "id": "mcp",
+  "type": "updated",
+  "summary": "MCP 2026-07-28 규격 반영: 세션·초기화 핸드셰이크 제거(무상태화), Tasks 공식 확장 분리, Roots·Sampling·Logging 폐기 예정"
+ },
+ {
+  "date": "2026-11-02",
+  "id": "layer-normalization",
+  "type": "updated",
+  "summary": "출처 보강"
+ },
+ {
+  "date": "2026-11-02",
+  "id": "sycophancy",
+  "type": "updated",
+  "summary": "출처 보강"
+ },
+ {
+  "date": "2026-11-02",
+  "id": "text-to-sql",
+  "type": "updated",
+  "summary": "출처 보강"
+ },
+ {
+  "date": "2026-11-02",
+  "id": "agentic-commerce",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-11-02",
+  "id": "llms-txt",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-11-02",
+  "id": "model-spec",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-11-02",
+  "id": "cot-monitoring",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-11-02",
+  "id": "generative-engine-optimization",
+  "type": "added",
+  "summary": "최초 수록"
  }
 ]
