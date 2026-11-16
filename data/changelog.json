@@ -2584,5 +2584,59 @@
   "id": "generative-engine-optimization",
   "type": "added",
   "summary": "최초 수록"
+ },
+ {
+  "date": "2026-11-16",
+  "id": "agent-identity",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-11-16",
+  "id": "tool-poisoning",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-11-16",
+  "id": "backdoor-attack",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-11-16",
+  "id": "zero-trust",
+  "type": "added",
+  "summary": "최초 수록"
+ },
+ {
+  "date": "2026-11-16",
+  "id": "eu-ai-act",
+  "type": "updated",
+  "summary": "디지털 옴니버스(Regulation (EU) 2026/1744) 세부 반영: 고위험 의무 적용일 2027-12-02(부속서 III)·2028-08-02(부속서 I), 비동의 성적 이미지 생성 AI 금지 2026-12-02 적용, 기존 생성형 AI 기계판독 표시 2026-12-02까지 유예"
+ },
+ {
+  "date": "2026-11-16",
+  "id": "ai-generated-content-labeling",
+  "type": "updated",
+  "summary": "EU 기존 생성형 AI의 기계판독 표시 의무 2026년 12월 2일까지 유예 반영"
+ },
+ {
+  "date": "2026-11-16",
+  "id": "network-separation-reform",
+  "type": "updated",
+  "summary": "2026년 망분리 규제 긴급 완화 테스트와 제2차 조치(15개사 이내, 1년 한시 비조치의견서), 전면 해제 방안 논의 반영"
+ },
+ {
+  "date": "2026-11-16",
+  "id": "rope",
+  "type": "updated",
+  "summary": "출처 보강"
+ },
+ {
+  "date": "2026-11-16",
+  "id": "grouped-query-attention",
+  "type": "updated",
+  "summary": "출처 보강"
  }
 ]

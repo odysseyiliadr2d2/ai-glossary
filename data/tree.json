@@ -622,6 +622,7 @@
     "terms": [
      "human-in-the-loop",
      "agent-permissions",
+     "agent-identity",
      "autonomy-level",
      "agent-sandbox",
      "agent-evaluation",
@@ -863,10 +864,13 @@
      "content-filter",
      "red-teaming",
      "indirect-prompt-injection",
+     "tool-poisoning",
      "jailbreak-defense",
      "data-poisoning",
+     "backdoor-attack",
      "adversarial-attack",
-     "model-extraction"
+     "model-extraction",
+     "zero-trust"
     ]
    },
    {
