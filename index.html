@@ -395,12 +395,24 @@ window.addEventListener("message", e => {
   if (f && e.source === f.contentWindow && e.data && e.data.type === "demo-height") f.style.height = Math.ceil(e.data.h) + "px";
 });
 DEMOS.forEach(d => d.terms.forEach(id => { if (!demosOf.has(id)) demosOf.set(id, []); demosOf.get(id).push(d); }));
+/* 데모 위치로 이동. 위에 붙어 있는 머리글(sticky) 높이만큼 띄우고, 프레임이 다 뜬 뒤 한 번 더 맞춘다 */
+let demoScrollPending = false;
+function scrollToDemo(again) {
+  const p = document.getElementById("demoPanel") || document.querySelector(".demo-cta");
+  if (!p) return;
+  const hdr = document.querySelector("header.top");
+  const sticky = hdr && getComputedStyle(hdr).position === "sticky";
+  const off = (sticky ? hdr.getBoundingClientRect().height : 0) + 12;
+  window.scrollTo({ top: Math.max(0, p.getBoundingClientRect().top + window.scrollY - off), behavior: "smooth" });
+  demoScrollPending = !!again;
+}
 function mountDemo() {
   const host = document.querySelector(".dp-host");
   if (!host || !DEMO_DOC) return;
   const f = document.createElement("iframe");
   f.className = "dp-frame"; f.title = "데모";
   f.srcdoc = DEMO_DOC.replace("</head>", `<script>window.DEMO_ONLY=${JSON.stringify(host.dataset.demoId)};<\/script></head>`);
+  f.addEventListener("load", () => { if (demoScrollPending) setTimeout(() => scrollToDemo(false), 120); });
   host.replaceChildren(f);
 }
 function demoPanel(t) {
@@ -856,8 +868,7 @@ document.addEventListener("click", e => {
   if (vb) {
     if (vb.dataset.v === "demo") {
       state.demo = !state.demo; render();
-      const p = document.getElementById("demoPanel") || document.querySelector(".demo-cta");
-      if (state.demo && p) p.scrollIntoView({ behavior: "smooth", block: "start" });
+      if (state.demo) scrollToDemo(true);
     } else { state.view = vb.dataset.v; store.set("gl-view", state.view); render(); }
     return;
   }
