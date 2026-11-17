@@ -300,18 +300,20 @@ a.catcard.more { background: var(--card); border: 2px dashed #c9cbe6; color: var
 .demo-cta { background: var(--soft); }
 .demo-cta .dsub { font-size: 13px; color: var(--muted); margin-left: 8px; }
 .demo-links { display: grid; gap: 8px; margin-top: 10px; }
-.demo-links a, .demo-links a:hover, .demo-links .pl, .demo-links b, .demo-links small, @media (max-width: 640px) { .demo-panel { padding: 18px; }
-.dp-head { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
-.dp-head .dsub { font-size: 13px; color: var(--muted); }
-.dp-open { margin-left: auto; font-size: 13px; font-weight: 700; color: var(--accent); text-decoration: none; }
-.dp-tabs { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 12px; }
-.dp-tabs button { border: 1px solid var(--line, #e3e6f0); background: var(--card); border-radius: 999px; padding: 6px 14px; font: inherit; font-size: 14px; font-weight: 600; cursor: pointer; color: var(--ink); }
-.dp-tabs button[aria-pressed="true"] { background: var(--ink); color: #fff; border-color: var(--ink); }
-.dp-frame { display: block; width: 100%; height: 760px; border: 0; margin-top: 12px; border-radius: 20px; background: #fff; }
+.demo-links a { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--ink); background: var(--card); border-radius: 16px; padding: 12px 14px; }
+.demo-links .pl { flex: none; width: 38px; height: 38px; border-radius: 12px; background: var(--accent); color: #fff; display: grid; place-items: center; font-size: 14px; }
+.demo-links b { display: block; font-size: 15px; }
+.demo-links small { display: block; color: var(--muted); font-size: 12.5px; margin-top: 2px; }
+.demo-panel .label { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+.demo-panel .label span { font-weight: 500; letter-spacing: 0; color: var(--muted); }
+.dp-tabs { display: flex; gap: 6px; flex-wrap: wrap; margin: 0 0 12px; }
+.dp-tabs button { border: 0; background: var(--soft); border-radius: 999px; padding: 6px 14px; font: inherit; font-size: 13px; font-weight: 700; cursor: pointer; color: var(--muted); }
+.dp-tabs button[aria-pressed="true"] { background: var(--night); color: #fff; }
+.dp-frame { display: block; width: 100%; height: 640px; border: 0; background: transparent; }
 #view .v-demo[aria-pressed="false"] { background: var(--yellow); color: var(--ink); margin-left: 4px; }
 @media (max-width: 400px) { .seg button { padding: 6px 11px; } }
 .pill.demo-mark { background: var(--yellow); color: var(--ink); }
-@media (max-width: 640px) { .demo-panel { padding: 12px; } .dp-frame { height: 1100px; border-radius: 14px; } }
+@media (max-width: 640px) { .demo-panel { padding: 14px 12px 12px; } .demo-panel .label { padding: 0 4px; } }
 </style>
 
 <header class="top">
@@ -384,8 +386,7 @@ function demoPanel(t) {
   if (!DEMO_DOC) return demoCard(t.id);
   const d = ds[0];
   return `<section class="card demo-panel" id="demoPanel">
-    <div class="dp-head"><span class="pill yellow">▶ 데모 보기</span><span class="dsub">예시 데이터로 동작 과정을 한 단계씩</span>
-</div>
+    <p class="label">데모 <span>예시 데이터로 동작 과정을 한 단계씩</span></p>
     ${ds.length > 1 ? `<div class="dp-tabs" role="group" aria-label="데모 고르기">${ds.map((x, k) => `<button type="button" data-demo-tab="${x.id}" aria-pressed="${k === 0}">${esc(x.short)}</button>`).join("")}</div>` : ""}
     <div class="dp-host" data-demo-id="${d.id}"></div></section>`;
 }

@@ -61,7 +61,7 @@ a{color:var(--accent)}
 .prog i{display:block;height:100%;width:0;background:var(--accent)}
 .prog i.run{animation:fill var(--dur,3s) linear forwards}
 @keyframes fill{to{width:100%}}
-.steps{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:4px}
+.steps{position:relative;list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:4px}
 .steps button{width:100%;text-align:left;background:none;border:0;padding:7px 10px;border-radius:10px;cursor:pointer;display:flex;gap:10px;align-items:baseline;font-size:14px;color:var(--muted)}
 .steps button b{font-family:var(--mono);font-weight:500;font-size:12px;min-width:18px}
 .steps button.on{background:var(--soft);color:var(--ink);font-weight:600}
@@ -354,7 +354,24 @@ a{color:var(--accent)}
 .embed body{background:#fff}
 .embed .top,.embed .hero,.embed .jumpwrap,.embed .grp,.embed .foot,.embed .dhead{display:none}
 .embed .wrap{padding:0 0 2px;max-width:none}
-.embed .demo{margin:0;border:0;padding:0;border-radius:0}
+.embed .demo{margin:0;border:0;padding:0;border-radius:0;background:transparent}
+.embed .stage{border-radius:18px}
+/* 끼워 넣기(용어 문서 안): 영상 플레이어처럼 그림 → 조작 → 설명 순서 */
+.embed .body{display:flex;flex-direction:column;gap:10px}
+.embed .side{display:contents}
+.embed .stage{order:1;padding:14px;min-height:0;border-radius:16px}
+.embed .ctrl{order:2}
+.embed .prog{order:3;margin-top:-2px}
+.embed .cap{order:4;min-height:0;padding:12px 14px;border-radius:14px}
+.embed .cap h3{font-size:16px;margin:2px 0 4px}
+.embed .cap p{font-size:13.5px;line-height:1.55}
+.embed .steps{display:none}
+.embed .ctrl button{height:40px}
+.embed .tag-ex{position:static;display:inline-block;margin:0 0 8px;font-size:10.5px}
+@media (min-width:700px){.embed .stage{padding:18px}}
+/* 아직 나오지 않은 요소는 자리를 비워 두지 않는다(빈 공간 없이 차례로 나타남) */
+.embed [data-from]:not(.on){display:none}
+.embed [data-from].on{animation:ckin .4s ease both}
 @media (max-width:900px){
   .body{grid-template-columns:1fr}
   .side{order:-1}
@@ -721,7 +738,9 @@ function Demo(root, def){
     $('p', cap).textContent = s.c;
     $$('.steps button', side).forEach((b,n) => { b.classList.toggle('on', n===i); b.classList.toggle('done', n<i); });
     const cur = $(`.steps button[data-k="${i}"]`, side);
-    if (cur && window.innerWidth <= 900) cur.scrollIntoView({block:'nearest', inline:'center', behavior: reduce ? 'auto' : 'smooth'});
+    // 단계 목록만 가로로 움직인다(scrollIntoView는 바깥 문서까지 스크롤시켜 끼워 넣었을 때 화면이 튄다)
+    const list = $('.steps', side);
+    if (cur && list.scrollWidth > list.clientWidth) list.scrollTo({left: cur.parentElement.offsetLeft - (list.clientWidth - cur.offsetWidth)/2, behavior: reduce ? 'auto' : 'smooth'});
     schedule();
   }
   function schedule(){
