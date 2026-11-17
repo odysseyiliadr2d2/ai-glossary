@@ -1514,7 +1514,7 @@ const defs = {tokenizer:D1, temperature:D2, semantic:D3, rag:D4, attention:D5, a
 const inst = {};
 const nav = $('.jumpwrap');
 /* 용어 문서 안에 끼워 넣을 때(?only=데모id): 그 데모 하나만 보여 주고 높이를 부모 화면에 알린다 */
-const only = new URLSearchParams(location.search).get('only');
+const only = window.DEMO_ONLY || new URLSearchParams(location.search).get('only');
 if (only && document.getElementById(only)) {
   document.documentElement.classList.add('embed');
   $$('[data-demo]').forEach(el => { if (el.id !== only) el.remove(); });
@@ -1525,7 +1525,7 @@ if (only && document.getElementById(only)) {
 }
 let n = 0, row = null;
 Array.from(document.querySelectorAll('.grp, [data-demo]')).forEach(el => {
-  if (only && el.id === only) { inst[el.id] = Demo(el, defs[el.dataset.demo]); if (!reduce) setTimeout(() => inst[el.id].start(), 400); return; }
+  if (only && el.id === only) { inst[el.id] = Demo(el, defs[el.dataset.demo]); setTimeout(() => inst[el.id].start(), 300); return; }
   if (el.classList.contains('grp')) { row = document.createElement('div'); row.className = 'jumpg'; row.innerHTML = `<span>${el.dataset.g}</span>`; nav.appendChild(row); return; }
   n++; const num = $('.num', el); num.textContent = String(n).padStart(2,'0') + ' · ' + num.textContent;
   row.insertAdjacentHTML('beforeend', `<a href="#${el.id}"><b>${String(n).padStart(2,'0')}</b>${el.dataset.short}</a>`);

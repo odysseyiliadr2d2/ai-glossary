@@ -166,12 +166,12 @@ def render_demos(src, terms, tree, demos):
             + src[:cut] + '</head>\n<body>\n' + src[cut:] + '\n</body>\n</html>\n')
 
 
-def render(tpl, terms, tree, changes, releases, pdf_meta, for_site, demos=()):
+def render(tpl, terms, tree, changes, releases, pdf_meta, for_site, demos=(), demo_doc=""):
     j = lambda o: json.dumps(o, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
     tpl = (tpl.replace("/*__DEMOS__*/[]", j(list(demos)))
               .replace("/*__DEMO_URL__*/", "demos.html" if for_site else SITE_URL + "demos.html")
               .replace("/*__DEMO_ATTR__*/", "" if for_site else 'target="_blank" rel="noopener"')
-              .replace("/*__DEMO_EMBED__*/false", "true" if for_site else "false"))
+              .replace("/*__DEMO_DOC__*/\"\"", j(demo_doc)))
     page = (tpl.replace("/*__DATA__*/[]", j(terms)).replace("/*__TREE__*/[]", j(tree))
                .replace("/*__CHANGES__*/[]", j(changes)).replace("/*__RELEASES__*/[]", j(releases))
                .replace("/*__PDF_META__*/", pdf_meta))
@@ -216,14 +216,15 @@ def main():
         pdf_meta = "PDF"
 
     tpl = open(os.path.join(ROOT, "scripts", "template.html"), encoding="utf-8").read()
+    demo_doc = render_demos(demo_src, terms, tree, demos) if demos else ""
     os.makedirs(BUILD, exist_ok=True)
     with open(os.path.join(ROOT, "index.html"), "w", encoding="utf-8") as f:
-        f.write(render(tpl, terms, tree, changes, releases, pdf_meta, True, demos))
+        f.write(render(tpl, terms, tree, changes, releases, pdf_meta, True, demos, demo_doc))
     with open(os.path.join(BUILD, "artifact.html"), "w", encoding="utf-8") as f:
-        f.write(render(tpl, terms, tree, changes, releases, pdf_meta, False, demos))
+        f.write(render(tpl, terms, tree, changes, releases, pdf_meta, False, demos, demo_doc))
     if demos:
         with open(os.path.join(ROOT, "demos.html"), "w", encoding="utf-8") as f:
-            f.write(render_demos(demo_src, terms, tree, demos))
+            f.write(demo_doc)
         print(f"데모: demos.html (데모 {len(demos)}개, 연결 용어 {len({i for d in demos for i in d['terms']})}개)")
 
     payload = sync_payload(terms, tree, changes, releases)
