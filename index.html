@@ -206,7 +206,7 @@ a.catcard.more { background: var(--card); border: 2px dashed #c9cbe6; color: var
 /* term page */
 .doc-grid { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 18px; align-items: start; }
 .stack { display: grid; gap: 16px; min-width: 0; align-content: start; }
-.seg { display: inline-grid; grid-template-columns: repeat(3, auto); background: var(--soft); border-radius: 999px; padding: 3px; margin-top: 14px; }
+.seg { display: inline-grid; grid-auto-flow: column; grid-auto-columns: auto; background: var(--soft); border-radius: 999px; padding: 3px; margin-top: 14px; }
 .seg button { border: 0; background: none; padding: 6px 16px; border-radius: 999px; font-size: 13px; font-weight: 700; cursor: pointer; color: var(--muted); }
 .seg button[aria-pressed="true"] { background: var(--night); color: #fff; }
 .def .tagline { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
@@ -332,6 +332,18 @@ a.catcard.more { background: var(--card); border: 2px dashed #c9cbe6; color: var
 .demo-banner .pl { background: var(--yellow); color: var(--ink); }
 .demo-banner .go { margin-left: auto; font-weight: 700; color: var(--yellow); white-space: nowrap; }
 @media (max-width: 640px) { .demo-banner .go { display: none; } }
+.demo-panel { padding: 18px; }
+.dp-head { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.dp-head .dsub { font-size: 13px; color: var(--muted); }
+.dp-open { margin-left: auto; font-size: 13px; font-weight: 700; color: var(--accent); text-decoration: none; }
+.dp-tabs { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 12px; }
+.dp-tabs button { border: 1px solid var(--line, #e3e6f0); background: var(--card); border-radius: 999px; padding: 6px 14px; font: inherit; font-size: 14px; font-weight: 600; cursor: pointer; color: var(--ink); }
+.dp-tabs button[aria-pressed="true"] { background: var(--ink); color: #fff; border-color: var(--ink); }
+.dp-frame { display: block; width: 100%; height: 760px; border: 0; margin-top: 12px; border-radius: 20px; background: #fff; }
+#view .v-demo[aria-pressed="false"] { background: var(--yellow); color: var(--ink); margin-left: 4px; }
+@media (max-width: 400px) { .seg button { padding: 6px 11px; } }
+.pill.demo-mark { background: var(--yellow); color: var(--ink); }
+@media (max-width: 640px) { .demo-panel { padding: 12px; } .dp-frame { height: 1100px; border-radius: 14px; } }
 </style>
 
 </head>
@@ -385,8 +397,24 @@ const RELEASES = [{"date":"2026-10-19","title":"초판 공개 · 위키 구조 �
 const DEMOS = [{"id":"demo-tokenizer","short":"토크나이저","title":"문장은 어떻게 토큰이 될까","terms":["tokenizer","token","korean-token-efficiency","token-cost"]},{"id":"demo-temperature","short":"다음 토큰·온도","title":"다음 단어는 확률로 고른다","terms":["next-token-prediction","logits","softmax","temperature","sampling"]},{"id":"demo-top-p","short":"Top-k·Top-p","title":"Top-k와 Top-p: 후보를 먼저 추린다","terms":["top-p","top-k","sampling","greedy-decoding"]},{"id":"demo-context","short":"컨텍스트 윈도","title":"컨텍스트 윈도: 한 번에 볼 수 있는 양","terms":["context-window","max-tokens","long-context","contextual-compression"]},{"id":"demo-caching","short":"프롬프트 캐싱","title":"프롬프트 캐싱: 같은 앞부분은 다시 계산하지 않는다","terms":["prompt-caching","kv-cache","token-cost"]},{"id":"demo-attention","short":"셀프 어텐션","title":"셀프 어텐션: '그것'이 무엇인지 알아내기","terms":["self-attention","attention","transformer","multi-head-attention"]},{"id":"demo-semantic","short":"임베딩·의미 검색","title":"뜻이 가까우면, 숫자도 가깝다","terms":["embedding","cosine-similarity","semantic-search","vector-db"]},{"id":"demo-chunking","short":"청킹","title":"청킹: 문서를 어떻게 자르느냐가 답을 바꾼다","terms":["chunking","chunk-overlap","rag"]},{"id":"demo-rag","short":"RAG","title":"RAG: 찾아보고 답하기","terms":["rag","hallucination","chunking","top-k-retrieval"]},{"id":"demo-agent","short":"AI 에이전트","title":"AI 에이전트는 생각-실행-관찰을 반복한다","terms":["ai-agent","react","function-calling","human-in-the-loop"]},{"id":"demo-gradient","short":"경사하강법","title":"경사하강법: 손실이 줄어드는 쪽으로 걷는다","terms":["gradient-descent","learning-rate","loss-function","backpropagation"]},{"id":"demo-lora","short":"LoRA","title":"LoRA: 큰 모델은 그대로, 작은 행렬만 학습","terms":["lora","fine-tuning","peft","qlora"]},{"id":"demo-quant","short":"양자화","title":"양자화: 숫자를 덜 정밀하게 저장해 모델을 줄인다","terms":["quantization","qlora","mixed-precision"]},{"id":"demo-precision","short":"정밀도·재현율","title":"정밀도와 재현율: 기준선 하나로 갈린다","terms":["precision-recall","confusion-matrix","f1-score"]}];
 const DEMO_URL = "demos.html";
 const DEMO_ATTR = '';
+const DEMO_EMBED = true;
 const demosOf = new Map();
+window.addEventListener("message", e => {
+  const f = document.querySelector(".dp-frame");
+  if (f && e.source === f.contentWindow && e.data && e.data.type === "demo-height") f.style.height = Math.ceil(e.data.h) + "px";
+});
 DEMOS.forEach(d => d.terms.forEach(id => { if (!demosOf.has(id)) demosOf.set(id, []); demosOf.get(id).push(d); }));
+function demoPanel(t) {
+  const ds = demosOf.get(t.id) || [];
+  if (!ds.length) return "";
+  if (!DEMO_EMBED) return demoCard(t.id);
+  const d = ds[0];
+  return `<section class="card demo-panel" id="demoPanel">
+    <div class="dp-head"><span class="pill yellow">▶ 데모 보기</span><span class="dsub">예시 데이터로 동작 과정을 한 단계씩</span>
+      <a class="dp-open" href="${DEMO_URL}#${d.id}">크게 보기 ↗</a></div>
+    ${ds.length > 1 ? `<div class="dp-tabs" role="group" aria-label="데모 고르기">${ds.map((x, k) => `<button type="button" data-demo-tab="${x.id}" aria-pressed="${k === 0}">${esc(x.short)}</button>`).join("")}</div>` : ""}
+    <iframe class="dp-frame" src="${DEMO_URL}?only=${d.id}" title="${esc(d.title)} 데모" loading="lazy"></iframe></section>`;
+}
 function demoCard(id) {
   const ds = demosOf.get(id) || [];
   if (!ds.length) return "";
@@ -449,7 +477,7 @@ LIVE.forEach(t => {
 });
 
 const store = { get(k){ try { return localStorage.getItem(k); } catch(e){ return null; } }, set(k,v){ try { localStorage.setItem(k,v); } catch(e){} } };
-const state = { route: "home", q: "", view: store.get("gl-view") || "both", levels: new Set(), ixSort: store.get("gl-ixsort") || "ko", tlType: "all", pq: "", pcat: "", pera: "", preg: "" };
+const state = { demo: false, route: "home", q: "", view: store.get("gl-view") || "both", levels: new Set(), ixSort: store.get("gl-ixsort") || "ko", tlType: "all", pq: "", pcat: "", pera: "", preg: "" };
 const $ = s => document.querySelector(s);
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;" }[c]));
 const safeUrl = u => /^https?:\/\//i.test(u || "") ? esc(u) : "#";
@@ -471,7 +499,7 @@ function termCard(t, o = {}) {
   const text = o.text ?? (state.view === "deep" ? t.deep : t.easy);
   const h = s => o.hq !== undefined ? hi(s, o.hq) : esc(s);
   return `<a class="card tcard" href="#${t.id}" data-go="${t.id}">
-    <div class="top-row">${o.no ? `<span class="num">${o.no}</span>` : catPill(t.cat)}${lvPill(t.level)}</div>
+    <div class="top-row">${o.no ? `<span class="num">${o.no}</span>` : catPill(t.cat)}${lvPill(t.level)}${demosOf.has(t.id) ? '<span class="pill demo-mark">▶ 데모</span>' : ""}</div>
     <div class="t">${h(t.ko)}</div><div class="e">${h(enOf(t))}</div><p>${h(text)}</p></a>`;
 }
 function weekdayOf(d) { const [y, m, dd] = d.split("-").map(Number); return "일월화수목금토"[new Date(Date.UTC(y, m - 1, dd)).getUTCDay()]; }
@@ -576,7 +604,8 @@ function viewTerm(t) {
   const rel = (t.related || []).filter(id => byId.has(id) && id !== t.id);
   const back = (backlinks.get(t.id) || []).filter(id => id !== t.id && !rel.includes(id));
   const hist = (histOf.get(t.id) || []).slice().sort((a, b) => b.date.localeCompare(a.date));
-  const showEasy = state.view !== "deep", showDeep = state.view !== "easy";
+  const hasDemo = demosOf.has(t.id), demoOn = state.demo && hasDemo;
+  const showEasy = !demoOn && state.view !== "deep", showDeep = !demoOn && state.view !== "easy";
   const srcs = t.sources || [], papers = t.papers || [];
   const q = t.abbr && t.abbr.length > 1 && t.abbr !== t.en ? `${t.en} ${t.abbr}` : t.en;
   return `<section class="card">
@@ -586,15 +615,15 @@ function viewTerm(t) {
       <div class="meta">${lvPill(t.level)}${catPill(c.id)}<a class="pill ghost" href="#t-${tp.id}" data-go="t-${tp.id}">${esc(tp.ko)} · ${i + 1}/${ids.length}</a>
         <span>최초 수록 <span class="mono">${fmtDate(t.added)}</span></span><span>마지막 수정 <span class="mono">${fmtDate(t.updated)}</span></span><span>판 <span class="mono">${t.revision}</span></span><span>출처 ${srcs.length} · 논문 ${papers.length}(국내 ${papers.filter(p => p.region === "kr").length})</span></div>
       <div class="seg" id="view" role="group" aria-label="설명 보기">
-        <button data-v="easy" aria-pressed="${state.view === "easy"}">입문만</button><button data-v="both" aria-pressed="${state.view === "both"}">모두</button><button data-v="deep" aria-pressed="${state.view === "deep"}">심화만</button>
+        <button data-v="easy" aria-pressed="${!demoOn && state.view === "easy"}">입문만</button><button data-v="both" aria-pressed="${!demoOn && state.view === "both"}">모두</button><button data-v="deep" aria-pressed="${!demoOn && state.view === "deep"}">심화만</button>${hasDemo ? `<button class="v-demo" data-v="demo" aria-pressed="${demoOn}">▶ 데모 보기</button>` : ""}
       </div>
     </section>
     <div class="doc-grid">
       <div class="stack">
+        ${demoOn ? demoPanel(t) : ""}
         ${showEasy ? `<section class="card def"><div class="tagline"><span class="pill l1">입문 · 누구나</span></div><p>${esc(t.easy)}</p></section>` : ""}
         ${showDeep ? `<section class="card night def"><div class="tagline"><span class="pill">심화 · 구현자</span></div><p>${esc(t.deep)}</p></section>` : ""}
         ${t.example ? `<section class="card yellow def"><div class="tagline"><span class="pill yellow">실무 예시</span></div><p>${esc(t.example)}</p></section>` : ""}
-        ${demoCard(t.id)}
         <section class="card"><p class="label">출처 · 더 읽을거리 ${srcs.length}</p>
           ${srcs.length ? `<ul class="list src">${srcs.map(s => `<li><a href="${safeUrl(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a>
             <div class="m"><span class="typ ${esc(s.type)}">${SRC_TYPES[s.type] || "자료"}</span>${esc(s.publisher || "")}<span class="mono">${esc((s.url || "").replace(/^https?:\/\//, "").split("/")[0])}</span></div></li>`).join("")}</ul>`
@@ -803,6 +832,15 @@ addEventListener("popstate", () => { const h = decodeURIComponent(location.hash.
 
 /* ---------- 이벤트 ---------- */
 document.addEventListener("click", e => {
+  const tab = e.target.closest("[data-demo-tab]");
+  if (tab) {
+    const panel = tab.closest(".demo-panel"), id = tab.dataset.demoTab;
+    panel.querySelectorAll("[data-demo-tab]").forEach(b => b.setAttribute("aria-pressed", b === tab));
+    panel.querySelector(".dp-frame").src = `${DEMO_URL}?only=${id}`;
+    panel.querySelector(".dp-open").href = `${DEMO_URL}#${id}`;
+    return;
+  }
+
   const a = e.target.closest("[data-go]");
   if (a) { e.preventDefault(); if (a.dataset.pq !== undefined) state.pq = a.dataset.pq; go(a.dataset.go); return; }
   const qa = e.target.closest("[data-quick]");
@@ -818,7 +856,7 @@ document.addEventListener("click", e => {
   const era = e.target.closest("#eraChips [data-era]");
   if (era) { state.pera = era.dataset.era; render(); return; }
   const vb = e.target.closest("#view button");
-  if (vb) { state.view = vb.dataset.v; store.set("gl-view", state.view); render(); return; }
+  if (vb) { if (vb.dataset.v === "demo") state.demo = true; else { state.demo = false; state.view = vb.dataset.v; store.set("gl-view", state.view); } render(); return; }
 });
 document.addEventListener("change", e => {
   if (e.target.id === "ixSort") { state.ixSort = e.target.value; store.set("gl-ixsort", state.ixSort); render(); }
