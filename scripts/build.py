@@ -155,6 +155,36 @@ def load_demos():
     return src, demos
 
 
+FLOW_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data", "demo_flows")
+FLOW_KEYS = {"text", "chat", "list", "kv", "bars", "code", "vs", "tags"}
+
+
+def load_flows():
+    """data/demo_flows/*.json(분야별)에서 용어별 공통 데모 시나리오를 읽는다."""
+    flows = {}
+    if os.path.isdir(FLOW_DIR):
+        for fn in sorted(os.listdir(FLOW_DIR)):
+            if fn.endswith(".json"):
+                flows.update(json.load(open(os.path.join(FLOW_DIR, fn), encoding="utf-8")))
+    return flows
+
+
+def validate_flows(flows, known):
+    errs = []
+    for tid, f in flows.items():
+        if tid not in known: errs.append(f"데모 시나리오가 없는 용어를 가리킴: {tid}"); continue
+        n, s = f.get("n", []), f.get("s", [])
+        if not 2 <= len(n) <= 5: errs.append(f"{tid}: 흐름 단계(n)는 2~5개"); continue
+        if not 3 <= len(s) <= 6: errs.append(f"{tid}: 재생 단계(s)는 3~6개")
+        for k, st in enumerate(s):
+            if not (isinstance(st, list) and len(st) == 4): errs.append(f"{tid} 단계{k+1}: [노드, 제목, 설명, 데이터] 형식"); continue
+            at = st[0] if isinstance(st[0], list) else [st[0]]
+            if any(not isinstance(x, int) or not 0 <= x < len(n) for x in at): errs.append(f"{tid} 단계{k+1}: 노드 번호 범위 밖")
+            for blk in (st[3] if isinstance(st[3], list) else [st[3]]):
+                if not isinstance(blk, dict) or not (set(blk) & FLOW_KEYS): errs.append(f"{tid} 단계{k+1}: 데이터 종류는 {sorted(FLOW_KEYS)} 중 하나")
+    return errs
+
+
 def render_demos(src, terms, tree, demos):
     """데모 원본(본문 조각)을 GitHub Pages용 완전한 문서 demos.html로 감싼다."""
     cut = src.find('<div class="wrap">')
@@ -166,9 +196,9 @@ def render_demos(src, terms, tree, demos):
             + src[:cut] + '</head>\n<body>\n' + src[cut:] + '\n</body>\n</html>\n')
 
 
-def render(tpl, terms, tree, changes, releases, pdf_meta, for_site, demos=(), demo_doc=""):
+def render(tpl, terms, tree, changes, releases, pdf_meta, for_site, demos=(), demo_doc="", flows=None, flow_doc=""):
     j = lambda o: json.dumps(o, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
-    tpl = (tpl.replace("/*__DEMOS__*/[]", j(list(demos)))
+    tpl = (tpl.replace("/*__FLOWS__*/{}", j(flows or {})).replace("/*__FLOW_DOC__*/\"\"", j(flow_doc)).replace("/*__DEMOS__*/[]", j(list(demos)))
               .replace("/*__DEMO_URL__*/", "demos.html" if for_site else SITE_URL + "demos.html")
               .replace("/*__DEMO_ATTR__*/", "" if for_site else 'target="_blank" rel="noopener"')
               .replace("/*__DEMO_DOC__*/\"\"", j(demo_doc)))
@@ -199,6 +229,10 @@ def main():
     demo_src, demos = load_demos()
     known = {t["id"] for t in terms if t["status"] == "active"}
     errs += [f"데모 {d['id']}가 없는 용어를 가리킴: {i}" for d in demos for i in d["terms"] if i not in known]
+    flows = load_flows()
+    errs += validate_flows(flows, known)
+    covered = {i for d in demos for i in d["terms"]} | set(flows)
+    missing = sorted(known - covered)
     if errs:
         print("검증 실패:"); [print(" -", e) for e in errs[:50]]; sys.exit(1)
     live = [t for t in terms if t["status"] == "active"]
@@ -217,15 +251,17 @@ def main():
 
     tpl = open(os.path.join(ROOT, "scripts", "template.html"), encoding="utf-8").read()
     demo_doc = render_demos(demo_src, terms, tree, demos) if demos else ""
+    flow_doc = open(os.path.join(ROOT, "scripts", "flow.html"), encoding="utf-8").read()
     os.makedirs(BUILD, exist_ok=True)
     with open(os.path.join(ROOT, "index.html"), "w", encoding="utf-8") as f:
-        f.write(render(tpl, terms, tree, changes, releases, pdf_meta, True, demos, demo_doc))
+        f.write(render(tpl, terms, tree, changes, releases, pdf_meta, True, demos, demo_doc, flows, flow_doc))
     with open(os.path.join(BUILD, "artifact.html"), "w", encoding="utf-8") as f:
-        f.write(render(tpl, terms, tree, changes, releases, pdf_meta, False, demos, demo_doc))
+        f.write(render(tpl, terms, tree, changes, releases, pdf_meta, False, demos, demo_doc, flows, flow_doc))
     if demos:
         with open(os.path.join(ROOT, "demos.html"), "w", encoding="utf-8") as f:
             f.write(demo_doc)
-        print(f"데모: demos.html (데모 {len(demos)}개, 연결 용어 {len({i for d in demos for i in d['terms']})}개)")
+        print(f"데모: demos.html (전용 데모 {len(demos)}개) · 공통 데모 시나리오 {len(flows)}개 · 데모 있는 문서 {len(covered)}/{len(known)}"
+              + (f" · 데모 없는 문서 {len(missing)}개" if missing else ""))
 
     payload = sync_payload(terms, tree, changes, releases)
     os.makedirs(os.path.join(ROOT, "supabase"), exist_ok=True)

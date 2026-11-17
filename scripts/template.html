@@ -372,6 +372,10 @@ window.addEventListener("message", e => {
   if (f && e.source === f.contentWindow && e.data && e.data.type === "demo-height") f.style.height = Math.ceil(e.data.h) + "px";
 });
 DEMOS.forEach(d => d.terms.forEach(id => { if (!demosOf.has(id)) demosOf.set(id, []); demosOf.get(id).push(d); }));
+/* 공통 데모 플레이어용 용어별 시나리오(data/demo_flows) — 전용 데모가 없는 용어에 쓴다 */
+const FLOWS = /*__FLOWS__*/{};
+const FLOW_DOC = /*__FLOW_DOC__*/"";
+const hasDemo = id => demosOf.has(id) || (!!FLOWS[id] && !!FLOW_DOC);
 /* 데모 위치로 이동. 위에 붙어 있는 머리글(sticky) 높이만큼 띄우고, 프레임이 다 뜬 뒤 한 번 더 맞춘다 */
 let demoScrollPending = false;
 function scrollToDemo(again) {
@@ -385,15 +389,19 @@ function scrollToDemo(again) {
 }
 function mountDemo() {
   const host = document.querySelector(".dp-host");
-  if (!host || !DEMO_DOC) return;
+  if (!host) return;
   const f = document.createElement("iframe");
   f.className = "dp-frame"; f.title = "데모";
-  f.srcdoc = DEMO_DOC.replace("</head>", `<script>window.DEMO_ONLY=${JSON.stringify(host.dataset.demoId)};<\/script></head>`);
+  if (host.dataset.flow) f.srcdoc = FLOW_DOC.replace("</head>", `<script>window.FLOW=${JSON.stringify(FLOWS[host.dataset.flow]).replace(/</g, "\\u003c")};<\/script></head>`);
+  else if (DEMO_DOC) f.srcdoc = DEMO_DOC.replace("</head>", `<script>window.DEMO_ONLY=${JSON.stringify(host.dataset.demoId)};<\/script></head>`);
   f.addEventListener("load", () => { if (demoScrollPending) setTimeout(() => scrollToDemo(false), 120); });
   host.replaceChildren(f);
 }
 function demoPanel(t) {
   const ds = demosOf.get(t.id) || [];
+  if (!ds.length && FLOWS[t.id] && FLOW_DOC) return `<section class="card demo-panel" id="demoPanel">
+    <p class="label">데모 <span>예시 데이터로 동작 과정을 한 단계씩</span></p>
+    <div class="dp-host" data-flow="${t.id}"></div></section>`;
   if (!ds.length) return "";
   if (!DEMO_DOC) return demoCard(t.id);
   const d = ds[0];
@@ -486,7 +494,7 @@ function termCard(t, o = {}) {
   const text = o.text ?? (state.view === "deep" ? t.deep : t.easy);
   const h = s => o.hq !== undefined ? hi(s, o.hq) : esc(s);
   return `<a class="card tcard" href="#${t.id}" data-go="${t.id}">
-    <div class="top-row">${o.no ? `<span class="num">${o.no}</span>` : catPill(t.cat)}${lvPill(t.level)}${demosOf.has(t.id) ? '<span class="pill demo-mark">▶ 데모</span>' : ""}</div>
+    <div class="top-row">${o.no ? `<span class="num">${o.no}</span>` : catPill(t.cat)}${lvPill(t.level)}${hasDemo(t.id) ? '<span class="pill demo-mark">▶ 데모</span>' : ""}</div>
     <div class="t">${h(t.ko)}</div><div class="e">${h(enOf(t))}</div><p>${h(text)}</p></a>`;
 }
 function weekdayOf(d) { const [y, m, dd] = d.split("-").map(Number); return "일월화수목금토"[new Date(Date.UTC(y, m - 1, dd)).getUTCDay()]; }
@@ -590,7 +598,7 @@ function viewTerm(t) {
   const rel = (t.related || []).filter(id => byId.has(id) && id !== t.id);
   const back = (backlinks.get(t.id) || []).filter(id => id !== t.id && !rel.includes(id));
   const hist = (histOf.get(t.id) || []).slice().sort((a, b) => b.date.localeCompare(a.date));
-  const hasDemo = demosOf.has(t.id), demoOn = state.demo && hasDemo;
+  const termDemo = hasDemo(t.id), demoOn = state.demo && termDemo;
   const showEasy = state.view !== "deep", showDeep = state.view !== "easy";
   const srcs = t.sources || [], papers = t.papers || [];
   const q = t.abbr && t.abbr.length > 1 && t.abbr !== t.en ? `${t.en} ${t.abbr}` : t.en;
@@ -601,7 +609,7 @@ function viewTerm(t) {
       <div class="meta">${lvPill(t.level)}${catPill(c.id)}<a class="pill ghost" href="#t-${tp.id}" data-go="t-${tp.id}">${esc(tp.ko)} · ${i + 1}/${ids.length}</a>
         <span>최초 수록 <span class="mono">${fmtDate(t.added)}</span></span><span>마지막 수정 <span class="mono">${fmtDate(t.updated)}</span></span><span>판 <span class="mono">${t.revision}</span></span><span>출처 ${srcs.length} · 논문 ${papers.length}(국내 ${papers.filter(p => p.region === "kr").length})</span></div>
       <div class="seg" id="view" role="group" aria-label="설명 보기">
-        <button data-v="easy" aria-pressed="${state.view === "easy"}">입문만</button><button data-v="both" aria-pressed="${state.view === "both"}">모두</button><button data-v="deep" aria-pressed="${state.view === "deep"}">심화만</button>${hasDemo ? `<button class="v-demo" data-v="demo" aria-pressed="${demoOn}">▶ 데모 보기</button>` : ""}
+        <button data-v="easy" aria-pressed="${state.view === "easy"}">입문만</button><button data-v="both" aria-pressed="${state.view === "both"}">모두</button><button data-v="deep" aria-pressed="${state.view === "deep"}">심화만</button>${termDemo ? `<button class="v-demo" data-v="demo" aria-pressed="${demoOn}">▶ 데모 보기</button>` : ""}
       </div>
     </section>
     <div class="doc-grid">

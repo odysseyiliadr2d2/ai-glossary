@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+<!-- 공통 데모 플레이어: 용어 문서 안 프레임에서 window.FLOW(시나리오)를 받아 단계별로 재생한다 -->
+<style>
+:root{color-scheme:light;--page:#f4f6fb;--card:#fff;--ink:#1b1f3b;--muted:#5b6080;--line:#e3e6f0;--accent:#3d35b8;--accent-2:#5b52e0;--soft:#eceafd;--yellow:#ffd84d;--night:#1b1f3b;--ok:#0f8a5f;--ok-bg:#d4f5dd;--bad:#c2352b;--bad-bg:#ffe0dc;--sans:"IBM Plex Sans KR",system-ui,sans-serif;--mono:"DM Mono",ui-monospace,monospace}
+*{box-sizing:border-box}
+html,body{margin:0;background:#fff;color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.55;-webkit-text-size-adjust:100%}
+button{font:inherit;color:inherit}
+.player{display:flex;flex-direction:column;gap:10px;padding-bottom:2px}
+.stage{background:var(--page);border-radius:16px;padding:14px}
+.tag{display:inline-block;font-size:10.5px;font-weight:700;color:var(--muted);background:#fff;border:1px solid var(--line);border-radius:999px;padding:2px 9px;margin-bottom:10px}
+.rail{display:flex;align-items:center;flex-wrap:wrap;gap:6px 4px}
+.node{background:#fff;border:2px solid var(--line);border-radius:12px;padding:6px 10px;font-size:13px;font-weight:700;line-height:1.3;transition:background .3s,border-color .3s,transform .3s,box-shadow .3s;max-width:100%}
+.node.done{background:var(--soft);border-color:var(--soft);color:var(--accent)}
+.node.on{background:var(--yellow);border-color:var(--night);transform:translateY(-2px);box-shadow:0 3px 0 var(--night);color:var(--ink)}
+.arr{color:#b4b8cf;font-size:13px;font-weight:700;transition:color .3s}
+.arr.on{color:var(--accent);animation:nudge .9s ease-in-out infinite}
+@keyframes nudge{50%{transform:translateX(3px)}}
+.data{margin-top:14px;display:grid;gap:8px}
+.in{animation:up .45s ease both}
+@keyframes up{from{opacity:0;transform:translateY(8px)}}
+.txt{background:#fff;border-radius:12px;padding:11px 13px;font-size:14.5px;border-left:4px solid var(--accent)}
+.bub{max-width:88%;padding:9px 12px;border-radius:14px;font-size:14px;line-height:1.5;white-space:pre-wrap}
+.bub small{display:block;font-size:10.5px;font-weight:700;opacity:.65;margin-bottom:1px}
+.bub.u{justify-self:end;background:var(--night);color:#fff;border-bottom-right-radius:4px}
+.bub.a{justify-self:start;background:#fff;border-bottom-left-radius:4px}
+.bub.s{justify-self:stretch;max-width:none;background:var(--soft);font-size:13px}
+.li{display:flex;gap:8px;align-items:flex-start;background:#fff;border-radius:10px;padding:8px 11px;font-size:14px}
+.li b{flex:none;width:20px;height:20px;border-radius:6px;background:var(--soft);color:var(--accent);display:grid;place-items:center;font-family:var(--mono);font-size:11px;font-weight:500;margin-top:1px}
+table{width:100%;border-collapse:collapse;background:#fff;border-radius:12px;overflow:hidden;font-size:13.5px}
+td,th{padding:7px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{font-size:11.5px;color:var(--muted);font-weight:700;background:#fafbfe}
+tr:last-child td{border-bottom:0}
+td:first-child{font-weight:600;white-space:nowrap}
+.bars{background:#fff;border-radius:12px;padding:10px 12px;display:grid;gap:8px}
+.bar{display:grid;grid-template-columns:minmax(64px,34%) 1fr auto;gap:8px;align-items:center;font-size:13px}
+.bar .t{height:14px;background:var(--line);border-radius:7px;overflow:hidden}
+.bar .t i{display:block;height:100%;width:0;background:var(--accent-2);border-radius:7px;transition:width .9s cubic-bezier(.2,.8,.2,1)}
+.bar .v{font-family:var(--mono);font-size:12.5px;min-width:44px;text-align:right}
+.bar.hi .t i{background:var(--ok)} .bar.lo .t i{background:var(--bad)}
+pre{margin:0;background:var(--night);color:#e7e9ff;border-radius:12px;padding:11px 13px;font-family:var(--mono);font-size:12.5px;line-height:1.6;white-space:pre-wrap;overflow-wrap:anywhere}
+.vs{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.vs div{border-radius:12px;padding:10px 12px;font-size:13.5px;line-height:1.5;background:#fff}
+.vs div b{display:block;font-size:12px;margin-bottom:3px}
+.vs .bad{background:var(--bad-bg)} .vs .bad b{color:var(--bad)}
+.vs .ok{background:var(--ok-bg)} .vs .ok b{color:var(--ok)}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tags span{background:#fff;border-radius:999px;padding:5px 11px;font-size:13px;font-weight:600}
+.tags span:nth-child(3n+1){background:#dbe7ff}.tags span:nth-child(3n+2){background:#cdf1ea}.tags span:nth-child(3n){background:#fff0b8}
+.note{font-size:12.5px;color:var(--muted);padding:0 2px}
+.ctrl{display:flex;gap:6px}
+.ctrl button{border:1px solid var(--line);background:#fff;border-radius:12px;height:40px;min-width:42px;padding:0 12px;cursor:pointer;font-weight:700}
+.ctrl .play{flex:1;background:var(--accent);border-color:var(--accent);color:#fff}
+.ctrl button:focus-visible{outline:3px solid var(--yellow);outline-offset:2px}
+.prog{height:4px;background:var(--line);border-radius:4px;overflow:hidden;margin-top:-2px}
+.prog i{display:block;height:100%;width:0;background:var(--accent)}
+.prog i.run{animation:fill var(--d,3s) linear forwards}
+@keyframes fill{to{width:100%}}
+.cap{background:var(--night);color:#fff;border-radius:14px;padding:12px 14px}
+.cap .k{font-family:var(--mono);font-size:12px;color:var(--yellow)}
+.cap h3{margin:2px 0 4px;font-size:16px;line-height:1.35}
+.cap p{margin:0;font-size:13.5px;color:#d8dbf0}
+@media (min-width:700px){.stage{padding:18px}.txt,.li,.bub{font-size:15px}}
+@media (max-width:380px){.vs{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:0s!important;transition-duration:0s!important}}
+</style>
+</head>
+<body>
+<div class="player">
+  <div class="stage"><span class="tag">예시 데이터</span><div class="rail"></div><div class="data"></div></div>
+  <div class="ctrl"><button class="prev" aria-label="이전 단계">◀</button><button class="play">❚❚ 일시정지</button><button class="next" aria-label="다음 단계">▶▶</button><button class="again" aria-label="처음부터">↺</button></div>
+  <div class="prog"><i></i></div>
+  <div class="cap" aria-live="polite"><span class="k"></span><h3></h3><p></p></div>
+</div>
+<script>
+(function(){
+const F = window.FLOW || {n:['입력','처리','결과'], s:[[0,'예시','시나리오가 없습니다.',{text:'—'}]]};
+const $ = s => document.querySelector(s);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const rail = $('.rail'), data = $('.data'), bar = $('.prog i'), playBtn = $('.play');
+rail.innerHTML = F.n.map((n,k) => (k ? '<span class="arr">→</span>' : '') + `<span class="node">${esc(n)}</span>`).join('');
+const nodes = [...rail.querySelectorAll('.node')], arrs = [...rail.querySelectorAll('.arr')];
+let i = 0, playing = true, timer = null, timers = [];
+const later = (fn, ms) => timers.push(setTimeout(fn, reduce ? 0 : ms));
+
+function block(b){
+  const k = Object.keys(b).find(x => x !== 'unit' && x !== 'note');
+  const v = b[k]; let h = '', d = 0;
+  const st = () => `style="animation-delay:${(d++)*(reduce?0:380)}ms"`;
+  if (k === 'text') h = `<div class="txt in" ${st()}>${esc(v)}</div>`;
+  else if (k === 'chat') h = v.map(([r,t]) => `<div class="bub ${r} in" ${st()}>${r === 'u' ? '<small>사용자</small>' : r === 'a' ? '<small>AI</small>' : '<small>시스템</small>'}${esc(t)}</div>`).join('');
+  else if (k === 'list') h = v.map((t,n) => `<div class="li in" ${st()}><b>${n+1}</b><span>${esc(t)}</span></div>`).join('');
+  else if (k === 'kv') { const head = b.head ? `<tr>${b.head.map(x => `<th>${esc(x)}</th>`).join('')}</tr>` : ''; h = `<table class="in" ${st()}>${head}${v.map(r => `<tr>${r.map(c => `<td>${esc(c)}</td>`).join('')}</tr>`).join('')}</table>`; }
+  else if (k === 'bars') { const mx = Math.max(...v.map(r => Math.abs(+r[1]))) || 1; h = `<div class="bars in" ${st()}>${v.map(r => `<div class="bar ${r[2]||''}"><span>${esc(r[0])}</span><span class="t"><i data-w="${(Math.abs(+r[1])/mx*100).toFixed(1)}"></i></span><span class="v">${esc(r[1])}${esc(b.unit||'')}</span></div>`).join('')}</div>`; }
+  else if (k === 'code') h = `<pre class="in" ${st()} data-code="${esc(v)}"></pre>`;
+  else if (k === 'vs') h = `<div class="vs in" ${st()}>${v.map((c,n) => `<div class="${c[2] || (n ? 'ok' : 'bad')}"><b>${esc(c[0])}</b>${esc(c[1])}</div>`).join('')}</div>`;
+  else if (k === 'tags') h = `<div class="tags in" ${st()}>${v.map(t => `<span>${esc(t)}</span>`).join('')}</div>`;
+  if (b.note) h += `<div class="note in" ${st()}>${esc(b.note)}</div>`;
+  return [h, d];
+}
+function dur(s){ const b = s[3] || {}, k = Object.keys(b)[0], v = b[k]; const items = Array.isArray(v) ? v.length : 1; return Math.min(9000, 2600 + s[2].length*28 + items*450 + (k === 'code' ? String(v).length*12 : 0)); }
+function go(n){
+  i = Math.max(0, Math.min(F.s.length-1, n));
+  timers.forEach(clearTimeout); timers = [];
+  const s = F.s[i], at = [].concat(s[0]);
+  const lo = Math.min(...at);
+  nodes.forEach((el,k) => { el.classList.toggle('on', at.includes(k)); el.classList.toggle('done', k < lo && !at.includes(k)); });
+  arrs.forEach((el,k) => el.classList.toggle('on', at.includes(k+1) && !at.includes(k)));
+  const blocks = [].concat(s[3] || []); let html = '';
+  blocks.forEach(b => { html += block(b)[0]; });
+  data.innerHTML = html;
+  data.querySelectorAll('.bar .t i').forEach(x => later(() => x.style.width = x.dataset.w + '%', 120));
+  data.querySelectorAll('pre[data-code]').forEach(p => { const c = p.dataset.code; if (reduce) { p.textContent = c; return; } let m = 0; const t = setInterval(() => { m += 3; p.textContent = c.slice(0, m); if (m >= c.length) clearInterval(t); }, 18); timers.push(t); });
+  $('.cap .k').textContent = `단계 ${i+1} / ${F.s.length}`;
+  $('.cap h3').textContent = s[1]; $('.cap p').textContent = s[2];
+  schedule(); post();
+}
+function schedule(){
+  clearTimeout(timer); bar.classList.remove('run'); void bar.offsetWidth;
+  if (!playing) { bar.style.width = ((i+1)/F.s.length*100) + '%'; return; }
+  bar.style.width = ''; const d = dur(F.s[i]); bar.style.setProperty('--d', d + 'ms'); bar.classList.add('run');
+  timer = setTimeout(() => { if (i < F.s.length-1) go(i+1); else setPlay(false); }, d);
+}
+function setPlay(p){ playing = p; playBtn.textContent = p ? '❚❚ 일시정지' : (i === F.s.length-1 ? '↺ 다시 재생' : '▶ 재생'); if (p && i === F.s.length-1) { go(0); return; } schedule(); }
+playBtn.onclick = () => setPlay(!playing);
+$('.prev').onclick = () => { setPlay(false); go(i-1); };
+$('.next').onclick = () => { setPlay(false); go(i+1); };
+$('.again').onclick = () => { playing = true; playBtn.textContent = '❚❚ 일시정지'; go(0); };
+function post(){ try { parent.postMessage({type:'demo-height', h: document.querySelector('.player').offsetHeight + 4}, '*'); } catch (e) {} }
+if ('ResizeObserver' in window) new ResizeObserver(post).observe(document.body);
+addEventListener('load', post);
+go(0);
+})();
+</script>
+</body>
+</html>
