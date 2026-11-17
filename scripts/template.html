@@ -297,7 +297,6 @@ a.catcard.more { background: var(--card); border: 2px dashed #c9cbe6; color: var
 }
 @media (prefers-reduced-motion: reduce) { a.tcard, a.catcard { transition: none; } }
 /* 데모 보기 */
-.pills a.demo-nav { background: var(--yellow); color: var(--ink); }
 .demo-cta { background: var(--soft); }
 .demo-cta .dsub { font-size: 13px; color: var(--muted); margin-left: 8px; }
 .demo-links { display: grid; gap: 8px; margin-top: 10px; }
@@ -339,7 +338,6 @@ a.catcard.more { background: var(--card); border: 2px dashed #c9cbe6; color: var
       <a href="#timeline" data-go="timeline">타임라인</a>
       <a href="#index" data-go="index">색인</a>
       <a href="#papers" data-go="papers">논문</a>
-      <a class="demo-nav" href="/*__DEMO_URL__*/" /*__DEMO_ATTR__*/>▶ 데모</a>
       <a href="#rank" data-go="rank" id="navRank" hidden>인기 순위</a>
       <a class="pdf" href="/*__PDF_URL__*/" /*__PDF_ATTR__*/>PDF 받기<span>/*__PDF_META__*/</span></a>
     </nav>
@@ -582,7 +580,7 @@ function viewTerm(t) {
   const back = (backlinks.get(t.id) || []).filter(id => id !== t.id && !rel.includes(id));
   const hist = (histOf.get(t.id) || []).slice().sort((a, b) => b.date.localeCompare(a.date));
   const hasDemo = demosOf.has(t.id), demoOn = state.demo && hasDemo;
-  const showEasy = !demoOn && state.view !== "deep", showDeep = !demoOn && state.view !== "easy";
+  const showEasy = state.view !== "deep", showDeep = state.view !== "easy";
   const srcs = t.sources || [], papers = t.papers || [];
   const q = t.abbr && t.abbr.length > 1 && t.abbr !== t.en ? `${t.en} ${t.abbr}` : t.en;
   return `<section class="card">
@@ -592,15 +590,15 @@ function viewTerm(t) {
       <div class="meta">${lvPill(t.level)}${catPill(c.id)}<a class="pill ghost" href="#t-${tp.id}" data-go="t-${tp.id}">${esc(tp.ko)} · ${i + 1}/${ids.length}</a>
         <span>최초 수록 <span class="mono">${fmtDate(t.added)}</span></span><span>마지막 수정 <span class="mono">${fmtDate(t.updated)}</span></span><span>판 <span class="mono">${t.revision}</span></span><span>출처 ${srcs.length} · 논문 ${papers.length}(국내 ${papers.filter(p => p.region === "kr").length})</span></div>
       <div class="seg" id="view" role="group" aria-label="설명 보기">
-        <button data-v="easy" aria-pressed="${!demoOn && state.view === "easy"}">입문만</button><button data-v="both" aria-pressed="${!demoOn && state.view === "both"}">모두</button><button data-v="deep" aria-pressed="${!demoOn && state.view === "deep"}">심화만</button>${hasDemo ? `<button class="v-demo" data-v="demo" aria-pressed="${demoOn}">▶ 데모 보기</button>` : ""}
+        <button data-v="easy" aria-pressed="${state.view === "easy"}">입문만</button><button data-v="both" aria-pressed="${state.view === "both"}">모두</button><button data-v="deep" aria-pressed="${state.view === "deep"}">심화만</button>${hasDemo ? `<button class="v-demo" data-v="demo" aria-pressed="${demoOn}">▶ 데모 보기</button>` : ""}
       </div>
     </section>
     <div class="doc-grid">
       <div class="stack">
-        ${demoOn ? demoPanel(t) : ""}
         ${showEasy ? `<section class="card def"><div class="tagline"><span class="pill l1">입문 · 누구나</span></div><p>${esc(t.easy)}</p></section>` : ""}
         ${showDeep ? `<section class="card night def"><div class="tagline"><span class="pill">심화 · 구현자</span></div><p>${esc(t.deep)}</p></section>` : ""}
         ${t.example ? `<section class="card yellow def"><div class="tagline"><span class="pill yellow">실무 예시</span></div><p>${esc(t.example)}</p></section>` : ""}
+        ${demoOn ? demoPanel(t) : ""}
         <section class="card"><p class="label">출처 · 더 읽을거리 ${srcs.length}</p>
           ${srcs.length ? `<ul class="list src">${srcs.map(s => `<li><a href="${safeUrl(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a>
             <div class="m"><span class="typ ${esc(s.type)}">${SRC_TYPES[s.type] || "자료"}</span>${esc(s.publisher || "")}<span class="mono">${esc((s.url || "").replace(/^https?:\/\//, "").split("/")[0])}</span></div></li>`).join("")}</ul>`
@@ -833,7 +831,14 @@ document.addEventListener("click", e => {
   const era = e.target.closest("#eraChips [data-era]");
   if (era) { state.pera = era.dataset.era; render(); return; }
   const vb = e.target.closest("#view button");
-  if (vb) { if (vb.dataset.v === "demo") state.demo = true; else { state.demo = false; state.view = vb.dataset.v; store.set("gl-view", state.view); } render(); return; }
+  if (vb) {
+    if (vb.dataset.v === "demo") {
+      state.demo = !state.demo; render();
+      const p = document.getElementById("demoPanel") || document.querySelector(".demo-cta");
+      if (state.demo && p) p.scrollIntoView({ behavior: "smooth", block: "start" });
+    } else { state.view = vb.dataset.v; store.set("gl-view", state.view); render(); }
+    return;
+  }
 });
 document.addEventListener("change", e => {
   if (e.target.id === "ixSort") { state.ixSort = e.target.value; store.set("gl-ixsort", state.ixSort); render(); }
