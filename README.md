@@ -10,7 +10,7 @@ AX 전환을 함께 하는 실무자와 개발자를 위한 AI 용어 위키다.
 - 날짜별 변경 타임라인, 초성·ABC 색인, 검색(한글·영문·약어·초성)
 - 방문자가 많이 찾은 문서 순위 (Supabase 집계)
 - 전체 용어 PDF (분야별 차례, 가나다순 본문, 가나다·ABC 색인)
-- 데모 보기(`demos.html`): 토크나이저·온도·RAG·셀프 어텐션·LoRA·양자화 등 14개 데모를 예시 데이터로 한 단계씩 재생. 연결된 용어 문서에 "데모 보기" 칸이 붙는다
+- 데모 보기: 모든 문서의 입문만·모두·심화만 옆 "▶ 데모 보기" 버튼을 누르면 실무 예시 아래에서 예시 데이터로 동작 과정을 바로 재생. 전용 데모 14개(`demos.html`) + 용어별 공통 데모 시나리오
 - 2주마다 월요일 오전 정기 업데이트 → [UPDATE_GUIDE.md](UPDATE_GUIDE.md)
 
 ## 구조
@@ -24,6 +24,8 @@ AX 전환을 함께 하는 실무자와 개발자를 위한 AI 용어 위키다.
 | `scripts/build.py` | 검증 → `index.html`, `ai-glossary.pdf`, `supabase/sync-payload.json` 생성 |
 | `scripts/template.html` | 사이트 화면 |
 | `scripts/make_pdf.py` | PDF 생성 (Chromium 인쇄, 쪽번호 색인) |
+| `data/demo_flows/*.json` | 분야별 공통 데모 시나리오(용어마다 흐름 단계와 예시 데이터). 형식은 UPDATE_GUIDE.md |
+| `scripts/flow.html` | 공통 데모 플레이어(문서 안 프레임에서 시나리오를 재생) |
 | `scripts/demos.html` | 데모 원본. 데모마다 용어 칩(`ai-glossary/#<id>`)이 곧 연결 정보다. 빌드가 `demos.html`을 만들고 용어 문서에 "데모 보기" 링크를 단다 |
 | `supabase/schema.sql` | Supabase 테이블·뷰·함수 구조 |
 | `supabase/sync-payload.json` | Supabase 동기화 데이터 (빌드 산출물) |

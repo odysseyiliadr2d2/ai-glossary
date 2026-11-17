@@ -234,6 +234,7 @@ def main():
     errs += validate_flows(flows, known)
     covered = {i for d in demos for i in d["terms"]} | set(flows)
     missing = sorted(known - covered)
+    errs += [f"데모 시나리오 없음: {i} → data/demo_flows/<분야>.json에 추가 (UPDATE_GUIDE.md 참고)" for i in missing]
     if errs:
         print("검증 실패:"); [print(" -", e) for e in errs[:50]]; sys.exit(1)
     live = [t for t in terms if t["status"] == "active"]
