@@ -116,31 +116,61 @@ def sync_payload(terms, tree, changes, releases):
     }
 
 
-def og_tags(terms, tree):
+def og_tags(terms, tree, title="실무 AI 용어집", desc=None, url=SITE_URL):
     """링크 미리보기(카카오톡·슬랙·문자 등)용 Open Graph·Twitter 카드 메타 태그. 이미지 주소는 절대 경로여야 한다."""
     live = [t for t in terms if t["status"] == "active"]
     papers = {p["url"] for t in live for p in t.get("papers", [])}
-    desc = (f"실무자와 개발자를 위한 AI 용어 위키. 용어 {len(live)}개를 입문·심화 두 수준으로 풀고, "
+    desc = desc or (f"실무자와 개발자를 위한 AI 용어 위키. 용어 {len(live)}개를 입문·심화 두 수준으로 풀고, "
             f"출처와 국내·해외 논문 {len(papers)}편을 연결했다. 2주마다 업데이트.")
     img = SITE_URL + "og-image.png"
     tags = [
         ('property', 'og:type', 'website'), ('property', 'og:site_name', '실무 AI 용어집'),
-        ('property', 'og:title', '실무 AI 용어집'), ('property', 'og:description', desc),
-        ('property', 'og:url', SITE_URL), ('property', 'og:locale', 'ko_KR'),
+        ('property', 'og:title', title), ('property', 'og:description', desc),
+        ('property', 'og:url', url), ('property', 'og:locale', 'ko_KR'),
         ('property', 'og:image', img), ('property', 'og:image:width', '1200'), ('property', 'og:image:height', '630'),
         ('property', 'og:image:alt', '실무 AI 용어집 대표 이미지'),
-        ('name', 'twitter:card', 'summary_large_image'), ('name', 'twitter:title', '실무 AI 용어집'),
+        ('name', 'twitter:card', 'summary_large_image'), ('name', 'twitter:title', title),
         ('name', 'twitter:description', desc), ('name', 'twitter:image', img),
     ]
     icon = ("data:image/svg+xml," "%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E"
             "%3Crect width='64' height='64' rx='16' fill='%233d35b8'/%3E"
             "%3Ctext x='32' y='42' font-family='Arial' font-weight='900' font-size='26' fill='%23ffd84d' text-anchor='middle'%3EAI%3C/text%3E%3C/svg%3E")
     out = "".join(f'<meta {k}="{n}" content="{v}">\n' for k, n, v in tags)
-    return out + f'<link rel="canonical" href="{SITE_URL}">\n<link rel="icon" href="{icon}">\n'
+    return out + f'<link rel="canonical" href="{url}">\n<link rel="icon" href="{icon}">\n'
 
 
-def render(tpl, terms, tree, changes, releases, pdf_meta, for_site):
+DEMO_SRC = os.path.join(os.path.dirname(os.path.abspath(__file__)), "demos.html")
+
+
+def load_demos():
+    """scripts/demos.html(데모 원본)에서 데모 목록과 각 데모가 다루는 용어 id를 읽는다."""
+    if not os.path.exists(DEMO_SRC):
+        return "", []
+    src = open(DEMO_SRC, encoding="utf-8").read()
+    demos = []
+    for m in re.finditer(r'<section class="demo" id="(demo-[\w-]+)"[^>]*data-short="([^"]+)"(.*?)</section>', src, re.S):
+        h2 = re.search(r"<h2>(.*?)</h2>", m.group(3)).group(1)
+        terms = re.findall(r'ai-glossary/#([\w-]+)"', m.group(3))
+        demos.append({"id": m.group(1), "short": m.group(2), "title": re.sub(r"<[^>]+>", "", h2), "terms": terms})
+    return src, demos
+
+
+def render_demos(src, terms, tree, demos):
+    """데모 원본(본문 조각)을 GitHub Pages용 완전한 문서 demos.html로 감싼다."""
+    cut = src.find('<div class="wrap">')
+    covered = len({i for d in demos for i in d["terms"]})
+    desc = f"AI 용어가 실제로 어떻게 동작하는지 예시 데이터로 한 단계씩 보여 주는 데모 {len(demos)}개. 용어 {covered}개와 연결된다."
+    return ('<!doctype html>\n<html lang="ko">\n<head>\n<meta charset="utf-8">\n'
+            '<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">\n'
+            + og_tags(terms, tree, "AI 용어 데모 · 실무 AI 용어집", desc, SITE_URL + "demos.html")
+            + src[:cut] + '</head>\n<body>\n' + src[cut:] + '\n</body>\n</html>\n')
+
+
+def render(tpl, terms, tree, changes, releases, pdf_meta, for_site, demos=()):
     j = lambda o: json.dumps(o, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
+    tpl = (tpl.replace("/*__DEMOS__*/[]", j(list(demos)))
+              .replace("/*__DEMO_URL__*/", "demos.html" if for_site else SITE_URL + "demos.html")
+              .replace("/*__DEMO_ATTR__*/", "" if for_site else 'target="_blank" rel="noopener"'))
     page = (tpl.replace("/*__DATA__*/[]", j(terms)).replace("/*__TREE__*/[]", j(tree))
                .replace("/*__CHANGES__*/[]", j(changes)).replace("/*__RELEASES__*/[]", j(releases))
                .replace("/*__PDF_META__*/", pdf_meta))
@@ -165,6 +195,9 @@ def main():
 
     terms, tree, changes, releases = load("terms.json"), load("tree.json"), load("changelog.json"), load("releases.json")
     errs = validate(terms, tree, changes, releases)
+    demo_src, demos = load_demos()
+    known = {t["id"] for t in terms if t["status"] == "active"}
+    errs += [f"데모 {d['id']}가 없는 용어를 가리킴: {i}" for d in demos for i in d["terms"] if i not in known]
     if errs:
         print("검증 실패:"); [print(" -", e) for e in errs[:50]]; sys.exit(1)
     live = [t for t in terms if t["status"] == "active"]
@@ -184,9 +217,13 @@ def main():
     tpl = open(os.path.join(ROOT, "scripts", "template.html"), encoding="utf-8").read()
     os.makedirs(BUILD, exist_ok=True)
     with open(os.path.join(ROOT, "index.html"), "w", encoding="utf-8") as f:
-        f.write(render(tpl, terms, tree, changes, releases, pdf_meta, True))
+        f.write(render(tpl, terms, tree, changes, releases, pdf_meta, True, demos))
     with open(os.path.join(BUILD, "artifact.html"), "w", encoding="utf-8") as f:
-        f.write(render(tpl, terms, tree, changes, releases, pdf_meta, False))
+        f.write(render(tpl, terms, tree, changes, releases, pdf_meta, False, demos))
+    if demos:
+        with open(os.path.join(ROOT, "demos.html"), "w", encoding="utf-8") as f:
+            f.write(render_demos(demo_src, terms, tree, demos))
+        print(f"데모: demos.html (데모 {len(demos)}개, 연결 용어 {len({i for d in demos for i in d['terms']})}개)")
 
     payload = sync_payload(terms, tree, changes, releases)
     os.makedirs(os.path.join(ROOT, "supabase"), exist_ok=True)

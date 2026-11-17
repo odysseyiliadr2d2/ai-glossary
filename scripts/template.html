@@ -296,6 +296,21 @@ a.catcard.more { background: var(--card); border: 2px dashed #c9cbe6; color: var
   .ix { columns: 2 150px; }
 }
 @media (prefers-reduced-motion: reduce) { a.tcard, a.catcard { transition: none; } }
+/* 데모 보기 */
+.pills a.demo-nav { background: var(--yellow); color: var(--ink); }
+.demo-cta { background: var(--soft); }
+.demo-cta .dsub { font-size: 13px; color: var(--muted); margin-left: 8px; }
+.demo-links { display: grid; gap: 8px; margin-top: 10px; }
+.demo-links a, .demo-banner { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--ink); background: var(--card); border-radius: 16px; padding: 12px 14px; transition: transform .15s; }
+.demo-links a:hover, .demo-banner:hover { transform: translateY(-1px); }
+.demo-links .pl, .demo-banner .pl { flex: none; width: 38px; height: 38px; border-radius: 12px; background: var(--accent); color: #fff; display: grid; place-items: center; font-size: 14px; }
+.demo-links b, .demo-banner b { display: block; font-size: 15px; }
+.demo-links small, .demo-banner small { display: block; color: var(--muted); font-size: 12.5px; margin-top: 2px; }
+.demo-banner { background: var(--night); color: #fff; margin-top: 16px; }
+.demo-banner small { color: #c9cce6; }
+.demo-banner .pl { background: var(--yellow); color: var(--ink); }
+.demo-banner .go { margin-left: auto; font-weight: 700; color: var(--yellow); white-space: nowrap; }
+@media (max-width: 640px) { .demo-banner .go { display: none; } }
 </style>
 
 <header class="top">
@@ -312,6 +327,7 @@ a.catcard.more { background: var(--card); border: 2px dashed #c9cbe6; color: var
       <a href="#timeline" data-go="timeline">타임라인</a>
       <a href="#index" data-go="index">색인</a>
       <a href="#papers" data-go="papers">논문</a>
+      <a class="demo-nav" href="/*__DEMO_URL__*/" /*__DEMO_ATTR__*/>▶ 데모</a>
       <a href="#rank" data-go="rank" id="navRank" hidden>인기 순위</a>
       <a class="pdf" href="/*__PDF_URL__*/" /*__PDF_ATTR__*/>PDF 받기<span>/*__PDF_META__*/</span></a>
     </nav>
@@ -342,6 +358,18 @@ const TERMS = /*__DATA__*/[];
 const TREE = /*__TREE__*/[];
 const CHANGES = /*__CHANGES__*/[];
 const RELEASES = /*__RELEASES__*/[];
+/* 데모 보기 — scripts/demos.html에서 빌드 때 읽어 온다. 용어마다 연결된 데모로 바로 간다 */
+const DEMOS = /*__DEMOS__*/[];
+const DEMO_URL = "/*__DEMO_URL__*/";
+const DEMO_ATTR = '/*__DEMO_ATTR__*/';
+const demosOf = new Map();
+DEMOS.forEach(d => d.terms.forEach(id => { if (!demosOf.has(id)) demosOf.set(id, []); demosOf.get(id).push(d); }));
+function demoCard(id) {
+  const ds = demosOf.get(id) || [];
+  if (!ds.length) return "";
+  return `<section class="card demo-cta"><div class="tagline"><span class="pill">데모 보기</span><span class="dsub">예시 데이터로 동작 과정을 한 단계씩</span></div>
+    <div class="demo-links">${ds.map(d => `<a href="${DEMO_URL}#${d.id}" ${DEMO_ATTR}><span class="pl">▶</span><span><b>${esc(d.title)}</b><small>${d.terms.filter(x => x !== id && byId.has(x)).slice(0, 4).map(x => esc(byId.get(x).ko)).join(" · ") || "이 용어 중심"}</small></span></a>`).join("")}</div></section>`;
+}
 /* 조회 순위 집계 설정 — Supabase 프로젝트 URL과 publishable 키. 비워 두면 순위 기능은 숨겨진다. */
 const STATS = { url: "", key: "" };
 
@@ -470,6 +498,7 @@ function viewHome() {
         <div class="recent">최근 바뀜 · ${fmtDate(last)} ${esc(r?.title || "")} · <a href="#timeline" data-go="timeline">타임라인 보기</a></div>
       </article>
     </section>
+    ${DEMOS.length ? `<a class="card demo-banner" href="${DEMO_URL}" ${DEMO_ATTR}><span class="pl">▶</span><span><b>데모 보기 · ${DEMOS.length}개</b><small>${DEMOS.slice(0, 7).map(d => esc(d.short)).join(" · ")} 등 · 용어 ${demosOf.size}개가 실제로 어떻게 동작하는지 예시 데이터로 보기</small></span><span class="go">열기 →</span></a>` : ""}
     ${pop.length ? `<section class="card tight"><p class="label">요즘 많이 찾는 문서</p><div class="chips">${pop.map((p, i) => `<a class="chip" href="#${p.term_id}" data-go="${p.term_id}"><b class="mono" style="color:var(--accent)">${i + 1}</b>${esc(byId.get(p.term_id).ko)}</a>`).join("")}</div></section>` : ""}
     <h2 class="h2">분야 고르기 <small>${TREE.length}개 분야 · ${TREE.reduce((s, c) => s + c.topics.length, 0)}개 주제</small></h2>
     <section class="grid g4">${TREE.map(c => `<a class="catcard fill c-${c.id}" href="#c-${c.id}" data-go="c-${c.id}">
@@ -542,6 +571,7 @@ function viewTerm(t) {
         ${showEasy ? `<section class="card def"><div class="tagline"><span class="pill l1">입문 · 누구나</span></div><p>${esc(t.easy)}</p></section>` : ""}
         ${showDeep ? `<section class="card night def"><div class="tagline"><span class="pill">심화 · 구현자</span></div><p>${esc(t.deep)}</p></section>` : ""}
         ${t.example ? `<section class="card yellow def"><div class="tagline"><span class="pill yellow">실무 예시</span></div><p>${esc(t.example)}</p></section>` : ""}
+        ${demoCard(t.id)}
         <section class="card"><p class="label">출처 · 더 읽을거리 ${srcs.length}</p>
           ${srcs.length ? `<ul class="list src">${srcs.map(s => `<li><a href="${safeUrl(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a>
             <div class="m"><span class="typ ${esc(s.type)}">${SRC_TYPES[s.type] || "자료"}</span>${esc(s.publisher || "")}<span class="mono">${esc((s.url || "").replace(/^https?:\/\//, "").split("/")[0])}</span></div></li>`).join("")}</ul>`
