@@ -178,6 +178,7 @@ def validate_flows(flows, known):
         if not 3 <= len(s) <= 6: errs.append(f"{tid}: 재생 단계(s)는 3~6개")
         for k, st in enumerate(s):
             if not (isinstance(st, list) and len(st) == 4): errs.append(f"{tid} 단계{k+1}: [노드, 제목, 설명, 데이터] 형식"); continue
+            if not str(st[1]).strip() or not str(st[2]).strip(): errs.append(f"{tid} 단계{k+1}: 제목·설명이 비어 있음")
             at = st[0] if isinstance(st[0], list) else [st[0]]
             if any(not isinstance(x, int) or not 0 <= x < len(n) for x in at): errs.append(f"{tid} 단계{k+1}: 노드 번호 범위 밖")
             for blk in (st[3] if isinstance(st[3], list) else [st[3]]):
